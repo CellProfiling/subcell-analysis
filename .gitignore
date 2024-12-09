@@ -161,14 +161,5 @@ cython_debug/
 ._*
 .DS_Store
 *.tsv
-stats/splits/
-stats/IF-image*
-stats/annotations/*
-.vscode/launch.json
-data_exploration/*
+.vscode/
 .local/
-wandb/
-weights/
-annotations/
-cell_model.pth
-subcell-exp-results/

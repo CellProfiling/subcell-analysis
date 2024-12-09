@@ -1,0 +1,19 @@
+name: bestfitting
+crops_folder: /proj/hpa_subcell/hpa_data/crops
+inference_folder: /proj/hpa_subcell/hpa_data/inference
+model:
+  args:
+    in_channels: 4
+    num_classes: 19
+    ml_num_classes: 20000
+    pretrained: False
+  weight_path: weights/bestfitting_weights/12.00_ema.pth
+crop_params:
+  pad: 20
+  crop: -1
+  resize_to: 128
+  channels:
+      - "red"
+      - "green"
+      - "blue"
+      - "yellow"

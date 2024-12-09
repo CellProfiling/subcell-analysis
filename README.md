@@ -32,9 +32,3 @@ transformers>=4.41.0
 torchmetrics==1.3.0
 mosaicml-streaming==0.7.3
 ```
-
-## Usage
-
-```
-python main_lightning.py --config configs/MAE-cellS-protS-contrast.yaml
-```

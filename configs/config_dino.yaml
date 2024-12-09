@@ -1,0 +1,23 @@
+name: dino
+crops_folder: /proj/hpa_subcell/hpa_data/crops
+inference_folder: /proj/hpa_subcell/hpa_data/inference
+model:
+  args:
+    num_channels: 4
+    patch_size: 16
+    embed_dim: 768
+    depth: 12
+    num_heads: 12
+    mlp_ratio: 4
+    qkv_bias: True
+  weight_path: weights/dino_weights/HPA_single_cell_model_checkpoint.pth
+crop_params:
+  pad: -1
+  crop: 640
+  resize_to: -1
+  channels:
+      - "red"
+      - "green"
+      - "blue"
+      - "yellow"
+
