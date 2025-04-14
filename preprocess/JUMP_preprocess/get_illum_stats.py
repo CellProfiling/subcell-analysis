@@ -1,7 +1,7 @@
 import click
 import pandas as pd
 import os
-from preprocessing.illumination_statistics import calculate_statistics
+from preprocess.illumination_statistics import calculate_statistics
 import multiprocessing
 
 
