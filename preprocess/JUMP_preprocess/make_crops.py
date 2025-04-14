@@ -1,5 +1,5 @@
 import click
-from preprocessing.preprocess import preprocess
+from preprocess.preprocess import preprocess
 from functools import partial
 import pandas as pd
 import multiprocessing
