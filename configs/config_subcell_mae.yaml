@@ -1,0 +1,36 @@
+name: subcell_rybg_mae
+crops_folder: /scratch/groups/emmalu/subcell_ankit/b2aicropsmasked/HPACellSegmentator_crops_masked # /proj/hpa_subcell/hpa_comp_data/Kaggle/test_images/crops #/proj/hpa_subcell/hpa_data/crops
+metadata_file: /scratch/groups/emmalu/subcell_ankit/full_subcell_crops_all_z_filtered.csv
+inference_folder: /scratch/groups/emmalu/subcell_ankit/b2ai
+save_attention: True
+model:
+    args:
+        vit_model:
+            hidden_size: 768
+            num_hidden_layers: 12
+            num_attention_heads: 12
+            intermediate_size: 3072
+            hidden_act: "gelu"
+            hidden_dropout_prob: 0.0
+            attention_probs_dropout_prob: 0.0
+            initializer_range: 0.02
+            layer_norm_eps: 1.e-12
+            image_size: 448
+            patch_size: 16
+            num_channels: 4
+            qkv_bias: True
+        pool_model:
+            dim: 768
+            int_dim: 512
+            num_heads: 2
+    weight_path: /home/groups/emmalu/ankitgpt/subcell_models/all_channels_MAE-CellS-ProtS-Pool.pth
+crop_params:
+    pad: -1
+    crop: 640
+    resize_to: -1
+    channels:
+        - "red"
+        - "yellow"
+        - "blue"
+        - "green"
+

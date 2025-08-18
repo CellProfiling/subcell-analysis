@@ -1,0 +1,170 @@
+    - 
+        name: subcell_bg_mae
+        crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+        metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+        inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+        channel_combination:  "concat" 
+        normalization: perchannel
+        save_attention: True
+        model:
+            args:
+                vit_model:
+                    hidden_size: 768
+                    num_hidden_layers: 12
+                    num_attention_heads: 12
+                    intermediate_size: 3072
+                    hidden_act: "gelu"
+                    hidden_dropout_prob: 0.0
+                    attention_probs_dropout_prob: 0.0
+                    initializer_range: 0.02
+                    layer_norm_eps: 1.e-12
+                    image_size: 448
+                    patch_size: 16
+                    num_channels: 2
+                    qkv_bias: True
+                pool_model:
+                    dim: 768 
+                    int_dim: 512
+                    num_heads: 2
+            weight_path: /home/groups/emmalu/ankitgpt/subcell_models/DNA-Protein_MAE-CellS-ProtS-Pool.pth
+
+    # -
+    #     name: subcell_bg_mae
+    #     crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+    #     metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+    #     channel_combination:  "concat" # "nuc_prot_only" # 
+    #     normalization: perimage
+    #     model:
+    #         args:
+    #             vit_model:
+    #                 hidden_size: 768
+    #                 num_hidden_layers: 12
+    #                 num_attention_heads: 12
+    #                 intermediate_size: 3072
+    #                 hidden_act: "gelu"
+    #                 hidden_dropout_prob: 0.0
+    #                 attention_probs_dropout_prob: 0.0
+    #                 initializer_range: 0.02
+    #                 layer_norm_eps: 1.e-12
+    #                 image_size: 448
+    #                 patch_size: 16
+    #                 num_channels: 2
+    #                 qkv_bias: True
+    #             pool_model:
+    #                 dim: 768 
+    #                 int_dim: 512
+    #                 num_heads: 2
+    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/DNA-Protein_MAE-CellS-ProtS-Pool.pth
+    # -
+    #     name: subcell_bg_mae
+    #     crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+    #     metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+    #     channel_combination:   "nuc_prot_only" 
+    #     normalization: perchannel
+    #     model:
+    #         args:
+    #             vit_model:
+    #                 hidden_size: 768
+    #                 num_hidden_layers: 12
+    #                 num_attention_heads: 12
+    #                 intermediate_size: 3072
+    #                 hidden_act: "gelu"
+    #                 hidden_dropout_prob: 0.0
+    #                 attention_probs_dropout_prob: 0.0
+    #                 initializer_range: 0.02
+    #                 layer_norm_eps: 1.e-12
+    #                 image_size: 448
+    #                 patch_size: 16
+    #                 num_channels: 2
+    #                 qkv_bias: True
+    #             pool_model:
+    #                 dim: 768 
+    #                 int_dim: 512
+    #                 num_heads: 2
+    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/DNA-Protein_MAE-CellS-ProtS-Pool.pth
+    # -
+    #     name: subcell_bg_mae
+    #     crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+    #     metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+    #     channel_combination: "nuc_prot_only" # 
+    #     normalization: perimage
+    #     model:
+    #         args:
+    #             vit_model:
+    #                 hidden_size: 768
+    #                 num_hidden_layers: 12
+    #                 num_attention_heads: 12
+    #                 intermediate_size: 3072
+    #                 hidden_act: "gelu"
+    #                 hidden_dropout_prob: 0.0
+    #                 attention_probs_dropout_prob: 0.0
+    #                 initializer_range: 0.02
+    #                 layer_norm_eps: 1.e-12
+    #                 image_size: 448
+    #                 patch_size: 16
+    #                 num_channels: 2
+    #                 qkv_bias: True
+    #             pool_model:
+    #                 dim: 768 
+    #                 int_dim: 512
+    #                 num_heads: 2
+    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/DNA-Protein_MAE-CellS-ProtS-Pool.pth
+    # -
+    #     name: subcell_rbg_mae
+    #     crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+    #     metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+    #     channel_combination:  "plasma_nuc_prot" 
+    #     normalization: perchannel
+    #     model:
+    #         args:
+    #             vit_model:
+    #                 hidden_size: 768
+    #                 num_hidden_layers: 12
+    #                 num_attention_heads: 12
+    #                 intermediate_size: 3072
+    #                 hidden_act: "gelu"
+    #                 hidden_dropout_prob: 0.0
+    #                 attention_probs_dropout_prob: 0.0
+    #                 initializer_range: 0.02
+    #                 layer_norm_eps: 1.e-12
+    #                 image_size: 448
+    #                 patch_size: 16
+    #                 num_channels: 3
+    #                 qkv_bias: True
+    #             pool_model:
+    #                 dim: 768 
+    #                 int_dim: 512
+    #                 num_heads: 2
+    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth
+    # -
+    #     name: subcell_rbg_mae
+    #     crops_folder: /scratch/groups/emmalu/AllenCell/loaddata 
+    #     metadata_file: /scratch/groups/emmalu/AllenCell/manifest.csv
+    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
+    #     channel_combination:  "plasma_nuc_prot" 
+    #     normalization: perimage
+    #     model:
+    #         args:
+    #             vit_model:
+    #                 hidden_size: 768
+    #                 num_hidden_layers: 12
+    #                 num_attention_heads: 12
+    #                 intermediate_size: 3072
+    #                 hidden_act: "gelu"
+    #                 hidden_dropout_prob: 0.0
+    #                 attention_probs_dropout_prob: 0.0
+    #                 initializer_range: 0.02
+    #                 layer_norm_eps: 1.e-12
+    #                 image_size: 448
+    #                 patch_size: 16
+    #                 num_channels: 3
+    #                 qkv_bias: True
+    #             pool_model:
+    #                 dim: 768 
+    #                 int_dim: 512
+    #                 num_heads: 2
+    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth

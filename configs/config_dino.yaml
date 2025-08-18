@@ -1,19 +1,44 @@
+# name: dino
+# crops_folder: /scratch/groups/emmalu/subcell_ankit/b2aicropsmasked/HPACellSegmentator_crops_masked # /proj/hpa_subcell/hpa_comp_data/Kaggle/test_images/crops #/proj/hpa_subcell/hpa_data/crops
+# metadata_file: /scratch/groups/emmalu/subcell_ankit/full_subcell_crops_all_z_filtered.csv
+# inference_folder: /scratch/groups/emmalu/subcell_ankit/b2ai
+# model:
+#   args:
+#     num_channels: 4
+#     patch_size: 16
+#     embed_dim: 768
+#     depth: 12
+#     num_heads: 12
+#     mlp_ratio: 4
+#     qkv_bias: True
+#   weight_path: /scratch/groups/emmalu/subcell_ankit/weights/dino_weights/HPA_single_cell_model_checkpoint.pth
+# crop_params:
+#   pad: -1
+#   crop: 512
+#   resize_to: -1
+#   channels:
+#       - "red"
+#       - "green"
+#       - "blue"
+#       - "yellow"
+
 name: dino
-crops_folder: /proj/hpa_subcell/hpa_data/crops
-inference_folder: /proj/hpa_subcell/hpa_data/inference
+crops_folder: /scratch/groups/emmalu/AllenCell/loaddata # /proj/hpa_subcell/hpa_comp_data/Kaggle/test_images/crops #/proj/hpa_subcell/hpa_data/crops
+metadata_file: /scratch/groups/emmalu/AllenCell/manfest.csv
+inference_folder: /scratch/groups/emmalu/subcell_ankit/allencell
 model:
   args:
-    num_channels: 4
+    num_channels: 3
     patch_size: 16
     embed_dim: 768
     depth: 12
     num_heads: 12
     mlp_ratio: 4
     qkv_bias: True
-  weight_path: weights/dino_weights/HPA_single_cell_model_checkpoint.pth
+  weight_path: /scratch/groups/emmalu/subcell_ankit/weights/dino_weights/HPA_single_cell_model_checkpoint.pth
 crop_params:
   pad: -1
-  crop: 640
+  crop: 512
   resize_to: -1
   channels:
       - "red"
