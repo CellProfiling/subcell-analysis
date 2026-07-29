@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64"]  # Build-time dependencies
+build-backend = "setuptools.build_meta"  # The engine executing the build
+
+[project]
+name = "subcell-analysis"
+version = "0.1.0"
+description = "Utilities used for SubCell Analysis"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.22.0",
+    "pandas",
+    "scikit-learn",
+    "scikit-multilearn",
+    "pycytominer",
+    "torch",
+    "torchvision",
+    "transformers",
+    "opencv-python",
+    "h5py",
+    "joblib",
+    "tqdm",
+    "umap-learn",
+    "matplotlib",
+    "seaborn",
+    "colorcet",
+]
+
+[project.urls]
+Homepage = "https://github.com/CellProfiling/subcell-analysis/tree/main"
+
+[tool.setuptools]
+# utils imports from models (utils.load_model -> models.vit_pool, utils.train_mlp
+# -> models.mlp), so both top-level packages have to ship together.
+packages = ["utils", "models"]
+
+[tool.setuptools.package-data]
+utils = ["colormaps/*.lut"]
