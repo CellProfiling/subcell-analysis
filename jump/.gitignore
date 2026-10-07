@@ -1,0 +1,15 @@
+# Embeddings (large; usually a symlink to scratch)
+/embeddings
+
+# SLURM logs (keep the folder)
+/slurm_launchers/slurm_out/*
+!/slurm_launchers/slurm_out/.gitkeep
+
+__pycache__/
+*.pyc
+
+# The top-level .gitignore of this repo ignores *.tsv and .env.
+# Re-include them here: the metadata TSVs are required inputs, and .env is a
+# template with paths to fill in.
+!*.tsv
+!.env

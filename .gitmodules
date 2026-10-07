@@ -1,0 +1,12 @@
+[submodule "jump/models/DINO4Cells_code"]
+	path = jump/models/DINO4Cells_code
+	url = https://github.com/broadinstitute/DINO4Cells_code.git
+[submodule "jump/models/DeepProfiler"]
+	path = jump/models/DeepProfiler
+	url = https://github.com/cytomining/DeepProfiler.git
+[submodule "jump/models/SubCellPortable"]
+	path = jump/models/SubCellPortable
+	url = https://github.com/CellProfiling/SubCellPortable.git
+[submodule "jump/models/dinov2"]
+	path = jump/models/dinov2
+	url = https://github.com/facebookresearch/dinov2.git

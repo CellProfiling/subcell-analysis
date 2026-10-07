@@ -1,0 +1,56 @@
+# GPU inference env for SubCell + DINO.
+#
+# The `moa` env (used for all other stages) has CPU-only torch. Both inference
+# scripts have been verified to work in moa on CPU — this env just swaps in a
+# CUDA-enabled torch for the GPU SLURM jobs. Everything else (transformers for
+# SubCellPortable's HuggingFace ViT, pillow for PNG loading, pyyaml for configs)
+# matches what's already in moa.
+#
+# DINO4Cells' requirements.txt pins torch==1.12.1+cu116, but the ViT code in
+# archs/vision_transformer.py is pure torch with no version-sensitive APIs and
+# was tested against torch 2.4. Ignore the old pin.
+#
+# kornia is NOT needed — DINO's utils.utils imports it but inference_dino.py
+# stubs that import out.
+#
+# GLIBC CAVEAT (Sherlock is CentOS 7, GLIBC 2.17):
+# conda's nvidia channel has loose version constraints and will pull in
+# libcurand/cuda-opencl from CUDA 13.x, which needs GLIBC 2.27+. This makes
+# `import torch` fail with:
+#   ImportError: /lib64/libm.so.6: version `GLIBC_2.27' not found
+# Fix: force the affected libs to conda-forge builds (compiled against 2.17):
+#   conda install -c conda-forge --override-channels \
+#       "libcurand=10.3.2" "cuda-opencl=12.1" "cuda-version=12.1"
+# The slurm launchers also `module load cuda/12.8.0` as a belt-and-suspenders
+# shadow of conda's CUDA libs.
+#
+# Create:
+#   conda env create -f envs/inference_gpu.yaml
+#   conda activate inference_gpu
+#   conda install -c conda-forge --override-channels \
+#       "libcurand=10.3.2" "cuda-opencl=12.1" "cuda-version=12.1"
+# Then update .env:
+#   CONDA_ENV_INFERENCE=inference_gpu
+
+name: inference_gpu
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.4
+  - pytorch-cuda=12.1
+  - numpy<2
+  - pillow
+  - pyyaml
+  - tqdm
+  - matplotlib
+  - pip
+  - pip:
+      # Pinned to match SubCellPortable/requirements.txt. transformers 4.56+
+      # removed the output_attentions kwarg from ViTAttention.forward() which
+      # SubCellPortable's vit_model.py relies on. DINO4Cells doesn't use
+      # transformers at all, so this pin costs nothing.
+      - transformers==4.45.1
+      - opencv-python-headless  

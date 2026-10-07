@@ -1,0 +1,35 @@
+# SubCell ViT (vit_supcon) inference config
+# Same 3-pass ybg strategy as subcell_mae, different checkpoint.
+
+model_name: subcell_vit
+
+encoder_env_key: SUBCELL_VIT_CKPT
+classifier_env_key: SUBCELL_VIT_CLF
+
+crop_size: 128
+rescale_ratio: 3.74
+normalize: per_chan
+
+context_channels: [ER, DNA]
+protein_channels: [Mito, AGP, RNA]
+
+model_config:
+  vit_model:
+    hidden_size: 768
+    num_hidden_layers: 12
+    num_attention_heads: 12
+    intermediate_size: 3072
+    hidden_act: gelu
+    hidden_dropout_prob: 0.0
+    attention_probs_dropout_prob: 0.0
+    initializer_range: 0.02
+    layer_norm_eps: 1.0e-12
+    image_size: 448
+    patch_size: 16
+    num_channels: 3
+    qkv_bias: true
+  pool_model:
+    dim: 768
+    int_dim: 512
+    num_heads: 2
+  num_classes: 31

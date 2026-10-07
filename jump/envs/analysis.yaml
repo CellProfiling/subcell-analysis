@@ -1,0 +1,27 @@
+# Analysis environment (CPU) for postprocessing, evaluation, and plotting.
+#
+# Create:
+#   conda env create -f envs/analysis.yaml
+#   conda activate moa
+#   pip install copairs
+
+name: moa
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas=2.1
+  - scipy
+  - scikit-learn=1.3
+  - seaborn=0.13
+  - matplotlib-venn
+  - pycytominer
+  - umap-learn=0.5
+  - tqdm
+  - pyyaml
+  - pyarrow
+  - pip
+  - pip:
+      - copairs

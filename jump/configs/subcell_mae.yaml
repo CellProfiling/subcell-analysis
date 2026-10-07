@@ -1,0 +1,45 @@
+# SubCell MAE (mae_contrast_supcon) inference config
+# Uses the ybg (3-channel) model with the 3-pass strategy:
+#   Pass 1: [ER, DNA, Mito]
+#   Pass 2: [ER, DNA, AGP]
+#   Pass 3: [ER, DNA, RNA]
+# All three passes are batched as (3, 3, H, W) in a single forward.
+# Output: (3, 1536) -> reshape -> (1, 4608)
+
+model_name: subcell_mae
+
+# Checkpoint paths (read from env at runtime via SUBCELL_MAE_CKPT, SUBCELL_MAE_CLF)
+encoder_env_key: SUBCELL_MAE_CKPT
+classifier_env_key: SUBCELL_MAE_CLF
+
+# Image preprocessing
+crop_size: 128           # center-crop the 192px crops to this
+rescale_ratio: 3.74      # upscale factor (JUMP pixel size / HPA pixel size)
+normalize: per_chan      # per-channel min-max normalization
+
+# Channel selection for the 3-pass ybg strategy
+# Each pass uses [ER, DNA, <protein>] fed to the model's [y, b, g] slots
+context_channels: [ER, DNA]
+protein_channels: [Mito, AGP, RNA]
+
+# Model architecture (must match checkpoint)
+model_config:
+  vit_model:
+    hidden_size: 768
+    num_hidden_layers: 12
+    num_attention_heads: 12
+    intermediate_size: 3072
+    hidden_act: gelu
+    hidden_dropout_prob: 0.0
+    attention_probs_dropout_prob: 0.0
+    initializer_range: 0.02
+    layer_norm_eps: 1.0e-12
+    image_size: 448
+    patch_size: 16
+    num_channels: 3
+    qkv_bias: true
+  pool_model:
+    dim: 768
+    int_dim: 512
+    num_heads: 2
+  num_classes: 31
