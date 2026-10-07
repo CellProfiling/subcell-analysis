@@ -1,0 +1,5 @@
+cellprofiler: {agg: median, fs: 1, norm1: mad_robustize, norm2: none}
+dino: {agg: mean, fs: 1, norm1: PCA, norm2: mad_robustize}
+subcell_mae: {agg: median, fs: 0, norm1: PCAcor, norm2: standardize}
+deepprofiler: {agg: mean, fs: 1, norm1: PCAcor, norm2: mad_robustize}
+cell_dino: {agg: mean, fs: 1, norm1: PCA, norm2: mad_robustize}

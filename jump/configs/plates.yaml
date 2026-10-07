@@ -1,0 +1,58 @@
+# ============================================================
+# Compound plates for the benchmark (cpg0000 JUMP Pilot)
+# 15 plates total (16 compound plates minus BR00116995 which has QC issues)
+#
+# Evaluation is done PER CELL TYPE (A549 vs U2OS separately)
+# because their morphology differs too much to compare directly.
+# Timepoints (24h vs 48h) are NOT stratified — cross-timepoint
+# replicates count as positive pairs.
+# ============================================================
+
+bad_plates:
+  - BR00116995  # QC issues — excluded from all analysis
+
+plates:
+  # --- A549 compound 24h ---
+  BR00116991: {cell_type: A549, timepoint: 24, perturbation: compound}
+  BR00116992: {cell_type: A549, timepoint: 24, perturbation: compound}
+  BR00116993: {cell_type: A549, timepoint: 24, perturbation: compound}
+  BR00116994: {cell_type: A549, timepoint: 24, perturbation: compound}
+
+  # --- A549 compound 48h ---
+  BR00117015: {cell_type: A549, timepoint: 48, perturbation: compound}
+  BR00117016: {cell_type: A549, timepoint: 48, perturbation: compound}
+  BR00117017: {cell_type: A549, timepoint: 48, perturbation: compound}
+  BR00117019: {cell_type: A549, timepoint: 48, perturbation: compound}
+
+  # --- U2OS compound 24h ---
+  BR00117024: {cell_type: U2OS, timepoint: 24, perturbation: compound}
+  BR00117025: {cell_type: U2OS, timepoint: 24, perturbation: compound}
+  BR00117026: {cell_type: U2OS, timepoint: 24, perturbation: compound}
+
+  # --- U2OS compound 48h ---
+  BR00117010: {cell_type: U2OS, timepoint: 48, perturbation: compound}
+  BR00117011: {cell_type: U2OS, timepoint: 48, perturbation: compound}
+  BR00117012: {cell_type: U2OS, timepoint: 48, perturbation: compound}
+  BR00117013: {cell_type: U2OS, timepoint: 48, perturbation: compound}
+
+# Convenience lists for SLURM array indexing
+plate_list:
+  - BR00116991
+  - BR00116992
+  - BR00116993
+  - BR00116994
+  - BR00117015
+  - BR00117016
+  - BR00117017
+  - BR00117019
+  - BR00117024
+  - BR00117025
+  - BR00117026
+  - BR00117010
+  - BR00117011
+  - BR00117012
+  - BR00117013
+
+cell_types:
+  - A549
+  - U2OS

@@ -1,0 +1,27 @@
+# Cell-DINO (ViT-S/8, 5-channel Cell Painting) inference config.
+#
+# Model: cell_dino_cp_vits8 from facebookresearch/dinov2 (dinov2/hub/cell_dino/
+# backbones.py), trained on the Combined Cell Painting dataset
+# (cpg0019-moshkov-deepprofiler). The checkpoint's pos_embed is [1, 257, 384]
+# = 16*16 + 1 patches at patch_size=8, i.e. 128x128 native input. We
+# center-crop our 192px crops to 128 (matches the paper's eval protocol:
+# "center crops of the same size [128] for evaluation", p.19).
+#
+# Preprocessing (dinov2/data/cell_dino/transforms.py, eval transform):
+#   x / 255 -> center crop -> per-image per-channel z-score (unbiased=False)
+
+model_name: cell_dino
+
+ckpt_env_key: CELL_DINO_CKPT
+
+crop_size: 128
+
+
+channels: [DNA, RNA, ER, AGP, Mito]
+
+# Which vector to save as the cell embedding:
+#   cls         - last-block CLS token (384D); what model(x) returns
+#   cls_avgpool - CLS + mean of last-block patch tokens (768D); the paper's
+#                 linear-eval recipe (p.18)
+#   both        - write both from one forward pass, to separate model dirs
+feature_mode: both

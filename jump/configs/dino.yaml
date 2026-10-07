@@ -1,0 +1,23 @@
+# DINO4Cells (vit_base, 5-channel Cell Painting) inference config.
+#
+# Unlike SubCell, DINO takes all 5 CP channels in a single forward pass,
+# so there is no multi-pass strategy. Output is 768D (CLS token).
+#
+# The checkpoint's pos_embed has shape [1, 65, 768] = 8*8 + 1 patches at
+# patch_size=16, i.e. it was trained at 128x128. We feed 128x128 crops
+# directly with no rescaling, so pos_embed matches exactly (strict load).
+
+model_name: dino
+
+ckpt_env_key: DINO_CKPT
+
+crop_size: 128
+
+# Channel order for the 5-channel input. Matches the old ankit_eval
+# DINO_CHANNEL_ORDER = [nuc, rna, er, agp, mito] in our naming.
+channels: [DNA, RNA, ER, AGP, Mito]
+
+# vit_base factory args (must match checkpoint)
+patch_size: 16
+in_chans: 5
+img_size: 128
