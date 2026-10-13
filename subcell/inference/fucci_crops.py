@@ -8,7 +8,7 @@ on the cell, multiplied by the cell mask, with the nuclear mask appended as a fi
 
 Inputs (``FUCCI_DATA``): ``single_cell_statistics_pcs.csv``, ``Files/`` (the fields), ``cell_masks/``.
 Output: ``single_cell_crops/`` there (replaced if it exists), the ``crops_folder`` of the configs
-``config_subcell_*_fucci.yaml``. ``subcell.inference.fucci`` encodes them.
+``fucci_subcell_*.yaml``. ``subcell.inference.fucci`` encodes them.
 """
 import argparse
 import os

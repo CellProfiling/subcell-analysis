@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.opencell -c configs/config_subcell_vit_opencell.yaml`: ViT-ProtS-Pool (DNA + protein)
+# Read by `python -m subcell.inference.opencell -c configs/opencell_subcell_vit.yaml`: ViT-ProtS-Pool (DNA + protein)
 # features on the OpenCell crops (Fig. 2e).
     -
         name: subcell_bg_vit

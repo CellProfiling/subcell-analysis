@@ -38,7 +38,6 @@ from tqdm import tqdm
 from subcell import config
 from subcell.classification.nested_cv import cross_val_mlp_folds
 from subcell.io.preprocess import safe_crop
-from subcell.perturbation import CM4AI_METADATA
 
 CROPS_DIR = config.CM4AI_CROPS
 N_SPLITS = 10
@@ -88,7 +87,7 @@ def generate_cell_crops(n_jobs=-1, crop_size=1024):
     mask_folder = data / "images" / "all_z_filtered_segmentations"
     save_folder = config.ensure(CROPS_DIR)
 
-    df = pd.read_csv(CM4AI_METADATA, usecols=["id", "cell"])
+    df = pd.read_csv(config.CM4AI_METADATA, usecols=["id", "cell"])
     df["fov_id"] = df["id"].str.replace(r"cell\d+_crop_$", "", regex=True)
 
     Parallel(n_jobs=n_jobs)(

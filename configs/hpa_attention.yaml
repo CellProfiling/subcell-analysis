@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.attention -c configs/config_attention_hpa.yaml`: attention maps of the SubCell
+# Read by `python -m subcell.inference.attention -c configs/hpa_attention.yaml`: attention maps of the SubCell
 # encoders, Cell-DINO-HPA and DINO4Cells-HPA (``dino``) on the HPA cells, scored against the input channels (Fig. 3f,g).
 - name: subcell_rybg_mae
   crops_folder: ${HPA_DATA}

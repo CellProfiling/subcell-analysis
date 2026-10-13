@@ -30,7 +30,7 @@ import pandas as pd
 from matplotlib.colors import to_rgba
 from matplotlib.patches import Rectangle
 
-from figures import _microscope_images as img
+from figures import _ed1_images as img
 from subcell import config, style
 from subcell.runlog import log
 from subcell.microscope_robustness import data

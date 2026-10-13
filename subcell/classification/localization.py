@@ -1,6 +1,6 @@
 """Protein localization probes on HPA features (Fig. 2a-c; Supplementary Table 9).
 
-Per model, an MLP (``subcell.classification.mlp``) is trained on ten seeds on single-cell
+Per model, an MLP (``subcell.classification.probe``) is trained on ten seeds on single-cell
 features of the HPA v23 train antibodies to predict the multi-label subcellular
 localization (31 HPA categories, or the 19 Kaggle challenge categories), selected on
 the validation antibodies and scored on the test antibodies at cell and FOV level and,
@@ -12,7 +12,7 @@ when its features exist, on the hidden Kaggle single-cell test set.
 
 Inputs, under ``config.FEATURE_DIR/<model>``: ``hpa_features/all_features.pth``
 (``(metadata, features)`` of the HPA cells), ``kaggle_features/all_features.pth``
-(``scripts/export_kaggle_features.py``), the antibody splits ``config.HPA_SPLITS`` and the
+(``subcell/inference/kaggle_features.py``), the antibody splits ``config.HPA_SPLITS`` and the
 category groupings ``config.LOCATION_GROUPS`` (Supplementary Table 2).
 Outputs: ``hpa_features/classification/multiclass_<categories>_seed_<i>/`` with the
 model, ``{val,test,test_fov,hidden_test}_preds.csv`` and ``*_metrics.csv`` (and plots).
@@ -30,7 +30,7 @@ import pandas as pd
 import torch
 
 from subcell import config
-from subcell.classification.mlp import TwoLayerProbe, eval_model, get_metrics, train_mlp
+from subcell.classification.probe import TwoLayerProbe, eval_model, get_metrics, train_mlp
 from subcell.runlog import log
 from subcell.utils.seed import set_random_seed
 
@@ -217,7 +217,7 @@ def main(model, categories="all_unique_cats", seeds=range(10), harmonize_feature
         challenge_x, challenge_y = get_challenge_data(model_dir, unique_cats)
         if challenge_x is None:
             raise FileNotFoundError(
-                f"{model_dir}/kaggle_features/all_features.pth; run scripts/export_kaggle_features.py"
+                f"{model_dir}/kaggle_features/all_features.pth; run subcell/inference/kaggle_features.py"
             )
         for i in seeds:
             folder = f"{save_folder}/multiclass_{categories}_seed_{i}"

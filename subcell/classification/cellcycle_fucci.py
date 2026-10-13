@@ -26,7 +26,7 @@ from sklearn.model_selection import GroupKFold
 
 from subcell import config
 from subcell.classification.evidential_regression import eval_model_reg, train_mlp_reg
-from subcell.classification.mlp import probe_seeds
+from subcell.classification.probe import probe_seeds
 from subcell.utils.seed import set_random_seed
 
 N_SPLITS = 10

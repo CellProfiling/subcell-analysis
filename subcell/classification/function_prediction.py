@@ -14,7 +14,7 @@ Random-feature baselines are scored alongside.
     python -m subcell.classification.function_prediction run        # pending units on this node's GPUs
     python -m subcell.classification.function_prediction plot       # merge, then figures.fig3d_function_prediction
 
-``scripts/function_prediction.sbatch`` runs the ``run`` stage as a Slurm array.
+``slurm/function_prediction.sbatch`` runs the ``run`` stage as a Slurm array.
 
 A unit is one (repeat, method, database, fold). Every stage skips what is
 already on disk, so any of them can be rerun after a crash or pre-emption.

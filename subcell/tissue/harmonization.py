@@ -23,7 +23,7 @@ Stages (``python -m subcell.tissue.harmonization <stage> [--fresh] [--pca-dim N]
 
 The UMAP neighbour search can run on the top ``--pca-dim`` principal components
 (0 = the raw 3,072 dims); Harmony itself always runs on the full 3,072 dims. The
-reported embeddings used 256 (``scripts/tissue_umap.sbatch``).
+reported embeddings used 256 (``slurm/tissue_umap.sbatch``).
 
 Join. The annotation's acquisition prefix does not agree with the filenames (it
 lumps R27-R36 into one block "HX"; the data splits it into two), so cells join on

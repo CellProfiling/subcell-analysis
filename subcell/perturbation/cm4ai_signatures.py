@@ -19,7 +19,7 @@ sliced-Wasserstein scatter of Fig. 4c is not drawn here.
     python -m subcell.perturbation.cm4ai_signatures [--out-dir DIR] [--cache-dir DIR]
 
 Inputs: ``config.features("MAE-CellS-ProtS-Pool", "b2ai_features")`` and
-``subcell.perturbation.CM4AI_METADATA``. Cached tables (``features/`` and
+``config.CM4AI_METADATA``. Cached tables (``features/`` and
 ``intensity/``) and the UMAP coordinates go to ``config.CM4AI_DIR /
 "perturbation_analysis"``; figures to ``config.figure_dir("fig4")`` and
 ``config.figure_dir("ed5")``.
@@ -40,7 +40,6 @@ from tqdm import tqdm
 
 from subcell import config, style
 from subcell.io.features import scale
-from subcell.perturbation import CM4AI_METADATA
 from subcell.perturbation.distances import compute_sliced_wasserstein
 from subcell.perturbation.spherize import Spherize
 
@@ -287,7 +286,7 @@ def _run(cache_dir, out_dir):
     ed5_dir = out_dir or config.figure_dir("ed5")
 
     df = pd.read_csv(
-        CM4AI_METADATA,
+        config.CM4AI_METADATA,
         usecols=["protein", "gene_name", "treatment", *INTENSITY_COLS],
     )
     df = df[~df["protein"].isin(REMOVED_ANTIBODIES)].reset_index(drop=True)

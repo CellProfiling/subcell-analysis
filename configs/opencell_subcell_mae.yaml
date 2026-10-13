@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.opencell -c configs/config_subcell_mae_opencell.yaml`: MAE-CellS-ProtS-Pool (DNA + protein)
+# Read by `python -m subcell.inference.opencell -c configs/opencell_subcell_mae.yaml`: MAE-CellS-ProtS-Pool (DNA + protein)
 # features on the OpenCell crops (Fig. 2e).
     -
         name: subcell_bg_mae

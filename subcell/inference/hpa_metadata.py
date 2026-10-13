@@ -5,7 +5,7 @@ into one CSV with a ``cell_path`` column, keeping only cells whose
 ``_cell_image.png`` exists. This is the ``metadata_file`` that ``HPATestDataset2``
 (``subcell.io.datasets``) reads.
 
-    python -m scripts.build_hpa_cell_metadata --crops-folder DIR --out-csv FILE
+    python -m subcell.inference.hpa_metadata --crops-folder DIR --out-csv FILE
 """
 
 import argparse

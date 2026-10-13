@@ -1,11 +1,11 @@
-# Read by `python -m subcell.inference.yeast -c configs/config_subcell_vit_yeast.yaml`: ViT-ProtS-Pool features on the yeast
+# Read by `python -m subcell.inference.yeast -c configs/yeast_subcell_mae.yaml`: MAE-CellS-ProtS-Pool features on the yeast
 # localization and cell-cycle datasets at three input sizes (Fig. 2f,h,j).
     -
-        name: subcell_rbg_vit
+        name: subcell_rbg_mae
         crops_folder: ${YEAST_DATA}/datasets/
         inference_folder: ${SUBCELL_ROOT}/yeast
+        save_attention: true
         resize: 256
-        save_attention: true
         model:
             args:
                 vit_model:
@@ -26,14 +26,13 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
-
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth
     -
-        name: subcell_rbg_vit
+        name: subcell_rbg_mae
         crops_folder: ${YEAST_DATA}/datasets/
         inference_folder: ${SUBCELL_ROOT}/yeast
+        save_attention: true
         resize: 512
-        save_attention: true
         model:
             args:
                 vit_model:
@@ -54,13 +53,13 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth
     -
-        name: subcell_rbg_vit
+        name: subcell_rbg_mae
         crops_folder: ${YEAST_DATA}/datasets/
         inference_folder: ${SUBCELL_ROOT}/yeast
-        resize: -1
         save_attention: true
+        resize: -1
         model:
             args:
                 vit_model:
@@ -81,4 +80,4 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth

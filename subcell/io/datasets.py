@@ -136,7 +136,7 @@ class HPATestDataset2(_HPACropDataset):
 
     ``<crop_folder>/<if_plate_id>/<plate>_<position>_<sample>_<cell_id>_cell_image.png``
     with an optional ``_cell_mask.png`` beside it (``mask_cell``); the metadata
-    CSV (see ``scripts/build_hpa_cell_metadata.py``) carries ``x1..y2`` and the HPA
+    CSV (see ``subcell/inference/hpa_metadata.py``) carries ``x1..y2`` and the HPA
     annotation columns. ``no_prot`` blanks the protein channel (the last one).
     """
 
@@ -181,7 +181,7 @@ class HPATestDataset3(_HPACropDataset):
 
     ``<crop_folder>/<if_plate_id>/<plate_position_sample>_cell<cell_id>_<channel>.png``
     (and ``_cell_mask.png`` for ``mask_cell``), as written for the Kaggle HPA
-    single-cell test set (``scripts/build_kaggle_metadata.py``). The metadata's
+    single-cell test set (``subcell/inference/kaggle_metadata.py``). The metadata's
     ``id`` and ``cell`` columns are renamed ``plate_position_sample`` and
     ``cell_id``.
     """

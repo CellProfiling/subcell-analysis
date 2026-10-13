@@ -80,19 +80,21 @@ METHODS_CSV = ANNOT_DIR / "methods_info.csv"          # embedding files per (Met
 MICROSCOPE_CSV = ANNOT_DIR / "HPA_microscope.csv"     # FOV -> imaging instrument
 LOCATION_GROUPS = ANNOT_DIR / "location_group_mapping.tsv"   # Supplementary Table 2
 HPA_SPLITS = ANNOT_DIR / "splits"                     # {train,valid,test}_antibodies.txt
-CM4AI_SPLIT = ANNOT_DIR / "b2ai_antibody_gene_split.csv"
+CM4AI_SPLIT = ANNOT_DIR / "cm4ai_antibody_gene_split.csv"
 SUBCELL_LOCATION = ANNOT_DIR / "subcellular_location.tsv"
 GENE2UNIPROT = ANNOT_DIR / "gene2uniprot.tsv"
 ENSG2UNIPROT = ANNOT_DIR / "ensg2uniprot.tsv"
 RNA_CELLINE = ANNOT_DIR / "rna_celline.tsv"           # HPA v24 bulk mRNA per cell line
 IF_IMAGES = ANNOT_DIR / "IF-image-orig-bboxes.csv"    # HPA v23 image table
 COMPLEXES_DIR = ANNOT_DIR / "complexes"               # GO / Reactome / CORUM / hu.MAP / BioPlex / STRING
+PPI_DIR = REPO / "ppi_data"                           # raw BioPlex / STRING downloads for subcell.io.complexes
 TISSUE_ANNOT_K13 = ANNOT_DIR / "hpa_tissue_cluster_annotation_k13.tsv"
 TISSUE_CORE_META = ANNOT_DIR / "hpa_tissue_core_metadata.tsv"
 
 # ------------------------------------------------------------- result trees
 
 FEATURE_DIR = ROOT / "features"                 # <model>/<dataset>/all_features.pth
+KAGGLE_INFERENCE_DIR = ROOT / "kaggle_inference"   # inference output of configs/kaggle.yaml
 MEAN_FEATURES_CSV = FEATURE_DIR / "mean_features_paths.csv"   # per-gene mean feature tables
 PPI_EMBEDDING = FEATURE_DIR / "ppi" / "ppi_emd.tsv"             # node2vec protein-interaction embedding
 HPA_UMAP_DIR = ROOT / "fov_umap_analysis"       # FOV means, UMAP coordinates, retrieval mAP
@@ -106,6 +108,7 @@ FUCCI_DIR = ROOT / "fucci"                      # FUCCI U2OS stage and pseudotim
 YEAST_DIR = ROOT / "yeast"                      # yeast localization and cell cycle (Fig. 2f,h,j)
 CM4AI_DIR = ROOT / "b2ai_analysis"              # CM4AI drug perturbation (Fig. 4a-c)
 CM4AI_CROPS = ROOT / "bridge2ai_crops"          # masked CM4AI single-cell crops
+CM4AI_METADATA = ROOTS["CM4AI_DATA"] / "full_subcell_crops_all_z_filtered.csv"   # one row per cell crop
 MULTIMODAL_DIR = ROOT / "multimodal_integration"  # image + sequence co-embedding (Fig. 6)
 MULTIMODAL_ENRICHMENT_DIR = ROOT / "bionic_eval_embed_imgseq"   # interaction enrichment (Fig. 6d, Extended Data Fig. 7b)
 

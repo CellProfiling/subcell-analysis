@@ -40,7 +40,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 
 from subcell import config
 
-PPI_DIR = config.REPO / "ppi_data"       # raw interaction-database downloads
+PPI_DIR = config.PPI_DIR
 BIOPLEX_NETWORKS = {                      # output name -> raw network file pattern
     "bioplex": "BioPlex_293T_Network_*.tsv",
     "bioplex_u2os": "BioPlex_U2OS_Network*.tsv",

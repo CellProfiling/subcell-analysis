@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.microscopes -c configs/config_cellcycle_microscopes.yaml [--shard K --nshards N | --merge]`
+# Read by `python -m subcell.inference.microscopes -c configs/microscopes.yaml [--shard K --nshards N | --merge]`
 # (features of Extended Data Fig. 1, Supplementary Note 1): the six four-channel models on the JNH044 cells imaged on the widefield
 # (40x) and the confocal (63x) microscope, at their default normalisation. 21,002 cells present at both magnifications; no mask;
 # the 40x crop zoomed by 448 x 0.1616971666 / (1024 x 0.07) = 1.010607 and rotated by its 63x field's registered rotation (align),

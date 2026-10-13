@@ -15,7 +15,7 @@
 # can run at once, e.g. a 16-task array (set the log path with -o; the directory
 # must exist):
 #   mkdir -p "$SUBCELL_ROOT/logs"
-#   sbatch -o "$SUBCELL_ROOT/logs/%x_%A_%a.out" --array=0-15 scripts/function_prediction.sbatch
+#   sbatch -o "$SUBCELL_ROOT/logs/%x_%A_%a.out" --array=0-15 slurm/function_prediction.sbatch
 #
 # Environment: SUBCELL_PYTHON is the interpreter of the analysis environment
 # (default: `python` on PATH); SUBCELL_ROOT and the other roots are those of

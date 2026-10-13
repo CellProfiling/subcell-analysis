@@ -1,7 +1,7 @@
 """Localization and cell-cycle probes on yeast features (Fig. 2f,h,j; Supplementary Table 1).
 
 For every SubCell variant (encoder and crop resize side length; ``Orig`` is no
-resize), an MLP (``subcell.classification.mlp``) is trained on ten seeds on the
+resize), an MLP (``subcell.classification.probe``) is trained on ten seeds on the
 train set of each yeast task and scored on its test set. Predictions, metrics and
 UMAPs are written per seed.
 
@@ -19,7 +19,7 @@ import torch
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from subcell import config
-from subcell.classification.mlp import probe_seeds
+from subcell.classification.probe import probe_seeds
 
 VARIANTS = {
     "MAE-Orig": "subcell_rbg_mae_resize_-1",
