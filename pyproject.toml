@@ -1,0 +1,57 @@
+[project]
+name = "subcell-analysis"
+version = "1.0.0"
+description = "Analysis and figure code for the SubCell manuscript"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+
+# The versions the reported results were produced with.
+dependencies = [
+    "numpy==1.26.4",
+    "scipy==1.17.1",
+    "pandas==2.2.3",
+    "scikit-learn==1.5.2",
+    "scikit-image==0.25.2",
+    "scikit-multilearn==0.2.0",
+    "statsmodels==0.14.4",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "transformers==4.48.0",
+    "harmony-pytorch==0.1.8",
+    "umap-learn==0.5.7",
+    "leidenalg==0.10.2",
+    "igraph==0.11.8",
+    "copairs==0.5.4",
+    "mantel==2.2.2",
+    "matplotlib==3.10.0",
+    "seaborn==0.13.2",
+    "colorcet==3.1.0",
+    "adjustText==1.3.0",
+    "opencv-python==4.11.0.86",
+    "pillow==11.1.0",
+    "tifffile==2025.3.30",
+    "h5py==3.12.1",
+    "pyarrow",
+    "PyYAML==6.0.2",
+    "joblib==1.4.2",
+    "tqdm==4.67.1",
+]
+
+[project.optional-dependencies]
+# MuSIC and MIRAGE co-embedding (Fig. 6, Extended Data Fig. 7).
+multimodal = [
+    "cellmaps_coembedding==1.5.0",
+    "wandb==0.19.4",
+]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["subcell*", "figures"]
+
+[tool.setuptools.package-data]
+"subcell.style" = ["colormaps/*.lut"]

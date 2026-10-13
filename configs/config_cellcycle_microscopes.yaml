@@ -1,0 +1,70 @@
+# Read by `python -m subcell.inference.microscopes -c configs/config_cellcycle_microscopes.yaml [--shard K --nshards N | --merge]`
+# (features of Extended Data Fig. 1, Supplementary Note 1): the six four-channel models on the JNH044 cells imaged on the widefield
+# (40x) and the confocal (63x) microscope, at their default normalisation. 21,002 cells present at both magnifications; no mask;
+# the 40x crop zoomed by 448 x 0.1616971666 / (1024 x 0.07) = 1.010607 and rotated by its 63x field's registered rotation (align),
+# so that both inputs span the same 71.68-um window; both resized to 448 px. Channels [MT, ER (blank), DNA, protein];
+# each cell twice (protein = CDT1, then GMNN) -> [CDT1 | GMNN].
+- name: cellcycle_microscopes
+  crops_folder: ${MICROSCOPE_DATA}/crops
+  index_file: ${MICROSCOPE_DATA}/crops/crops_index.parquet
+  inference_folder: ${MICROSCOPE_DATA}/subcell_features_4063c_nomask
+  mags: [40x, 63x]
+  common_only: true
+  wtag_prefix: JNH044
+  batch_size: 16
+  num_workers: 12
+  tf32: true
+  crop_params:
+    proteins: [cdt1, gmnn]
+    channels: &rybg [red, yellow, blue, protein]
+    blank_channels: [yellow]
+    resize_to: 448
+    meta_cols: [id, wtag, mag, cell_line, unit, label, source, qc_ok, cut_by_source, centre, x_um, y_um, nuc_area_um2, cell_area_um2]
+    align: {40x: "${MICROSCOPE_DATA}/benchmark4063c/align40x.parquet"}
+  models:
+  - name: subcell_rybg_mae                       # SubCell
+    channels: *rybg
+    normalizations: [perimage]
+    model:
+      output_attentions: false
+      args:
+        vit_model: &vit4 {hidden_size: 768, num_hidden_layers: 12, num_attention_heads: 12, intermediate_size: 3072, hidden_act: gelu,
+          hidden_dropout_prob: 0.0, attention_probs_dropout_prob: 0.0, initializer_range: 0.02, layer_norm_eps: 1.0e-12, image_size: 448,
+          patch_size: 16, num_channels: 4, qkv_bias: true}
+        pool_model: &pool {dim: 768, int_dim: 512, num_heads: 2}
+      weight_path: ${SUBCELL_WEIGHTS}/all_channels_MAE-CellS-ProtS-Pool.pth
+  - name: subcell_rybg_vit                       # SubCell-P
+    channels: *rybg
+    normalizations: [perimage]
+    model:
+      output_attentions: false
+      args:
+        vit_model: *vit4
+        pool_model: *pool
+      weight_path: ${SUBCELL_WEIGHTS}/all_channels_ViT-ProtS-Pool.pth
+  - name: subcell_vit_supervised                 # ViT-Weak-Supervised
+    channels: *rybg
+    normalizations: [perimage]
+    model:
+      output_attentions: false
+      args:
+        vit_model: *vit4
+        pool_model: null
+      weight_path: ${BASELINE_WEIGHTS}/vit-supervised/best_model_ap.pth
+  - name: dino                                   # DINO4Cells-HPA
+    channels: &rpby [red, protein, blue, yellow]
+    normalizations: [dino]
+    model:
+      args: {num_channels: 4, patch_size: 16, embed_dim: 768, depth: 12, num_heads: 12, mlp_ratio: 4, qkv_bias: true}
+      weight_path: ${BASELINE_WEIGHTS}/dino_weights/HPA_single_cell_model_checkpoint.pth
+  - name: cell_dino_hpa_vitl16                   # Cell-DINO-HPA
+    channels: *rpby
+    normalizations: [selfnorm]
+    model: {entrypoint: cell_dino_hpa_vitl16, repo_path: "${DINOV2_REPO}",
+            weight_path: "${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth"}
+  - name: bestfitting                            # bestfitting
+    channels: *rpby
+    normalizations: [bestfitting]
+    model:
+      args: {in_channels: 4, num_classes: 19, ml_num_classes: 20000, pretrained: false}
+      weight_path: ${BASELINE_WEIGHTS}/bestfitting/bestfitting-inceptionv3-single-cell_state_dict.pth

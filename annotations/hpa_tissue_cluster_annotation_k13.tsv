@@ -1,0 +1,27 @@
+# Manual annotation of the k = 13 tissue clusters (Extended Data Fig. 2j), scored on
+# the reference labelling (config.TISSUE_REF_LABELS). The reported partition matches
+# that labelling on 99.97% of cells (all 13 ids identical, ARI 0.9993), so each row
+# applies to the cluster of the same name.
+#
+#   presence   : no | sometimes | both | often | yes | variable | (blank)
+#   cell size  : small | medium | large | (blank)
+#   intensity  : negative | low | medium | variable | high | (blank)
+#   quality    : yes | a percentage | (blank)   -- Correct_cells is graded, not
+#                binary; 60%/25%/40%/10% mark partly contaminated clusters
+#
+# v1_source lists the clusters of the first (k = 19) labelling that feed each cluster.
+# Blank source fields are kept blank and drawn as an empty, hatched cell.
+cluster	v1_source	stromal	cell_size	nuc_elong	nuc_small	nuc_jagged	nuc_intensity	vimentin	mt	correct	tiling	focus	outside	note
+0	c0 (c6,c3,c4)	no	medium	no	no	both	medium	negative	medium	yes				ducts, acinar, etc. in non cancer
+1	c1/c12 (c4,c3)	no	medium	no	no	both	medium	negative	variable	yes
+2	c2 (c1,c6,c9)	both	medium	sometimes	no	no	high	medium	negative	yes		10%
+3	c3 (weak)	no	large	no	no	no	medium	negative	high	yes				ducts in cancer
+4	c4/c8 (c3)	no	medium	no	no	both	medium	negative	variable	60%	Yes	10%		ducts in non-cancer pancreas (and others)
+5	c5	both	medium	no	no	both	low	variable	variable	25%		yes
+7	c7 (c3,c2,c9)	both	large	no	no	both	medium	variable	variable	40%		yes
+10	c10/c11 (c9,c1)	yes	medium	often	no	no	medium	high	variable	yes
+11	c11 (c14,c12)	both	medium	variable	variable	no	variable	variable	negative	yes		10%
+13	c13 (c14,c17)										yes	yes
+15	c15 (c17)		small		yes	no	high	variable	variable	10%	yes	yes
+16	c16 (c8)										yes	yes
+18	c18												yes

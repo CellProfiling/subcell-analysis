@@ -1,0 +1,271 @@
+# Read by `python -m subcell.inference.hpa -c configs/config_kaggle.yaml`: features of every compared model on the HPA
+# Kaggle test crops (Fig. 2a,b); scripts/export_kaggle_features.py moves them under config.FEATURE_DIR.
+- name: cell_dino_hpa_vitl16
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    entrypoint: cell_dino_hpa_vitl16
+    repo_path: ${DINOV2_REPO}
+    weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 384
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+- name: dino
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      num_channels: 4
+      patch_size: 16
+      embed_dim: 768
+      depth: 12
+      num_heads: 12
+      mlp_ratio: 4
+      qkv_bias: true
+    weight_path: ${BASELINE_WEIGHTS}/dino_weights/HPA_single_cell_model_checkpoint.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 512
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+- name: subcell_rybg_mae
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      vit_model:
+        hidden_size: 768
+        num_hidden_layers: 12
+        num_attention_heads: 12
+        intermediate_size: 3072
+        hidden_act: gelu
+        hidden_dropout_prob: 0.0
+        attention_probs_dropout_prob: 0.0
+        initializer_range: 0.02
+        layer_norm_eps: 1.0e-12
+        image_size: 448
+        patch_size: 16
+        num_channels: 4
+        qkv_bias: true
+      pool_model:
+        dim: 768
+        int_dim: 512
+        num_heads: 2
+    weight_path: ${SUBCELL_WEIGHTS}/all_channels_MAE-CellS-ProtS-Pool.pth
+    output_attentions: false
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 640
+    resize_to: -1
+    channels:
+    - red
+    - yellow
+    - blue
+    - green
+- name: subcell_rybg_vit
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      vit_model:
+        hidden_size: 768
+        num_hidden_layers: 12
+        num_attention_heads: 12
+        intermediate_size: 3072
+        hidden_act: gelu
+        hidden_dropout_prob: 0.0
+        attention_probs_dropout_prob: 0.0
+        initializer_range: 0.02
+        layer_norm_eps: 1.0e-12
+        image_size: 448
+        patch_size: 16
+        num_channels: 4
+        qkv_bias: true
+      pool_model:
+        dim: 768
+        int_dim: 512
+        num_heads: 2
+    weight_path: ${SUBCELL_WEIGHTS}/all_channels_ViT-ProtS-Pool.pth
+    output_attentions: false
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 640
+    resize_to: -1
+    channels:
+    - red
+    - yellow
+    - blue
+    - green
+- name: subcell_vit_supervised
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      vit_model:
+        hidden_size: 768
+        num_hidden_layers: 12
+        num_attention_heads: 12
+        intermediate_size: 3072
+        hidden_act: gelu
+        hidden_dropout_prob: 0.0
+        attention_probs_dropout_prob: 0.0
+        initializer_range: 0.02
+        layer_norm_eps: 1.0e-12
+        image_size: 448
+        patch_size: 16
+        num_channels: 4
+        qkv_bias: true
+      pool_model: null
+    weight_path: ${BASELINE_WEIGHTS}/vit-supervised/best_model_ap.pth
+    output_attentions: false
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 640
+    resize_to: -1
+    channels:
+    - red
+    - yellow
+    - blue
+    - green
+- name: bestfitting
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      in_channels: 4
+      num_classes: 19
+      ml_num_classes: 20000
+      pretrained: false
+    weight_path: ${BASELINE_WEIGHTS}/bestfitting/bestfitting-inceptionv3-single-cell_state_dict.pth
+  crop_params:
+    pad: 0
+    crop: -1
+    resize_to: 128
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+    mask_cell: false
+- name: dino_selfnorm
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    args:
+      num_channels: 4
+      patch_size: 16
+      embed_dim: 768
+      depth: 12
+      num_heads: 12
+      mlp_ratio: 4
+      qkv_bias: true
+    weight_path: ${BASELINE_WEIGHTS}/dino_weights/HPA_single_cell_model_checkpoint.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 512
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+  preprocess: preprocess_input_self_norm
+- name: cell_dino_hpa_vitl16_crop512_8bit
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    entrypoint: cell_dino_hpa_vitl16
+    repo_path: ${DINOV2_REPO}
+    weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 512
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+- name: cell_dino_hpa_vitl16_dinonorm
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    entrypoint: cell_dino_hpa_vitl16
+    repo_path: ${DINOV2_REPO}
+    weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 384
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+  preprocess: preprocess_input_dino
+- name: cell_dino_hpa_vitl16_crop512
+  dataset: HPATestDataset3
+  crops_folder: ${KAGGLE_DATA}/crops
+  metadata_file: ${KAGGLE_DATA}/kaggle_crops_metadata.csv
+  inference_folder: ${SUBCELL_ROOT}/kaggle_inference
+  save_patch_features: false
+  model:
+    entrypoint: cell_dino_hpa_vitl16
+    repo_path: ${DINOV2_REPO}
+    weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+  crop_params:
+    mask_cell: false
+    pad: -1
+    crop: 512
+    resize_to: -1
+    channels:
+    - red
+    - green
+    - blue
+    - yellow
+  preprocess: preprocess_input_self_norm_no_8bit

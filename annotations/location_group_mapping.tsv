@@ -1,0 +1,35 @@
+Original annotation	Grouping 1	Grouping 2	Grouping 3	Grouping dl2	Grouping OpenCell	Grouping challenge
+Actin filaments	Actin filaments	Actin filaments	Cytoskeleton	Cytoplasm	cytoskeleton	Actin filaments
+Aggresome						Aggresome
+Cell Junctions	Plasma membrane	Plasma membrane	Plasma membrane	Cell membrane	cell_contact	Plasma membrane
+Centriolar satellite	Centrosome	Centrosome	Cytosol		centrosome	Centrosome
+Centrosome	Centrosome	Centrosome	Cytoskeleton		centrosome	Centrosome
+Cleavage furrow						
+Cytokinetic bridge						
+Cytoplasmic bodies	Cytosol	Cytosol	Cytosol	Cytoplasm	big_aggregates	Vesicles
+Cytosol	Cytosol	Cytosol	Cytosol	Cytoplasm	cytoplasmic	Cytosol
+Endoplasmic reticulum	Endoplasmic reticulum	Endoplasmic reticulum	Endomembrane system	Endoplasmic reticulum	er	Endoplasmic reticulum
+Endosomes	Endosomes	Vesicles	Endomembrane system		vesicles	Vesicles
+Focal adhesion sites	Actin filaments	Actin filaments	Cytoskeleton		focal_adhesions	Actin filaments
+Golgi apparatus	Golgi apparatus	Golgi apparatus	Endomembrane system	Golgi apparatus	golgi	Golgi apparatus
+Intermediate filaments	Intermediate filaments	Intermediate filaments	Cytoskeleton	Cytoplasm	cytoskeleton	Intermediate filaments
+Lipid droplets	Lipid droplets	Vesicles	Endomembrane system		vesicles	Vesicles
+Lysosomes	Lysosomes	Vesicles	Endomembrane system		vesicles	Vesicles
+Microtubule ends	Microtubules	Microtubules	Cytoskeleton		cytoskeleton	
+Microtubules	Microtubules	Microtubules	Cytoskeleton	Cytoplasm	cytoskeleton	Microtubules
+Midbody						
+Midbody ring						
+Mitochondria	Mitochondria	Mitochondria	Mitochondria	Mitochondrion	mitochondria	Mitochondria
+Mitotic chromosome						
+Mitotic spindle						Mitotic spindle
+Nuclear bodies	Nuclear bodies	Nucleus	Nucleus		nuclear_punctae	Nuclear bodies
+Nuclear membrane	Nuclear membrane	Nuclear membrane	Nucleus	Nucleus	nuclear_membrane	Nuclear membrane
+Nuclear speckles	Nuclear speckles	Nucleus	Nucleus	Nucleus	chromatin	Nuclear speckles
+Nucleoli	Nucleoli	Nucleoli	Nucleoli		nucleolus_gc	Nucleoli
+Nucleoli fibrillar center	Nucleoli fibrillar center	Nucleoli	Nucleoli		nucleolus_fc_dfc	Nucleoli fibrillar center
+Nucleoli rim	Nucleoli	Nucleoli	Nucleoli			
+Nucleoplasm	Nucleoplasm	Nucleus	Nucleus	Nucleus	nucleoplasm	Nucleoplasm
+Peroxisomes	Peroxisomes	Vesicles	Endomembrane system		vesicles	Vesicles
+Plasma membrane	Plasma membrane	Plasma membrane	Plasma membrane	Cell membrane	membrane	Plasma membrane
+Rods & Rings						
+Vesicles	Vesicles	Vesicles	Endomembrane system		vesicles	Vesicles

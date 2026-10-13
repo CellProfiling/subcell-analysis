@@ -1,0 +1,41 @@
+name: Fetch Repo Traffic Stats
+
+on:
+  schedule:
+    # Runs every 14 days at midnight UTC.
+    - cron: "0 0 */14 * *"
+  workflow_dispatch: # Allows manual runs
+
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    
+    # --- ADD THIS BLOCK ---
+    # This grants the GITHUB_TOKEN the necessary permissions.
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout current repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: pip install requests
+      
+    - name: Run Python script to generate summary
+      run: python3 github_stats.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GHRS_GITHUB_API_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "chore: Update repository traffic stats"
+        # Ensure this matches the output directory in your Python script
+        file_pattern: traffic/* 

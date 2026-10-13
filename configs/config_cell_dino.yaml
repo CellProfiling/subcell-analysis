@@ -1,0 +1,47 @@
+# Read by `python -m subcell.inference.hpa -c configs/config_cell_dino.yaml`: Cell-DINO-HPA features on the HPA cells at
+# the 384 px (the model's crop) and 512 px crop sizes. The 384 px run writes the Cell-DINO-HPA features used by the
+# analyses (config.FEATURE_DIR/Cell-DINO-HPA).
+-
+    name: cell_dino_hpa_vitl16
+    crops_folder: ${HPA_DATA}
+    metadata_file: ${HPA_DATA}/crops_metadata.csv
+    inference_folder: ${SUBCELL_ROOT}/cell_dino_inference
+    output_path: ${SUBCELL_ROOT}/features/Cell-DINO-HPA/hpa_features/all_features.pth
+    save_attention: False
+    save_patch_features: False
+    model:
+        entrypoint: cell_dino_hpa_vitl16
+        repo_path: ${DINOV2_REPO}
+        weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+    crop_params:
+        mask_cell: True
+        pad: -1
+        crop: 384
+        resize_to: -1
+        channels:
+            - "red"
+            - "green"
+            - "blue"
+            - "yellow"
+-
+    name: cell_dino_hpa_vitl16_crop512
+    crops_folder: ${HPA_DATA}
+    metadata_file: ${HPA_DATA}/crops_metadata.csv
+    inference_folder: ${SUBCELL_ROOT}/cell_dino_inference
+    output_path: ${SUBCELL_ROOT}/features/Cell-DINO-HPA-Crop512/hpa_features/all_features.pth
+    save_attention: False
+    save_patch_features: False
+    model:
+        entrypoint: cell_dino_hpa_vitl16
+        repo_path: ${DINOV2_REPO}
+        weight_path: ${BASELINE_WEIGHTS}/cell_dino/cell_dino_vitl16_pretrain_hpa_sc-d3ab8938.pth
+    crop_params:
+        mask_cell: True
+        pad: -1
+        crop: 512
+        resize_to: -1
+        channels:
+            - "red"
+            - "green"
+            - "blue"
+            - "yellow"

@@ -1,7 +1,9 @@
+# Read by `python -m subcell.inference.yeast -c configs/config_subcell_vit_yeast.yaml`: ViT-ProtS-Pool features on the yeast
+# localization and cell-cycle datasets at three input sizes (Fig. 2f,h,j).
     -
         name: subcell_rbg_vit
-        crops_folder: /scratch/groups/emmalu/yeast_cell_cycle/datasets/
-        inference_folder: /scratch/groups/emmalu/subcell_ankit/yeast
+        crops_folder: ${YEAST_DATA}/datasets/
+        inference_folder: ${SUBCELL_ROOT}/yeast
         resize: 256
         save_attention: true
         model:
@@ -24,12 +26,12 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
 
     -
         name: subcell_rbg_vit
-        crops_folder: /scratch/groups/emmalu/yeast_cell_cycle/datasets/
-        inference_folder: /scratch/groups/emmalu/subcell_ankit/yeast
+        crops_folder: ${YEAST_DATA}/datasets/
+        inference_folder: ${SUBCELL_ROOT}/yeast
         resize: 512
         save_attention: true
         model:
@@ -52,11 +54,11 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
     -
         name: subcell_rbg_vit
-        crops_folder: /scratch/groups/emmalu/yeast_cell_cycle/datasets/
-        inference_folder: /scratch/groups/emmalu/subcell_ankit/yeast
+        crops_folder: ${YEAST_DATA}/datasets/
+        inference_folder: ${SUBCELL_ROOT}/yeast
         resize: -1
         save_attention: true
         model:
@@ -79,4 +81,4 @@
                     dim: 768
                     int_dim: 512
                     num_heads: 2
-            weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
+            weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth

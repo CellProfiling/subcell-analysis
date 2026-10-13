@@ -1,0 +1,28 @@
+# Copy to paths.local.toml and point each root at your copy of the data.
+# Any root can also be set as an environment variable of the same name.
+# Unset roots default to results/ and data/<name>/ inside the checkout.
+
+# Analysis outputs: features, embeddings, cached results (tens of GB per model).
+SUBCELL_ROOT = "/path/to/results"
+# Rendered figures (default: $SUBCELL_ROOT/figures).
+# SUBCELL_FIG_DIR = "/path/to/figures"
+# Library caches: Hugging Face, matplotlib, the copairs null distribution.
+# SUBCELL_CACHE = "/path/to/cache"
+
+# SubCell weights (https://virtualcellmodels.cziscience.com/), the weights of the
+# compared models, and the dinov2 checkout needed by Cell-DINO.
+SUBCELL_WEIGHTS = "/path/to/subcell_weights"
+BASELINE_WEIGHTS = "/path/to/baseline_weights"
+DINOV2_REPO = "/path/to/dinov2"
+# Liberation Sans or Nimbus Sans (Arial/Helvetica metrics) for the figures.
+SUBCELL_FONT_DIR = "/path/to/fonts"
+
+# Image datasets (see README, "Data").
+HPA_DATA = "/path/to/hpa"
+KAGGLE_DATA = "/path/to/kaggle"
+CM4AI_DATA = "/path/to/cm4ai"
+ALLENCELL_DATA = "/path/to/allencell"
+OPENCELL_DATA = "/path/to/opencell"
+YEAST_DATA = "/path/to/yeast"
+FUCCI_DATA = "/path/to/fucci"
+MICROSCOPE_DATA = "/path/to/microscope_comparison"

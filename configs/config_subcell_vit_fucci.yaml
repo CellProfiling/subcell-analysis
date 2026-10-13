@@ -1,168 +1,21 @@
-    # -
-    #     name: subcell_rbg_vit
-    #     crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-    #     metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-    #     resize: false
-    #     channel_combination:  "nuc_zero" 
-    #     model:
-    #         args:
-    #             vit_model:
-    #                 hidden_size: 768
-    #                 num_hidden_layers: 12
-    #                 num_attention_heads: 12
-    #                 intermediate_size: 3072
-    #                 hidden_act: "gelu"
-    #                 hidden_dropout_prob: 0.0
-    #                 attention_probs_dropout_prob: 0.0
-    #                 initializer_range: 0.02
-    #                 layer_norm_eps: 1.e-12
-    #                 image_size: 448
-    #                 patch_size: 16
-    #                 num_channels: 3
-    #                 qkv_bias: True
-    #             pool_model:
-    #                 dim: 768
-    #                 int_dim: 512
-    #                 num_heads: 2
-    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
-    # -
-    #     name: subcell_rbg_vit
-    #     crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-    #     metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-    #     resize: false
-    #     channel_combination:  "nuc_const" 
-    #     model:
-    #         args:
-    #             vit_model:
-    #                 hidden_size: 768
-    #                 num_hidden_layers: 12
-    #                 num_attention_heads: 12
-    #                 intermediate_size: 3072
-    #                 hidden_act: "gelu"
-    #                 hidden_dropout_prob: 0.0
-    #                 attention_probs_dropout_prob: 0.0
-    #                 initializer_range: 0.02
-    #                 layer_norm_eps: 1.e-12
-    #                 image_size: 448
-    #                 patch_size: 16
-    #                 num_channels: 3
-    #                 qkv_bias: True
-    #             pool_model:
-    #                 dim: 768
-    #                 int_dim: 512
-    #                 num_heads: 2
-    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
-    # -
-    #     name: subcell_rbg_vit
-    #     crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-    #     metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-    #     resize: false
-    #     channel_combination:  "nuc_cdt_gmmn" 
-    #     model:
-    #         args:
-    #             vit_model:
-    #                 hidden_size: 768
-    #                 num_hidden_layers: 12
-    #                 num_attention_heads: 12
-    #                 intermediate_size: 3072
-    #                 hidden_act: "gelu"
-    #                 hidden_dropout_prob: 0.0
-    #                 attention_probs_dropout_prob: 0.0
-    #                 initializer_range: 0.02
-    #                 layer_norm_eps: 1.e-12
-    #                 image_size: 448
-    #                 patch_size: 16
-    #                 num_channels: 3
-    #                 qkv_bias: True
-    #             pool_model:
-    #                 dim: 768
-    #                 int_dim: 512
-    #                 num_heads: 2
-    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
-    # -
-    #     name: subcell_rbg_vit
-    #     crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-    #     metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-    #     resize: true
-    #     channel_combination:  "nuc_zero" 
-    #     model:
-    #         args:
-    #             vit_model:
-    #                 hidden_size: 768
-    #                 num_hidden_layers: 12
-    #                 num_attention_heads: 12
-    #                 intermediate_size: 3072
-    #                 hidden_act: "gelu"
-    #                 hidden_dropout_prob: 0.0
-    #                 attention_probs_dropout_prob: 0.0
-    #                 initializer_range: 0.02
-    #                 layer_norm_eps: 1.e-12
-    #                 image_size: 448
-    #                 patch_size: 16
-    #                 num_channels: 3
-    #                 qkv_bias: True
-    #             pool_model:
-    #                 dim: 768
-    #                 int_dim: 512
-    #                 num_heads: 2
-    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
-    # -
-    #     name: subcell_rbg_vit
-    #     crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-    #     metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-    #     inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-    #     resize: true
-    #     channel_combination:  "nuc_const" 
-    #     model:
-    #         args:
-    #             vit_model:
-    #                 hidden_size: 768
-    #                 num_hidden_layers: 12
-    #                 num_attention_heads: 12
-    #                 intermediate_size: 3072
-    #                 hidden_act: "gelu"
-    #                 hidden_dropout_prob: 0.0
-    #                 attention_probs_dropout_prob: 0.0
-    #                 initializer_range: 0.02
-    #                 layer_norm_eps: 1.e-12
-    #                 image_size: 448
-    #                 patch_size: 16
-    #                 num_channels: 3
-    #                 qkv_bias: True
-    #             pool_model:
-    #                 dim: 768
-    #                 int_dim: 512
-    #                 num_heads: 2
-    #         weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
-    -
-        name: subcell_rbg_vit
-        crops_folder: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_crops
-        metadata_file: /scratch/groups/emmalu/cell_cycle_callisto/single_cell_statistics.csv
-        inference_folder: /scratch/groups/emmalu/subcell_ankit/fucci
-        resize: true
-        channel_combination:  "nuc_cdt_gmmn" 
-        model:
-            args:
-                vit_model:
-                    hidden_size: 768
-                    num_hidden_layers: 12
-                    num_attention_heads: 12
-                    intermediate_size: 3072
-                    hidden_act: "gelu"
-                    hidden_dropout_prob: 0.0
-                    attention_probs_dropout_prob: 0.0
-                    initializer_range: 0.02
-                    layer_norm_eps: 1.e-12
-                    image_size: 448
-                    patch_size: 16
-                    num_channels: 3
-                    qkv_bias: True
-                pool_model:
-                    dim: 768
-                    int_dim: 512
-                    num_heads: 2
-            weight_path: /home/groups/emmalu/ankitgpt/subcell_models/MT-DNA-Protein_ViT-ProtS-Pool.pth
+# Read by `python -m subcell.inference.fucci -c configs/config_subcell_vit_fucci.yaml`: ViT-ProtS-Pool features
+# on the FUCCI U2OS crops (built by subcell.inference.fucci_crops), with three substitutes for the missing
+# DNA channel (Fig. 2k,l; config.FUCCI_VARIANTS).
+- &nuc_zero
+  name: subcell_rbg_vit
+  crops_folder: ${FUCCI_DATA}/single_cell_crops
+  metadata_file: ${FUCCI_DATA}/single_cell_statistics_pcs.csv
+  inference_folder: ${SUBCELL_ROOT}/fucci
+  resize: true
+  channel_combination: nuc_zero
+  model:
+    args:
+      vit_model: {hidden_size: 768, num_hidden_layers: 12, num_attention_heads: 12, intermediate_size: 3072, hidden_act: gelu,
+          hidden_dropout_prob: 0.0, attention_probs_dropout_prob: 0.0, initializer_range: 0.02, layer_norm_eps: 1.0e-12, image_size: 448,
+          patch_size: 16, num_channels: 3, qkv_bias: true}
+      pool_model: {dim: 768, int_dim: 512, num_heads: 2}
+    weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
+- <<: *nuc_zero
+  channel_combination: nuc_const
+- <<: *nuc_zero
+  channel_combination: nuc_cdt_gmmn

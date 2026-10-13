@@ -1,0 +1,52 @@
+Core	Slide	Tissue	Patient_tentative	Cancer	Imaged	Data_Analyzed
+G1_R1	G	Pancreas	A	No	Y	Y
+G1_R2	G	Pancreas	B	No	Y	Y
+G1_R3	G	Pancreas	C	No	Y	Y
+H1_R1	H	Pancreas	G	Yes	Y	Y
+H1_R2	H	Pancreas	G	Yes	Y	Y
+H1_R3	H	Pancreas	H	Yes	Y	Y
+H1_R4	H	Pancreas	H	Yes	Y	Y
+H1_R5	H	Pancreas	I	Yes	Y	Y
+H1_R6	H	Pancreas	J	Yes	Y	Y
+H1_R7	H	Pancreas	K	Yes	Y	Y
+H1_R8	H	Pancreas	K	Yes
+H1_R9	H	Pancreas	AC	Yes
+H1_R10	H	Pancreas	AC	Yes
+H2_R11	H	Pancreas	X	Yes	Y	Y
+HX_R27	H	Pancreas	I	Yes	Y	Y
+HX_R28	H	Pancreas	U	Yes	Y	Y
+HX_R29	H	Pancreas	U	Yes	Y	Y
+HX_R30	H	Pancreas	V	Yes	Y	Y
+HX_R31	H	Pancreas	V	Yes	Y	Y
+HX_R32	H	Pancreas	W	Yes	Y	Y
+HX_R33	H	Pancreas	W	Yes	Y	Y
+HX_R34	H	Pancreas	J	Yes	Y	Y
+HX_R35	H	Pancreas	AB	Yes	Y	Y
+HX_R36	H	Pancreas	AB	Yes	Y	Y
+G2_R4	G	Liver	D	No	Y	Y
+G2_R5	G	Liver	E	No	Y	Y
+G2_R6	G	Liver	F	No	Y	Y
+H3_R12	H	Liver	L	Yes	Y	Y
+H3_R13	H	Liver	L	Yes	Y	Y
+H3_R14	H	Liver	M	Yes	Y	Y
+H4_R15	H	Liver	M	Yes	Y	Y
+H4_R16	H	Liver	N	Yes	Y	Y
+H4_R17	H	Liver	N	Yes	Y	Y
+H4_R18	H	Liver	O	Yes	Y	Y
+H4_R19	H	Liver	O	Yes	Y	Y
+HX_R20	H	Liver	P	Yes
+HX_R21	H	Liver	P	Yes
+HX_R22	H	Liver	Q	Yes
+HX_R23	H	Liver	Q	Yes
+HX_R24	H	Liver	R	Yes
+HX_R25	H	Liver	S	Yes
+HX_R26	H	Liver	T	Yes
+HX_R37	H	Liver	Y	Yes	Y
+HX_R38	H	Liver	Y	Yes	Y
+HX_R39	H	Liver	T	Yes	Y
+HX_R40	H	Liver	S	Yes	Y
+HX_R41	H	Liver	R	Yes	Y
+HX_R42	H	Liver	Z	Yes	Y
+HX_R43	H	Liver	Z	Yes	Y
+HX_R44	H	Liver	AA	Yes	Y
+HX_R45	H	Liver	AA	Yes	Y
