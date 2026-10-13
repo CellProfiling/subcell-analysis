@@ -21,6 +21,7 @@ dependencies = [
     "transformers==4.48.0",
     "harmony-pytorch==0.1.8",
     "umap-learn==0.5.7",
+    "scanpy==1.11.3",
     "leidenalg==0.10.2",
     "igraph==0.11.8",
     "copairs==0.5.4",

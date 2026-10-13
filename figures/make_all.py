@@ -20,6 +20,7 @@ from subcell.perturbation import CM4AI_METADATA
 from subcell.runlog import log
 
 _ATTENTION_RUNS = ("subcell_rybg_mae", "subcell_rybg_vit")
+_CLUSTER_TRANSFER_RUN = "MAE-CellS-ProtS-Pool_U2OS_harmonized_if_plate_id_microscope"
 _MICROSCOPE_TABLES = ("identity.csv", "transfer.csv", "transfer_direction_delta.csv",
                       "geometry.csv", "panel_a_cells.csv", "gallery.csv")
 
@@ -55,6 +56,11 @@ FIGURES = {
             [config.HPA_UMAP_DIR / "retrieval" / "retrieval_map.csv", config.MUTUAL_INFO_DIR]),
     "ed7b": ("figures.ed7b_interaction_enrichment",
              [config.MULTIMODAL_ENRICHMENT_DIR]),
+    "fig6_clusters": ("figures.fig6_cluster_transfer",
+                      [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "clusters.csv"]),
+    "fig6_percentile": ("figures.fig6_cluster_percentile",
+                        [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN
+                         / "cluster_percentile_summary.csv"]),
 }
 
 

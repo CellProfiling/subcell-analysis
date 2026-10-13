@@ -5,4 +5,5 @@
 ``metrics``     multilabel classification metrics and significance stars
 ``inference``   model loading and the batch loop shared by the feature extractors
 ``dendrogram``  Ward clustering with bootstrap and jackknife clade support
+``hierarchical_leiden``  Leiden clustering that subclusters each level's clusters at the next
 """
