@@ -9,7 +9,8 @@ its mean +- s.d. over the 1,000 resamplings.
 * ``ed7b_<cell line>``: one panel per image model, bars per embedding: sequence,
   image, MIRAGE co-embedding, MuSIC co-embedding (embeddings with no results are
   left out).
-* ``fig6d_<cell line>``: the same for SubCell alone, without MIRAGE.
+* ``fig6d_<cell line>``: the same for SubCell alone, without MIRAGE, labelled
+  Sequence, Image and Multimodal in the colours of the other Fig. 6 panels.
 
 Also writes ``figures/<cell line>/best_results.csv`` (mean +- s.d. of the kept
 configurations) beside the results.
@@ -102,15 +103,21 @@ def summary_table(best_df):
 
 EMBEDDING_COLORS = dict(zip(EMBEDDING_LABELS, style.palettes.categorical(len(EMBEDDING_LABELS))))
 
+# Fig. 6d names and colours its embeddings as the other Fig. 6 panels do, unmuted
+FIG6D_LABELS = {"Seq_Embed": "Sequence", "Image_Embed": "Image", "Music_Embed": "Multimodal"}
+FIG6D_COLORS = {"Seq_Embed": "#1d3a42", "Image_Embed": "#5191bc", "Music_Embed": "#F4AC45"}
 
-def _bars(ax, data, method, embeddings):
-    data = data.assign(Embedding=data["Embedding_Type"].map(EMBEDDING_LABELS))
+
+def _bars(ax, data, method, embeddings, labels=EMBEDDING_LABELS, colors=EMBEDDING_COLORS,
+          saturation=0.75):
+    data = data.assign(Embedding=data["Embedding_Type"].map(labels))
     sns.barplot(
         data=data, x="Database", y="Enrichment", hue="Embedding",
         order=sorted(DATABASE_DIRS.values()),
-        hue_order=[EMBEDDING_LABELS[e] for e in embeddings],
-        palette={EMBEDDING_LABELS[e]: EMBEDDING_COLORS[e] for e in embeddings},
+        hue_order=[labels[e] for e in embeddings],
+        palette={labels[e]: colors[e] for e in embeddings},
         errorbar="sd", ax=ax, linewidth=style.LW_MIN, err_kws={"linewidth": style.LW_AXIS},
+        saturation=saturation,
     )
     ax.set_title(naming.display(method))
     ax.set_xlabel("")
@@ -121,7 +128,8 @@ def _bars(ax, data, method, embeddings):
     L.despine(ax)
 
 
-def _panels(name, best_df, methods, embeddings, width, panel_w, out_dir, height=54):
+def _panels(name, best_df, methods, embeddings, width, panel_w, out_dir, height=54,
+            labels=EMBEDDING_LABELS, colors=EMBEDDING_COLORS, saturation=0.75):
     """One bar panel per image model, a shared legend below."""
     # The sequence embedding is evaluated on the first row of each cell line only and
     # does not depend on the image model, so the same bars appear in every panel.
@@ -131,10 +139,11 @@ def _panels(name, best_df, methods, embeddings, width, panel_w, out_dir, height=
     for i, method in enumerate(methods):
         own = best_df[(best_df["Method"] == method) & best_df["Embedding_Type"].isin(embeddings)]
         ax = L.axes(fig, x=12 + i * (panel_w + gap), y=6, w=panel_w, h=height - 24)
-        _bars(ax, pd.concat([own, seq.assign(Method=method)]), method, embeddings)
+        _bars(ax, pd.concat([own, seq.assign(Method=method)]), method, embeddings, labels, colors,
+              saturation)
         ax.set_ylabel("Enrichment (Cliff's delta)" if i == 0 else "")
-    handles = [plt.Rectangle((0, 0), 1, 1, color=EMBEDDING_COLORS[e]) for e in embeddings]
-    fig.legend(handles, [EMBEDDING_LABELS[e] for e in embeddings], loc="lower center",
+    handles = [plt.Rectangle((0, 0), 1, 1, color=colors[e]) for e in embeddings]
+    fig.legend(handles, [labels[e] for e in embeddings], loc="lower center",
                ncol=len(embeddings), frameon=False, bbox_to_anchor=(0.5, 0.0))
     style.save(fig, name, out_dir)
 
@@ -157,7 +166,8 @@ def main(exp_folder=None, out_dir=None):
                     out_dir or config.figure_dir("ed7"))
             _panels(f"fig6d_{cell_line}", best_df, [FIG6D_MODEL],
                     [e for e in present if "Mirage" not in e], style.WIDTH_1COL, 60,
-                    out_dir or config.figure_dir("fig6"))
+                    out_dir or config.figure_dir("fig6"),
+                    labels=FIG6D_LABELS, colors=FIG6D_COLORS, saturation=1)
 
 
 if __name__ == "__main__":
