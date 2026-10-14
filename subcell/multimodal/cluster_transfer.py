@@ -6,14 +6,10 @@ multiscale cell map (Fig. 5). Each space's labels are then carried, by UniProt
 entry, to the UMAP of the MuSIC co-embedding the two were combined into, which
 shows how much of each modality's structure the co-embedding keeps.
 
-The three embeddings are the inputs and output of one MuSIC run, the row
-``--method-name`` of ``methods_info.csv`` (``Image_Embed``, ``Seq_Embed``,
-``Music_Embed``), so they cover the same proteins.
+The three embeddings are those of one MuSIC run, the row ``--method-name`` of
+``methods_info.csv`` (see ``subcell.multimodal.embeddings``).
 
     python -m subcell.multimodal.cluster_transfer [--method-name NAME] [--run-dir DIR] [--out-dir DIR]
-
-``--run-dir`` reads the three files from another copy of the run folder
-(``<run>/img_data/``, ``<run>/seq_data/``, ``<run>/coembedding_k_10_d_128/``).
 
 Output ``config.CLUSTER_TRANSFER_DIR``/``<method name>``/clusters.csv, one row per
 UniProt entry: ``<space>_leiden_<res>`` for the image and sequence clusters and
@@ -24,42 +20,16 @@ plots it.
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 
 import pandas as pd
 import scanpy as sc
 
 from subcell import config
-from subcell.io.metadata import read_methods_csv
+from subcell.multimodal.embeddings import METHOD_NAME, input_paths, read_embedding
 from subcell.runlog import log
 from subcell.utils.hierarchical_leiden import RESOLUTIONS, hierarchical_leiden
 
-METHOD_NAME = "MAE-CellS-ProtS-Pool_U2OS_harmonized_if_plate_id_microscope"
-
-# space -> methods_info.csv column; the image and sequence spaces are clustered
-SPACES = {"image": "Image_Embed", "sequence": "Seq_Embed", "multimodal": "Music_Embed"}
 CLUSTERED = ("image", "sequence")
-
-
-def input_paths(method_name=METHOD_NAME, run_dir=None) -> dict[str, Path]:
-    """space -> embedding file of the MuSIC run *method_name*."""
-    table = read_methods_csv().set_index("Method_Name")
-    paths = {space: Path(table.loc[method_name, col]) for space, col in SPACES.items()}
-    if run_dir is not None:
-        # every file sits one folder below the run folder
-        paths = {space: Path(run_dir) / p.parent.name / p.name for space, p in paths.items()}
-    return paths
-
-
-def read_embedding(path) -> pd.DataFrame:
-    """A MuSIC embedding table, indexed by UniProt entry.
-
-    Read without its header: ``coembedding_emd.tsv`` names one column fewer than
-    it has, so the header would shift the index into the first dimension.
-    """
-    df = pd.read_csv(path, sep="\t", header=None, skiprows=1, index_col=0)
-    df.index = df.index.astype(str)
-    return df.astype("float32")
 
 
 def umap(adata):

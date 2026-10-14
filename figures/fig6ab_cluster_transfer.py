@@ -31,7 +31,7 @@ import numpy as np
 import pandas as pd
 
 from subcell import config, style
-from subcell.multimodal.cluster_transfer import METHOD_NAME
+from subcell.multimodal.embeddings import METHOD_NAME
 from subcell.runlog import log
 from subcell.style import layout as L
 from subcell.style import palettes as pal
