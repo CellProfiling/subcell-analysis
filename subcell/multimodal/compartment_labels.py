@@ -1,13 +1,15 @@
-"""Compartment labels of the proteins in Fig. 6c, and how the shipped tables were made.
+"""Compartment labels of the proteins in Fig. 6c,e, and how the shipped tables were made.
 
-Two tables in ``annotations/`` hold the labels exactly as used for the figure, and
-``subcell.multimodal.compartment_enrichment`` reads them by default:
+Two tables in ``annotations/`` hold the labels exactly as used for the figures, and
+the Fig. 6 analyses read them by default:
 
-``config.U2OS_LOCATIONS``       ``uniprot``, ``locations``: the Grouping 1 locations
-                                (Supplementary Table 2) of each UniProt entry,
-                                comma-separated, from the HPA annotations of its U2OS
-                                cells; ``location_not_included_g1`` stands for any
-                                annotation without a Grouping 1 category.
+``config.U2OS_LOCATIONS``       ``uniprot``, ``locations``: the HPA location annotations
+                                of the U2OS cells of each UniProt entry,
+                                comma-separated. :func:`read_locations` maps them to
+                                Grouping 1 (Supplementary Table 2); an annotation
+                                without a Grouping 1 category becomes
+                                ``location_not_included_g1``, or stays as it is with
+                                ``keep_unmapped``.
 ``config.SUBORGANELLAR_GOCC``   ``go_cc_term``, ``uniprot``: the members of the 11
                                 GO:CC compartments plotted, from a g:Profiler query of
                                 14 March 2026 over the entries in
@@ -19,9 +21,8 @@ This module rebuilds each:
     python -m subcell.multimodal.compartment_labels gocc [--ids FILE] [--out FILE]
 
 ``locations`` pools the location annotations of the U2OS cells of each gene (the
-cell metadata of ``config.features(MODEL)``), regroups genes by reviewed UniProt
-entry as the per-gene image embedding does (``config.ENSG2UNIPROT``), and maps
-each annotation to Grouping 1 (``config.LOCATION_GROUPS``). The shipped table
+cell metadata of ``config.features(MODEL)``) and regroups genes by reviewed UniProt
+entry as the per-gene image embedding does (``config.ENSG2UNIPROT``). The shipped table
 paired genes with entries by matching each gene's mean embedding to the per-entry
 mean embedding instead; where several genes share an entry it kept the annotations
 of one of them, so a rebuilt table can differ for those entries.
@@ -55,10 +56,21 @@ SUBORGANELLAR_TERMS = {
 }
 
 
-def read_locations(path=None) -> dict[str, list[str]]:
-    """UniProt entry -> Grouping 1 locations, from a table written like ``config.U2OS_LOCATIONS``."""
+def read_locations(path=None, keep_unmapped=False) -> dict[str, list[str]]:
+    """UniProt entry -> Grouping 1 locations, from a table written like ``config.U2OS_LOCATIONS``.
+
+    With ``keep_unmapped``, an annotation without a Grouping 1 category is kept as it
+    is rather than becoming ``NOT_INCLUDED``.
+    """
     df = pd.read_csv(path or config.U2OS_LOCATIONS, sep="\t", dtype=str)
-    return {u: locs.split(",") for u, locs in zip(df["uniprot"], df["locations"])}
+    to_group = grouping1()
+    out = {}
+    for u, locs in zip(df["uniprot"], df["locations"]):
+        groups = (to_group.get(a, NOT_INCLUDED) for a in locs.split(","))
+        if keep_unmapped:
+            groups = (g if g != NOT_INCLUDED else a for g, a in zip(groups, locs.split(",")))
+        out[u] = list(dict.fromkeys(groups))
+    return out
 
 
 def read_gocc(path=None) -> dict[str, set[str]]:
@@ -87,12 +99,10 @@ def u2os_locations(features_path=None) -> pd.DataFrame:
     log(f"{len(df):,} U2OS cells with location annotations")
     cell_locations = df["locations"].astype(str).str.split(",")
 
-    to_group = grouping1()
     rows = []
     for entry, cells in generate_uniprot_mapping(create_cell_mapping(df)).items():
         annotations = sorted({a.strip() for c in cells for a in cell_locations[c]})
-        groups = list(dict.fromkeys(to_group.get(a, NOT_INCLUDED) for a in annotations))
-        rows.append((entry, ",".join(groups)))
+        rows.append((entry, ",".join(annotations)))
     return pd.DataFrame(rows, columns=["uniprot", "locations"]).sort_values("uniprot")
 
 

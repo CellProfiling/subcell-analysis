@@ -49,3 +49,15 @@ def centered_cosine(X) -> np.ndarray:
     X = X - X.mean(axis=0, keepdims=True)
     X = X / np.linalg.norm(X, axis=1, keepdims=True)
     return X @ X.T
+
+
+def pair_percentiles(X) -> np.ndarray:
+    """Percentile rank (0-100] of every pair's centred cosine similarity among all pairs.
+
+    Pairs are the upper triangle of the similarity matrix in row-major order, as
+    ``np.triu_indices(len(X), k=1)``; ties are broken by position (ordinal ranks).
+    """
+    sims = centered_cosine(X)[np.triu_indices(len(X), k=1)]
+    ranks = np.empty(len(sims), dtype=np.int64)
+    ranks[np.argsort(sims)] = np.arange(1, len(sims) + 1)
+    return (ranks * (100.0 / len(sims))).astype(np.float32)

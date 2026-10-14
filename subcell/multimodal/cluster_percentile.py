@@ -30,7 +30,7 @@ import pandas as pd
 
 from subcell import config
 from subcell.multimodal.cluster_transfer import CLUSTERED
-from subcell.multimodal.embeddings import (METHOD_NAME, centered_cosine, input_paths,
+from subcell.multimodal.embeddings import (METHOD_NAME, input_paths, pair_percentiles,
                                            read_embedding)
 from subcell.runlog import log
 from subcell.utils.hierarchical_leiden import RESOLUTIONS
@@ -46,12 +46,8 @@ def percentile_matrix(X) -> np.ndarray:
     Rows of *X* are mean-centred first. Ties are broken by position (ordinal ranks).
     """
     n = len(X)
-    iu = np.triu_indices(n, k=1)
-    sims = centered_cosine(X)[iu]
-    ranks = np.empty(len(sims), dtype=np.int64)
-    ranks[np.argsort(sims)] = np.arange(1, len(sims) + 1)
     pct = np.zeros((n, n), dtype=np.float32)
-    pct[iu] = ranks * (100.0 / len(sims))
+    pct[np.triu_indices(n, k=1)] = pair_percentiles(X)
     return pct + pct.T
 
 

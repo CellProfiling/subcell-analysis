@@ -29,12 +29,12 @@ A1L4L8	Nucleoplasm
 A1X283	Cytosol
 A1XBS5	Mitochondria
 A1Z1Q3	Nucleoli
-A2A288	Cytosol,Nucleoplasm
+A2A288	Cytoplasmic bodies,Nucleoplasm
 A2A2V5	Vesicles
 A2A3K4	Nucleoplasm
 A2AJT9	Nucleoplasm
 A2PYH4	Golgi apparatus,Vesicles
-A2RRD8	Cytosol,Nucleoplasm
+A2RRD8	Cytoplasmic bodies,Nucleoplasm
 A2RRH5	Nucleoplasm
 A2RRP1	Golgi apparatus,Nuclear membrane,Nucleoli
 A2RTX5	Cytosol
@@ -42,7 +42,7 @@ A2RU14	Cytosol,Plasma membrane
 A2RU48	Cytosol,Plasma membrane
 A2RU49	Cytosol,Nucleoplasm
 A2RU67	Endoplasmic reticulum
-A2RUB6	location_not_included_g1
+A2RUB6	Midbody ring
 A2RUH7	Vesicles
 A2RUR9	Cytosol
 A2RUS2	Vesicles
@@ -89,7 +89,7 @@ A6NGS2	Cytosol,Nucleoplasm
 A6NHC0	Nuclear membrane,Nucleoplasm,Vesicles
 A6NHJ4	Nucleoli
 A6NHQ2	Nucleoli fibrillar center,Nucleoplasm
-A6NHQ4	Cytosol,Nucleoplasm
+A6NHQ4	Cytoplasmic bodies,Cytosol,Nucleoplasm
 A6NHR9	Nucleoplasm
 A6NHT5	Nucleoplasm
 A6NI28	Nuclear speckles
@@ -98,12 +98,12 @@ A6NI79	Actin filaments,Plasma membrane
 A6NI87	Nucleoplasm
 A6NIK2	Nucleoli,Nucleoplasm
 A6NIV6	Mitochondria
-A6NJB7	Mitochondria,location_not_included_g1,Nucleoli,Nucleoplasm
+A6NJB7	Mitochondria,Mitotic chromosome,Nucleoli,Nucleoplasm
 A6NK53	Nucleoplasm
 A6NK89	Cytosol,Vesicles
 A6NKB5	Endoplasmic reticulum
 A6NKC9	Nucleoli,Nucleoplasm
-A6NKD9	Plasma membrane,location_not_included_g1,Nuclear bodies,Nucleoli
+A6NKD9	Cell Junctions,Mitotic chromosome,Nuclear bodies,Nucleoli rim
 A6NKL6	Microtubules
 A6NKN8	Mitochondria,Nucleoplasm
 A6NLC5	Cytosol
@@ -124,14 +124,14 @@ A7E2U8	Vesicles
 A7E2V4	Cytosol,Plasma membrane
 A7MBM2	Nucleoplasm,Vesicles
 A7MCY6	Nucleoplasm
-A7XYQ1	location_not_included_g1,Nucleoplasm,Vesicles
+A7XYQ1	Micronucleus,Nucleoplasm,Vesicles
 A8K0R7	Nucleoplasm,Plasma membrane
 A8K0Z3	Vesicles
 A8K855	Cytosol
 A8K8V0	Cytosol
 A8K979	Golgi apparatus,Nucleoplasm
 A8MPS7	Cytosol,Vesicles
-A8MQ03	location_not_included_g1,Nuclear speckles,Vesicles
+A8MQ03	Midbody,Nuclear speckles,Vesicles
 A8MQ27	Actin filaments,Cytosol
 A8MT33	Intermediate filaments
 A8MT65	Nucleoplasm,Vesicles
@@ -166,7 +166,7 @@ B5MCN3	Nucleoplasm
 B5ME19	Cytosol
 C9J069	Golgi apparatus
 C9J1S8	Cytosol,Nucleoplasm
-C9J3I9	Centrosome,location_not_included_g1,Cytosol
+C9J3I9	Centriolar satellite,Cytokinetic bridge,Cytosol
 C9JH25	Nucleoplasm,Peroxisomes
 C9JLR9	Intermediate filaments
 C9JLW8	Cytosol
@@ -198,7 +198,7 @@ O00168	Cytosol,Nucleoplasm
 O00170	Cytosol
 O00178	Cytosol,Golgi apparatus,Nuclear bodies
 O00186	Cytosol,Nucleoplasm
-O00192	Plasma membrane,Nuclear speckles
+O00192	Cell Junctions,Nuclear speckles,Plasma membrane
 O00193	Endoplasmic reticulum,Nucleoplasm
 O00194	Cytosol,Plasma membrane
 O00203	Nucleoplasm
@@ -226,10 +226,10 @@ O00299	Cytosol
 O00300	Golgi apparatus
 O00311	Nucleoplasm
 O00327	Nucleoplasm,Vesicles
-O00329	location_not_included_g1,Vesicles
+O00329	Cytokinetic bridge,Vesicles
 O00330	Mitochondria,Nucleoplasm,Plasma membrane
 O00337	Cytosol,Nuclear speckles
-O00391	location_not_included_g1,Golgi apparatus,Vesicles
+O00391	Cytokinetic bridge,Golgi apparatus,Vesicles
 O00399	Cytosol,Nucleoli
 O00400	Cytosol,Vesicles
 O00401	Cytosol,Nucleoli
@@ -255,17 +255,17 @@ O00499	Cytosol
 O00512	Nuclear bodies,Nucleoplasm
 O00519	Cytosol
 O00534	Nucleoplasm
-O00541	Cytosol,location_not_included_g1,Nucleoli,Nucleoplasm
+O00541	Cytosol,Mitotic chromosome,Nucleoli,Nucleoli rim,Nucleoplasm
 O00559	Golgi apparatus
 O00560	Cytosol,Nuclear membrane,Nucleoplasm
 O00562	Cytosol,Vesicles
-O00566	location_not_included_g1,Nucleoli
+O00566	Mitotic chromosome,Nucleoli
 O00567	Nucleoli fibrillar center
 O00587	Vesicles
 O00590	Nuclear membrane,Nucleoplasm,Vesicles
 O00625	Cytosol,Nucleoplasm
 O00628	Nucleoplasm,Vesicles
-O00629	location_not_included_g1,Nucleoplasm
+O00629	Micronucleus,Nucleoplasm
 O00631	Microtubules
 O00635	Centrosome
 O00712	Nucleoli fibrillar center,Nucleoplasm
@@ -291,7 +291,7 @@ O14530	Cytosol
 O14531	Mitochondria,Vesicles
 O14543	Cytosol
 O14544	Cytosol,Nuclear speckles
-O14545	Cytosol,Actin filaments,Nucleoplasm
+O14545	Cytosol,Focal adhesion sites,Nucleoplasm
 O14548	Mitochondria
 O14556	Nucleoplasm
 O14558	Cytosol,Mitochondria,Nuclear speckles
@@ -299,7 +299,7 @@ O14559	Actin filaments,Cytosol,Plasma membrane
 O14561	Mitochondria
 O14578	Cytosol
 O14579	Golgi apparatus
-O14593	location_not_included_g1,Cytosol,Nucleoplasm
+O14593	Cytokinetic bridge,Cytosol,Nucleoplasm
 O14613	Cytosol,Microtubules
 O14617	Cytosol
 O14627	Cytosol,Nucleoplasm
@@ -317,16 +317,16 @@ O14681	Cytosol,Endoplasmic reticulum
 O14683	Endoplasmic reticulum,Golgi apparatus
 O14686	Cytosol,Nucleoplasm,Plasma membrane
 O14709	Nucleoplasm
-O14713	Centrosome,Cytosol,Nucleoplasm
+O14713	Centriolar satellite,Cytosol,Nucleoplasm
 O14727	Cytosol,Nucleoplasm
 O14730	Cytosol,Plasma membrane
 O14732	Mitochondria,Nucleoplasm
 O14734	Mitochondria,Vesicles
 O14737	Cytosol
 O14744	Cytosol,Nucleoplasm
-O14745	Centrosome,Plasma membrane,Vesicles
+O14745	Centriolar satellite,Plasma membrane,Vesicles
 O14756	Nucleoplasm
-O14757	location_not_included_g1,Nucleoplasm
+O14757	Micronucleus,Nucleoplasm
 O14770	Cytosol,Nucleoplasm
 O14771	Cytosol
 O14772	Vesicles
@@ -346,7 +346,7 @@ O14862	Cytosol,Mitochondria,Nucleoplasm
 O14874	Mitochondria
 O14880	Nucleoplasm
 O14893	Nuclear bodies,Nucleoli,Nucleoplasm
-O14901	Cytosol,Actin filaments,Nucleoplasm
+O14901	Cytosol,Focal adhesion sites,Nucleoplasm
 O14905	Vesicles
 O14907	Actin filaments,Nucleoli fibrillar center
 O14917	Cytosol,Vesicles
@@ -398,11 +398,11 @@ O15072	Intermediate filaments
 O15075	Cytosol,Nucleoplasm
 O15078	Centrosome
 O15085	Nucleoplasm,Plasma membrane
-O15090	Plasma membrane,Nucleoplasm
+O15090	Cell Junctions,Nucleoplasm
 O15091	Mitochondria,Nucleoplasm
 O15105	Nucleoplasm
 O15111	Cytosol,Nucleoplasm
-O15116	Cytosol
+O15116	Cytoplasmic bodies,Cytosol
 O15117	Plasma membrane
 O15119	Cytosol,Nucleoplasm
 O15121	Mitochondria
@@ -423,7 +423,7 @@ O15205	Nucleoli fibrillar center
 O15209	Nucleoplasm
 O15212	Golgi apparatus,Nucleoplasm
 O15226	Nucleoli
-O15231	Actin filaments,Cytosol,Plasma membrane
+O15231	Actin filaments,Cytosol,Focal adhesion sites,Plasma membrane
 O15232	Cytosol,Endoplasmic reticulum,Golgi apparatus,Vesicles
 O15234	Nuclear membrane
 O15239	Cytosol
@@ -432,7 +432,7 @@ O15243	Centrosome
 O15254	Peroxisomes
 O15258	Golgi apparatus
 O15260	Cytosol
-O15264	Cytosol,Nucleoli,Nucleoplasm
+O15264	Cytosol,Nucleoli rim,Nucleoplasm
 O15265	Cytosol,Nucleoplasm
 O15269	Endoplasmic reticulum
 O15270	Plasma membrane
@@ -452,11 +452,11 @@ O15360	Nucleoplasm
 O15370	Nucleoplasm
 O15371	Cytosol,Nucleoplasm
 O15372	Cytosol
-O15374	location_not_included_g1,Cytosol,Microtubules
+O15374	Cytokinetic bridge,Cytosol,Microtubules
 O15379	Golgi apparatus,Nucleoplasm
 O15381	Nucleoli
 O15382	Mitochondria
-O15392	location_not_included_g1
+O15392	Cytokinetic bridge
 O15393	Plasma membrane
 O15394	Nuclear bodies,Plasma membrane
 O15397	Nucleoplasm
@@ -479,7 +479,7 @@ O15514	Cytosol,Nucleoplasm
 O15516	Nucleoplasm,Vesicles
 O15519	Cytosol,Nucleoli fibrillar center,Nucleoplasm,Plasma membrane
 O15522	Nucleoplasm,Plasma membrane
-O15524	Cytosol,Nucleoplasm
+O15524	Cytoplasmic bodies,Nucleoplasm
 O15527	Nucleoplasm
 O15530	Cytosol
 O15533	Mitochondria,Nucleoli,Plasma membrane
@@ -509,18 +509,18 @@ O43236	Nucleoplasm
 O43242	Cytosol,Nucleoplasm
 O43246	Nucleoplasm,Vesicles
 O43251	Nucleoplasm
-O43252	location_not_included_g1,Nuclear bodies,Nucleoli
+O43252	Mitotic chromosome,Nuclear bodies,Nucleoli rim
 O43255	Nucleoplasm
 O43257	Nucleoplasm
 O43264	Cytosol,Endoplasmic reticulum
 O43278	Cytosol,Nucleoplasm,Plasma membrane
-O43283	Centrosome,Cytosol,Nucleoplasm
+O43283	Centriolar satellite,Cytosol,Nucleoplasm
 O43286	Vesicles
 O43290	Golgi apparatus,Nuclear speckles
 O43291	Intermediate filaments
 O43292	Endoplasmic reticulum
 O43293	Nucleoplasm
-O43294	Cytosol,Actin filaments
+O43294	Cytosol,Focal adhesion sites
 O43298	Nucleoli,Nucleoplasm
 O43299	Nuclear speckles
 O43301	Cytosol,Golgi apparatus
@@ -536,7 +536,7 @@ O43353	Cytosol
 O43361	Nuclear membrane,Nucleoplasm
 O43364	Nucleoplasm,Vesicles
 O43365	Nucleoplasm
-O43379	Centrosome
+O43379	Centriolar satellite
 O43390	Nucleoplasm
 O43395	Cytosol,Nucleoplasm
 O43396	Cytosol
@@ -553,7 +553,7 @@ O43462	Cytosol,Mitochondria,Nucleoplasm
 O43464	Mitochondria
 O43474	Nucleoplasm
 O43482	Nuclear speckles,Vesicles
-O43491	Plasma membrane
+O43491	Cell Junctions,Plasma membrane
 O43493	Golgi apparatus,Nucleoplasm
 O43502	Nucleoplasm,Vesicles
 O43504	Cytosol
@@ -582,8 +582,8 @@ O43623	Nucleoplasm
 O43633	Cytosol
 O43638	Cytosol,Nucleoplasm
 O43657	Cytosol
-O43660	location_not_included_g1,Nuclear membrane,Nuclear speckles,Nucleoplasm
-O43663	location_not_included_g1,Microtubules,Nucleoplasm,Plasma membrane
+O43660	Micronucleus,Nuclear membrane,Nuclear speckles,Nucleoplasm
+O43663	Cytokinetic bridge,Microtubules,Midbody,Nucleoplasm,Plasma membrane
 O43665	Nuclear bodies,Nucleoplasm
 O43670	Nucleoplasm
 O43674	Mitochondria,Nucleoplasm
@@ -636,7 +636,7 @@ O43903	Cytosol,Nucleoli,Nucleoplasm
 O43913	Nucleoplasm
 O43914	Plasma membrane
 O43929	Nucleoli,Nucleoplasm
-O60216	location_not_included_g1,Nucleoplasm
+O60216	Midbody,Nucleoplasm
 O60220	Mitochondria
 O60231	Nucleoplasm
 O60232	Cytosol
@@ -653,7 +653,7 @@ O60260	Nuclear speckles
 O60264	Nucleoli fibrillar center,Nucleoplasm
 O60268	Cytosol
 O60269	Microtubules,Plasma membrane
-O60271	Centrosome,Cytosol
+O60271	Centriolar satellite,Cytosol
 O60281	Nuclear membrane,Nucleoplasm
 O60285	Microtubules,Nucleoli fibrillar center,Nucleoplasm
 O60287	Nucleoli fibrillar center
@@ -662,7 +662,7 @@ O60291	Endoplasmic reticulum
 O60292	Nucleoplasm,Plasma membrane
 O60293	Nucleoplasm
 O60294	Cytosol
-O60296	location_not_included_g1,Nucleoplasm,Vesicles
+O60296	Micronucleus,Nucleoplasm,Vesicles
 O60299	Vesicles
 O60303	Nuclear speckles,Plasma membrane
 O60304	Cytosol,Nucleoplasm
@@ -673,14 +673,14 @@ O60315	Nucleoli
 O60318	Cytosol,Nuclear membrane,Nucleoplasm
 O60320	Nucleoplasm
 O60331	Cytosol,Nucleoplasm
-O60336	Nucleoli,Nucleoplasm
+O60336	Nucleoli rim,Nucleoplasm
 O60337	Endoplasmic reticulum
 O60341	Cytosol,Nucleoplasm
 O60343	Cytosol
 O60347	Nuclear speckles
 O60353	Plasma membrane
 O60356	Nucleoplasm
-O60381	Cytosol,Nuclear speckles,Nucleoplasm
+O60381	Cytoplasmic bodies,Nuclear speckles,Nucleoplasm
 O60383	Cytosol
 O60443	Cytosol
 O60447	Golgi apparatus,Vesicles
@@ -700,7 +700,7 @@ O60518	Vesicles
 O60519	Mitochondria
 O60524	Cytosol
 O60551	Cytosol,Golgi apparatus,Plasma membrane
-O60563	Cytosol,location_not_included_g1,Nucleoplasm
+O60563	Cytosol,Micronucleus,Nucleoplasm
 O60566	Cytosol
 O60573	Cytosol,Mitochondria
 O60575	Golgi apparatus,Vesicles
@@ -715,16 +715,16 @@ O60658	Golgi apparatus
 O60662	Cytosol,Plasma membrane
 O60663	Nucleoplasm
 O60664	Cytosol,Lipid droplets
-O60667	Actin filaments,Nucleoplasm,Plasma membrane
+O60667	Focal adhesion sites,Nucleoplasm,Plasma membrane
 O60669	Plasma membrane
 O60671	Nucleoplasm,Vesicles
-O60673	Plasma membrane,Nucleoplasm
-O60674	Actin filaments,Nucleoplasm,Plasma membrane
+O60673	Cell Junctions,Nucleoplasm
+O60674	Focal adhesion sites,Nucleoplasm,Plasma membrane
 O60675	Nucleoplasm
 O60684	Cytosol
 O60701	Nucleoplasm
 O60706	Cytosol,Nucleoplasm
-O60711	Cytosol,Actin filaments,Nuclear speckles
+O60711	Cytosol,Focal adhesion sites,Nuclear speckles
 O60716	Plasma membrane
 O60732	Cytosol,Nucleoplasm
 O60733	Microtubules,Plasma membrane
@@ -744,7 +744,7 @@ O60830	Microtubules,Mitochondria
 O60831	Endoplasmic reticulum
 O60832	Nucleoli fibrillar center,Nucleoplasm
 O60841	Cytosol,Plasma membrane
-O60861	Actin filaments,Plasma membrane
+O60861	Focal adhesion sites,Plasma membrane
 O60869	Cytosol
 O60870	Nucleoplasm,Vesicles
 O60879	Endoplasmic reticulum,Nucleoli,Vesicles
@@ -752,7 +752,7 @@ O60880	Cytosol
 O60883	Nucleoplasm,Plasma membrane,Vesicles
 O60884	Cytosol,Intermediate filaments
 O60885	Nucleoplasm
-O60888	Actin filaments,Plasma membrane
+O60888	Focal adhesion sites,Plasma membrane
 O60890	Nucleoplasm,Plasma membrane
 O60895	Vesicles
 O60906	Plasma membrane,Vesicles
@@ -777,7 +777,7 @@ O75061	Cytosol,Nucleoplasm
 O75063	Golgi apparatus,Nucleoplasm
 O75064	Golgi apparatus,Nucleoplasm
 O75071	Cytosol,Nucleoli
-O75083	Plasma membrane
+O75083	Cell Junctions,Plasma membrane
 O75095	Microtubules
 O75113	Nucleoli fibrillar center
 O75121	Nucleoplasm
@@ -790,9 +790,9 @@ O75144	Vesicles
 O75146	Cytosol,Plasma membrane,Vesicles
 O75147	Centrosome,Nucleoplasm
 O75150	Nucleoplasm
-O75151	Nucleoli
+O75151	Nucleoli rim
 O75153	Nucleoli fibrillar center,Vesicles
-O75154	Centrosome,location_not_included_g1,Mitochondria,Vesicles
+O75154	Centriolar satellite,Cytokinetic bridge,Mitochondria,Vesicles
 O75155	Nuclear bodies
 O75157	Cytosol
 O75159	Cytosol,Nucleoplasm,Plasma membrane
@@ -813,7 +813,7 @@ O75293	Nucleoplasm
 O75306	Mitochondria
 O75312	Vesicles
 O75317	Nucleoplasm
-O75319	location_not_included_g1,Nucleoli fibrillar center,Nucleoplasm
+O75319	Cytokinetic bridge,Nucleoli fibrillar center,Nucleoplasm
 O75323	Mitochondria
 O75325	Endoplasmic reticulum
 O75330	Centrosome,Cytosol,Microtubules
@@ -844,17 +844,17 @@ O75417	Cytosol,Golgi apparatus,Nucleoplasm
 O75419	Cytosol,Nucleoplasm
 O75420	Microtubules
 O75425	Cytosol
-O75427	Actin filaments
+O75427	Focal adhesion sites
 O75436	Endosomes,Lysosomes,Vesicles
 O75438	Mitochondria,Nuclear speckles
 O75439	Mitochondria
 O75444	Nucleoplasm,Vesicles
 O75446	Nucleoplasm
-O75449	Centrosome,Nucleoplasm
+O75449	Centriolar satellite,Nucleoplasm
 O75459	Cytosol,Mitochondria,Nucleoli fibrillar center
 O75461	Nucleoplasm
 O75467	Cytosol,Nuclear membrane
-O75469	Intermediate filaments,location_not_included_g1,Nuclear bodies,Nucleoplasm
+O75469	Intermediate filaments,Micronucleus,Nuclear bodies,Nucleoplasm
 O75474	Nucleoplasm
 O75475	Nucleoplasm
 O75477	Endoplasmic reticulum
@@ -868,8 +868,8 @@ O75509	Cytosol,Plasma membrane
 O75521	Mitochondria,Vesicles
 O75525	Nucleoplasm
 O75528	Nucleoplasm
-O75529	Cytosol,Nuclear speckles
-O75530	Cytosol,location_not_included_g1,Nucleoplasm
+O75529	Cytoplasmic bodies,Nuclear speckles
+O75530	Cytosol,Micronucleus,Nucleoplasm
 O75533	Nuclear speckles
 O75534	Cytosol,Plasma membrane
 O75541	Nuclear speckles
@@ -892,7 +892,7 @@ O75635	Endoplasmic reticulum
 O75643	Nucleoplasm
 O75648	Mitochondria
 O75676	Cytosol,Nucleoplasm
-O75683	location_not_included_g1,Nucleoli
+O75683	Mitotic chromosome,Nucleoli,Nucleoli rim
 O75688	Cytosol,Nucleoli
 O75689	Cytosol,Plasma membrane
 O75691	Nucleoli
@@ -912,7 +912,7 @@ O75800	Cytosol,Plasma membrane
 O75808	Nucleoplasm
 O75817	Vesicles
 O75818	Nucleoplasm
-O75820	location_not_included_g1,Intermediate filaments
+O75820	Aggresome,Intermediate filaments
 O75821	Cytosol
 O75822	Cytosol
 O75832	Cytosol,Intermediate filaments
@@ -944,7 +944,7 @@ O75956	Nucleoplasm
 O75962	Cytosol,Vesicles
 O75971	Nucleoplasm
 O76011	Nucleoplasm,Vesicles
-O76021	location_not_included_g1,Nucleoli
+O76021	Mitotic chromosome,Nucleoli rim
 O76027	Cytosol,Nuclear speckles
 O76031	Cytosol,Mitochondria,Nucleoplasm
 O76038	Cytosol
@@ -963,11 +963,11 @@ O94760	Cytosol,Plasma membrane
 O94761	Nucleoplasm
 O94762	Cytosol,Nucleoplasm
 O94763	Cytosol,Nucleoplasm
-O94768	location_not_included_g1,Nucleoplasm
+O94768	Midbody ring,Nucleoplasm
 O94776	Nucleoplasm
-O94782	location_not_included_g1,Nucleoplasm
+O94782	Micronucleus,Nucleoplasm
 O94804	Nucleoplasm
-O94805	location_not_included_g1,Nucleoli
+O94805	Mitotic chromosome,Nucleoli rim
 O94806	Cytosol,Nucleoplasm,Plasma membrane
 O94808	Vesicles
 O94811	Cytosol
@@ -983,7 +983,7 @@ O94844	Cytosol,Nucleoplasm
 O94868	Actin filaments,Nuclear speckles,Plasma membrane
 O94874	Endoplasmic reticulum
 O94885	Cytosol,Nucleoplasm
-O94888	location_not_included_g1,Nucleoplasm
+O94888	Micronucleus,Nucleoplasm
 O94889	Nucleoplasm
 O94898	Golgi apparatus,Nucleoplasm
 O94900	Nucleoplasm
@@ -991,7 +991,7 @@ O94901	Nuclear membrane,Vesicles
 O94903	Cytosol
 O94905	Cytosol,Plasma membrane
 O94913	Mitochondria,Nucleoplasm
-O94915	location_not_included_g1,Cytosol
+O94915	Cytokinetic bridge,Cytosol
 O94916	Cytosol,Nucleoplasm
 O94919	Cytosol,Nuclear membrane,Nucleoplasm
 O94921	Cytosol,Nucleoplasm
@@ -1005,9 +1005,9 @@ O94973	Nucleoplasm,Vesicles
 O94979	Cytosol,Vesicles
 O94983	Actin filaments,Cytosol,Mitochondria,Nucleoplasm
 O94986	Centrosome,Nucleoplasm
-O94988	Plasma membrane,Cytosol,Nucleoli
+O94988	Cell Junctions,Cytosol,Nucleoli
 O94991	Vesicles
-O94992	location_not_included_g1,Nucleoplasm,Vesicles
+O94992	Micronucleus,Nucleoplasm,Vesicles
 O94993	Nucleoplasm,Vesicles
 O95025	Vesicles
 O95045	Cytosol,Mitochondria,Nucleoplasm,Vesicles
@@ -1022,7 +1022,7 @@ O95072	Nucleoplasm
 O95076	Nucleoli fibrillar center
 O95081	Cytosol
 O95104	Nucleoplasm
-O95125	location_not_included_g1,Nuclear bodies,Nucleoli
+O95125	Mitotic chromosome,Nuclear bodies,Nucleoli rim
 O95139	Mitochondria,Nucleoplasm
 O95140	Mitochondria
 O95147	Cytosol,Nucleoplasm
@@ -1045,7 +1045,7 @@ O95218	Nucleoplasm
 O95229	Nuclear bodies,Nucleoplasm
 O95231	Nucleoli fibrillar center
 O95232	Nuclear speckles
-O95235	location_not_included_g1,Nucleoplasm
+O95235	Cytokinetic bridge,Nucleoplasm
 O95243	Nuclear speckles
 O95248	Nuclear bodies
 O95251	Cytosol,Nucleoplasm
@@ -1062,13 +1062,13 @@ O95278	Nucleoplasm
 O95292	Endoplasmic reticulum,Golgi apparatus
 O95294	Cytosol,Plasma membrane
 O95295	Golgi apparatus,Nucleoli
-O95297	Plasma membrane,Vesicles
+O95297	Cell Junctions,Plasma membrane,Vesicles
 O95302	Mitochondria
-O95319	location_not_included_g1,Nucleoplasm
+O95319	Midbody ring,Nucleoplasm
 O95336	Cytosol,Nucleoplasm
 O95340	Mitochondria
 O95343	Cytosol,Nucleoplasm
-O95347	location_not_included_g1,Nucleoli,Nucleoplasm
+O95347	Micronucleus,Nucleoli,Nucleoplasm
 O95352	Cytosol,Nucleoplasm
 O95361	Cytosol,Plasma membrane
 O95365	Nucleoplasm
@@ -1110,7 +1110,7 @@ O95571	Mitochondria,Nucleoplasm
 O95573	Nucleoli
 O95600	Nucleoplasm
 O95602	Nucleoli fibrillar center,Nucleoplasm
-O95613	Centrosome,Cytosol
+O95613	Centriolar satellite,Centrosome,Cytosol
 O95619	Nucleoplasm
 O95622	Vesicles
 O95625	Nucleoplasm
@@ -1140,11 +1140,11 @@ O95759	Nuclear speckles
 O95760	Nucleoplasm
 O95772	Vesicles
 O95782	Vesicles
-O95785	location_not_included_g1,Nucleoplasm
+O95785	Midbody,Nucleoplasm
 O95786	Cytosol,Plasma membrane
 O95789	Nucleoplasm
 O95793	Cytosol
-O95801	Cytosol,Intermediate filaments
+O95801	Cytoplasmic bodies,Intermediate filaments
 O95807	Cytosol,Plasma membrane
 O95810	Nucleoplasm,Plasma membrane
 O95816	Intermediate filaments
@@ -1163,10 +1163,10 @@ O95864	Plasma membrane
 O95865	Mitochondria
 O95872	Endoplasmic reticulum
 O95873	Cytosol
-O95886	Endoplasmic reticulum,location_not_included_g1
+O95886	Endoplasmic reticulum,Midbody
 O95897	Nucleoplasm
 O95905	Cytosol,Nucleoplasm
-O95907	Actin filaments,Intermediate filaments
+O95907	Focal adhesion sites,Intermediate filaments
 O95926	Nuclear speckles
 O95931	Nucleoplasm
 O95935	Nucleoplasm
@@ -1178,14 +1178,14 @@ O95985	Cytosol,Nucleoplasm
 O95988	Cytosol
 O95990	Nuclear speckles
 O95995	Cytosol,Plasma membrane
-O95996	location_not_included_g1,Cytosol
+O95996	Cytokinetic bridge,Cytosol,Midbody
 O95998	Endoplasmic reticulum
 O96004	Nuclear bodies,Nuclear membrane,Nucleoplasm
 O96005	Endoplasmic reticulum
 O96006	Centrosome,Nuclear membrane
 O96008	Mitochondria
 O96011	Nucleoplasm,Vesicles
-O96013	Actin filaments,Plasma membrane
+O96013	Actin filaments,Cell Junctions,Plasma membrane
 O96015	Centrosome,Cytosol,Nucleoli,Nucleoplasm
 O96018	Vesicles
 O96019	Cytosol,Nucleoplasm
@@ -1232,7 +1232,7 @@ P02786	Endosomes,Lysosomes,Vesicles
 P03372	Vesicles
 P03901	Mitochondria
 P03905	Mitochondria
-P03950	Nucleoli
+P03950	Nucleoli rim
 P03951	Vesicles
 P03956	Vesicles
 P03973	Golgi apparatus
@@ -1250,11 +1250,11 @@ P04233	Golgi apparatus
 P04271	Vesicles
 P04406	Cytosol,Nuclear membrane,Plasma membrane,Vesicles
 P04424	Cytosol
-P04440	Plasma membrane,Nucleoplasm
+P04440	Cell Junctions,Nucleoplasm
 P04553	Nucleoplasm
 P04626	Cytosol,Nucleoplasm
 P04629	Cytosol,Vesicles
-P04637	Cytosol,location_not_included_g1,Nucleoplasm
+P04637	Cytosol,Micronucleus,Nucleoplasm
 P04792	Cytosol,Plasma membrane
 P04843	Cytosol,Endoplasmic reticulum
 P05067	Golgi apparatus,Vesicles
@@ -1290,12 +1290,12 @@ P06493	Cytosol,Nucleoplasm
 P06576	Mitochondria
 P06702	Cytosol,Intermediate filaments,Nucleoplasm
 P06703	Cytosol
-P06730	Cytosol,Nucleoplasm
+P06730	Cytoplasmic bodies,Cytosol,Nucleoplasm
 P06737	Cytosol,Plasma membrane
 P06744	Cytosol,Plasma membrane
 P06746	Vesicles
-P06748	Nucleoli,Nucleoplasm
-P06756	Cytosol,Actin filaments
+P06748	Nucleoli rim,Nucleoplasm
+P06756	Cytosol,Focal adhesion sites
 P06858	Vesicles
 P06865	Cytosol
 P07093	Golgi apparatus
@@ -1312,7 +1312,7 @@ P07332	Nucleoplasm,Vesicles
 P07333	Vesicles
 P07355	Cytosol,Plasma membrane
 P07384	Cytosol
-P07550	location_not_included_g1,Cytosol
+P07550	Cytokinetic bridge,Cytosol
 P07602	Vesicles
 P07711	Golgi apparatus,Vesicles
 P07738	Nucleoli
@@ -1349,7 +1349,7 @@ P08579	Nuclear speckles
 P08581	Cytosol
 P08590	Mitochondria,Nucleoli
 P08631	Vesicles
-P08651	location_not_included_g1,Nucleoli fibrillar center,Nucleoplasm
+P08651	Micronucleus,Nucleoli fibrillar center,Nucleoplasm
 P08670	Intermediate filaments
 P08697	Golgi apparatus
 P08708	Cytosol,Endoplasmic reticulum,Nucleoli
@@ -1360,7 +1360,7 @@ P08922	Vesicles
 P08949	Nucleoplasm,Vesicles
 P08962	Nucleoplasm,Vesicles
 P09012	Nucleoplasm
-P09016	Plasma membrane,Nucleoplasm
+P09016	Cell Junctions,Nucleoplasm
 P09038	Nuclear bodies,Nucleoplasm
 P09067	Cytosol,Nucleoplasm
 P09086	Nucleoplasm,Vesicles
@@ -1434,7 +1434,7 @@ P10070	Nucleoli,Nucleoplasm
 P10071	Nucleoli,Nucleoplasm,Vesicles
 P10072	Mitochondria,Nucleoplasm
 P10074	Cytosol,Nucleoplasm
-P10075	location_not_included_g1
+P10075	Cytokinetic bridge
 P10109	Mitochondria
 P10155	Cytosol
 P10242	Cytosol,Nucleoplasm
@@ -1444,7 +1444,7 @@ P10275	Cytosol
 P10276	Actin filaments,Cytosol,Nucleoplasm
 P10301	Vesicles
 P10398	Plasma membrane
-P10412	Cytosol,location_not_included_g1,Nuclear speckles
+P10412	Cytosol,Micronucleus,Nuclear speckles
 P10415	Mitochondria
 P10515	Mitochondria
 P10588	Cytosol,Nuclear speckles
@@ -1461,13 +1461,13 @@ P10809	Mitochondria
 P10826	Nucleoplasm
 P10828	Nuclear bodies
 P10911	Cytosol,Plasma membrane
-P10912	Cytosol,Plasma membrane
+P10912	Cytoplasmic bodies,Cytosol,Plasma membrane
 P10914	Endoplasmic reticulum,Nucleoplasm
 P10915	Vesicles
 P10997	Vesicles
 P11137	Actin filaments
 P11161	Nucleoplasm,Vesicles
-P11171	Plasma membrane,location_not_included_g1,Cytosol,Nuclear bodies
+P11171	Cell Junctions,Cytokinetic bridge,Cytosol,Mitotic spindle,Nuclear bodies,Plasma membrane
 P11172	Cytosol
 P11177	Mitochondria
 P11182	Cytosol,Microtubules
@@ -1539,7 +1539,7 @@ P14136	Intermediate filaments
 P14174	Cytosol,Nucleoplasm
 P14209	Golgi apparatus
 P14314	Endoplasmic reticulum
-P14316	Plasma membrane,Cytosol,Nucleoplasm
+P14316	Cell Junctions,Cytosol,Nucleoplasm
 P14317	Cytosol,Plasma membrane
 P14324	Cytosol,Nucleoplasm
 P14373	Nucleoli,Nucleoplasm
@@ -1548,7 +1548,7 @@ P14618	Cytosol
 P14621	Nucleoplasm
 P14625	Endoplasmic reticulum
 P14635	Cytosol
-P14651	location_not_included_g1,Nucleoplasm
+P14651	Micronucleus,Nucleoplasm
 P14652	Nucleoplasm
 P14653	Nucleoplasm
 P14770	Cytosol,Nucleoplasm
@@ -1599,20 +1599,20 @@ P16066	Nucleoli
 P16070	Plasma membrane
 P16083	Cytosol,Nucleoplasm
 P16220	Nucleoplasm
-P16234	Plasma membrane,Nucleoplasm
+P16234	Cell Junctions,Nucleoplasm,Plasma membrane
 P16278	Vesicles
 P16284	Nucleoli
 P16333	Cytosol,Plasma membrane
 P16383	Cytosol,Nucleoplasm
 P16401	Nucleoli,Nucleoplasm
-P16403	location_not_included_g1,Nucleoli,Nucleoplasm
+P16403	Micronucleus,Nucleoli rim,Nucleoplasm
 P16435	Cytosol,Nucleoplasm,Vesicles
 P16455	Nucleoplasm
 P16519	Nucleoplasm,Vesicles
 P16591	Cytosol
 P16860	Cytosol,Vesicles
 P16870	Centrosome
-P16871	Centrosome,Nucleoplasm
+P16871	Centriolar satellite,Nucleoplasm
 P16885	Cytosol,Vesicles
 P16949	Cytosol
 P16989	Cytosol
@@ -1631,7 +1631,7 @@ P17032	Vesicles
 P17036	Nucleoplasm
 P17039	Cytosol,Nucleoplasm
 P17040	Nucleoplasm
-P17041	location_not_included_g1,Nuclear bodies,Nucleoplasm
+P17041	Micronucleus,Nuclear bodies,Nucleoplasm
 P17081	Cytosol,Vesicles
 P17096	Nucleoli,Nucleoplasm
 P17097	Mitochondria,Nuclear bodies
@@ -1639,7 +1639,7 @@ P17098	Cytosol,Nucleoplasm
 P17152	Mitochondria
 P17252	Cytosol,Plasma membrane
 P17275	Nucleoplasm
-P17302	Plasma membrane,Nucleoplasm,Vesicles
+P17302	Cell Junctions,Nucleoplasm,Vesicles
 P17480	Nucleoli fibrillar center
 P17481	Nucleoplasm
 P17482	Nucleoplasm
@@ -1648,8 +1648,8 @@ P17535	Nucleoplasm
 P17542	Nucleoplasm
 P17544	Cytosol,Nucleoplasm
 P17655	Cytosol
-P17676	location_not_included_g1,Nucleoplasm
-P17706	location_not_included_g1,Nucleoplasm
+P17676	Micronucleus,Nucleoplasm
+P17706	Micronucleus,Nucleoplasm
 P17707	Nucleoplasm
 P17752	Cytosol
 P17812	Actin filaments,Cytosol
@@ -1666,26 +1666,26 @@ P18075	Vesicles
 P18084	Mitochondria,Plasma membrane
 P18124	Cytosol,Endoplasmic reticulum,Nucleoli
 P18146	Nucleoplasm
-P18206	Actin filaments
+P18206	Focal adhesion sites
 P18283	Cytosol
 P18433	Vesicles
 P18583	Nuclear speckles
 P18615	Nuclear bodies,Nucleoplasm,Plasma membrane
 P18621	Cytosol,Endoplasmic reticulum,Nucleoli
 P18754	Nucleoplasm
-P18827	Actin filaments
+P18827	Focal adhesion sites
 P18846	Nucleoplasm
 P18847	Nucleoli,Nucleoplasm
-P18848	location_not_included_g1,Nucleoplasm
+P18848	Micronucleus,Nucleoplasm
 P18858	Golgi apparatus,Nucleoli fibrillar center,Nucleoplasm,Vesicles
 P18859	Mitochondria
 P18887	Nucleoplasm
 P19021	Cytosol
-P19022	Plasma membrane
+P19022	Cell Junctions,Plasma membrane
 P19086	Vesicles
 P19174	Cytosol
-P19320	Plasma membrane
-P19338	Cytosol,Nucleoli,Nucleoplasm
+P19320	Cell Junctions
+P19338	Cytoplasmic bodies,Nucleoli,Nucleoli rim,Nucleoplasm
 P19367	Mitochondria
 P19387	Cytosol,Nucleoplasm
 P19388	Nucleoplasm
@@ -1718,13 +1718,13 @@ P20290	Cytosol
 P20336	Centrosome,Cytosol,Nucleoplasm
 P20339	Nucleoplasm,Vesicles
 P20393	Nuclear bodies
-P20472	Plasma membrane,Nucleoli,Nucleoplasm
+P20472	Cell Junctions,Nucleoli,Nucleoplasm
 P20585	Nuclear bodies
 P20591	Cytosol,Nuclear membrane
 P20700	Nuclear membrane
 P20702	Vesicles
 P20711	Actin filaments
-P20749	location_not_included_g1,Nucleoplasm,Plasma membrane,Vesicles
+P20749	Midbody,Nucleoplasm,Plasma membrane,Vesicles
 P20783	Vesicles
 P20800	Cytosol
 P20813	Nuclear membrane,Nucleoplasm
@@ -1739,7 +1739,7 @@ P21333	Actin filaments,Cytosol,Plasma membrane
 P21359	Microtubules,Nucleoplasm,Plasma membrane
 P21397	Cytosol
 P21399	Cytosol,Mitochondria
-P21439	Actin filaments,Nucleoplasm,Plasma membrane
+P21439	Focal adhesion sites,Nucleoplasm,Plasma membrane
 P21452	Plasma membrane
 P21462	Golgi apparatus,Nucleoli
 P21506	Plasma membrane,Vesicles
@@ -1752,7 +1752,7 @@ P21730	Golgi apparatus,Vesicles
 P21731	Nuclear speckles,Plasma membrane
 P21741	Vesicles
 P21781	Nucleoli,Nucleoplasm
-P21802	Plasma membrane
+P21802	Cell Junctions
 P21860	Actin filaments,Plasma membrane
 P21912	Mitochondria
 P21926	Plasma membrane
@@ -1775,12 +1775,12 @@ P22466	Golgi apparatus,Vesicles
 P22570	Mitochondria
 P22607	Endoplasmic reticulum
 P22670	Nucleoplasm,Vesicles
-P22674	Centrosome
+P22674	Centriolar satellite
 P22676	Cytosol
 P22681	Cytosol
 P22695	Mitochondria
 P22736	Cytosol,Nuclear membrane,Nucleoplasm
-P22888	Centrosome,Plasma membrane
+P22888	Centriolar satellite,Plasma membrane
 P23141	Endoplasmic reticulum
 P23193	Nucleoli,Nucleoplasm
 P23246	Nucleoplasm
@@ -1809,7 +1809,7 @@ P23771	Nucleoplasm
 P23786	Mitochondria,Nucleoplasm
 P23919	Mitochondria
 P23921	Cytosol
-P23946	Cytosol
+P23946	Cytoplasmic bodies,Cytosol
 P24071	Plasma membrane
 P24278	Nucleoplasm
 P24347	Cytosol,Golgi apparatus
@@ -1852,7 +1852,7 @@ P26006	Plasma membrane
 P26010	Cytosol,Plasma membrane
 P26012	Cytosol,Nucleoplasm,Plasma membrane
 P26038	Plasma membrane
-P26196	Cytosol
+P26196	Cytoplasmic bodies,Cytosol
 P26358	Nucleoplasm
 P26367	Cytosol,Nucleoplasm
 P26368	Nuclear speckles,Nucleoplasm
@@ -1865,7 +1865,7 @@ P26599	Nucleoplasm
 P26639	Actin filaments,Cytosol
 P26640	Cytosol
 P26718	Plasma membrane
-P26998	Microtubules,location_not_included_g1
+P26998	Microtubules,Mitotic spindle
 P27105	Cytosol
 P27348	Cytosol,Nucleoplasm
 P27361	Nucleoplasm
@@ -1885,7 +1885,7 @@ P27918	Vesicles
 P27986	Cytosol
 P27987	Nucleoplasm
 P28039	Vesicles
-P28062	location_not_included_g1,Vesicles
+P28062	Cytokinetic bridge,Vesicles
 P28065	Cytosol
 P28066	Cytosol
 P28069	Cytosol,Nucleoplasm
@@ -1914,14 +1914,14 @@ P28749	Nucleoplasm
 P28799	Endosomes,Lysosomes,Vesicles
 P28827	Plasma membrane
 P28838	Cytosol
-P28906	Plasma membrane,Nucleoplasm
+P28906	Cell Junctions,Nucleoplasm,Plasma membrane
 P29034	Cytosol,Nucleoli,Nucleoplasm,Plasma membrane
 P29074	Cytosol,Nucleoplasm
 P29083	Nucleoplasm
 P29084	Cytosol,Nucleoplasm
 P29144	Cytosol
 P29279	Golgi apparatus,Vesicles
-P29317	Plasma membrane,Golgi apparatus
+P29317	Cell Junctions,Golgi apparatus,Plasma membrane
 P29320	Actin filaments,Nuclear membrane,Nucleoplasm,Plasma membrane
 P29323	Plasma membrane
 P29350	Nucleoplasm
@@ -1941,7 +1941,7 @@ P29558	Cytosol
 P29590	Nuclear bodies
 P29597	Cytosol
 P29692	Cytosol,Nucleoli fibrillar center,Nucleoplasm
-P29966	Plasma membrane,Nuclear speckles
+P29966	Cell Junctions,Nuclear speckles
 P29972	Plasma membrane
 P30039	Vesicles
 P30041	Cytosol,Plasma membrane
@@ -1968,7 +1968,7 @@ P30419	Cytosol,Plasma membrane
 P30519	Cytosol,Vesicles
 P30520	Cytosol
 P30530	Actin filaments,Plasma membrane,Vesicles
-P30532	Actin filaments,Plasma membrane
+P30532	Focal adhesion sites,Plasma membrane
 P30533	Endoplasmic reticulum
 P30536	Cytosol,Mitochondria,Vesicles
 P30542	Plasma membrane
@@ -1978,7 +1978,7 @@ P30793	Cytosol,Nuclear membrane,Nucleoplasm
 P30837	Cytosol,Mitochondria,Nucleoplasm
 P30874	Cytosol
 P30876	Nucleoplasm
-P30988	Centrosome,Vesicles
+P30988	Centriolar satellite,Vesicles
 P30990	Vesicles
 P31040	Mitochondria,Nucleoli
 P31249	Nuclear bodies,Nucleoplasm
@@ -2028,7 +2028,7 @@ P32942	Mitochondria,Nucleoplasm
 P32969	Cytosol,Endoplasmic reticulum
 P33076	Cytosol,Nucleoplasm
 P33151	Nuclear membrane,Nucleoplasm
-P33176	Centrosome,Cytosol
+P33176	Centriolar satellite,Cytosol
 P33240	Nucleoplasm
 P33316	Nucleoplasm
 P33527	Plasma membrane
@@ -2049,7 +2049,7 @@ P34913	Cytosol
 P34925	Golgi apparatus
 P34932	Cytosol,Nucleoplasm
 P34969	Cytosol,Nuclear speckles
-P35221	Plasma membrane,Vesicles
+P35221	Cell Junctions,Plasma membrane,Vesicles
 P35222	Plasma membrane
 P35226	Cytosol,Nuclear bodies,Nucleoplasm
 P35232	Mitochondria
@@ -2129,7 +2129,7 @@ P37837	Cytosol
 P38117	Mitochondria
 P38398	Nuclear bodies
 P38405	Cytosol,Nucleoplasm
-P38432	Cytosol,location_not_included_g1,Nuclear bodies,Nucleoli fibrillar center,Nucleoplasm
+P38432	Cytosol,Micronucleus,Nuclear bodies,Nucleoli fibrillar center,Nucleoplasm
 P38571	Nucleoplasm
 P38606	Cytosol,Nucleoplasm,Vesicles
 P38646	Mitochondria
@@ -2142,7 +2142,7 @@ P39086	Plasma membrane,Vesicles
 P39656	Endoplasmic reticulum
 P39748	Nucleoplasm
 P39905	Vesicles
-P40121	location_not_included_g1,Nucleoplasm
+P40121	Micronucleus,Nucleoplasm
 P40123	Cytosol,Nucleoplasm
 P40126	Vesicles
 P40189	Plasma membrane
@@ -2168,9 +2168,9 @@ P40939	Mitochondria
 P41134	Nucleoplasm
 P41145	Nucleoplasm,Plasma membrane
 P41159	Plasma membrane
-P41161	location_not_included_g1,Nucleoplasm
+P41161	Micronucleus,Nucleoplasm
 P41162	Nucleoplasm,Vesicles
-P41182	location_not_included_g1,Nucleoplasm
+P41182	Micronucleus,Nucleoplasm
 P41212	Cytosol,Nucleoli
 P41214	Cytosol,Nuclear bodies
 P41218	Nucleoplasm,Vesicles
@@ -2185,12 +2185,12 @@ P41250	Cytosol
 P41273	Cytosol,Golgi apparatus,Nucleoli fibrillar center
 P41279	Cytosol
 P41586	Vesicles
-P41587	Actin filaments
+P41587	Focal adhesion sites
 P41595	Nucleoplasm
 P41597	Nucleoli fibrillar center,Plasma membrane
-P41743	location_not_included_g1,Cytosol,Microtubules
+P41743	Cytokinetic bridge,Cytosol,Microtubules
 P41970	Mitochondria,Nucleoplasm
-P42081	Centrosome
+P42081	Centriolar satellite
 P42126	Mitochondria
 P42224	Cytosol
 P42226	Cytosol,Nucleoplasm
@@ -2198,9 +2198,9 @@ P42229	Cytosol,Nucleoplasm
 P42285	Nucleoplasm
 P42331	Nucleoplasm,Vesicles
 P42336	Cytosol,Mitochondria
-P42338	location_not_included_g1,Nucleoli,Nucleoplasm
+P42338	Midbody,Nucleoli,Nucleoplasm
 P42345	Cytosol
-P42356	Plasma membrane,Nucleoplasm
+P42356	Cell Junctions,Nucleoplasm,Plasma membrane
 P42357	Cytosol
 P42566	Cytosol,Vesicles
 P42568	Cytosol,Nucleoplasm
@@ -2212,7 +2212,7 @@ P42681	Cytosol,Nucleoli
 P42684	Nucleoplasm
 P42694	Actin filaments,Nucleoli,Plasma membrane
 P42695	Nucleoplasm
-P42696	location_not_included_g1,Nucleoli
+P42696	Mitotic chromosome,Nucleoli
 P42701	Plasma membrane
 P42704	Mitochondria
 P42765	Mitochondria
@@ -2220,7 +2220,7 @@ P42766	Cytosol,Endoplasmic reticulum
 P42773	Cytosol,Nucleoplasm
 P42785	Vesicles
 P42858	Cytosol,Nucleoplasm
-P42898	Plasma membrane
+P42898	Cell Junctions
 P43003	Nucleoli,Vesicles
 P43007	Centrosome
 P43121	Plasma membrane
@@ -2229,7 +2229,7 @@ P43166	Cytosol,Golgi apparatus
 P43243	Nucleoplasm
 P43246	Nucleoplasm,Vesicles
 P43250	Mitochondria
-P43268	location_not_included_g1,Nucleoli
+P43268	Mitotic chromosome,Nucleoli rim
 P43304	Mitochondria
 P43307	Endoplasmic reticulum
 P43320	Nucleoplasm
@@ -2248,15 +2248,15 @@ P45381	Cytosol
 P45844	Vesicles
 P45880	Mitochondria
 P45954	Mitochondria
-P45973	location_not_included_g1,Nucleoplasm
+P45973	Micronucleus,Nucleoplasm
 P45974	Cytosol,Nucleoplasm
 P45984	Cytosol
 P45985	Nucleoplasm
-P46013	Cytosol,location_not_included_g1,Nuclear bodies,Nucleoli,Nucleoplasm
+P46013	Cytosol,Micronucleus,Mitotic chromosome,Nuclear bodies,Nucleoli rim,Nucleoplasm
 P46019	Nucleoplasm
 P46020	Cytosol,Vesicles
 P46059	Cytosol,Nucleoplasm
-P46060	Cytosol,location_not_included_g1,Nuclear membrane,Vesicles
+P46060	Cytosol,Micronucleus,Nuclear membrane,Vesicles
 P46063	Nucleoplasm
 P46087	Nucleoli
 P46091	Plasma membrane,Vesicles
@@ -2278,7 +2278,7 @@ P46821	Cytosol
 P46934	Cytosol
 P46937	Nucleoli,Nucleoplasm
 P46939	Nucleoplasm,Plasma membrane
-P46940	Plasma membrane
+P46940	Cell Junctions,Plasma membrane
 P46976	Vesicles
 P47755	Cytosol
 P47756	Cytosol,Nucleoplasm
@@ -2293,7 +2293,7 @@ P48047	Mitochondria
 P48052	Golgi apparatus
 P48067	Golgi apparatus,Nucleoplasm
 P48147	Cytosol
-P48200	Plasma membrane,Cytosol
+P48200	Cell Junctions,Cytosol
 P48230	Cytosol
 P48378	Golgi apparatus,Nucleoplasm
 P48380	Nucleoplasm,Vesicles
@@ -2303,7 +2303,7 @@ P48436	Nucleoplasm
 P48443	Nucleoplasm
 P48444	Golgi apparatus,Vesicles
 P48506	Cytosol,Nucleoli,Nucleoplasm
-P48507	Cytosol,Actin filaments,Nucleoplasm,Plasma membrane
+P48507	Cytosol,Focal adhesion sites,Nucleoplasm,Plasma membrane
 P48539	Nucleoli fibrillar center,Nucleoplasm
 P48547	Cytosol,Nuclear bodies,Nuclear membrane,Nucleoplasm,Vesicles
 P48549	Mitochondria
@@ -2325,7 +2325,7 @@ P48960	Cytosol
 P48995	Vesicles
 P49005	Nucleoplasm
 P49006	Actin filaments,Cytosol,Nucleoplasm
-P49023	Cytosol,Actin filaments
+P49023	Cytosol,Focal adhesion sites
 P49116	Nucleoplasm
 P49137	Centrosome,Nucleoplasm
 P49189	Cytosol
@@ -2346,9 +2346,9 @@ P49406	Mitochondria
 P49411	Mitochondria
 P49418	Cytosol,Plasma membrane
 P49419	Cytosol,Mitochondria
-P49441	Centrosome,Cytosol
+P49441	Centriolar satellite,Cytosol
 P49450	Nucleoplasm
-P49454	location_not_included_g1,Nuclear membrane,Nucleoplasm
+P49454	Micronucleus,Nuclear membrane,Nucleoplasm
 P49585	Cytosol,Nucleoplasm
 P49588	Cytosol
 P49589	Cytosol
@@ -2372,12 +2372,12 @@ P49760	Nuclear bodies,Nucleoplasm
 P49761	Intermediate filaments
 P49763	Mitochondria,Nucleoplasm
 P49768	Golgi apparatus,Nucleoplasm
-P49770	Actin filaments,Nucleoplasm
+P49770	Focal adhesion sites,Nucleoplasm
 P49773	Cytosol,Nucleoplasm,Plasma membrane
 P49789	Nucleoli fibrillar center,Plasma membrane
 P49790	Cytosol,Nuclear membrane,Nucleoli
 P49792	Nuclear membrane,Nucleoplasm,Vesicles
-P49795	Plasma membrane,Nucleoli fibrillar center
+P49795	Cell Junctions,Nucleoli fibrillar center
 P49796	Plasma membrane
 P49802	Cytosol,Mitochondria
 P49815	Cytosol
@@ -2399,24 +2399,24 @@ P50213	Mitochondria
 P50219	Cytosol,Nucleoli,Nucleoplasm
 P50238	Centrosome,Cytosol,Nuclear speckles
 P50336	Cytosol,Mitochondria,Vesicles
-P50402	Endoplasmic reticulum,location_not_included_g1,Nuclear membrane
+P50402	Endoplasmic reticulum,Micronucleus,Nuclear membrane
 P50454	Endoplasmic reticulum
 P50458	Nucleoplasm
 P50479	Actin filaments
 P50502	Cytosol
-P50539	Nucleoli,Nucleoplasm
+P50539	Nucleoli rim,Nucleoplasm
 P50542	Cytosol,Golgi apparatus
-P50552	Cytosol,Actin filaments,Plasma membrane
+P50552	Cytosol,Focal adhesion sites,Plasma membrane
 P50553	Cytosol,Nucleoplasm
 P50579	Cytosol,Plasma membrane
 P50583	Nucleoplasm,Vesicles
-P50607	Centrosome
+P50607	Centriolar satellite
 P50613	Nucleoplasm,Plasma membrane
 P50616	Nucleoplasm,Vesicles
 P50747	Cytosol
 P50748	Actin filaments,Cytosol,Plasma membrane
 P50749	Nucleoplasm,Plasma membrane
-P50750	Cytosol,Nucleoplasm
+P50750	Cytoplasmic bodies,Nucleoplasm
 P50851	Cytosol
 P50876	Vesicles
 P50895	Nucleoli fibrillar center
@@ -2440,7 +2440,7 @@ P51513	Nucleoli
 P51523	Nucleoplasm
 P51530	Mitochondria
 P51531	Nucleoplasm,Vesicles
-P51532	location_not_included_g1,Nucleoli fibrillar center,Nucleoplasm
+P51532	Micronucleus,Nucleoli fibrillar center,Nucleoplasm
 P51553	Mitochondria,Nucleoli
 P51570	Cytosol
 P51571	Endoplasmic reticulum
@@ -2473,8 +2473,8 @@ P51817	Nucleoplasm
 P51825	Mitochondria,Nucleoplasm
 P51826	Nucleoplasm
 P51828	Cytosol
-P51843	Centrosome,Nuclear speckles,Nucleoplasm,Vesicles
-P51858	location_not_included_g1,Nucleoplasm
+P51843	Centriolar satellite,Nuclear speckles,Nucleoplasm,Vesicles
+P51858	Micronucleus,Nucleoplasm
 P51911	Actin filaments
 P51948	Nucleoplasm
 P51955	Centrosome,Nucleoplasm
@@ -2491,13 +2491,13 @@ P52298	Nucleoplasm
 P52306	Cytosol
 P52429	Cytosol,Nucleoplasm
 P52565	Cytosol
-P52569	Plasma membrane
+P52569	Cell Junctions,Plasma membrane
 P52594	Vesicles
 P52630	Cytosol
 P52655	Cytosol,Nucleoplasm
 P52657	Nucleoplasm
 P52701	Nucleoplasm,Vesicles
-P52732	Cytosol,location_not_included_g1
+P52732	Cytosol,Mitotic spindle
 P52736	Vesicles
 P52738	Nucleoplasm
 P52739	Intermediate filaments,Nucleoplasm
@@ -2529,7 +2529,7 @@ P53396	Cytosol,Nucleoplasm
 P53567	Nucleoplasm
 P53582	Cytosol,Nucleoplasm
 P53597	Cytosol,Mitochondria,Plasma membrane
-P53602	Plasma membrane,Cytosol
+P53602	Cell Junctions,Cytosol
 P53611	Vesicles
 P53618	Cytosol,Golgi apparatus,Vesicles
 P53621	Cytosol,Golgi apparatus,Nucleoplasm
@@ -2545,7 +2545,7 @@ P53803	Nucleoli fibrillar center
 P53804	Cytosol,Nucleoli,Nucleoplasm
 P53805	Cytosol
 P53814	Actin filaments,Nucleoplasm
-P53985	Plasma membrane,location_not_included_g1,Microtubules,Vesicles
+P53985	Cell Junctions,Cytokinetic bridge,Microtubules,Plasma membrane,Vesicles
 P53990	Vesicles
 P53992	Nucleoplasm,Vesicles
 P53999	Nucleoli,Nucleoplasm
@@ -2560,7 +2560,7 @@ P54257	Cytosol,Nucleoli
 P54259	Nucleoplasm
 P54274	Nuclear bodies,Nucleoli fibrillar center
 P54277	Nuclear bodies
-P54278	Cytosol,location_not_included_g1,Nucleoplasm
+P54278	Cytosol,Micronucleus,Nucleoplasm
 P54284	Golgi apparatus
 P54368	Vesicles
 P54577	Cytosol,Nuclear bodies
@@ -2590,7 +2590,7 @@ P55060	Cytosol,Nucleoplasm
 P55064	Plasma membrane
 P55072	Cytosol,Nucleoplasm
 P55073	Vesicles
-P55081	location_not_included_g1,Nucleoplasm
+P55081	Micronucleus,Nucleoplasm
 P55082	Golgi apparatus,Nucleoplasm
 P55083	Endoplasmic reticulum
 P55084	Mitochondria
@@ -2600,7 +2600,7 @@ P55103	Cytosol
 P55145	Endoplasmic reticulum
 P55157	Cytosol
 P55160	Cytosol
-P55196	Plasma membrane,Cytosol,Nuclear speckles,Nucleoplasm
+P55196	Cell Junctions,Cytosol,Nuclear speckles,Nucleoplasm,Plasma membrane
 P55197	Cytosol,Nucleoplasm
 P55198	Nucleoplasm
 P55199	Cytosol,Nuclear bodies,Nucleoplasm
@@ -2617,7 +2617,7 @@ P55317	Nucleoli fibrillar center,Nucleoplasm
 P55318	Actin filaments,Nucleoplasm
 P55327	Cytosol
 P55345	Cytosol,Nucleoplasm
-P55347	Cytosol,location_not_included_g1,Nucleoplasm
+P55347	Cytosol,Micronucleus,Nucleoplasm
 P55771	Nucleoli,Nucleoplasm
 P55786	Cytosol
 P55789	Cytosol,Mitochondria
@@ -2631,7 +2631,7 @@ P56159	Golgi apparatus
 P56177	Nucleoplasm,Vesicles
 P56178	Nucleoplasm
 P56181	Mitochondria
-P56182	location_not_included_g1,Nucleoli
+P56182	Mitotic chromosome,Nucleoli
 P56192	Cytosol
 P56270	Nucleoplasm
 P56277	Mitochondria
@@ -2673,11 +2673,11 @@ P58005	Cytosol,Nucleoplasm
 P58317	Nucleoli,Nucleoplasm
 P58340	Nucleoplasm
 P58397	Nucleoli
-P58505	Actin filaments,Nucleoplasm
+P58505	Focal adhesion sites,Nucleoplasm
 P58546	Cytosol,Mitochondria,Plasma membrane
 P58557	Nucleoplasm
 P59047	Golgi apparatus,Vesicles
-P59190	Centrosome,Vesicles
+P59190	Centriolar satellite,Vesicles
 P59768	Plasma membrane,Vesicles
 P59817	Nucleoplasm
 P59827	Actin filaments,Cytosol
@@ -2696,8 +2696,8 @@ P60866	Cytosol,Endoplasmic reticulum
 P60880	Vesicles
 P60900	Nucleoplasm
 P60903	Mitochondria
-P60953	location_not_included_g1,Microtubules
-P61006	location_not_included_g1,Nucleoli,Nucleoplasm
+P60953	Cytokinetic bridge,Microtubules
+P61006	Micronucleus,Nucleoli,Nucleoplasm
 P61011	Cytosol
 P61081	Nuclear bodies,Nucleoplasm
 P61086	Cytosol
@@ -2722,15 +2722,15 @@ P61647	Endoplasmic reticulum
 P61758	Cytosol
 P61769	Cytosol,Golgi apparatus,Plasma membrane
 P61812	Vesicles
-P61968	Cytosol,location_not_included_g1,Nucleoplasm
-P61978	location_not_included_g1,Nucleoplasm
+P61968	Cytosol,Midbody ring,Nucleoplasm
+P61978	Micronucleus,Nucleoplasm
 P61981	Cytosol
-P62068	Nucleoli
+P62068	Nucleoli,Nucleoli rim
 P62072	Mitochondria
 P62079	Nucleoplasm,Plasma membrane
 P62081	Cytosol,Endoplasmic reticulum
 P62136	Cytosol,Nucleoplasm,Plasma membrane
-P62140	Cytosol,location_not_included_g1,Nucleoplasm
+P62140	Cytosol,Micronucleus,Nucleoplasm
 P62166	Plasma membrane,Vesicles
 P62191	Cytosol,Nucleoplasm
 P62195	Cytosol,Plasma membrane
@@ -2754,7 +2754,7 @@ P62333	Cytosol,Nucleoplasm
 P62380	Cytosol,Nucleoplasm
 P62424	Nucleoli
 P62487	Nucleoplasm
-P62491	Centrosome,Vesicles
+P62491	Centriolar satellite,Vesicles
 P62699	Cytosol
 P62736	Actin filaments
 P62750	Cytosol,Endoplasmic reticulum,Nucleoli fibrillar center
@@ -2778,11 +2778,11 @@ P62945	Endoplasmic reticulum
 P62952	Nucleoli
 P62979	Cytosol,Endoplasmic reticulum,Nucleoli
 P62987	Cytosol,Endoplasmic reticulum,Nucleoplasm
-P62995	Cytosol,location_not_included_g1,Nucleoplasm
+P62995	Cytosol,Micronucleus,Nucleoplasm
 P63000	Cytosol,Nucleoplasm
 P63010	Vesicles
 P63162	Nucleoplasm
-P63165	location_not_included_g1,Nuclear membrane,Nucleoli,Nucleoplasm
+P63165	Micronucleus,Nuclear membrane,Nucleoli,Nucleoplasm
 P63172	Nucleoplasm
 P63173	Cytosol,Endoplasmic reticulum
 P63208	Cytosol,Nucleoplasm
@@ -2795,12 +2795,12 @@ P68104	Cytosol
 P68106	Vesicles
 P68402	Cytosol,Plasma membrane
 P68543	Centrosome
-P78310	Plasma membrane,Nucleoplasm
+P78310	Cell Junctions,Nucleoplasm,Plasma membrane
 P78314	Golgi apparatus
 P78316	Nucleoli,Nucleoplasm
 P78317	Nuclear bodies
 P78330	Cytosol
-P78332	Cytosol,Nuclear speckles
+P78332	Cytoplasmic bodies,Nuclear speckles
 P78333	Cytosol,Nucleoplasm
 P78337	Nucleoli
 P78344	Cytosol
@@ -2855,7 +2855,7 @@ P82921	Mitochondria
 P82930	Mitochondria
 P82933	Mitochondria,Nucleoli
 P82970	Mitochondria,Nucleoplasm
-P82979	Cytosol,Nuclear speckles
+P82979	Cytoplasmic bodies,Nuclear speckles
 P82980	Golgi apparatus,Vesicles
 P82987	Vesicles
 P83111	Mitochondria
@@ -2879,7 +2879,7 @@ P98082	Nucleoli fibrillar center,Plasma membrane,Vesicles
 P98170	Cytosol,Nucleoplasm,Plasma membrane
 P98171	Nucleoplasm
 P98172	Plasma membrane
-P98173	Golgi apparatus,location_not_included_g1,Nucleoli,Nucleoplasm
+P98173	Golgi apparatus,Mitotic chromosome,Nucleoli rim,Nucleoplasm
 P98174	Cytosol,Plasma membrane
 P98175	Nuclear speckles
 P98177	Cytosol,Nuclear speckles
@@ -2889,7 +2889,7 @@ P98194	Golgi apparatus
 P98196	Golgi apparatus,Vesicles
 P98198	Plasma membrane
 P99999	Mitochondria
-Q00013	Centrosome
+Q00013	Centriolar satellite
 Q00056	Nuclear bodies
 Q00059	Mitochondria
 Q00341	Endoplasmic reticulum,Nuclear bodies
@@ -2898,18 +2898,18 @@ Q00444	Nucleoplasm
 Q00526	Cytosol
 Q00532	Nucleoplasm,Vesicles
 Q00534	Nucleoplasm
-Q00535	Plasma membrane
+Q00535	Cell Junctions,Plasma membrane
 Q00536	Cytosol,Microtubules
 Q00537	Cytosol,Nucleoplasm
 Q00587	Actin filaments,Plasma membrane
-Q00610	Cytosol,Endosomes,Lysosomes,location_not_included_g1,Vesicles
+Q00610	Cytosol,Endosomes,Lysosomes,Mitotic spindle,Vesicles
 Q00613	Cytosol,Nucleoplasm
 Q00653	Cytosol,Nucleoplasm
 Q00688	Cytosol
 Q00722	Cytosol,Nucleoli,Plasma membrane
 Q00765	Endoplasmic reticulum
 Q00796	Cytosol
-Q00839	location_not_included_g1,Nucleoplasm
+Q00839	Micronucleus,Nucleoplasm
 Q00975	Mitochondria
 Q00978	Cytosol
 Q00987	Cytosol,Nucleoplasm
@@ -2921,21 +2921,21 @@ Q01151	Golgi apparatus,Nucleoli,Nucleoplasm,Plasma membrane
 Q01167	Nucleoplasm,Vesicles
 Q01196	Nucleoplasm,Vesicles
 Q01201	Cytosol,Nucleoplasm
-Q01432	location_not_included_g1,Nuclear membrane,Nucleoli
+Q01432	Micronucleus,Nuclear membrane,Nucleoli
 Q01433	Cytosol
 Q01469	Cytosol,Plasma membrane
 Q01518	Cytosol
 Q01543	Nuclear bodies,Nucleoplasm
 Q01581	Cytosol,Nucleoplasm,Plasma membrane
-Q01638	Cytosol,Actin filaments,Plasma membrane
+Q01638	Cytosol,Focal adhesion sites,Plasma membrane
 Q01650	Plasma membrane,Vesicles
 Q01658	Nucleoplasm
-Q01664	location_not_included_g1,Nucleoplasm
+Q01664	Micronucleus,Nucleoplasm
 Q01780	Cytosol,Nucleoli,Nucleoplasm
 Q01804	Cytosol
 Q01813	Cytosol
 Q01831	Nucleoli,Nucleoplasm,Plasma membrane,Vesicles
-Q01844	Nucleoli,Nucleoplasm
+Q01844	Nucleoli rim,Nucleoplasm
 Q01954	Nucleoplasm
 Q01955	Vesicles
 Q01959	Vesicles
@@ -2943,15 +2943,15 @@ Q01968	Cytosol,Microtubules
 Q01970	Golgi apparatus,Nucleoplasm
 Q01995	Microtubules,Mitochondria
 Q02078	Nucleoplasm
-Q02080	Plasma membrane,Cytosol,Nucleoplasm
-Q02086	location_not_included_g1,Nucleoplasm,Vesicles
+Q02080	Cell Junctions,Cytosol,Nucleoplasm
+Q02086	Micronucleus,Nucleoplasm,Vesicles
 Q02108	Nucleoplasm
 Q02127	Mitochondria,Nucleoplasm
 Q02153	Cytosol
 Q02156	Cytosol,Plasma membrane,Vesicles
 Q02218	Mitochondria
-Q02224	location_not_included_g1,Microtubules
-Q02241	location_not_included_g1,Nucleoplasm
+Q02224	Cytokinetic bridge,Microtubules,Mitotic spindle
+Q02241	Midbody ring,Mitotic spindle,Nucleoplasm
 Q02252	Mitochondria,Nucleoplasm
 Q02318	Cytosol
 Q02338	Mitochondria,Nucleoplasm
@@ -2966,7 +2966,7 @@ Q02575	Golgi apparatus
 Q02577	Nuclear bodies,Nucleoplasm
 Q02742	Nuclear speckles
 Q02750	Cytosol,Plasma membrane
-Q02763	Centrosome,Plasma membrane
+Q02763	Centriolar satellite,Plasma membrane
 Q02779	Cytosol,Nucleoplasm
 Q02790	Cytosol,Nucleoplasm
 Q02818	Golgi apparatus
@@ -2983,7 +2983,7 @@ Q03135	Golgi apparatus
 Q03164	Nucleoplasm
 Q03167	Cytosol
 Q03169	Cytosol,Golgi apparatus,Nucleoplasm
-Q03188	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q03188	Midbody,Nuclear bodies,Nucleoplasm
 Q03252	Nuclear membrane
 Q03393	Cytosol
 Q03395	Cytosol,Plasma membrane
@@ -3001,9 +3001,9 @@ Q04637	Cytosol,Vesicles
 Q04656	Golgi apparatus
 Q04671	Plasma membrane
 Q04721	Nucleoplasm,Plasma membrane
-Q04725	Actin filaments,Nucleoplasm
+Q04725	Focal adhesion sites,Nucleoplasm
 Q04726	Nucleoplasm
-Q04759	Centrosome
+Q04759	Centriolar satellite
 Q04760	Cytosol,Nucleoplasm,Plasma membrane
 Q04837	Mitochondria
 Q04912	Cytosol
@@ -3011,7 +3011,7 @@ Q05048	Nucleoplasm
 Q05084	Vesicles
 Q05086	Cytosol,Nucleoplasm
 Q05209	Cytosol,Plasma membrane
-Q05397	Cytosol,Actin filaments,Vesicles
+Q05397	Cytosol,Focal adhesion sites,Vesicles
 Q05469	Cytosol
 Q05513	Cytosol,Plasma membrane
 Q05519	Nuclear speckles
@@ -3019,24 +3019,24 @@ Q05655	Cytosol
 Q05682	Actin filaments,Plasma membrane
 Q05707	Vesicles
 Q05923	Nuclear membrane
-Q05925	Nucleoli,Nucleoplasm
+Q05925	Nucleoli rim,Nucleoplasm
 Q05940	Centrosome
 Q05BQ5	Cytosol,Nucleoplasm
 Q05C16	Golgi apparatus
 Q05D32	Nucleoplasm
 Q05DH4	Cytosol
-Q06124	Actin filaments,Cytosol,Nucleoli,Nucleoplasm
+Q06124	Actin filaments,Cytosol,Nucleoli rim,Nucleoplasm
 Q06190	Golgi apparatus
-Q06203	location_not_included_g1
+Q06203	Midbody ring
 Q06210	Nucleoli fibrillar center,Nucleoplasm
 Q06323	Cytosol
-Q06330	location_not_included_g1,Nucleoplasm
+Q06330	Micronucleus,Nucleoplasm
 Q06413	Nucleoplasm,Vesicles
 Q06416	Mitochondria,Nucleoplasm
 Q06455	Nucleoplasm
 Q06481	Golgi apparatus,Vesicles
 Q06546	Nucleoplasm
-Q06547	Cytosol,Nucleoplasm
+Q06547	Cytoplasmic bodies,Nucleoplasm
 Q06587	Cytosol,Nucleoplasm
 Q06609	Cytosol,Mitochondria,Nucleoli
 Q06643	Centrosome
@@ -3049,7 +3049,7 @@ Q07011	Nucleoli,Plasma membrane
 Q07020	Cytosol,Endoplasmic reticulum,Nucleoli
 Q07021	Mitochondria,Plasma membrane
 Q07092	Cytosol
-Q07157	Plasma membrane,Cytosol
+Q07157	Cell Junctions,Cytosol
 Q07343	Cytosol,Golgi apparatus
 Q07617	Cytosol
 Q07654	Nucleoli,Nucleoplasm
@@ -3072,20 +3072,20 @@ Q08174	Nucleoli,Nucleoplasm
 Q08211	Nucleoli,Nucleoplasm
 Q08257	Cytosol
 Q08334	Cytosol
-Q08345	Plasma membrane,Nucleoplasm
+Q08345	Cell Junctions,Nucleoplasm
 Q08378	Golgi apparatus
 Q08379	Golgi apparatus
 Q08397	Endoplasmic reticulum
 Q08431	Cytosol
-Q08493	Centrosome,Cytosol,location_not_included_g1
+Q08493	Centrosome,Cytosol,Midbody ring
 Q08623	Cytosol,Nucleoplasm
 Q08629	Vesicles
 Q08722	Plasma membrane
 Q08752	Cytosol,Nucleoli
 Q08881	Cytosol
 Q08945	Cytosol
-Q08999	location_not_included_g1,Nucleoli,Nucleoplasm
-Q08AD1	Cytosol,Microtubules
+Q08999	Mitotic chromosome,Nucleoli rim,Nucleoplasm
+Q08AD1	Cytosol,Microtubule ends
 Q08AE8	Cytosol,Nucleoplasm
 Q08AI8	Golgi apparatus
 Q08AM6	Cytosol,Vesicles
@@ -3101,7 +3101,7 @@ Q0IIM8	Cytosol
 Q0JRZ9	Centrosome
 Q0P641	Golgi apparatus
 Q0P670	Golgi apparatus
-Q0P6H9	Cytosol,Nuclear bodies,Nucleoli fibrillar center,Nucleoplasm
+Q0P6H9	Cytoplasmic bodies,Nuclear bodies,Nucleoli fibrillar center,Nucleoplasm
 Q0PNE2	Cytosol,Nucleoplasm
 Q0VAA5	Nucleoplasm
 Q0VAM2	Nucleoplasm,Vesicles
@@ -3111,9 +3111,9 @@ Q0VDD7	Nucleoplasm
 Q0VDD8	Centrosome
 Q0VDG4	Cytosol,Vesicles
 Q0VDI3	Nucleoplasm
-Q0VF96	Plasma membrane,Nuclear bodies
+Q0VF96	Cell Junctions,Nuclear bodies
 Q0VG06	Cytosol,Nucleoplasm
-Q0VGE8	Nucleoli
+Q0VGE8	Nucleoli rim
 Q0VGL1	Vesicles
 Q0ZGT2	Actin filaments
 Q10469	Golgi apparatus
@@ -3140,7 +3140,7 @@ Q12798	Nucleoplasm
 Q12800	Nucleoplasm
 Q12802	Cytosol
 Q12805	Mitochondria
-Q12816	Plasma membrane
+Q12816	Cell Junctions
 Q12824	Nucleoplasm
 Q12830	Nucleoplasm
 Q12834	Cytosol,Nucleoplasm
@@ -3157,7 +3157,7 @@ Q12872	Cytosol,Nucleoplasm,Plasma membrane
 Q12873	Nucleoli,Nucleoplasm
 Q12874	Nuclear speckles,Nucleoplasm
 Q12887	Mitochondria,Nucleoli
-Q12888	location_not_included_g1,Nuclear bodies,Nucleoplasm,Vesicles
+Q12888	Mitotic chromosome,Nuclear bodies,Nucleoplasm,Vesicles
 Q12889	Microtubules,Vesicles
 Q12893	Golgi apparatus
 Q12899	Cytosol,Nucleoplasm
@@ -3186,7 +3186,7 @@ Q12982	Cytosol,Nucleoli
 Q12986	Cytosol,Nucleoplasm
 Q12988	Nuclear speckles
 Q12996	Nucleoplasm
-Q12999	location_not_included_g1,Cytosol,Nucleoplasm
+Q12999	Cytokinetic bridge,Cytosol,Nucleoplasm
 Q13009	Cytosol,Nuclear membrane,Nucleoli,Nucleoplasm
 Q13011	Mitochondria
 Q13015	Cytosol
@@ -3194,7 +3194,7 @@ Q13018	Cytosol
 Q13029	Golgi apparatus
 Q13033	Actin filaments,Cytosol,Nucleoplasm
 Q13043	Cytosol,Nuclear bodies,Nucleoplasm
-Q13045	Centrosome,Cytosol,Nucleoplasm
+Q13045	Centriolar satellite,Cytosol,Nucleoplasm
 Q13049	Intermediate filaments
 Q13061	Cytosol,Plasma membrane
 Q13084	Mitochondria
@@ -3209,7 +3209,7 @@ Q13127	Cytosol,Nucleoplasm
 Q13129	Nucleoplasm
 Q13131	Cytosol,Nuclear speckles
 Q13133	Cytosol
-Q13136	Cytosol,Actin filaments
+Q13136	Cytosol,Focal adhesion sites
 Q13137	Cytosol
 Q13144	Cytosol
 Q13145	Lipid droplets,Nucleoli fibrillar center,Vesicles
@@ -3224,7 +3224,7 @@ Q13163	Microtubules,Nucleoli
 Q13164	Cytosol,Nucleoplasm
 Q13177	Nucleoplasm,Vesicles
 Q13185	Nuclear bodies,Nucleoplasm
-Q13188	location_not_included_g1
+Q13188	Rods & Rings
 Q13190	Golgi apparatus,Nucleoplasm
 Q13191	Cytosol,Nucleoplasm
 Q13202	Cytosol
@@ -3264,7 +3264,7 @@ Q13398	Mitochondria
 Q13409	Cytosol,Endoplasmic reticulum,Nucleoli,Nucleoli fibrillar center
 Q13415	Nucleoplasm
 Q13416	Nucleoplasm
-Q13418	Actin filaments
+Q13418	Focal adhesion sites
 Q13421	Plasma membrane,Vesicles
 Q13423	Mitochondria
 Q13425	Golgi apparatus
@@ -3309,13 +3309,13 @@ Q13576	Vesicles
 Q13585	Nucleoplasm
 Q13595	Nucleoli
 Q13596	Endosomes,Lysosomes,Vesicles
-Q13601	location_not_included_g1,Nucleoli
+Q13601	Mitotic chromosome,Nucleoli
 Q13608	Nuclear bodies,Nucleoplasm
-Q13610	Golgi apparatus,Nucleoli
+Q13610	Golgi apparatus,Nucleoli rim
 Q13616	Nucleoplasm
 Q13617	Nucleoplasm
 Q13619	Nucleoplasm
-Q13625	Plasma membrane,Cytosol
+Q13625	Cell Junctions,Cytosol
 Q13627	Cytosol,Nucleoli fibrillar center
 Q13630	Cytosol,Nucleoplasm
 Q13635	Golgi apparatus
@@ -3330,7 +3330,7 @@ Q13769	Nucleoplasm
 Q13772	Cytosol,Nucleoli
 Q13797	Nucleoplasm,Plasma membrane,Vesicles
 Q13822	Golgi apparatus,Nucleoplasm
-Q13823	Nucleoli
+Q13823	Nucleoli,Nucleoli rim
 Q13829	Nucleoli
 Q13835	Nucleoplasm
 Q13867	Cytosol,Nuclear bodies,Nucleoplasm
@@ -3340,7 +3340,7 @@ Q13882	Cytosol,Nucleoplasm,Plasma membrane
 Q13886	Cytosol,Nucleoplasm,Plasma membrane
 Q13887	Nucleoplasm,Vesicles
 Q13889	Nucleoplasm
-Q13895	location_not_included_g1,Nucleoli,Nucleoplasm,Vesicles
+Q13895	Mitotic chromosome,Nucleoli,Nucleoli rim,Nucleoplasm,Vesicles
 Q13901	Nucleoli,Nucleoplasm
 Q13905	Vesicles
 Q13938	Cytosol
@@ -3349,8 +3349,8 @@ Q13951	Cytosol
 Q13952	Nucleoplasm
 Q13972	Golgi apparatus,Nuclear speckles
 Q13976	Cytosol
-Q14005	Cytosol,location_not_included_g1,Nuclear speckles,Plasma membrane
-Q14008	Centrosome,Nucleoli,Plasma membrane
+Q14005	Cytosol,Midbody ring,Nuclear speckles,Plasma membrane
+Q14008	Centrosome,Nucleoli rim,Plasma membrane
 Q14011	Nucleoplasm
 Q14019	Cytosol
 Q14028	Cytosol
@@ -3368,7 +3368,7 @@ Q14119	Nucleoplasm
 Q14123	Cytosol,Mitochondria
 Q14134	Nucleoplasm
 Q14135	Nucleoli fibrillar center,Nucleoplasm
-Q14137	location_not_included_g1,Nucleoli,Nucleoplasm
+Q14137	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q14139	Nuclear speckles
 Q14140	Cytosol,Nucleoplasm
 Q14145	Cytosol,Nucleoplasm
@@ -3380,23 +3380,23 @@ Q14153	Cytosol
 Q14156	Cytosol,Plasma membrane
 Q14157	Cytosol,Nuclear speckles
 Q14159	Nucleoplasm
-Q14160	Plasma membrane,Nucleoplasm,location_not_included_g1
+Q14160	Cell Junctions,Nucleoplasm,Plasma membrane,Rods & Rings
 Q14161	Microtubules
 Q14162	Golgi apparatus,Nucleoplasm
 Q14164	Cytosol
 Q14166	Cytosol,Plasma membrane
 Q14181	Nucleoplasm
-Q14183	Plasma membrane,Nucleoplasm
+Q14183	Cell Junctions,Nucleoplasm
 Q14185	Nuclear speckles,Nucleoplasm
-Q14188	location_not_included_g1,Nucleoplasm
-Q14190	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q14188	Mitotic spindle,Nucleoplasm
+Q14190	Micronucleus,Nuclear bodies,Nucleoplasm
 Q14191	Nuclear speckles
-Q14192	Actin filaments
+Q14192	Actin filaments,Focal adhesion sites
 Q14194	Centrosome
 Q14195	Cytosol
 Q14197	Mitochondria
 Q14202	Nucleoplasm
-Q14203	location_not_included_g1,Microtubules
+Q14203	Cytokinetic bridge,Microtubules,Mitotic spindle
 Q14206	Mitochondria,Nucleoplasm
 Q14207	Nuclear bodies
 Q14232	Cytosol
@@ -3431,7 +3431,7 @@ Q14562	Cytosol,Nucleoplasm
 Q14563	Vesicles
 Q14566	Nucleoplasm
 Q14571	Endoplasmic reticulum,Nucleoplasm
-Q14574	Plasma membrane
+Q14574	Cell Junctions,Plasma membrane
 Q14582	Cytosol
 Q14584	Cytosol,Nucleoplasm,Vesicles
 Q14588	Nuclear bodies
@@ -3440,7 +3440,7 @@ Q14592	Nucleoplasm
 Q14596	Nuclear bodies,Vesicles
 Q14624	Vesicles
 Q14626	Vesicles
-Q14627	Plasma membrane
+Q14627	Cell Junctions
 Q14642	Cytosol
 Q14651	Cytosol,Plasma membrane
 Q14653	Cytosol
@@ -3453,12 +3453,12 @@ Q14674	Vesicles
 Q14676	Nuclear bodies,Nucleoplasm
 Q14677	Nucleoplasm,Vesicles
 Q14683	Cytosol,Nucleoplasm
-Q14684	location_not_included_g1,Nucleoli,Nucleoplasm
+Q14684	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q14686	Cytosol,Nucleoplasm,Vesicles
 Q14687	Mitochondria,Nucleoplasm
-Q14690	Nucleoli
+Q14690	Nucleoli rim
 Q14691	Nucleoplasm
-Q14692	location_not_included_g1,Nucleoli,Nucleoplasm
+Q14692	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q14693	Plasma membrane
 Q14694	Cytosol,Nucleoplasm
 Q14696	Endoplasmic reticulum,Nuclear bodies
@@ -3478,8 +3478,8 @@ Q147U1	Actin filaments
 Q147X3	Cytosol
 Q14807	Nuclear speckles
 Q14814	Nucleoplasm,Vesicles
-Q14839	location_not_included_g1,Nucleoplasm
-Q14847	Cytosol,Actin filaments,Plasma membrane
+Q14839	Micronucleus,Nucleoplasm
+Q14847	Cytosol,Focal adhesion sites,Plasma membrane
 Q14849	Cytosol,Endoplasmic reticulum,Nucleoplasm,Vesicles
 Q14865	Endoplasmic reticulum
 Q14872	Nucleoplasm
@@ -3516,9 +3516,9 @@ Q15007	Nuclear speckles
 Q15012	Nucleoplasm,Vesicles
 Q15013	Nucleoplasm
 Q15014	Nucleoplasm,Plasma membrane
-Q15019	Actin filaments,location_not_included_g1,Nucleoplasm
+Q15019	Actin filaments,Cytokinetic bridge,Nucleoplasm
 Q15021	Cytosol,Nucleoli
-Q15022	Nuclear bodies,Nucleoli,Nucleoplasm
+Q15022	Nuclear bodies,Nucleoli rim,Nucleoplasm
 Q15024	Nuclear speckles
 Q15025	Cytosol,Nucleoplasm
 Q15029	Nucleoplasm,Vesicles
@@ -3539,7 +3539,7 @@ Q15053	Nucleoplasm
 Q15054	Nucleoplasm
 Q15056	Cytosol,Nuclear bodies,Nucleoplasm
 Q15057	Endosomes
-Q15058	Cytosol,location_not_included_g1
+Q15058	Cytosol,Midbody ring
 Q15059	Nucleoplasm
 Q15067	Nucleoli,Peroxisomes
 Q15070	Mitochondria
@@ -3554,13 +3554,13 @@ Q15121	Cytosol,Nucleoplasm
 Q15125	Endoplasmic reticulum
 Q15139	Plasma membrane
 Q15149	Cytosol,Intermediate filaments
-Q15154	Centrosome,Cytosol
+Q15154	Centriolar satellite,Cytosol
 Q15155	Endoplasmic reticulum
 Q15170	Nucleoplasm
 Q15181	Vesicles
 Q15185	Cytosol
 Q15198	Golgi apparatus,Nucleoli,Nucleoplasm
-Q15233	location_not_included_g1,Nucleoli,Nucleoli fibrillar center,Nucleoplasm
+Q15233	Micronucleus,Nucleoli,Nucleoli fibrillar center,Nucleoplasm
 Q15256	Plasma membrane
 Q15257	Cytosol,Nucleoplasm
 Q15262	Vesicles
@@ -3579,9 +3579,9 @@ Q15345	Nuclear bodies,Nucleoplasm
 Q15349	Nucleoplasm
 Q15361	Nucleoli fibrillar center
 Q15363	Vesicles
-Q15365	Cytosol,Nuclear speckles,Nucleoplasm
+Q15365	Cytoplasmic bodies,Cytosol,Nuclear speckles,Nucleoplasm
 Q15366	Cytosol,Nucleoplasm
-Q15369	Plasma membrane
+Q15369	Cell Junctions
 Q15386	Mitochondria
 Q15388	Mitochondria
 Q15390	Cytosol,Mitochondria
@@ -3593,7 +3593,7 @@ Q15406	Cytosol,Nucleoplasm
 Q15413	Vesicles
 Q15417	Actin filaments,Cytosol
 Q15418	Cytosol
-Q15424	location_not_included_g1,Nucleoplasm
+Q15424	Midbody,Nucleoplasm
 Q15427	Nuclear speckles
 Q15428	Nucleoplasm
 Q15434	Cytosol,Nucleoli fibrillar center,Nucleoplasm
@@ -3637,10 +3637,10 @@ Q15649	Mitochondria
 Q15650	Nuclear bodies,Nucleoplasm
 Q15651	Nucleoplasm
 Q15652	Cytosol,Nucleoplasm
-Q15654	Cytosol,Actin filaments,Plasma membrane
+Q15654	Cytosol,Focal adhesion sites,Plasma membrane
 Q15661	Vesicles
 Q15669	Golgi apparatus
-Q15691	Centrosome,Cytosol
+Q15691	Centriolar satellite,Cytosol
 Q15697	Nucleoli fibrillar center
 Q15699	Golgi apparatus,Nuclear bodies,Nucleoplasm
 Q15700	Plasma membrane
@@ -3666,7 +3666,7 @@ Q15796	Cytosol,Nucleoli,Nucleoplasm
 Q15797	Cytosol,Nucleoplasm
 Q15811	Plasma membrane
 Q15814	Cytosol
-Q15822	location_not_included_g1,Nucleoplasm,Plasma membrane
+Q15822	Cytokinetic bridge,Nucleoplasm,Plasma membrane
 Q15828	Plasma membrane
 Q15831	Cytosol,Nucleoplasm
 Q15833	Cytosol
@@ -3674,17 +3674,17 @@ Q15846	Endoplasmic reticulum,Plasma membrane
 Q15853	Nucleoplasm,Vesicles
 Q15878	Actin filaments,Cytosol,Plasma membrane
 Q15906	Nuclear speckles
-Q15907	Centrosome,Vesicles
+Q15907	Centriolar satellite,Vesicles
 Q15910	Nucleoplasm
 Q15911	Nucleoplasm
 Q15915	Nucleoplasm
 Q15916	Mitochondria,Nucleoplasm
 Q15935	Cytosol,Nucleoli
 Q15937	Cytosol,Nucleoplasm
-Q15942	Actin filaments,Plasma membrane
+Q15942	Actin filaments,Focal adhesion sites,Plasma membrane
 Q15973	Nuclear membrane,Nucleoplasm
 Q16082	Golgi apparatus,Nucleoplasm
-Q16181	Actin filaments,location_not_included_g1,Nucleoli
+Q16181	Actin filaments,Midbody,Nucleoli
 Q16186	Cytosol,Nucleoplasm,Plasma membrane
 Q16204	Cytosol
 Q16206	Cytosol
@@ -3694,13 +3694,13 @@ Q16288	Nucleoli
 Q16352	Cytosol
 Q16363	Cytosol,Plasma membrane
 Q16401	Cytosol,Nucleoplasm
-Q16512	location_not_included_g1,Plasma membrane
+Q16512	Cytokinetic bridge,Plasma membrane
 Q16513	Cytosol,Intermediate filaments,Nuclear bodies,Nucleoplasm
 Q16526	Microtubules,Nucleoplasm
 Q16531	Nucleoplasm
 Q16533	Nucleoli,Nucleoplasm
 Q16537	Cytosol
-Q16538	Centrosome
+Q16538	Centriolar satellite
 Q16539	Cytosol,Nuclear speckles
 Q16540	Mitochondria,Nucleoli fibrillar center
 Q16543	Cytosol
@@ -3708,7 +3708,7 @@ Q16555	Cytosol,Plasma membrane
 Q16559	Cytosol
 Q16560	Nucleoli
 Q16566	Nucleoli fibrillar center,Nucleoplasm
-Q16584	Centrosome,Cytosol
+Q16584	Centriolar satellite,Cytosol
 Q16585	Cytosol
 Q16587	Actin filaments,Nucleoplasm
 Q16589	Cytosol,Nucleoplasm
@@ -3757,7 +3757,7 @@ Q16880	Mitochondria
 Q16881	Nucleoplasm
 Q16890	Cytosol
 Q16891	Mitochondria
-Q17R31	Actin filaments,Golgi apparatus,Nucleoplasm
+Q17R31	Focal adhesion sites,Golgi apparatus,Nucleoplasm
 Q17R98	Nucleoplasm
 Q17RB8	Cytosol,Plasma membrane
 Q17RP2	Actin filaments,Nucleoplasm,Vesicles
@@ -3765,11 +3765,11 @@ Q17RS7	Nucleoplasm
 Q17RY0	Golgi apparatus,Nucleoplasm
 Q18PE1	Nucleoplasm
 Q19T08	Vesicles
-Q1ED39	Cytosol,Nucleoli
+Q1ED39	Cytosol,Nucleoli,Nucleoli rim
 Q1EHB4	Nucleoplasm,Plasma membrane
-Q1KMD3	location_not_included_g1,Nucleoplasm
+Q1KMD3	Micronucleus,Nucleoplasm
 Q1L6U9	Vesicles
-Q1MSJ5	Centrosome
+Q1MSJ5	Centriolar satellite,Centrosome
 Q1X8D7	Mitochondria,Vesicles
 Q1XH10	Cytosol,Nuclear bodies
 Q24JP5	Mitochondria
@@ -3804,17 +3804,17 @@ Q2NKX9	Mitochondria,Nucleoplasm
 Q2NL68	Golgi apparatus
 Q2PPJ7	Cytosol,Plasma membrane
 Q2PZI1	Vesicles
-Q2Q1W2	Actin filaments,Plasma membrane
+Q2Q1W2	Focal adhesion sites,Plasma membrane
 Q2QGD7	Nucleoli
 Q2T9K0	Cytosol
 Q2T9L4	Cytosol,Nucleoplasm
 Q2TAA2	Nucleoplasm
-Q2TAC2	Centrosome,Cytosol,Microtubules
+Q2TAC2	Centriolar satellite,Cytosol,Microtubules
 Q2TAC6	Actin filaments,Centrosome,Plasma membrane
 Q2TAL5	Nuclear speckles
 Q2TAM9	Vesicles
 Q2TAY7	Vesicles
-Q2TB10	Cytosol,Nucleoli,Nucleoplasm
+Q2TB10	Cytosol,Nucleoli,Nucleoli rim,Nucleoplasm
 Q2TB18	Endoplasmic reticulum
 Q2TB90	Mitochondria
 Q2TBE0	Cytosol,Nuclear speckles
@@ -3847,15 +3847,15 @@ Q3KP44	Nuclear speckles
 Q3KP66	Nucleoplasm
 Q3KQV3	Nuclear bodies,Nucleoplasm
 Q3KQV9	Intermediate filaments
-Q3KR16	Plasma membrane,Centrosome
+Q3KR16	Cell Junctions,Centrosome
 Q3KR37	Endoplasmic reticulum,Vesicles
-Q3KRA9	Actin filaments
+Q3KRA9	Focal adhesion sites
 Q3L8U1	Cytosol,Nucleoplasm
 Q3LHN0	Cytosol,Nuclear membrane
 Q3LIE5	Nucleoplasm
 Q3LXA3	Cytosol
 Q3MHD2	Cytosol
-Q3MIN7	Cytosol,location_not_included_g1,Nucleoplasm
+Q3MIN7	Cytosol,Micronucleus,Nucleoplasm
 Q3MIS6	Cytosol,Nuclear speckles
 Q3MIT2	Mitochondria,Nucleoplasm
 Q3MIX3	Cytosol,Plasma membrane
@@ -3872,7 +3872,7 @@ Q3SY56	Nucleoplasm
 Q3SY69	Mitochondria
 Q3SY77	Cytosol,Nucleoplasm
 Q3T8J9	Nuclear bodies,Nucleoplasm
-Q3V5L5	location_not_included_g1,Nucleoplasm
+Q3V5L5	Mitotic spindle,Nucleoplasm
 Q3YBM2	Golgi apparatus,Nucleoplasm,Plasma membrane
 Q3YBR2	Nucleoplasm
 Q3YEC7	Cytosol
@@ -3886,7 +3886,7 @@ Q3ZCX4	Nucleoplasm
 Q460N5	Cytosol
 Q494R4	Cytosol
 Q494U1	Nuclear speckles
-Q494X3	Intermediate filaments,Mitochondria,Nucleoli,Nucleoplasm
+Q494X3	Intermediate filaments,Mitochondria,Nucleoli rim,Nucleoplasm
 Q495B1	Nucleoplasm
 Q496Y0	Nucleoplasm,Plasma membrane
 Q499Z3	Cytosol
@@ -3914,7 +3914,7 @@ Q4G0X9	Microtubules
 Q4G112	Nuclear bodies,Nucleoplasm
 Q4G148	Endoplasmic reticulum,Vesicles
 Q4G1C9	Vesicles
-Q4KMG9	Actin filaments
+Q4KMG9	Focal adhesion sites
 Q4KMQ1	Plasma membrane
 Q4KMQ2	Cytosol,Plasma membrane
 Q4KMZ1	Vesicles
@@ -3926,8 +3926,8 @@ Q4U2R6	Mitochondria
 Q4VC05	Nucleoplasm,Vesicles
 Q4VC31	Mitochondria
 Q4VC44	Cytosol,Nuclear bodies,Nucleoplasm
-Q4VCS5	Plasma membrane,Nucleoplasm
-Q4VNC0	location_not_included_g1,Nucleoplasm,Plasma membrane
+Q4VCS5	Cell Junctions,Nucleoplasm
+Q4VNC0	Cytokinetic bridge,Nucleoplasm,Plasma membrane
 Q4VX76	Nucleoli fibrillar center,Vesicles
 Q4VXU2	Cytosol
 Q4W4Y0	Cytosol
@@ -3943,7 +3943,7 @@ Q52LD8	Plasma membrane
 Q52LJ0	Nucleoplasm,Vesicles
 Q52LR7	Nuclear speckles
 Q52LW3	Nucleoplasm
-Q52M93	Cytosol,Nucleoplasm
+Q52M93	Cytoplasmic bodies,Nucleoplasm
 Q52MB2	Mitochondria
 Q53EL6	Nucleoplasm
 Q53EP0	Endoplasmic reticulum
@@ -3951,16 +3951,16 @@ Q53ET0	Nucleoplasm
 Q53EV4	Nucleoli
 Q53F19	Nuclear speckles
 Q53FD0	Mitochondria,Nuclear speckles
-Q53FP2	Actin filaments,Vesicles
+Q53FP2	Focal adhesion sites,Vesicles
 Q53FT3	Nuclear bodies,Nuclear speckles
-Q53G59	Centrosome,Vesicles
+Q53G59	Centriolar satellite,Vesicles
 Q53GG5	Cytosol
 Q53GI3	Cytosol,Nucleoplasm
 Q53GL0	Mitochondria
-Q53GL7	Cytosol,Nucleoli
+Q53GL7	Cytosol,Nucleoli rim
 Q53GS7	Nuclear membrane,Nucleoli
 Q53GS9	Nucleoplasm
-Q53GT1	location_not_included_g1
+Q53GT1	Cytokinetic bridge,Mitotic spindle
 Q53H12	Mitochondria,Vesicles
 Q53H47	Nucleoli
 Q53H54	Mitochondria,Nucleoplasm
@@ -3969,7 +3969,7 @@ Q53H82	Cytosol,Golgi apparatus,Nucleoplasm
 Q53H96	Cytosol
 Q53HC0	Centrosome,Nucleoplasm,Vesicles
 Q53HC9	Cytosol,Intermediate filaments,Nucleoli,Nucleoplasm
-Q53HL2	location_not_included_g1,Nucleoli,Nucleoplasm
+Q53HL2	Cytokinetic bridge,Micronucleus,Nucleoli,Nucleoplasm
 Q53HV7	Nucleoli fibrillar center,Nucleoplasm
 Q53LP3	Cytosol
 Q53QV2	Vesicles
@@ -3984,12 +3984,12 @@ Q53TN4	Plasma membrane
 Q562E7	Cytosol,Nucleoplasm,Vesicles
 Q562F6	Nucleoplasm
 Q567U6	Vesicles
-Q569H4	location_not_included_g1
+Q569H4	Midbody
 Q569K4	Nucleoli fibrillar center
 Q56A73	Nucleoplasm
 Q56NI9	Golgi apparatus,Nucleoplasm
 Q56VL3	Mitochondria,Plasma membrane
-Q58WW2	Cytosol,Actin filaments,Nucleoplasm
+Q58WW2	Cytosol,Focal adhesion sites,Nucleoplasm
 Q59EK9	Vesicles
 Q5BJF2	Endoplasmic reticulum
 Q5BJF6	Centrosome
@@ -4012,7 +4012,7 @@ Q5EBM0	Mitochondria,Nucleoplasm
 Q5EBN2	Endoplasmic reticulum,Nucleoli fibrillar center
 Q5EG05	Mitochondria
 Q5F1R6	Cytosol,Nucleoli
-Q5FBB7	location_not_included_g1,Nucleoplasm
+Q5FBB7	Kinetochore,Nucleoplasm
 Q5FVE4	Cytosol
 Q5FWE3	Plasma membrane
 Q5FWF4	Nucleoplasm
@@ -4037,7 +4037,7 @@ Q5HYK9	Nucleoplasm
 Q5HYM0	Golgi apparatus,Nucleoli fibrillar center
 Q5HYR2	Nucleoplasm
 Q5HYW2	Nucleoplasm,Plasma membrane
-Q5HYW3	location_not_included_g1,Nucleoplasm
+Q5HYW3	Aggresome,Nucleoplasm
 Q5I0X4	Nuclear speckles
 Q5I0X7	Mitochondria,Nucleoplasm
 Q5JPH6	Mitochondria,Nucleoplasm
@@ -4057,7 +4057,7 @@ Q5JTD7	Cytosol
 Q5JTH9	Cytosol,Nucleoli
 Q5JTJ3	Mitochondria,Nucleoplasm
 Q5JTN6	Vesicles
-Q5JTV8	location_not_included_g1,Nuclear membrane
+Q5JTV8	Micronucleus,Nuclear membrane
 Q5JTZ5	Nucleoplasm
 Q5JTZ9	Mitochondria
 Q5JU00	Vesicles
@@ -4067,14 +4067,14 @@ Q5JUK9	Nuclear speckles,Nucleoplasm
 Q5JUW0	Nucleoplasm
 Q5JUX0	Nucleoplasm
 Q5JVF3	Nucleoli,Nucleoplasm
-Q5JVS0	location_not_included_g1,Nuclear membrane
+Q5JVS0	Micronucleus,Nuclear membrane
 Q5JW98	Plasma membrane
 Q5JWR5	Nucleoplasm,Vesicles
 Q5JXA9	Nuclear bodies
 Q5JXC2	Cytosol,Nucleoplasm
 Q5JYT7	Nucleoli
 Q5K651	Cytosol,Vesicles
-Q5KU26	Plasma membrane,Golgi apparatus,Vesicles
+Q5KU26	Cell Junctions,Golgi apparatus,Vesicles
 Q5M775	Cytosol,Nucleoplasm
 Q5MCW4	Golgi apparatus,Nucleoplasm,Vesicles
 Q5MIZ7	Nucleoplasm
@@ -4085,7 +4085,7 @@ Q5PRF9	Cytosol
 Q5PSV4	Nucleoplasm
 Q5QGS0	Nucleoplasm
 Q5QJ38	Nuclear membrane,Nucleoli
-Q5QJE6	location_not_included_g1,Nucleoli
+Q5QJE6	Mitotic chromosome,Nucleoli rim
 Q5R3F8	Nucleoplasm,Vesicles
 Q5R3I4	Cytosol
 Q5RI15	Mitochondria
@@ -4093,7 +4093,7 @@ Q5RL73	Nucleoplasm
 Q5SGD2	Cytosol,Nucleoplasm
 Q5SNT2	Nuclear membrane,Nucleoplasm
 Q5SQN1	Cytosol
-Q5SQQ9	Nucleoli,Nucleoplasm
+Q5SQQ9	Nucleoli rim,Nucleoplasm
 Q5SR56	Cytosol,Nucleoplasm
 Q5SRE5	Nucleoplasm
 Q5SRE7	Nuclear speckles
@@ -4104,7 +4104,7 @@ Q5ST30	Mitochondria
 Q5SVJ3	Cytosol,Nuclear bodies
 Q5SVQ8	Cytosol,Nuclear membrane
 Q5SVS4	Nucleoplasm
-Q5SVZ6	Centrosome
+Q5SVZ6	Centriolar satellite
 Q5SW79	Centrosome
 Q5SW96	Microtubules
 Q5SWA1	Golgi apparatus
@@ -4141,8 +4141,8 @@ Q5T2T1	Nucleoplasm
 Q5T2W1	Nucleoplasm,Vesicles
 Q5T3F8	Actin filaments,Plasma membrane
 Q5T442	Cytosol
-Q5T481	location_not_included_g1,Golgi apparatus,Nucleoli
-Q5T4B2	Plasma membrane,Nucleoli,Nucleoplasm
+Q5T481	Cytokinetic bridge,Golgi apparatus,Nucleoli
+Q5T4B2	Cell Junctions,Nucleoli,Nucleoplasm
 Q5T4D3	Vesicles
 Q5T4I8	Intermediate filaments,Nuclear speckles
 Q5T4S7	Nucleoplasm
@@ -4157,10 +4157,10 @@ Q5T5X7	Nucleoplasm
 Q5T5Y3	Cytosol
 Q5T655	Cytosol,Vesicles
 Q5T681	Cytosol
-Q5T6C5	Nucleoli,Vesicles
+Q5T6C5	Nucleoli rim,Vesicles
 Q5T6F2	Cytosol
 Q5T6J7	Mitochondria
-Q5T6L9	location_not_included_g1,Cytosol
+Q5T6L9	Aggresome,Cytosol
 Q5T6V5	Golgi apparatus
 Q5T700	Golgi apparatus,Nucleoplasm
 Q5T750	Cytosol,Plasma membrane
@@ -4174,7 +4174,7 @@ Q5T890	Nucleoplasm
 Q5T8A7	Cytosol,Nucleoplasm
 Q5T8D3	Nucleoplasm,Peroxisomes
 Q5T8I3	Cytosol,Nucleoli
-Q5T8P6	location_not_included_g1,Nuclear speckles
+Q5T8P6	Micronucleus,Nuclear speckles
 Q5T953	Nucleoplasm
 Q5T9C2	Cytosol
 Q5T9G4	Nucleoplasm,Plasma membrane
@@ -4194,7 +4194,7 @@ Q5TBK1	Cytosol
 Q5TC79	Cytosol,Nucleoli fibrillar center,Nucleoplasm,Vesicles
 Q5TC82	Cytosol
 Q5TC84	Golgi apparatus,Nucleoplasm
-Q5TCQ9	Plasma membrane
+Q5TCQ9	Cell Junctions
 Q5TCS8	Nuclear membrane,Nucleoplasm
 Q5TCX8	Cytosol,Plasma membrane
 Q5TDH0	Cytosol,Nucleoplasm
@@ -4204,13 +4204,13 @@ Q5TEC3	Nucleoplasm
 Q5TF21	Cytosol,Nucleoplasm
 Q5TF58	Nucleoplasm,Plasma membrane
 Q5TFE4	Cytosol,Nucleoplasm
-Q5TG30	Plasma membrane,Centrosome,Cytosol,Nucleoplasm
+Q5TG30	Cell Junctions,Centrosome,Cytosol,Nucleoplasm,Plasma membrane
 Q5TGI0	Nucleoplasm
 Q5TGJ6	Nucleoli fibrillar center
 Q5TGL8	Plasma membrane
 Q5TGU0	Plasma membrane
 Q5TGY1	Endoplasmic reticulum
-Q5TGY3	Actin filaments,Nucleoplasm
+Q5TGY3	Focal adhesion sites,Nucleoplasm
 Q5TGZ0	Mitochondria
 Q5TH74	Nucleoplasm
 Q5THJ4	Cytosol,Nucleoplasm
@@ -4222,7 +4222,7 @@ Q5TYW1	Nucleoplasm
 Q5TYW2	Nucleoplasm
 Q5TZA2	Actin filaments,Centrosome,Plasma membrane
 Q5TZF3	Cytosol,Plasma membrane
-Q5U3C3	Plasma membrane,Vesicles
+Q5U3C3	Cell Junctions,Vesicles
 Q5U5Q3	Vesicles
 Q5U5R9	Nucleoplasm
 Q5U5X8	Golgi apparatus
@@ -4233,13 +4233,13 @@ Q5VIR6	Cytosol,Golgi apparatus,Vesicles
 Q5VSG8	Golgi apparatus
 Q5VSL9	Cytosol
 Q5VST9	Cytosol,Plasma membrane
-Q5VSY0	Centrosome,Cytosol
+Q5VSY0	Centriolar satellite,Cytosol
 Q5VT06	Centrosome
 Q5VT40	Vesicles
 Q5VT52	Nucleoplasm,Vesicles
 Q5VT66	Mitochondria
 Q5VT97	Golgi apparatus,Nucleoli
-Q5VTB9	Cytosol,location_not_included_g1,Nucleoplasm
+Q5VTB9	Cytosol,Micronucleus,Nucleoplasm
 Q5VTD9	Plasma membrane
 Q5VTE6	Nuclear bodies,Nucleoplasm
 Q5VTJ3	Nuclear speckles
@@ -4267,7 +4267,7 @@ Q5VVQ6	Actin filaments,Nuclear bodies,Nucleoplasm,Plasma membrane
 Q5VW32	Cytosol,Golgi apparatus,Nucleoplasm
 Q5VW36	Mitochondria
 Q5VW38	Golgi apparatus,Nucleoplasm
-Q5VWG9	location_not_included_g1,Nuclear membrane,Nucleoplasm
+Q5VWG9	Micronucleus,Nuclear membrane,Nucleoplasm
 Q5VWI1	Nucleoplasm
 Q5VWJ9	Cytosol,Nucleoli,Nucleoplasm
 Q5VWN6	Cytosol,Nucleoplasm
@@ -4281,7 +4281,7 @@ Q5VXT5	Cytosol
 Q5VXU3	Cytosol,Nuclear speckles,Vesicles
 Q5VXU9	Nucleoplasm
 Q5VY09	Nucleoplasm
-Q5VY43	Centrosome
+Q5VY43	Centriolar satellite
 Q5VY80	Plasma membrane
 Q5VYK3	Nucleoplasm
 Q5VYM1	Mitochondria
@@ -4306,7 +4306,7 @@ Q5W111	Vesicles
 Q5W5X9	Cytosol
 Q5XG87	Nuclear membrane,Nucleoplasm
 Q5XG99	Actin filaments,Cytosol
-Q5XKK7	location_not_included_g1,Nucleoplasm
+Q5XKK7	Micronucleus,Nucleoplasm
 Q5XKL5	Nucleoplasm
 Q5XKP0	Mitochondria,Nucleoplasm
 Q5XKR4	Nuclear bodies,Nucleoplasm
@@ -4338,9 +4338,9 @@ Q684P5	Cytosol,Nuclear membrane
 Q68BL7	Cytosol,Nucleoplasm
 Q68CP9	Nucleoplasm
 Q68CZ1	Cytosol,Plasma membrane
-Q68CZ2	Cytosol,Actin filaments
-Q68CZ6	location_not_included_g1,Mitochondria
-Q68D06	location_not_included_g1
+Q68CZ2	Cytosol,Focal adhesion sites
+Q68CZ6	Cytokinetic bridge,Mitochondria,Mitotic spindle
+Q68D06	Cytokinetic bridge
 Q68D10	Nucleoli,Nucleoplasm
 Q68D42	Nucleoplasm,Vesicles
 Q68D51	Nucleoplasm
@@ -4386,15 +4386,15 @@ Q6DKK2	Mitochondria
 Q6DN12	Cytosol,Nucleoplasm
 Q6DN14	Golgi apparatus
 Q6DN90	Nucleoli,Vesicles
-Q6DT37	Centrosome,Cytosol
+Q6DT37	Centriolar satellite,Cytosol
 Q6E0U4	Cytosol,Nucleoplasm
-Q6ECI4	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q6ECI4	Micronucleus,Nuclear bodies,Nucleoplasm
 Q6EMB2	Cytosol,Plasma membrane
 Q6EMK4	Mitochondria
 Q6FI81	Mitochondria,Nucleoplasm
 Q6GMV2	Mitochondria
 Q6GMV3	Nucleoplasm
-Q6GPH4	location_not_included_g1
+Q6GPH4	Rods & Rings
 Q6GTX8	Plasma membrane
 Q6GYQ0	Cytosol,Mitochondria
 Q6H9L7	Centrosome
@@ -4405,7 +4405,7 @@ Q6IA86	Cytosol
 Q6IAA8	Golgi apparatus,Vesicles
 Q6IAN0	Cytosol,Plasma membrane
 Q6IBW4	Nucleoplasm
-Q6ICB0	location_not_included_g1,Cytosol
+Q6ICB0	Cytokinetic bridge,Cytosol
 Q6ICC9	Cytosol,Nuclear speckles
 Q6ICG6	Mitochondria,Nuclear membrane,Nucleoplasm
 Q6IE81	Nucleoplasm
@@ -4467,7 +4467,7 @@ Q6NVY1	Mitochondria
 Q6NW29	Intermediate filaments
 Q6NW34	Nucleoli,Nucleoplasm
 Q6NW40	Nucleoplasm
-Q6NWY9	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q6NWY9	Aggresome,Nuclear bodies,Nucleoplasm
 Q6NX45	Cytosol,Intermediate filaments
 Q6NX49	Nucleoplasm
 Q6NXE6	Cytosol
@@ -4505,9 +4505,9 @@ Q6P2C0	Actin filaments
 Q6P2C8	Cytosol,Nucleoli,Nucleoplasm
 Q6P2D0	Nucleoplasm
 Q6P2D8	Nucleoplasm
-Q6P2E9	Cytosol,Nucleoplasm
+Q6P2E9	Cytoplasmic bodies,Nucleoplasm
 Q6P2H3	Centrosome,Golgi apparatus,Nucleoli
-Q6P2H8	Actin filaments,Golgi apparatus
+Q6P2H8	Focal adhesion sites,Golgi apparatus
 Q6P2I7	Nuclear bodies
 Q6P2M8	Cytosol,Plasma membrane
 Q6P2Q9	Nucleoplasm
@@ -4538,9 +4538,9 @@ Q6P996	Golgi apparatus,Vesicles
 Q6P9A3	Cytosol,Nucleoplasm
 Q6P9B6	Cytosol
 Q6P9B9	Cytosol,Nucleoplasm
-Q6P9G9	location_not_included_g1
+Q6P9G9	Aggresome
 Q6P9H4	Cytosol,Mitochondria
-Q6PCB5	location_not_included_g1,Nuclear speckles,Plasma membrane
+Q6PCB5	Aggresome,Nuclear speckles,Plasma membrane
 Q6PCB7	Mitochondria,Plasma membrane
 Q6PCD5	Nucleoplasm
 Q6PCT2	Nucleoplasm
@@ -4566,15 +4566,15 @@ Q6PI26	Cytosol,Nucleoplasm
 Q6PI47	Mitochondria
 Q6PI48	Mitochondria,Nucleoplasm
 Q6PI98	Nucleoli fibrillar center
-Q6PID6	Golgi apparatus,location_not_included_g1,Nucleoplasm,Vesicles
+Q6PID6	Golgi apparatus,Micronucleus,Nucleoplasm,Vesicles
 Q6PID8	Nucleoplasm
 Q6PIF2	Nucleoplasm
 Q6PII3	Nucleoplasm
-Q6PIJ6	location_not_included_g1,Nucleoplasm,Plasma membrane
+Q6PIJ6	Cytokinetic bridge,Nucleoplasm,Plasma membrane
 Q6PIS1	Nucleoplasm
-Q6PIU1	location_not_included_g1,Plasma membrane
+Q6PIU1	Cytokinetic bridge,Plasma membrane
 Q6PIU2	Endoplasmic reticulum
-Q6PIV2	location_not_included_g1,Nucleoplasm
+Q6PIV2	Cytokinetic bridge,Nucleoplasm
 Q6PIV7	Mitochondria
 Q6PIY5	Vesicles
 Q6PIY7	Cytosol
@@ -4589,11 +4589,11 @@ Q6PJP8	Nucleoli fibrillar center,Nucleoplasm
 Q6PJQ5	Nucleoplasm
 Q6PJT7	Nuclear speckles,Nucleoli
 Q6PJW8	Vesicles
-Q6PK04	location_not_included_g1,Nucleoli
+Q6PK04	Mitotic chromosome,Nucleoli
 Q6PK81	Nucleoplasm
 Q6PKC3	Cytosol,Plasma membrane
 Q6PKG0	Cytosol,Endoplasmic reticulum,Nucleoplasm
-Q6PKX4	Cytosol,Actin filaments
+Q6PKX4	Cytosol,Focal adhesion sites
 Q6PL18	Nucleoplasm
 Q6PL24	Plasma membrane,Vesicles
 Q6PL45	Actin filaments
@@ -4612,9 +4612,9 @@ Q6SJ93	Cytosol,Nucleoplasm
 Q6STE5	Nucleoplasm
 Q6SZW1	Mitochondria
 Q6T310	Nuclear bodies
-Q6T311	Centrosome,Plasma membrane
+Q6T311	Centriolar satellite,Plasma membrane
 Q6T4P5	Cytosol,Golgi apparatus,Nucleoplasm
-Q6T4R5	Plasma membrane,Golgi apparatus
+Q6T4R5	Cell Junctions,Golgi apparatus
 Q6TDU7	Cytosol
 Q6TFL3	Nucleoli,Nucleoplasm
 Q6U7Q0	Cytosol,Nucleoplasm
@@ -4655,17 +4655,17 @@ Q6UX53	Microtubules
 Q6UX65	Golgi apparatus,Vesicles
 Q6UX71	Nuclear bodies,Nucleoplasm
 Q6UX72	Golgi apparatus,Nucleoli fibrillar center
-Q6UXB0	location_not_included_g1,Nucleoli
+Q6UXB0	Mitotic chromosome,Nucleoli rim
 Q6UXC1	Cytosol,Nucleoplasm
 Q6UXD1	Nucleoplasm
 Q6UXF1	Nucleoli,Vesicles
 Q6UXG8	Nuclear membrane,Vesicles
 Q6UXH8	Cytosol,Nucleoli,Plasma membrane
-Q6UXI9	Plasma membrane
+Q6UXI9	Cell Junctions
 Q6UXM1	Cytosol
-Q6UXN9	Nucleoli
+Q6UXN9	Nucleoli rim
 Q6UXP7	Cytosol
-Q6UXV0	Actin filaments,Nucleoplasm,Plasma membrane
+Q6UXV0	Actin filaments,Focal adhesion sites,Nucleoplasm,Plasma membrane
 Q6UXV4	Mitochondria
 Q6UXZ0	Cytosol,Mitochondria
 Q6UY11	Nucleoli,Nucleoplasm
@@ -4682,7 +4682,7 @@ Q6WKZ4	Cytosol,Vesicles
 Q6WN34	Vesicles
 Q6XE24	Vesicles
 Q6XQN6	Golgi apparatus,Nucleoplasm
-Q6XYB7	location_not_included_g1
+Q6XYB7	Midbody
 Q6XYQ8	Nucleoplasm,Vesicles
 Q6XZF7	Cytosol,Nuclear bodies,Nucleoli
 Q6Y7W6	Cytosol
@@ -4691,7 +4691,7 @@ Q6YFQ2	Cytosol,Nucleoplasm,Plasma membrane
 Q6YHK3	Cytosol
 Q6YHU6	Cytosol
 Q6YN16	Mitochondria
-Q6YP21	location_not_included_g1,Cytosol
+Q6YP21	Cytokinetic bridge,Cytosol
 Q6ZMC9	Golgi apparatus,Nucleoplasm
 Q6ZMI0	Vesicles
 Q6ZMI3	Plasma membrane
@@ -4722,7 +4722,7 @@ Q6ZNB5	Nucleoli
 Q6ZNG0	Centrosome
 Q6ZNG2	Nuclear membrane,Nucleoplasm,Vesicles
 Q6ZNG9	Nucleoplasm
-Q6ZNH5	Plasma membrane,Nucleoplasm
+Q6ZNH5	Cell Junctions,Nucleoplasm
 Q6ZNI0	Cytosol,Nuclear bodies
 Q6ZNQ3	Plasma membrane
 Q6ZNX1	Nucleoli,Nucleoplasm
@@ -4798,7 +4798,7 @@ Q6ZW05	Cytosol,Plasma membrane
 Q6ZW31	Cytosol,Golgi apparatus,Nucleoplasm
 Q6ZW49	Nucleoplasm,Vesicles
 Q6ZW76	Cytosol,Nucleoplasm
-Q6ZWB6	Cytosol
+Q6ZWB6	Cytoplasmic bodies
 Q6ZWE6	Cytosol
 Q6ZWH5	Vesicles
 Q6ZWJ1	Cytosol,Plasma membrane
@@ -4809,14 +4809,14 @@ Q70CQ4	Cytosol
 Q70E73	Cytosol,Nuclear bodies,Plasma membrane
 Q70EK9	Cytosol
 Q70EL1	Mitochondria
-Q70EL2	Cytosol,location_not_included_g1,Nucleoplasm
+Q70EL2	Cytosol,Micronucleus,Nucleoplasm
 Q70EL4	Nuclear speckles,Nucleoplasm
 Q70HW3	Mitochondria
 Q70IA6	Cytosol,Nucleoli,Nucleoplasm
 Q70J99	Cytosol
 Q70SY1	Endoplasmic reticulum,Nucleoplasm
 Q70UQ0	Endoplasmic reticulum
-Q70YC5	Centrosome,Vesicles
+Q70YC5	Centriolar satellite,Centrosome,Vesicles
 Q711Q0	Nucleoplasm
 Q719H9	Cytosol,Nucleoplasm
 Q71F56	Golgi apparatus,Nucleoplasm
@@ -4827,9 +4827,9 @@ Q71SY5	Nucleoplasm
 Q75N03	Nuclear speckles
 Q75QN2	Nucleoplasm
 Q75VX8	Cytosol
-Q765P7	Actin filaments
+Q765P7	Focal adhesion sites
 Q76EJ3	Golgi apparatus
-Q76FK4	location_not_included_g1,Nucleoli
+Q76FK4	Mitotic chromosome,Nucleoli
 Q76L83	Nucleoplasm
 Q76LX8	Nucleoplasm,Vesicles
 Q76MJ5	Cytosol
@@ -4843,7 +4843,7 @@ Q7L099	Cytosol
 Q7L0J3	Cytosol
 Q7L0R7	Nucleoplasm
 Q7L0Y3	Mitochondria,Nucleoplasm
-Q7L190	Cytosol,location_not_included_g1,Nucleoli,Nucleoplasm,Vesicles
+Q7L190	Cytosol,Mitotic chromosome,Nucleoli,Nucleoplasm,Vesicles
 Q7L1Q6	Vesicles
 Q7L1V2	Cytosol
 Q7L266	Microtubules,Nucleoplasm
@@ -4860,11 +4860,11 @@ Q7L4I2	Nuclear speckles,Nucleoli fibrillar center
 Q7L4P6	Cytosol,Nuclear speckles
 Q7L4S7	Cytosol,Nucleoplasm
 Q7L590	Nucleoli,Nucleoplasm
-Q7L591	location_not_included_g1
+Q7L591	Cytokinetic bridge
 Q7L5A3	Nucleoli fibrillar center,Nucleoplasm
-Q7L5D6	Cytosol,location_not_included_g1,Nucleoplasm
+Q7L5D6	Cytosol,Mitotic chromosome,Nucleoplasm
 Q7L5N1	Nucleoplasm
-Q7L5Y6	location_not_included_g1,Microtubules
+Q7L5Y6	Cytokinetic bridge,Microtubules
 Q7L5Y9	Nucleoplasm
 Q7L622	Cytosol,Vesicles
 Q7L7X3	Vesicles
@@ -4872,11 +4872,11 @@ Q7L804	Vesicles
 Q7L8C5	Vesicles
 Q7L8J4	Nucleoplasm,Vesicles
 Q7L8S5	Cytosol
-Q7L8W6	Nucleoli,Nucleoplasm
+Q7L8W6	Nucleoli,Nucleoli rim,Nucleoplasm
 Q7L945	Nucleoplasm
 Q7L9B9	Nuclear speckles
 Q7LBC6	Nucleoplasm
-Q7LBR1	location_not_included_g1,Nucleoplasm
+Q7LBR1	Midbody,Nucleoplasm
 Q7LC44	Microtubules,Vesicles
 Q7LFL8	Nucleoplasm
 Q7LFX5	Centrosome,Cytosol
@@ -4884,7 +4884,7 @@ Q7LG56	Cytosol,Nucleoplasm
 Q7LGA3	Mitochondria
 Q7LGC8	Cytosol
 Q7M4L6	Nucleoplasm
-Q7RTP6	Cytosol,location_not_included_g1,Nucleoplasm,Plasma membrane
+Q7RTP6	Cytosol,Midbody ring,Nucleoplasm,Plasma membrane
 Q7RTR2	Vesicles
 Q7RTS1	Golgi apparatus,Nucleoplasm
 Q7RTS3	Cytosol,Nucleoplasm
@@ -4896,7 +4896,7 @@ Q7RTV0	Nucleoplasm
 Q7RTV3	Nucleoplasm
 Q7RTX9	Endoplasmic reticulum
 Q7RTY0	Golgi apparatus
-Q7RTY1	Plasma membrane,Nucleoplasm
+Q7RTY1	Cell Junctions,Nucleoplasm
 Q7Z2E3	Nucleoli,Nucleoplasm
 Q7Z2F6	Cytosol
 Q7Z2K8	Plasma membrane,Vesicles
@@ -4907,7 +4907,7 @@ Q7Z2Z1	Cytosol,Nucleoplasm
 Q7Z2Z2	Cytosol
 Q7Z304	Nuclear speckles,Plasma membrane
 Q7Z309	Nucleoplasm
-Q7Z333	location_not_included_g1,Nuclear bodies
+Q7Z333	Cytokinetic bridge,Nuclear bodies
 Q7Z353	Cytosol
 Q7Z388	Vesicles
 Q7Z398	Microtubules,Vesicles
@@ -4928,9 +4928,9 @@ Q7Z3T8	Cytosol,Vesicles
 Q7Z3U7	Nucleoli fibrillar center,Nucleoplasm
 Q7Z3V4	Mitochondria,Nuclear speckles
 Q7Z3V5	Nucleoli,Nucleoplasm,Plasma membrane
-Q7Z3Z3	Cytosol,Plasma membrane
+Q7Z3Z3	Cytoplasmic bodies,Plasma membrane
 Q7Z3Z4	Mitochondria,Nucleoplasm
-Q7Z401	location_not_included_g1,Nucleoli,Nucleoplasm
+Q7Z401	Mitotic chromosome,Nucleoli rim,Nucleoplasm
 Q7Z402	Vesicles
 Q7Z406	Nucleoplasm
 Q7Z407	Nucleoplasm,Plasma membrane
@@ -4941,7 +4941,7 @@ Q7Z434	Mitochondria
 Q7Z449	Nucleoplasm,Vesicles
 Q7Z4G4	Nuclear bodies
 Q7Z4H3	Nucleoli,Nucleoplasm
-Q7Z4H7	Centrosome,Cytosol,Nuclear speckles
+Q7Z4H7	Centriolar satellite,Cytosol,Nuclear speckles
 Q7Z4H8	Nucleoplasm
 Q7Z4H9	Vesicles
 Q7Z4P5	Vesicles
@@ -4953,10 +4953,10 @@ Q7Z4W1	Microtubules,Nucleoli
 Q7Z569	Cytosol,Nuclear membrane,Nucleoplasm
 Q7Z572	Cytosol
 Q7Z589	Nucleoplasm
-Q7Z591	Centrosome,location_not_included_g1,Nucleoplasm,Vesicles
+Q7Z591	Centrosome,Micronucleus,Nucleoplasm,Vesicles
 Q7Z5H3	Nucleoplasm,Plasma membrane
 Q7Z5J1	Nucleoplasm,Vesicles
-Q7Z5J8	Centrosome
+Q7Z5J8	Centriolar satellite
 Q7Z5K2	Nucleoplasm,Vesicles
 Q7Z5L2	Nucleoplasm
 Q7Z5L9	Nucleoplasm
@@ -4983,7 +4983,7 @@ Q7Z6J0	Intermediate filaments,Vesicles
 Q7Z6J2	Vesicles
 Q7Z6J9	Nucleoplasm
 Q7Z6K1	Nucleoplasm
-Q7Z6K3	Centrosome,location_not_included_g1
+Q7Z6K3	Centriolar satellite,Rods & Rings
 Q7Z6K4	Cytosol
 Q7Z6L0	Plasma membrane
 Q7Z6L1	Nucleoplasm,Vesicles
@@ -4997,15 +4997,15 @@ Q7Z7B0	Actin filaments,Plasma membrane
 Q7Z7B1	Plasma membrane
 Q7Z7C7	Cytosol
 Q7Z7C8	Nucleoplasm
-Q7Z7D3	Actin filaments,Plasma membrane
+Q7Z7D3	Focal adhesion sites,Plasma membrane
 Q7Z7E8	Centrosome
 Q7Z7F0	Nucleoplasm
-Q7Z7G8	Plasma membrane
+Q7Z7G8	Cell Junctions
 Q7Z7H8	Mitochondria
 Q7Z7J5	Nucleoplasm
 Q7Z7J7	Golgi apparatus,Nucleoplasm
 Q7Z7K2	Mitochondria
-Q7Z7K6	location_not_included_g1,Nucleoplasm
+Q7Z7K6	Midbody,Nucleoplasm
 Q7Z7L1	Nucleoplasm
 Q7Z7L7	Cytosol
 Q7Z7L9	Cytosol,Nucleoplasm
@@ -5016,7 +5016,7 @@ Q86SE8	Nucleoli,Nucleoplasm
 Q86SE9	Nucleoplasm
 Q86SF2	Golgi apparatus
 Q86SG2	Actin filaments,Cytosol,Nucleoplasm
-Q86SG6	Microtubules,location_not_included_g1,Nuclear speckles
+Q86SG6	Microtubules,Mitotic spindle,Nuclear speckles
 Q86SJ2	Plasma membrane
 Q86SQ0	Cytosol,Intermediate filaments,Plasma membrane
 Q86SX6	Mitochondria
@@ -5026,7 +5026,7 @@ Q86T24	Cytosol,Nucleoli,Nucleoplasm,Plasma membrane
 Q86T82	Nucleoli,Nucleoplasm
 Q86T90	Nuclear speckles,Plasma membrane,Vesicles
 Q86T96	Cytosol
-Q86TB9	Cytosol
+Q86TB9	Cytoplasmic bodies
 Q86TC9	Cytosol,Nucleoplasm
 Q86TE4	Cytosol,Nucleoplasm,Plasma membrane
 Q86TH1	Vesicles
@@ -5060,7 +5060,7 @@ Q86UF1	Microtubules
 Q86UF4	Cytosol
 Q86UK0	Plasma membrane
 Q86UK5	Cytosol,Microtubules,Nucleoplasm
-Q86UN2	Actin filaments,location_not_included_g1,Nucleoplasm,Plasma membrane
+Q86UN2	Actin filaments,Midbody,Nucleoplasm,Plasma membrane
 Q86UP0	Cytosol,Vesicles
 Q86UP2	Endoplasmic reticulum
 Q86UP3	Nucleoli fibrillar center,Nucleoplasm
@@ -5074,7 +5074,7 @@ Q86UU1	Cytosol,Vesicles
 Q86UW2	Mitochondria,Vesicles
 Q86UW6	Cytosol,Nucleoplasm,Plasma membrane
 Q86UW9	Nuclear membrane,Nucleoplasm
-Q86UY6	Centrosome,Cytosol,Nucleoplasm
+Q86UY6	Centriolar satellite,Cytosol,Nucleoplasm
 Q86UY8	Cytosol,Mitochondria
 Q86UZ6	Nucleoplasm,Vesicles
 Q86V15	Cytosol,Nucleoplasm,Vesicles
@@ -5094,7 +5094,7 @@ Q86VE0	Nucleoplasm
 Q86VE3	Cytosol,Nucleoplasm
 Q86VE9	Centrosome,Cytosol,Vesicles
 Q86VF7	Cytosol,Intermediate filaments,Vesicles
-Q86VI3	location_not_included_g1,Nucleoli,Nucleoplasm
+Q86VI3	Mitotic chromosome,Nucleoli rim,Nucleoplasm
 Q86VI4	Golgi apparatus
 Q86VM9	Nuclear speckles
 Q86VN1	Lysosomes,Vesicles
@@ -5107,7 +5107,7 @@ Q86VR2	Cytosol,Nuclear membrane,Nucleoplasm
 Q86VR7	Nucleoplasm
 Q86VR8	Vesicles
 Q86VS3	Cytosol
-Q86VS8	Centrosome,Cytosol,Golgi apparatus
+Q86VS8	Centriolar satellite,Cytosol,Golgi apparatus
 Q86VU5	Cytosol,Golgi apparatus
 Q86VX2	Vesicles
 Q86VY4	Cytosol
@@ -5150,7 +5150,7 @@ Q86X02	Cytosol
 Q86X10	Nuclear speckles
 Q86X19	Actin filaments
 Q86X24	Nucleoli,Nucleoplasm
-Q86X29	Plasma membrane
+Q86X29	Cell Junctions,Plasma membrane
 Q86X40	Mitochondria,Nucleoplasm
 Q86X51	Nucleoplasm
 Q86X53	Nucleoli fibrillar center
@@ -5163,7 +5163,7 @@ Q86XF7	Cytosol,Nucleoli fibrillar center,Nucleoplasm
 Q86XH1	Nucleoplasm
 Q86XI2	Nuclear speckles,Nucleoplasm
 Q86XK2	Nucleoplasm
-Q86XK3	Nucleoli
+Q86XK3	Nucleoli rim
 Q86XL3	Plasma membrane
 Q86XN7	Nucleoplasm
 Q86XP0	Cytosol
@@ -5188,7 +5188,7 @@ Q86YA3	Nucleoplasm
 Q86YB7	Mitochondria
 Q86YC2	Nuclear speckles,Nucleoplasm
 Q86YD3	Golgi apparatus,Microtubules
-Q86YD5	Plasma membrane
+Q86YD5	Cell Junctions
 Q86YE8	Intermediate filaments
 Q86YF9	Nucleoplasm,Vesicles
 Q86YH2	Nucleoplasm
@@ -5200,7 +5200,7 @@ Q86YM7	Cytosol
 Q86YN1	Intermediate filaments,Vesicles
 Q86YN6	Cytosol,Nucleoplasm
 Q86YP4	Nucleoplasm
-Q86YR7	Centrosome,Cytosol
+Q86YR7	Centriolar satellite,Cytosol
 Q86YS6	Plasma membrane
 Q86YT5	Cytosol
 Q86YT6	Plasma membrane,Vesicles
@@ -5208,7 +5208,7 @@ Q86YT9	Nucleoplasm,Plasma membrane
 Q86YV6	Golgi apparatus,Nucleoli
 Q86YW9	Nucleoli
 Q8IU57	Cytosol
-Q8IU60	Cytosol,Nucleoplasm
+Q8IU60	Cytoplasmic bodies,Nucleoplasm
 Q8IU81	Nucleoplasm
 Q8IUA7	Endoplasmic reticulum
 Q8IUD2	Cytosol,Plasma membrane,Vesicles
@@ -5232,7 +5232,7 @@ Q8IUZ5	Mitochondria
 Q8IV04	Nuclear bodies
 Q8IV08	Cytosol,Endoplasmic reticulum
 Q8IV13	Nuclear speckles
-Q8IV31	Actin filaments,Plasma membrane
+Q8IV31	Focal adhesion sites,Plasma membrane
 Q8IV32	Nuclear membrane
 Q8IV35	Nucleoplasm
 Q8IV36	Cytosol
@@ -5254,15 +5254,15 @@ Q8IVF7	Cytosol,Golgi apparatus,Plasma membrane,Vesicles
 Q8IVG5	Cytosol
 Q8IVH2	Intermediate filaments,Nucleoplasm
 Q8IVH4	Cytosol
-Q8IVH8	Centrosome
+Q8IVH8	Centriolar satellite
 Q8IVJ1	Mitochondria,Nucleoli
 Q8IVL0	Cytosol,Nuclear membrane
 Q8IVL1	Nucleoplasm
 Q8IVL5	Golgi apparatus,Nucleoplasm
 Q8IVL6	Cytosol,Nucleoli
 Q8IVM0	Cytosol
-Q8IVS8	Cytosol,location_not_included_g1
-Q8IVT2	Actin filaments,Plasma membrane,Vesicles
+Q8IVS8	Cytosol,Rods & Rings
+Q8IVT2	Focal adhesion sites,Plasma membrane,Vesicles
 Q8IVT5	Cytosol,Vesicles
 Q8IVU3	Cytosol,Nucleoplasm
 Q8IVU9	Centrosome,Cytosol,Nucleoplasm
@@ -5285,7 +5285,7 @@ Q8IWD4	Cytosol,Microtubules,Nucleoplasm
 Q8IWE2	Cytosol,Golgi apparatus,Nucleoplasm
 Q8IWE4	Cytosol,Nucleoplasm
 Q8IWF6	Vesicles
-Q8IWF9	location_not_included_g1,Nucleoplasm,Vesicles
+Q8IWF9	Micronucleus,Nucleoplasm,Vesicles
 Q8IWI9	Nucleoplasm
 Q8IWJ2	Golgi apparatus,Nucleoplasm
 Q8IWL3	Cytosol,Mitochondria,Nucleoplasm
@@ -5295,13 +5295,13 @@ Q8IWR0	Cytosol
 Q8IWS0	Nucleoli,Nucleoplasm
 Q8IWT0	Plasma membrane
 Q8IWT3	Cytosol
-Q8IWU2	Centrosome,Cytosol,Nuclear speckles,Plasma membrane
+Q8IWU2	Centriolar satellite,Cytosol,Nuclear speckles,Plasma membrane
 Q8IWU4	Vesicles
 Q8IWV1	Cytosol,Plasma membrane
 Q8IWV7	Cytosol,Nucleoplasm,Vesicles
 Q8IWV8	Nucleoplasm,Plasma membrane
 Q8IWX7	Cytosol
-Q8IWY8	Actin filaments,location_not_included_g1,Nucleoplasm
+Q8IWY8	Actin filaments,Micronucleus,Nucleoplasm
 Q8IWY9	Cytosol,Plasma membrane
 Q8IWZ8	Nucleoplasm
 Q8IX01	Nuclear bodies,Nucleoplasm
@@ -5324,16 +5324,16 @@ Q8IXL6	Golgi apparatus,Nucleoplasm
 Q8IXM3	Mitochondria
 Q8IXM6	Nuclear membrane
 Q8IXQ3	Cytosol,Nucleoplasm
-Q8IXQ4	Nucleoli,Nucleoplasm
+Q8IXQ4	Nucleoli rim,Nucleoplasm
 Q8IXQ5	Cytosol,Nucleoplasm,Plasma membrane
 Q8IXQ6	Cytosol,Mitochondria
 Q8IXR5	Golgi apparatus,Nuclear speckles
-Q8IXS2	Centrosome
-Q8IXS8	Plasma membrane,Nucleoplasm
+Q8IXS2	Centriolar satellite
+Q8IXS8	Cell Junctions,Nucleoplasm
 Q8IXT1	Cytosol,Plasma membrane
 Q8IXT5	Nucleoplasm
 Q8IXV7	Cytosol
-Q8IXW0	Cytosol
+Q8IXW0	Cytoplasmic bodies
 Q8IXW5	Cytosol
 Q8IXX5	Plasma membrane
 Q8IXY8	Vesicles
@@ -5343,13 +5343,13 @@ Q8IY22	Cytosol,Nucleoplasm
 Q8IY26	Nucleoplasm,Vesicles
 Q8IY31	Microtubules
 Q8IY37	Nuclear membrane
-Q8IY42	location_not_included_g1,Nucleoplasm
+Q8IY42	Micronucleus,Nucleoplasm
 Q8IY45	Centrosome
 Q8IY47	Nucleoli fibrillar center,Nucleoplasm
 Q8IY51	Cytosol,Nucleoplasm
 Q8IY57	Nucleoplasm
 Q8IY63	Cytosol
-Q8IY81	location_not_included_g1,Nucleoli,Nucleoplasm
+Q8IY81	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q8IY84	Cytosol
 Q8IY85	Cytosol,Nucleoplasm
 Q8IY95	Endosomes,Lysosomes
@@ -5361,9 +5361,9 @@ Q8IYB5	Cytosol
 Q8IYB8	Mitochondria
 Q8IYD8	Nucleoplasm
 Q8IYD9	Nucleoplasm
-Q8IYE1	Centrosome,Nucleoplasm
+Q8IYE1	Centriolar satellite,Nucleoplasm
 Q8IYF1	Cytosol,Nucleoli,Nucleoplasm,Vesicles
-Q8IYH5	Nucleoli,Nucleoplasm
+Q8IYH5	Nucleoli,Nucleoli rim,Nucleoplasm
 Q8IYI0	Endoplasmic reticulum,Vesicles
 Q8IYI6	Cytosol
 Q8IYJ0	Nucleoplasm
@@ -5384,7 +5384,7 @@ Q8IYU8	Nucleoplasm
 Q8IYW5	Cytosol,Nucleoplasm
 Q8IYX4	Nucleoplasm
 Q8IYY4	Cytosol,Microtubules,Nucleoplasm
-Q8IZ02	Plasma membrane,location_not_included_g1,Microtubules
+Q8IZ02	Cell Junctions,Cytokinetic bridge,Microtubules
 Q8IZ07	Plasma membrane
 Q8IZ13	Nucleoplasm
 Q8IZ16	Vesicles
@@ -5409,9 +5409,9 @@ Q8IZH2	Cytosol,Plasma membrane
 Q8IZL2	Cytosol,Nucleoplasm
 Q8IZL8	Nucleoli,Nucleoplasm
 Q8IZL9	Nucleoplasm
-Q8IZM8	location_not_included_g1,Microtubules,Nucleoplasm
-Q8IZM9	Plasma membrane,Microtubules
-Q8IZP0	Plasma membrane
+Q8IZM8	Cytokinetic bridge,Microtubules,Mitotic spindle,Nucleoplasm
+Q8IZM9	Cell Junctions,Microtubules
+Q8IZP0	Cell Junctions,Plasma membrane
 Q8IZP7	Nuclear membrane,Nucleoplasm
 Q8IZP9	Cytosol,Plasma membrane
 Q8IZQ1	Cytosol,Nucleoplasm,Plasma membrane
@@ -5470,7 +5470,7 @@ Q8N1Q1	Nucleoli
 Q8N1W1	Cytosol,Microtubules
 Q8N1W2	Mitochondria,Nucleoplasm
 Q8N264	Cytosol,Plasma membrane
-Q8N271	Plasma membrane,Nucleoplasm
+Q8N271	Cell Junctions,Nucleoplasm,Plasma membrane
 Q8N292	Vesicles
 Q8N2C3	Microtubules
 Q8N2E2	Cytosol
@@ -5492,7 +5492,7 @@ Q8N350	Nucleoplasm
 Q8N357	Nucleoplasm,Vesicles
 Q8N386	Cytosol,Endoplasmic reticulum
 Q8N392	Cytosol,Nuclear speckles
-Q8N393	location_not_included_g1,Nuclear speckles
+Q8N393	Micronucleus,Nuclear speckles
 Q8N394	Actin filaments,Plasma membrane
 Q8N398	Golgi apparatus,Nucleoli,Nucleoplasm
 Q8N3A8	Nucleoplasm
@@ -5501,7 +5501,7 @@ Q8N3C7	Vesicles
 Q8N3D4	Plasma membrane,Vesicles
 Q8N3E9	Plasma membrane
 Q8N3F0	Cytosol,Nucleoplasm
-Q8N3F8	Plasma membrane,Centrosome,Cytosol,Nucleoplasm
+Q8N3F8	Cell Junctions,Centriolar satellite,Cytosol,Nucleoplasm
 Q8N3F9	Nucleoli,Vesicles
 Q8N3J2	Mitochondria
 Q8N3J3	Cytosol,Nucleoplasm
@@ -5509,7 +5509,7 @@ Q8N3J5	Mitochondria
 Q8N3R9	Cytosol,Nucleoplasm,Plasma membrane
 Q8N3S3	Cytosol,Nucleoplasm
 Q8N3T6	Cytosol
-Q8N3U4	Nucleoli,Nucleoplasm,location_not_included_g1
+Q8N3U4	Nucleoli,Nucleoplasm,Rods & Rings
 Q8N3V7	Actin filaments,Cytosol,Plasma membrane
 Q8N3X1	Nucleoplasm
 Q8N3X6	Cytosol,Nuclear membrane,Nucleoplasm
@@ -5523,10 +5523,10 @@ Q8N431	Mitochondria
 Q8N442	Mitochondria,Nucleoplasm
 Q8N446	Nuclear speckles,Nucleoplasm
 Q8N448	Vesicles
-Q8N485	location_not_included_g1,Cytosol
+Q8N485	Cytokinetic bridge,Cytosol
 Q8N488	Nucleoplasm
 Q8N490	Mitochondria
-Q8N4C6	Centrosome,Nucleoli,Nucleoplasm
+Q8N4C6	Centrosome,Nucleoli,Nucleoli rim,Nucleoplasm
 Q8N4E4	Centrosome,Microtubules
 Q8N4F0	Vesicles
 Q8N4H5	Mitochondria
@@ -5546,10 +5546,10 @@ Q8N565	Vesicles
 Q8N567	Nucleoli,Nucleoplasm
 Q8N573	Vesicles
 Q8N584	Nucleoplasm
-Q8N594	Nucleoli,Nucleoplasm
+Q8N594	Nucleoli rim,Nucleoplasm
 Q8N5B7	Endoplasmic reticulum,Nuclear membrane
 Q8N5C6	Cytosol,Mitochondria
-Q8N5C7	location_not_included_g1,Nucleoli,Nucleoplasm,Vesicles
+Q8N5C7	Mitotic chromosome,Nucleoli rim,Nucleoplasm,Vesicles
 Q8N5C8	Cytosol,Nuclear speckles
 Q8N5D0	Golgi apparatus,Vesicles
 Q8N5F7	Cytosol,Nucleoplasm
@@ -5584,9 +5584,9 @@ Q8N6F8	Cytosol,Mitochondria
 Q8N6G5	Endoplasmic reticulum
 Q8N6H7	Golgi apparatus
 Q8N6I1	Nucleoplasm
-Q8N6I4	Plasma membrane
+Q8N6I4	Cell Junctions
 Q8N6M0	Cytosol,Golgi apparatus,Nucleoplasm
-Q8N6M6	Plasma membrane
+Q8N6M6	Cell Junctions
 Q8N6N2	Mitochondria,Nucleoplasm
 Q8N6N3	Nucleoplasm
 Q8N6N7	Vesicles
@@ -5605,7 +5605,7 @@ Q8N7B6	Nucleoplasm,Vesicles
 Q8N7C3	Cytosol,Plasma membrane
 Q8N7C4	Nucleoli
 Q8N7G0	Nucleoplasm
-Q8N7H5	location_not_included_g1,Nucleoplasm,Vesicles
+Q8N7H5	Micronucleus,Nucleoplasm,Vesicles
 Q8N7J2	Plasma membrane
 Q8N7P1	Mitochondria
 Q8N7R7	Plasma membrane
@@ -5626,15 +5626,15 @@ Q8N895	Nucleoplasm
 Q8N8A6	Cytosol,Nucleoli
 Q8N8B7	Nuclear speckles
 Q8N8D1	Plasma membrane
-Q8N8E3	Centrosome,Cytosol,location_not_included_g1,Nucleoplasm
+Q8N8E3	Centrosome,Cytosol,Midbody ring,Nucleoplasm
 Q8N8F7	Cytosol
 Q8N8J6	Mitochondria,Nucleoli
 Q8N8J7	Golgi apparatus
 Q8N8K9	Cytosol,Plasma membrane
 Q8N8M0	Nucleoplasm
 Q8N8N7	Vesicles
-Q8N8R7	Cytosol,Actin filaments,Nucleoplasm,Plasma membrane,Vesicles
-Q8N8S7	Cytosol,Actin filaments,Plasma membrane
+Q8N8R7	Cytosol,Focal adhesion sites,Nucleoplasm,Plasma membrane,Vesicles
+Q8N8S7	Cytosol,Focal adhesion sites,Plasma membrane
 Q8N8U3	Golgi apparatus,Nucleoplasm,Plasma membrane
 Q8N8X9	Nucleoplasm
 Q8N8Y2	Vesicles
@@ -5655,7 +5655,7 @@ Q8N9A8	Cytosol
 Q8N9B4	Cytosol,Nucleoplasm
 Q8N9B8	Golgi apparatus
 Q8N9C0	Mitochondria
-Q8N9H8	Actin filaments
+Q8N9H8	Actin filaments,Focal adhesion sites
 Q8N9K5	Nuclear bodies,Nucleoplasm
 Q8N9L1	Cytosol,Nucleoplasm,Plasma membrane
 Q8N9M1	Nucleoplasm
@@ -5675,12 +5675,12 @@ Q8N9Z2	Actin filaments
 Q8NA03	Nucleoplasm
 Q8NA19	Nucleoplasm,Vesicles
 Q8NA23	Cytosol,Nuclear bodies
-Q8NA29	Cytosol
+Q8NA29	Cytoplasmic bodies,Cytosol
 Q8NA31	Cytosol,Nucleoplasm
 Q8NA42	Nuclear membrane,Nucleoplasm
 Q8NA47	Nuclear bodies
 Q8NA54	Nuclear speckles
-Q8NA61	Plasma membrane,Nucleoplasm
+Q8NA61	Cell Junctions,Nucleoplasm,Plasma membrane
 Q8NA82	Cytosol,Plasma membrane
 Q8NA92	Nucleoplasm
 Q8NAA4	Nucleoplasm
@@ -5693,7 +5693,7 @@ Q8NAP8	Cytosol,Nucleoplasm
 Q8NAV1	Nucleoplasm
 Q8NAV2	Nuclear bodies
 Q8NB14	Centrosome,Cytosol,Nucleoplasm
-Q8NB16	Plasma membrane
+Q8NB16	Cell Junctions,Plasma membrane
 Q8NB25	Cytosol,Golgi apparatus,Nucleoplasm
 Q8NB37	Nucleoplasm
 Q8NB42	Golgi apparatus,Nuclear speckles
@@ -5721,12 +5721,12 @@ Q8NBQ7	Plasma membrane
 Q8NBR6	Nucleoplasm
 Q8NBS9	Endoplasmic reticulum
 Q8NBT2	Nucleoli,Nucleoplasm
-Q8NBU5	Mitochondria,Nucleoli
+Q8NBU5	Mitochondria,Nucleoli rim
 Q8NBV4	Vesicles
 Q8NBV8	Endoplasmic reticulum,Nucleoli fibrillar center
 Q8NBW4	Vesicles
 Q8NBX0	Vesicles
-Q8NBZ0	Nucleoli,Nucleoplasm
+Q8NBZ0	Nucleoli rim,Nucleoplasm
 Q8NC06	Cytosol,Nucleoplasm
 Q8NC26	Cytosol,Nucleoplasm
 Q8NC42	Plasma membrane,Vesicles
@@ -5764,8 +5764,8 @@ Q8ND04	Nucleoplasm
 Q8ND07	Cytosol,Nucleoplasm,Plasma membrane
 Q8ND24	Cytosol
 Q8ND30	Mitochondria
-Q8ND56	Cytosol
-Q8ND76	location_not_included_g1,Nucleoplasm
+Q8ND56	Cytoplasmic bodies
+Q8ND76	Micronucleus,Nucleoplasm
 Q8ND82	Cytosol,Nucleoli fibrillar center,Nucleoplasm
 Q8NDA2	Vesicles
 Q8NDA8	Cytosol,Nucleoplasm
@@ -5775,7 +5775,7 @@ Q8NDH2	Cytosol,Nucleoli
 Q8NDH3	Cytosol,Nucleoplasm
 Q8NDH6	Mitochondria
 Q8NDI1	Cytosol,Plasma membrane
-Q8NDL9	location_not_included_g1,Cytosol,Microtubules
+Q8NDL9	Cytokinetic bridge,Cytosol,Microtubules
 Q8NDN9	Nucleoplasm
 Q8NDQ6	Cytosol,Nucleoplasm
 Q8NDT2	Nucleoplasm
@@ -5793,7 +5793,7 @@ Q8NE09	Actin filaments,Cytosol,Nucleoli fibrillar center
 Q8NE18	Vesicles
 Q8NE22	Nucleoplasm
 Q8NE31	Cytosol,Nucleoplasm
-Q8NE35	location_not_included_g1,Nucleoplasm,Plasma membrane
+Q8NE35	Midbody,Nucleoplasm,Plasma membrane
 Q8NE71	Cytosol
 Q8NE86	Mitochondria
 Q8NEA4	Cytosol,Nucleoplasm
@@ -5802,14 +5802,14 @@ Q8NEA6	Golgi apparatus,Nucleoplasm
 Q8NEB5	Vesicles
 Q8NEB7	Nucleoplasm,Vesicles
 Q8NEC7	Actin filaments,Nucleoplasm
-Q8NEF9	Nucleoli
+Q8NEF9	Nucleoli rim
 Q8NEG4	Mitochondria
 Q8NEG7	Plasma membrane
 Q8NEH6	Nuclear speckles
 Q8NEJ0	Nucleoplasm
 Q8NEJ9	Mitochondria,Nucleoli,Nucleoplasm
 Q8NEK5	Cytosol,Nucleoplasm
-Q8NEM2	location_not_included_g1,Nuclear bodies
+Q8NEM2	Midbody,Mitotic spindle,Nuclear bodies
 Q8NEM7	Nucleoli fibrillar center
 Q8NEN9	Nucleoli fibrillar center,Plasma membrane
 Q8NEP7	Nucleoli
@@ -5819,7 +5819,7 @@ Q8NES3	Golgi apparatus,Nuclear membrane
 Q8NET5	Cytosol
 Q8NET8	Plasma membrane
 Q8NEV1	Nucleoplasm
-Q8NEV4	Actin filaments,Cytosol
+Q8NEV4	Actin filaments,Cytoplasmic bodies
 Q8NEY1	Microtubules
 Q8NEY8	Golgi apparatus,Nucleoplasm
 Q8NEZ2	Cytosol,Vesicles
@@ -5845,7 +5845,7 @@ Q8NFP0	Vesicles
 Q8NFP4	Golgi apparatus,Plasma membrane
 Q8NFP9	Golgi apparatus
 Q8NFT6	Nucleoplasm
-Q8NFU3	Cytosol
+Q8NFU3	Cytoplasmic bodies,Cytosol
 Q8NFU5	Nucleoplasm
 Q8NFU7	Mitochondria,Nuclear membrane,Nucleoplasm
 Q8NFW1	Vesicles
@@ -5856,7 +5856,7 @@ Q8NG08	Mitochondria,Nuclear bodies,Nucleoplasm
 Q8NG11	Vesicles
 Q8NG27	Nucleoli,Nucleoplasm
 Q8NG31	Nuclear bodies,Nucleoplasm
-Q8NG48	location_not_included_g1,Nucleoplasm
+Q8NG48	Cytokinetic bridge,Nucleoplasm
 Q8NG50	Cytosol,Nucleoli
 Q8NG66	Nucleoplasm
 Q8NG68	Nucleoplasm,Vesicles
@@ -5868,7 +5868,7 @@ Q8NHQ9	Cytosol,Nucleoli,Nucleoplasm
 Q8NHS3	Nucleoplasm,Vesicles
 Q8NHS4	Nucleoli fibrillar center
 Q8NHU3	Golgi apparatus,Nucleoplasm
-Q8NHU6	Cytosol,Nucleoplasm
+Q8NHU6	Cytoplasmic bodies,Nucleoplasm
 Q8NHV1	Golgi apparatus,Vesicles
 Q8NHV4	Centrosome,Nucleoli fibrillar center,Nucleoplasm
 Q8NHV9	Cytosol,Nucleoplasm
@@ -5880,11 +5880,11 @@ Q8NI08	Nuclear bodies
 Q8NI17	Cytosol
 Q8NI27	Nucleoplasm
 Q8NI29	Nucleoplasm
-Q8NI35	Plasma membrane,Centrosome
+Q8NI35	Cell Junctions,Centriolar satellite
 Q8NI37	Cytosol,Plasma membrane
 Q8NI38	Cytosol,Nuclear bodies
 Q8NI51	Cytosol,Nuclear bodies,Nucleoplasm
-Q8NI77	location_not_included_g1,Cytosol,Microtubules
+Q8NI77	Cytokinetic bridge,Cytosol,Microtubules
 Q8TA86	Cytosol,Nucleoplasm,Vesicles
 Q8TAA5	Mitochondria
 Q8TAA9	Plasma membrane
@@ -5901,7 +5901,7 @@ Q8TAK5	Cytosol,Nucleoplasm
 Q8TAM6	Cytosol,Plasma membrane
 Q8TAP8	Cytosol,Nucleoplasm
 Q8TAP9	Nucleoplasm,Vesicles
-Q8TAQ2	location_not_included_g1,Nucleoplasm
+Q8TAQ2	Micronucleus,Nucleoplasm
 Q8TAQ5	Nucleoplasm
 Q8TAQ9	Nucleoplasm,Plasma membrane
 Q8TAS1	Vesicles
@@ -5921,7 +5921,7 @@ Q8TB72	Cytosol
 Q8TB96	Cytosol
 Q8TBA6	Golgi apparatus
 Q8TBB0	Centrosome,Nucleoplasm
-Q8TBB1	Plasma membrane,Cytosol
+Q8TBB1	Cell Junctions,Cytosol
 Q8TBB5	Nucleoli
 Q8TBB6	Cytosol,Plasma membrane
 Q8TBC4	Cytosol,Nucleoplasm
@@ -5934,7 +5934,7 @@ Q8TBG9	Vesicles
 Q8TBH0	Nucleoplasm
 Q8TBJ4	Nucleoplasm
 Q8TBK2	Cytosol,Nucleoplasm
-Q8TBK6	Nucleoli,Nucleoplasm
+Q8TBK6	Nucleoli rim,Nucleoplasm
 Q8TBM7	Plasma membrane
 Q8TBN0	Cytosol
 Q8TBP0	Intermediate filaments
@@ -5979,18 +5979,18 @@ Q8TCY5	Endoplasmic reticulum
 Q8TCY9	Cytosol
 Q8TCZ2	Intermediate filaments,Plasma membrane
 Q8TD06	Endoplasmic reticulum,Vesicles
-Q8TD07	Actin filaments
+Q8TD07	Focal adhesion sites
 Q8TD10	Cytosol
 Q8TD16	Cytosol,Plasma membrane
 Q8TD17	Nucleoplasm
-Q8TD20	Plasma membrane
+Q8TD20	Cell Junctions
 Q8TD22	Mitochondria
 Q8TD30	Mitochondria
 Q8TD31	Cytosol
 Q8TD43	Nucleoplasm,Plasma membrane
 Q8TD55	Cytosol,Plasma membrane
 Q8TDB6	Cytosol
-Q8TDC3	Plasma membrane,Nucleoplasm
+Q8TDC3	Cell Junctions,Nucleoplasm
 Q8TDF5	Golgi apparatus
 Q8TDF6	Cytosol,Nucleoplasm
 Q8TDG4	Nuclear speckles,Nucleoplasm
@@ -5999,7 +5999,7 @@ Q8TDI0	Cytosol,Nuclear speckles,Nucleoplasm
 Q8TDM0	Cytosol,Intermediate filaments
 Q8TDN1	Nucleoplasm,Plasma membrane
 Q8TDN4	Nuclear bodies,Nucleoplasm
-Q8TDN6	location_not_included_g1,Nucleoli
+Q8TDN6	Mitotic chromosome,Nucleoli
 Q8TDR2	Nuclear bodies,Nucleoplasm
 Q8TDW5	Cytosol,Microtubules,Nucleoplasm
 Q8TDX6	Cytosol
@@ -6033,11 +6033,11 @@ Q8TER5	Cytosol,Plasma membrane
 Q8TET4	Cytosol
 Q8TEU7	Cytosol
 Q8TEV9	Nucleoplasm
-Q8TEW0	Plasma membrane
+Q8TEW0	Cell Junctions,Plasma membrane
 Q8TEW6	Cytosol
 Q8TEX9	Cytosol
 Q8TEY5	Mitochondria,Nuclear membrane,Nucleoplasm
-Q8TEY7	Actin filaments,Golgi apparatus,Nucleoplasm
+Q8TEY7	Focal adhesion sites,Golgi apparatus,Nucleoplasm
 Q8TEZ7	Plasma membrane
 Q8TF01	Nuclear speckles,Nucleoplasm,Plasma membrane
 Q8TF05	Nucleoplasm
@@ -6061,8 +6061,8 @@ Q8WTR2	Nucleoplasm
 Q8WTR4	Golgi apparatus
 Q8WTR7	Nucleoplasm
 Q8WTS1	Cytosol,Nucleoplasm,Vesicles
-Q8WTS6	Nucleoli
-Q8WTT2	Mitochondria,Nucleoli,Nucleoplasm
+Q8WTS6	Nucleoli rim
+Q8WTT2	Mitochondria,Nucleoli,Nucleoli rim,Nucleoplasm
 Q8WTV0	Lysosomes,Vesicles
 Q8WTV1	Mitochondria,Nucleoli,Nucleoplasm
 Q8WTX9	Cytosol
@@ -6091,7 +6091,7 @@ Q8WUK0	Mitochondria
 Q8WUM0	Nuclear membrane
 Q8WUM4	Vesicles
 Q8WUM9	Plasma membrane
-Q8WUP2	Actin filaments,Nucleoli fibrillar center
+Q8WUP2	Focal adhesion sites,Nucleoli fibrillar center
 Q8WUQ7	Cytosol,Nuclear speckles
 Q8WUR7	Nucleoplasm
 Q8WUU4	Centrosome,Nucleoplasm
@@ -6114,7 +6114,7 @@ Q8WV74	Cytosol,Nucleoli
 Q8WV92	Vesicles
 Q8WV99	Nucleoli,Nucleoplasm
 Q8WVB3	Mitochondria,Nucleoli fibrillar center
-Q8WVB6	Cytosol,location_not_included_g1,Nucleoplasm
+Q8WVB6	Cytosol,Micronucleus,Nucleoplasm
 Q8WVC0	Centrosome,Nucleoli fibrillar center,Nucleoplasm
 Q8WVC6	Nucleoplasm
 Q8WVD3	Mitochondria
@@ -6122,13 +6122,13 @@ Q8WVD5	Microtubules,Nucleoplasm
 Q8WVE0	Cytosol,Plasma membrane
 Q8WVI0	Mitochondria,Nucleoplasm
 Q8WVI7	Golgi apparatus,Nucleoplasm
-Q8WVJ2	location_not_included_g1,Microtubules
+Q8WVJ2	Cytokinetic bridge,Microtubules
 Q8WVK2	Cytosol,Nucleoplasm
 Q8WVL7	Cytosol,Golgi apparatus,Nucleoli,Nucleoplasm
 Q8WVM7	Nuclear bodies,Nucleoplasm
 Q8WVQ1	Golgi apparatus
-Q8WVR3	Centrosome,Plasma membrane,Vesicles
-Q8WVS4	Centrosome
+Q8WVR3	Centriolar satellite,Plasma membrane,Vesicles
+Q8WVS4	Centriolar satellite
 Q8WVT3	Nucleoplasm
 Q8WVV4	Golgi apparatus,Nucleoplasm
 Q8WVV5	Mitochondria
@@ -6152,10 +6152,10 @@ Q8WWI1	Actin filaments,Cytosol
 Q8WWI5	Mitochondria
 Q8WWK9	Microtubules
 Q8WWL2	Intermediate filaments,Nucleoplasm
-Q8WWM1	location_not_included_g1,Nucleoplasm,Vesicles
+Q8WWM1	Micronucleus,Nucleoplasm,Vesicles
 Q8WWM7	Cytosol
 Q8WWM9	Nuclear speckles
-Q8WWN9	Cytosol,Nuclear speckles,Nucleoli
+Q8WWN9	Cytoplasmic bodies,Nuclear speckles,Nucleoli
 Q8WWQ0	Nucleoplasm
 Q8WWQ8	Cytosol
 Q8WWW8	Nuclear speckles,Nucleoplasm
@@ -6178,19 +6178,19 @@ Q8WXG6	Cytosol,Plasma membrane
 Q8WXG8	Centrosome,Cytosol
 Q8WXH0	Intermediate filaments,Nuclear membrane
 Q8WXH2	Cytosol,Nucleoplasm
-Q8WXH5	location_not_included_g1,Cytosol,Nucleoplasm
+Q8WXH5	Aggresome,Cytosol,Nucleoplasm
 Q8WXI9	Nucleoplasm
 Q8WXK3	Golgi apparatus,Nucleoplasm
 Q8WXQ8	Nucleoplasm
 Q8WXS3	Cytosol,Nucleoplasm
 Q8WXS4	Nucleoli fibrillar center
 Q8WXU2	Cytosol,Plasma membrane
-Q8WXW3	Centrosome
+Q8WXW3	Centriolar satellite
 Q8WXX0	Cytosol
-Q8WXX5	Cytosol,location_not_included_g1,Nucleoplasm,Plasma membrane
+Q8WXX5	Cytosol,Micronucleus,Nucleoplasm,Plasma membrane
 Q8WXX7	Cytosol,Nucleoplasm
 Q8WY21	Cytosol,Plasma membrane
-Q8WY36	Cytosol,location_not_included_g1,Nucleoplasm
+Q8WY36	Cytosol,Micronucleus,Nucleoplasm
 Q8WY41	Cytosol,Nucleoplasm
 Q8WY54	Nucleoli,Nucleoplasm
 Q8WY91	Cytosol,Nucleoplasm
@@ -6204,18 +6204,18 @@ Q8WYK0	Cytosol
 Q8WYK1	Nucleoli fibrillar center,Nucleoplasm,Vesicles
 Q8WYK2	Nuclear speckles
 Q8WYN0	Actin filaments,Microtubules
-Q8WYN3	Nucleoli
+Q8WYN3	Nucleoli rim
 Q8WYP3	Cytosol,Nucleoli
 Q8WYP5	Nuclear membrane
 Q8WYQ5	Nucleoplasm
-Q8WYR1	Centrosome,Cytosol
+Q8WYR1	Centriolar satellite,Cytosol
 Q8WZ19	Nuclear bodies,Nucleoplasm
-Q8WZ64	Actin filaments
+Q8WZ64	Actin filaments,Focal adhesion sites
 Q8WZ73	Vesicles
-Q8WZ74	Cytosol,location_not_included_g1
+Q8WZ74	Cytosol,Midbody ring
 Q8WZA9	Vesicles
 Q92187	Golgi apparatus
-Q92466	Plasma membrane,Nucleoplasm
+Q92466	Cell Junctions,Nucleoplasm
 Q92481	Nucleoplasm
 Q92484	Mitochondria,Nucleoli,Nucleoplasm
 Q92485	Cytosol,Golgi apparatus
@@ -6224,7 +6224,7 @@ Q92503	Cytosol,Nucleoplasm
 Q92504	Endoplasmic reticulum,Nucleoplasm
 Q92519	Cytosol,Nucleoplasm
 Q92520	Golgi apparatus
-Q92522	location_not_included_g1,Nucleoli,Nucleoplasm
+Q92522	Micronucleus,Nucleoli,Nucleoli rim,Nucleoplasm
 Q92527	Centrosome,Nucleoplasm
 Q92529	Cytosol,Nuclear bodies,Nucleoplasm
 Q92530	Cytosol
@@ -6238,7 +6238,7 @@ Q92546	Cytosol,Plasma membrane
 Q92547	Actin filaments,Nuclear bodies,Nucleoplasm
 Q92551	Cytosol,Nucleoli fibrillar center
 Q92552	Mitochondria,Nucleoli
-Q92560	Cytosol,location_not_included_g1,Nucleoplasm
+Q92560	Cytosol,Micronucleus,Nucleoplasm
 Q92561	Mitochondria
 Q92562	Lipid droplets,Vesicles
 Q92564	Nucleoplasm,Vesicles
@@ -6251,7 +6251,7 @@ Q92581	Vesicles
 Q92585	Nucleoplasm,Vesicles
 Q92597	Cytosol,Microtubules
 Q92598	Cytosol,Nucleoplasm
-Q92600	Cytosol
+Q92600	Cytoplasmic bodies
 Q92609	Vesicles
 Q92610	Nucleoplasm
 Q92613	Nucleoli,Nucleoplasm
@@ -6272,7 +6272,7 @@ Q92665	Mitochondria
 Q92667	Mitochondria
 Q92674	Nuclear bodies
 Q92681	Nucleoplasm
-Q92692	Plasma membrane,Nucleoli fibrillar center
+Q92692	Cell Junctions,Nucleoli fibrillar center
 Q92698	Nucleoplasm
 Q92731	Nucleoplasm,Vesicles
 Q92733	Nuclear speckles
@@ -6294,10 +6294,10 @@ Q92785	Nucleoplasm,Vesicles
 Q92786	Cytosol,Nucleoplasm
 Q92791	Endoplasmic reticulum,Vesicles
 Q92793	Nucleoplasm
-Q92794	Cytosol,location_not_included_g1,Nuclear speckles
+Q92794	Cytosol,Micronucleus,Nuclear speckles
 Q92797	Cytosol,Nucleoplasm,Plasma membrane
 Q92800	Nucleoplasm
-Q92802	location_not_included_g1,Nucleoplasm
+Q92802	Micronucleus,Nucleoplasm
 Q92804	Nucleoplasm
 Q92805	Golgi apparatus
 Q92813	Nucleoplasm,Plasma membrane,Vesicles
@@ -6319,7 +6319,7 @@ Q92859	Nucleoplasm,Plasma membrane
 Q92870	Mitochondria
 Q92871	Cytosol
 Q92874	Mitochondria
-Q92876	location_not_included_g1,Nucleoplasm
+Q92876	Cytokinetic bridge,Micronucleus,Nucleoplasm
 Q92879	Nucleoplasm
 Q92882	Cytosol
 Q92886	Nuclear bodies,Nucleoplasm
@@ -6342,12 +6342,12 @@ Q92935	Centrosome,Vesicles
 Q92945	Nucleoplasm
 Q92947	Mitochondria
 Q92952	Actin filaments,Cytosol
-Q92953	location_not_included_g1,Nucleoli,Plasma membrane
+Q92953	Midbody,Nucleoli,Plasma membrane
 Q92968	Peroxisomes
-Q92973	Cytosol,location_not_included_g1,Nucleoplasm
-Q92979	location_not_included_g1,Nucleoli,Nucleoplasm
+Q92973	Cytoplasmic bodies,Micronucleus,Nucleoplasm
+Q92979	Mitotic chromosome,Nucleoli rim,Nucleoplasm
 Q92985	Cytosol,Nucleoplasm
-Q92988	location_not_included_g1,Nucleoplasm
+Q92988	Micronucleus,Nucleoplasm
 Q92989	Nucleoplasm
 Q92990	Cytosol,Nucleoplasm
 Q92993	Cytosol,Nucleoplasm
@@ -6355,9 +6355,9 @@ Q92995	Cytosol,Nucleoplasm
 Q93008	Cytosol
 Q93009	Nuclear bodies,Nucleoplasm
 Q93034	Cytosol
-Q93038	Actin filaments,Nucleoplasm,Plasma membrane
+Q93038	Actin filaments,Focal adhesion sites,Nucleoplasm,Plasma membrane
 Q93045	Vesicles
-Q93052	Cytosol,Actin filaments
+Q93052	Cytosol,Focal adhesion sites
 Q93073	Nucleoplasm
 Q93074	Nucleoplasm
 Q93075	Cytosol,Nuclear speckles
@@ -6368,7 +6368,7 @@ Q93100	Golgi apparatus
 Q95460	Plasma membrane
 Q969E2	Lipid droplets
 Q969E8	Cytosol,Nucleoli,Nucleoplasm
-Q969F1	location_not_included_g1,Nucleoplasm
+Q969F1	Micronucleus,Nucleoplasm
 Q969F9	Golgi apparatus,Plasma membrane
 Q969G2	Nuclear speckles
 Q969G3	Nucleoplasm
@@ -6397,8 +6397,8 @@ Q969R8	Vesicles
 Q969S2	Nucleoplasm,Vesicles
 Q969S3	Cytosol,Golgi apparatus,Nucleoli
 Q969S8	Cytosol,Nucleoplasm,Vesicles
-Q969S9	location_not_included_g1,Mitochondria
-Q969T3	Centrosome,Vesicles
+Q969S9	Midbody ring,Mitochondria
+Q969T3	Centriolar satellite,Vesicles
 Q969T9	Cytosol,Nucleoplasm
 Q969U6	Mitochondria
 Q969U7	Nucleoplasm
@@ -6421,7 +6421,7 @@ Q96A29	Golgi apparatus
 Q96A33	Endoplasmic reticulum
 Q96A37	Cytosol,Nucleoplasm
 Q96A44	Golgi apparatus,Nucleoplasm
-Q96A47	location_not_included_g1
+Q96A47	Rods & Rings
 Q96A49	Cytosol,Golgi apparatus,Nucleoplasm
 Q96A57	Endoplasmic reticulum
 Q96A58	Cytosol,Nucleoli fibrillar center,Nucleoplasm
@@ -6433,12 +6433,12 @@ Q96A83	Vesicles
 Q96AA3	Vesicles
 Q96AA8	Golgi apparatus
 Q96AB6	Actin filaments,Nucleoplasm
-Q96AC1	Cytosol,Actin filaments,Nucleoplasm
+Q96AC1	Cytosol,Focal adhesion sites,Nucleoplasm
 Q96AC6	Cytosol,Nucleoplasm
 Q96AD5	Lipid droplets,Nucleoplasm
 Q96AE4	Nucleoplasm
 Q96AE7	Plasma membrane
-Q96AG4	Endoplasmic reticulum,location_not_included_g1
+Q96AG4	Endoplasmic reticulum,Micronucleus
 Q96AH0	Cytosol,Nucleoplasm
 Q96AJ1	Nucleoplasm,Vesicles
 Q96AJ9	Vesicles
@@ -6453,52 +6453,52 @@ Q96AV8	Nuclear speckles
 Q96AX1	Nucleoplasm
 Q96AY2	Nucleoplasm
 Q96AY3	Golgi apparatus
-Q96AY4	location_not_included_g1,Cytosol,Microtubules
+Q96AY4	Cytokinetic bridge,Cytosol,Microtubules,Mitotic spindle
 Q96AZ1	Centrosome
 Q96B01	Nucleoplasm
 Q96B02	Nucleoli
 Q96B18	Vesicles
 Q96B23	Cytosol,Nucleoplasm
-Q96B26	location_not_included_g1,Nucleoli fibrillar center,Nucleoplasm
+Q96B26	Mitotic chromosome,Nucleoli fibrillar center,Nucleoplasm
 Q96B33	Vesicles
 Q96B36	Cytosol
 Q96B42	Endoplasmic reticulum,Mitochondria
 Q96B49	Mitochondria
 Q96B54	Mitochondria,Nucleoli
-Q96B77	Plasma membrane,Nucleoplasm
+Q96B77	Cell Junctions,Nucleoplasm
 Q96B86	Cytosol,Nuclear bodies,Nucleoplasm
 Q96B96	Vesicles
 Q96B97	Cytosol
 Q96BA8	Cytosol,Nucleoplasm
 Q96BD5	Nucleoplasm
-Q96BD8	location_not_included_g1,Microtubules
+Q96BD8	Cytokinetic bridge,Microtubules
 Q96BF6	Mitochondria,Nucleoli
 Q96BH1	Actin filaments,Cytosol
-Q96BJ3	location_not_included_g1,Cytosol,Microtubules
+Q96BJ3	Cytokinetic bridge,Cytosol,Microtubules
 Q96BK5	Mitochondria,Nucleoli
 Q96BN2	Cytosol,Nucleoplasm
 Q96BN8	Mitochondria,Plasma membrane
-Q96BP2	location_not_included_g1,Mitochondria,Nucleoli fibrillar center,Nucleoplasm
+Q96BP2	Micronucleus,Mitochondria,Nucleoli fibrillar center,Nucleoplasm
 Q96BP3	Nuclear bodies
 Q96BQ5	Nucleoli fibrillar center,Nucleoplasm
 Q96BR5	Mitochondria,Nucleoplasm
-Q96BR9	Actin filaments,Nuclear speckles
+Q96BR9	Focal adhesion sites,Nuclear speckles
 Q96BS2	Cytosol,Nucleoplasm
 Q96BT1	Centrosome,Cytosol
 Q96BT3	Nuclear bodies
-Q96BU1	location_not_included_g1,Nuclear speckles
+Q96BU1	Micronucleus,Nuclear speckles
 Q96BW1	Nucleoplasm
 Q96BW9	Cytosol
 Q96BY6	Cytosol,Nucleoplasm
-Q96BY9	Endoplasmic reticulum,location_not_included_g1
+Q96BY9	Endoplasmic reticulum,Rods & Rings
 Q96BZ8	Plasma membrane
 Q96C00	Nucleoplasm
 Q96C01	Mitochondria
 Q96C10	Cytosol
 Q96C11	Nuclear bodies,Nucleoplasm
-Q96C12	Cytosol,Actin filaments,Nucleoplasm
+Q96C12	Cytosol,Focal adhesion sites,Nucleoplasm
 Q96C24	Vesicles
-Q96C28	location_not_included_g1,Nucleoplasm
+Q96C28	Micronucleus,Nucleoplasm
 Q96C36	Mitochondria
 Q96C45	Mitochondria
 Q96C55	Nucleoplasm
@@ -6554,8 +6554,8 @@ Q96DU7	Nuclear speckles
 Q96DV4	Cytosol,Mitochondria
 Q96DX7	Vesicles
 Q96DY7	Nucleoplasm
-Q96E09	location_not_included_g1,Nuclear bodies,Nucleoplasm
-Q96E11	location_not_included_g1,Microtubules
+Q96E09	Micronucleus,Nuclear bodies,Nucleoplasm
+Q96E11	Cytokinetic bridge,Microtubules
 Q96E14	Cytosol,Nuclear speckles
 Q96E16	Nuclear speckles
 Q96E17	Cytosol
@@ -6575,7 +6575,7 @@ Q96EH3	Mitochondria
 Q96EK2	Nucleoli fibrillar center,Nucleoplasm
 Q96EK4	Cytosol,Nucleoplasm
 Q96EK7	Cytosol,Nucleoplasm
-Q96EK9	Cytosol
+Q96EK9	Cytoplasmic bodies
 Q96EL3	Mitochondria
 Q96EN8	Cytosol,Mitochondria
 Q96EN9	Vesicles
@@ -6609,7 +6609,7 @@ Q96F63	Cytosol,Nucleoplasm,Plasma membrane
 Q96F81	Nuclear bodies
 Q96F83	Cytosol,Nuclear bodies,Nucleoplasm
 Q96F85	Cytosol
-Q96F86	Cytosol
+Q96F86	Cytoplasmic bodies
 Q96FB5	Nucleoli
 Q96FC9	Nucleoli,Nucleoplasm
 Q96FE5	Plasma membrane
@@ -6625,7 +6625,7 @@ Q96FT9	Microtubules
 Q96FV0	Cytosol
 Q96FV2	Golgi apparatus,Nucleoplasm
 Q96FV9	Nuclear speckles
-Q96FW1	Cytosol
+Q96FW1	Cytoplasmic bodies,Cytosol
 Q96FX2	Cytosol,Nucleoplasm
 Q96FX7	Mitochondria
 Q96FZ2	Nucleoplasm
@@ -6642,7 +6642,7 @@ Q96GC5	Mitochondria
 Q96GC6	Nucleoplasm
 Q96GC9	Nucleoli
 Q96GD3	Cytosol,Nuclear bodies,Nucleoplasm
-Q96GD4	location_not_included_g1,Nucleoplasm
+Q96GD4	Midbody,Nucleoplasm
 Q96GE4	Cytosol
 Q96GE6	Golgi apparatus
 Q96GG9	Cytosol,Nucleoplasm
@@ -6673,13 +6673,13 @@ Q96H55	Cytosol,Mitochondria
 Q96H78	Mitochondria
 Q96H79	Cytosol
 Q96H96	Cytosol
-Q96HA4	Intermediate filaments,Nucleoli
+Q96HA4	Intermediate filaments,Nucleoli rim
 Q96HA7	Nucleoplasm
 Q96HA8	Nucleoplasm
-Q96HC4	Actin filaments,Nucleoplasm,Plasma membrane
+Q96HC4	Focal adhesion sites,Nucleoplasm,Plasma membrane
 Q96HD1	Cytosol,Nucleoli
 Q96HE9	Endoplasmic reticulum
-Q96HH4	Actin filaments
+Q96HH4	Focal adhesion sites
 Q96HH9	Cytosol
 Q96HJ3	Nuclear membrane,Nucleoli fibrillar center
 Q96HL8	Nucleoplasm
@@ -6692,7 +6692,7 @@ Q96HR3	Nucleoplasm
 Q96HR8	Nucleoplasm
 Q96HS1	Mitochondria
 Q96HV5	Nucleoplasm
-Q96HW7	Nucleoli
+Q96HW7	Nucleoli rim
 Q96HY6	Endoplasmic reticulum
 Q96HY7	Mitochondria
 Q96HZ4	Cytosol,Nuclear bodies
@@ -6740,7 +6740,7 @@ Q96JE7	Actin filaments,Endoplasmic reticulum,Plasma membrane
 Q96JF0	Nucleoli fibrillar center,Nucleoplasm
 Q96JF6	Nucleoplasm
 Q96JG6	Cytosol,Plasma membrane
-Q96JG9	Plasma membrane,Nucleoplasm
+Q96JG9	Cell Junctions,Nucleoplasm
 Q96JI7	Cytosol,Nucleoli,Plasma membrane
 Q96JJ3	Cytosol
 Q96JK2	Mitochondria
@@ -6748,7 +6748,7 @@ Q96JK9	Nuclear speckles
 Q96JL9	Nucleoplasm
 Q96JM2	Nucleoplasm
 Q96JM3	Nucleoplasm
-Q96JM7	Nucleoli,Nucleoplasm
+Q96JM7	Nucleoli,Nucleoli rim,Nucleoplasm
 Q96JN0	Nucleoplasm
 Q96JN2	Golgi apparatus,Nuclear membrane,Plasma membrane
 Q96JP0	Nucleoplasm
@@ -6757,7 +6757,7 @@ Q96JP5	Nucleoli,Nucleoplasm
 Q96JQ2	Cytosol,Nuclear bodies
 Q96JS3	Cytosol,Nucleoplasm
 Q96JT2	Nucleoplasm,Vesicles
-Q96JY6	Actin filaments
+Q96JY6	Actin filaments,Focal adhesion sites
 Q96K12	Golgi apparatus
 Q96K17	Cytosol,Nucleoplasm
 Q96K30	Nucleoplasm
@@ -6767,7 +6767,7 @@ Q96K58	Nucleoli,Nucleoplasm
 Q96K75	Nuclear bodies,Nucleoplasm
 Q96K76	Intermediate filaments,Vesicles
 Q96K80	Vesicles
-Q96K83	location_not_included_g1,Nucleoplasm
+Q96K83	Micronucleus,Nucleoplasm
 Q96KA5	Endoplasmic reticulum
 Q96KB5	Cytosol
 Q96KC8	Endoplasmic reticulum
@@ -6785,7 +6785,7 @@ Q96KR4	Cytosol
 Q96KR6	Cytosol,Plasma membrane
 Q96KR7	Nucleoplasm
 Q96KV7	Centrosome
-Q96KX1	Cytosol,Actin filaments
+Q96KX1	Cytosol,Focal adhesion sites
 Q96L21	Cytosol,Endoplasmic reticulum
 Q96L34	Cytosol
 Q96L46	Cytosol
@@ -6809,7 +6809,7 @@ Q96LR5	Nucleoplasm
 Q96LR7	Cytosol
 Q96LR9	Nucleoplasm,Plasma membrane
 Q96LT6	Cytosol,Plasma membrane
-Q96LT7	Cytosol,location_not_included_g1
+Q96LT7	Cytosol,Midbody ring
 Q96LT9	Nucleoplasm
 Q96LU5	Mitochondria
 Q96LU7	Nucleoli
@@ -6819,21 +6819,21 @@ Q96LW4	Cytosol
 Q96LW7	Mitochondria
 Q96LW9	Cytosol,Nucleoplasm
 Q96LX8	Nucleoli,Nucleoplasm,Vesicles
-Q96LZ7	Cytosol,Golgi apparatus,location_not_included_g1
+Q96LZ7	Cytosol,Golgi apparatus,Mitotic spindle
 Q96M02	Cytosol
 Q96M11	Cytosol,Plasma membrane
 Q96M27	Vesicles
 Q96M34	Plasma membrane,Vesicles
 Q96M83	Cytosol,Nucleoli
-Q96M86	location_not_included_g1,Nucleoplasm
+Q96M86	Cytokinetic bridge,Micronucleus,Nucleoplasm
 Q96M89	Cytosol,Nucleoplasm
-Q96M91	location_not_included_g1
+Q96M91	Midbody
 Q96M96	Actin filaments
 Q96MB7	Cytosol,Plasma membrane
 Q96MC4	Vesicles
 Q96MC5	Cytosol
 Q96MC6	Vesicles
-Q96MD2	location_not_included_g1
+Q96MD2	Cytokinetic bridge
 Q96MD7	Golgi apparatus
 Q96ME1	Cytosol,Nucleoplasm
 Q96ME7	Nucleoplasm
@@ -6859,7 +6859,7 @@ Q96MV1	Cytosol,Nuclear speckles
 Q96MV8	Cytosol,Nuclear speckles
 Q96MW1	Cytosol
 Q96MW5	Golgi apparatus
-Q96MW7	location_not_included_g1,Nuclear bodies,Nucleoli
+Q96MW7	Midbody ring,Mitotic chromosome,Nuclear bodies,Nucleoli rim
 Q96MX0	Nucleoplasm
 Q96MX3	Mitochondria
 Q96MY1	Nucleoplasm
@@ -6890,7 +6890,7 @@ Q96NL1	Golgi apparatus
 Q96NL3	Cytosol,Plasma membrane
 Q96NL6	Cytosol,Microtubules
 Q96NN9	Cytosol,Mitochondria
-Q96NS5	Actin filaments
+Q96NS5	Focal adhesion sites
 Q96NT0	Plasma membrane,Vesicles
 Q96NT1	Nucleoplasm
 Q96NT3	Nucleoplasm
@@ -6932,7 +6932,7 @@ Q96PV7	Nucleoli,Nucleoplasm
 Q96PX1	Golgi apparatus,Vesicles
 Q96PX9	Nucleoplasm
 Q96PY5	Cytosol
-Q96PY6	Centrosome,Cytosol
+Q96PY6	Centriolar satellite,Cytosol
 Q96PZ2	Nucleoli fibrillar center
 Q96PZ7	Vesicles
 Q96Q06	Cytosol
@@ -6944,11 +6944,11 @@ Q96Q35	Cytosol,Plasma membrane
 Q96Q42	Cytosol,Intermediate filaments,Vesicles
 Q96Q77	Plasma membrane
 Q96Q83	Cytosol,Nucleoplasm
-Q96Q89	location_not_included_g1,Nucleoplasm
+Q96Q89	Cytokinetic bridge,Midbody,Nucleoplasm
 Q96Q91	Vesicles
 Q96QA5	Cytosol,Nucleoplasm,Plasma membrane
 Q96QB1	Cytosol
-Q96QC0	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q96QC0	Micronucleus,Nuclear bodies,Nucleoplasm
 Q96QD5	Nucleoli
 Q96QD8	Plasma membrane
 Q96QE3	Cytosol,Nucleoplasm
@@ -6965,7 +6965,7 @@ Q96QT4	Nucleoplasm,Vesicles
 Q96QT6	Nucleoplasm
 Q96QU6	Golgi apparatus
 Q96QU8	Nucleoli,Nucleoplasm,Plasma membrane
-Q96QZ7	Plasma membrane,Nucleoli,Nucleoplasm
+Q96QZ7	Cell Junctions,Nucleoli,Nucleoplasm
 Q96R06	Cytosol
 Q96RD6	Plasma membrane
 Q96RD7	Plasma membrane
@@ -6978,15 +6978,15 @@ Q96RI1	Nucleoplasm
 Q96RK0	Nucleoplasm,Vesicles
 Q96RK1	Vesicles
 Q96RK4	Cytosol
-Q96RL1	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q96RL1	Micronucleus,Nuclear bodies,Nucleoplasm
 Q96RN5	Nucleoplasm
 Q96RP3	Vesicles
 Q96RP7	Cytosol,Nucleoplasm
-Q96RQ1	Nucleoli,Vesicles
+Q96RQ1	Nucleoli rim,Vesicles
 Q96RQ3	Mitochondria
 Q96RR4	Cytosol
 Q96RS0	Cytosol
-Q96RT1	Plasma membrane,Nuclear speckles
+Q96RT1	Cell Junctions,Nuclear speckles,Plasma membrane
 Q96RT8	Cytosol
 Q96RU2	Nucleoplasm
 Q96RU8	Cytosol,Plasma membrane
@@ -7050,14 +7050,14 @@ Q99435	Vesicles
 Q99436	Cytosol,Nucleoplasm
 Q99437	Cytosol
 Q99439	Actin filaments,Vesicles
-Q99442	location_not_included_g1,Endoplasmic reticulum,Intermediate filaments
+Q99442	Aggresome,Endoplasmic reticulum,Intermediate filaments
 Q99447	Cytosol,Nucleoplasm
 Q99459	Nucleoplasm
 Q99460	Actin filaments,Nucleoplasm
 Q99467	Nucleoplasm,Plasma membrane
 Q99471	Intermediate filaments
 Q99489	Cytosol
-Q99490	Cytosol,location_not_included_g1,Nucleoplasm
+Q99490	Cytosol,Midbody ring,Nucleoplasm
 Q99496	Nuclear bodies
 Q99497	Cytosol,Nucleoplasm
 Q99501	Cytosol,Plasma membrane
@@ -7074,7 +7074,7 @@ Q99549	Cytosol,Nucleoli,Nucleoplasm,Plasma membrane
 Q99551	Mitochondria
 Q99558	Cytosol,Nucleoli fibrillar center,Nucleoplasm,Vesicles
 Q99567	Nucleoplasm
-Q99569	Plasma membrane
+Q99569	Cell Junctions,Plasma membrane
 Q99570	Vesicles
 Q99575	Nucleoli
 Q99576	Cytosol,Nuclear speckles
@@ -7082,7 +7082,7 @@ Q99578	Cytosol,Nucleoplasm
 Q99581	Nuclear speckles
 Q99583	Nucleoplasm
 Q99584	Cytosol,Nucleoplasm,Plasma membrane
-Q99590	location_not_included_g1,Nuclear bodies,Nucleoli,Nucleoplasm
+Q99590	Micronucleus,Nuclear bodies,Nucleoli,Nucleoplasm
 Q99592	Nucleoplasm
 Q99593	Nucleoplasm
 Q99595	Mitochondria,Nucleoplasm
@@ -7101,7 +7101,7 @@ Q99638	Nuclear bodies,Nucleoplasm
 Q99640	Golgi apparatus,Nucleoli
 Q99650	Nucleoli
 Q99653	Vesicles
-Q99661	Centrosome,Cytosol,location_not_included_g1,Nucleoplasm
+Q99661	Centrosome,Cytosol,Midbody,Nucleoplasm
 Q99665	Plasma membrane
 Q99675	Nucleoplasm,Vesicles
 Q99676	Cytosol,Nucleoplasm
@@ -7132,7 +7132,7 @@ Q99750	Nucleoplasm
 Q99755	Cytosol,Plasma membrane
 Q99757	Mitochondria
 Q99759	Nucleoplasm
-Q99766	location_not_included_g1,Mitochondria,Nucleoplasm
+Q99766	Micronucleus,Mitochondria,Nucleoplasm
 Q99767	Golgi apparatus,Nucleoplasm
 Q99784	Cytosol,Nucleoli,Nucleoplasm
 Q99797	Mitochondria
@@ -7145,7 +7145,7 @@ Q99819	Cytosol,Plasma membrane
 Q99829	Nucleoplasm
 Q99832	Cytosol
 Q99836	Cytosol,Mitochondria
-Q99848	location_not_included_g1,Nucleoli
+Q99848	Mitotic chromosome,Nucleoli,Nucleoli rim
 Q99853	Mitochondria,Nucleoplasm
 Q99856	Cytosol,Nucleoplasm
 Q99871	Plasma membrane
@@ -7154,7 +7154,7 @@ Q99884	Cytosol
 Q99928	Microtubules,Plasma membrane
 Q99933	Nucleoplasm
 Q99942	Endoplasmic reticulum
-Q99943	Endoplasmic reticulum,location_not_included_g1
+Q99943	Endoplasmic reticulum,Rods & Rings
 Q99944	Vesicles
 Q99956	Endoplasmic reticulum
 Q99961	Cytosol
@@ -7179,7 +7179,7 @@ Q9BQ61	Nucleoplasm
 Q9BQ67	Cytosol,Nucleoli,Nucleoplasm
 Q9BQ69	Nucleoplasm
 Q9BQ75	Nucleoli,Nucleoplasm
-Q9BQ83	location_not_included_g1,Nucleoplasm
+Q9BQ83	Micronucleus,Nucleoplasm
 Q9BQ90	Nucleoplasm,Vesicles
 Q9BQ95	Cytosol,Nucleoplasm
 Q9BQA1	Cytosol,Nucleoplasm
@@ -7217,10 +7217,10 @@ Q9BRC7	Cytosol,Endoplasmic reticulum
 Q9BRD0	Nucleoplasm
 Q9BRF8	Cytosol,Plasma membrane
 Q9BRG1	Vesicles
-Q9BRG2	location_not_included_g1,Microtubules,Nucleoplasm
+Q9BRG2	Cytokinetic bridge,Microtubules,Nucleoplasm
 Q9BRH9	Cytosol,Nucleoplasm
 Q9BRI3	Vesicles
-Q9BRJ6	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9BRJ6	Micronucleus,Nucleoli,Nucleoplasm
 Q9BRK3	Nucleoli
 Q9BRK4	Cytosol,Plasma membrane
 Q9BRL7	Golgi apparatus,Nucleoplasm
@@ -7233,12 +7233,12 @@ Q9BRQ0	Nucleoplasm,Plasma membrane
 Q9BRQ5	Cytosol,Nucleoplasm
 Q9BRQ6	Mitochondria
 Q9BRQ8	Plasma membrane,Vesicles
-Q9BRR8	Plasma membrane
+Q9BRR8	Cell Junctions,Plasma membrane
 Q9BRR9	Plasma membrane
 Q9BRS2	Cytosol
-Q9BRS8	location_not_included_g1,Microtubules
+Q9BRS8	Cytokinetic bridge,Microtubules
 Q9BRT2	Mitochondria,Nuclear bodies
-Q9BRT6	location_not_included_g1,Nucleoli
+Q9BRT6	Mitotic chromosome,Nucleoli
 Q9BRT9	Nucleoplasm
 Q9BRU9	Nucleoli
 Q9BRV8	Vesicles
@@ -7290,7 +7290,7 @@ Q9BTC8	Nucleoplasm,Vesicles
 Q9BTD3	Cytosol
 Q9BTD8	Cytosol,Nuclear speckles
 Q9BTE0	Nucleoplasm
-Q9BTE3	Cytosol,location_not_included_g1,Nucleoplasm
+Q9BTE3	Cytosol,Micronucleus,Nucleoplasm
 Q9BTE6	Cytosol,Nuclear membrane
 Q9BTE7	Nucleoli,Nucleoplasm
 Q9BTL4	Nucleoplasm
@@ -7315,7 +7315,7 @@ Q9BUA3	Nuclear speckles
 Q9BUB4	Nucleoplasm
 Q9BUB7	Mitochondria,Nucleoplasm
 Q9BUE0	Nucleoplasm
-Q9BUF7	Plasma membrane
+Q9BUF7	Cell Junctions
 Q9BUH6	Nucleoplasm
 Q9BUH8	Cytosol,Nucleoplasm
 Q9BUI4	Nucleoplasm
@@ -7330,7 +7330,7 @@ Q9BUQ8	Nucleoli,Nucleoplasm
 Q9BUR4	Cytosol,Nucleoplasm
 Q9BUR5	Cytosol,Mitochondria
 Q9BUT1	Cytosol
-Q9BUU2	Nucleoli
+Q9BUU2	Nucleoli rim
 Q9BUV0	Nucleoplasm
 Q9BUV8	Mitochondria
 Q9BUW7	Microtubules
@@ -7354,18 +7354,18 @@ Q9BVA0	Cytosol,Microtubules,Plasma membrane
 Q9BVA6	Nucleoplasm
 Q9BVC3	Nucleoplasm
 Q9BVC4	Nucleoplasm
-Q9BVC5	location_not_included_g1,Mitochondria,Nucleoplasm
+Q9BVC5	Micronucleus,Mitochondria,Nucleoplasm
 Q9BVC6	Cytosol,Nuclear membrane
-Q9BVG3	Actin filaments,Vesicles
+Q9BVG3	Focal adhesion sites,Vesicles
 Q9BVG4	Cytosol,Nucleoli,Nucleoplasm
 Q9BVH7	Vesicles
-Q9BVI0	Cytosol,location_not_included_g1,Nucleoplasm
+Q9BVI0	Cytosol,Micronucleus,Nucleoplasm
 Q9BVI4	Nucleoli
 Q9BVK2	Nucleoplasm
 Q9BVL4	Mitochondria
 Q9BVM2	Nuclear speckles
 Q9BVN2	Cytosol
-Q9BVP2	location_not_included_g1,Nuclear bodies,Nucleoli
+Q9BVP2	Midbody,Mitotic chromosome,Nuclear bodies,Nucleoli rim
 Q9BVQ7	Nucleoplasm
 Q9BVS4	Cytosol
 Q9BVT8	Cytosol,Nucleoplasm
@@ -7375,7 +7375,7 @@ Q9BW11	Nucleoli,Nucleoplasm
 Q9BW27	Cytosol,Nucleoplasm
 Q9BW60	Endoplasmic reticulum
 Q9BW61	Nucleoli,Nucleoplasm
-Q9BW71	location_not_included_g1,Nucleoplasm
+Q9BW71	Micronucleus,Nucleoplasm
 Q9BW85	Nucleoplasm
 Q9BW91	Mitochondria,Nuclear bodies
 Q9BW92	Cytosol,Nucleoplasm
@@ -7389,7 +7389,7 @@ Q9BWJ5	Nucleoplasm
 Q9BWL3	Mitochondria
 Q9BWM5	Nucleoplasm
 Q9BWM7	Mitochondria
-Q9BWN1	location_not_included_g1,Nucleoplasm
+Q9BWN1	Micronucleus,Nucleoplasm
 Q9BWQ6	Mitochondria
 Q9BWT1	Cytosol,Nucleoplasm
 Q9BWT3	Nucleoplasm
@@ -7407,27 +7407,27 @@ Q9BX26	Nucleoplasm
 Q9BX40	Vesicles
 Q9BX46	Cytosol,Nucleoplasm
 Q9BX63	Nuclear membrane,Nucleoplasm
-Q9BX66	Centrosome,Actin filaments
+Q9BX66	Centrosome,Focal adhesion sites
 Q9BX68	Mitochondria
 Q9BX73	Plasma membrane
 Q9BX74	Nucleoplasm,Vesicles
 Q9BX82	Nucleoplasm
 Q9BX95	Nucleoplasm
 Q9BX97	Cytosol
-Q9BXB1	Centrosome
+Q9BXB1	Centriolar satellite
 Q9BXB4	Golgi apparatus,Nucleoplasm
 Q9BXC1	Vesicles
 Q9BXC9	Mitochondria,Vesicles
 Q9BXD5	Vesicles
 Q9BXF3	Nucleoplasm,Vesicles
-Q9BXF6	Centrosome,Vesicles
+Q9BXF6	Centriolar satellite,Vesicles
 Q9BXF9	Nucleoplasm,Plasma membrane
 Q9BXI6	Plasma membrane
 Q9BXI9	Nucleoplasm
 Q9BXJ1	Cytosol,Nucleoplasm
 Q9BXJ9	Cytosol,Nuclear bodies,Vesicles
 Q9BXK5	Mitochondria
-Q9BXL6	location_not_included_g1,Cytosol
+Q9BXL6	Aggresome,Cytosol
 Q9BXL8	Nucleoplasm,Plasma membrane
 Q9BXM0	Plasma membrane,Vesicles
 Q9BXM9	Plasma membrane,Vesicles
@@ -7442,8 +7442,8 @@ Q9BXS9	Cytosol,Plasma membrane
 Q9BXT2	Cytosol,Nucleoli fibrillar center
 Q9BXT5	Cytosol,Nucleoplasm
 Q9BXU7	Nucleoplasm
-Q9BXV9	Nucleoli,Nucleoplasm
-Q9BXW4	Cytosol
+Q9BXV9	Nucleoli rim,Nucleoplasm
+Q9BXW4	Cytoplasmic bodies
 Q9BXW7	Mitochondria
 Q9BXW9	Cytosol,Nuclear bodies,Nucleoplasm
 Q9BXY0	Nucleoli,Vesicles
@@ -7457,9 +7457,9 @@ Q9BY42	Nucleoplasm
 Q9BY44	Cytosol,Mitochondria
 Q9BY49	Peroxisomes
 Q9BY66	Nucleoli fibrillar center
-Q9BY67	Plasma membrane
+Q9BY67	Cell Junctions
 Q9BY76	Vesicles
-Q9BY77	Cytosol,Nuclear speckles
+Q9BY77	Cytoplasmic bodies,Nuclear speckles
 Q9BY78	Nucleoplasm,Vesicles
 Q9BY84	Nucleoplasm
 Q9BY89	Microtubules
@@ -7469,10 +7469,10 @@ Q9BYD5	Microtubules
 Q9BYD9	Cytosol,Nucleoplasm
 Q9BYE0	Nucleoli,Nucleoplasm
 Q9BYG0	Nuclear bodies,Nucleoli
-Q9BYG3	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9BYG3	Mitotic chromosome,Nucleoli,Nucleoli rim,Nucleoplasm
 Q9BYG5	Cytosol
 Q9BYG8	Vesicles
-Q9BYH8	Cytosol,Nuclear speckles
+Q9BYH8	Cytoplasmic bodies,Nuclear speckles
 Q9BYI3	Cytosol,Plasma membrane
 Q9BYJ1	Cytosol,Plasma membrane
 Q9BYL1	Nucleoplasm
@@ -7505,16 +7505,16 @@ Q9BZE9	Nucleoplasm,Plasma membrane
 Q9BZF1	Cytosol,Vesicles
 Q9BZF2	Cytosol,Nucleoplasm
 Q9BZF9	Cytosol,Nucleoplasm
-Q9BZG8	Plasma membrane,Nucleoplasm
+Q9BZG8	Cell Junctions,Nucleoplasm
 Q9BZH6	Microtubules
 Q9BZI7	Cytosol,Nucleoli
 Q9BZJ6	Cytosol,Nucleoplasm,Plasma membrane
 Q9BZK7	Nucleoplasm
-Q9BZL3	location_not_included_g1,Vesicles
+Q9BZL3	Cytokinetic bridge,Vesicles
 Q9BZL6	Cytosol,Nucleoplasm
-Q9BZM4	Centrosome,Vesicles
+Q9BZM4	Centriolar satellite,Vesicles
 Q9BZQ6	Endoplasmic reticulum
-Q9BZR6	Actin filaments,Plasma membrane
+Q9BZR6	Focal adhesion sites,Plasma membrane
 Q9BZR8	Cytosol
 Q9BZR9	Cytosol,Nucleoplasm
 Q9BZS1	Cytosol,Nucleoplasm
@@ -7532,7 +7532,7 @@ Q9C086	Nuclear bodies,Nucleoplasm
 Q9C098	Cytosol
 Q9C0A1	Cytosol,Nucleoli fibrillar center,Nucleoplasm
 Q9C0A6	Cytosol,Nucleoplasm
-Q9C0B0	Cytosol,Nuclear speckles
+Q9C0B0	Cytoplasmic bodies,Cytosol,Nuclear speckles
 Q9C0B1	Cytosol
 Q9C0B5	Nucleoplasm,Plasma membrane
 Q9C0B7	Cytosol,Golgi apparatus
@@ -7549,7 +7549,7 @@ Q9C0E8	Endoplasmic reticulum,Nucleoplasm
 Q9C0F3	Cytosol,Nucleoplasm
 Q9C0G0	Nucleoplasm,Plasma membrane
 Q9C0G6	Plasma membrane
-Q9C0H5	location_not_included_g1,Cytosol,Microtubules
+Q9C0H5	Cytokinetic bridge,Cytosol,Microtubules
 Q9C0H6	Microtubules
 Q9C0I4	Cytosol,Nucleoplasm
 Q9C0I9	Nucleoplasm
@@ -7565,7 +7565,7 @@ Q9GZN6	Golgi apparatus
 Q9GZN8	Cytosol,Nucleoplasm
 Q9GZP0	Vesicles
 Q9GZP1	Vesicles
-Q9GZP8	Cytosol,location_not_included_g1,Nucleoplasm
+Q9GZP8	Cytosol,Micronucleus,Nucleoplasm
 Q9GZP9	Endoplasmic reticulum
 Q9GZQ4	Plasma membrane
 Q9GZR1	Cytosol,Nucleoplasm
@@ -7588,7 +7588,7 @@ Q9GZV5	Nuclear bodies,Nucleoplasm
 Q9GZV8	Nucleoplasm,Vesicles
 Q9GZX5	Nuclear bodies,Nucleoplasm
 Q9GZX9	Centrosome,Cytosol
-Q9GZY1	Centrosome,Nucleoplasm
+Q9GZY1	Centriolar satellite,Nucleoplasm
 Q9GZY4	Mitochondria
 Q9GZY6	Plasma membrane
 Q9GZY8	Mitochondria
@@ -7604,9 +7604,9 @@ Q9H040	Nucleoplasm
 Q9H061	Cytosol,Nucleoplasm
 Q9H063	Cytosol,Nucleoplasm
 Q9H074	Cytosol,Plasma membrane
-Q9H079	location_not_included_g1
+Q9H079	Midbody
 Q9H089	Cytosol,Nuclear bodies,Nucleoplasm
-Q9H091	Cytosol,location_not_included_g1,Nuclear speckles
+Q9H091	Cytosol,Micronucleus,Nuclear speckles
 Q9H093	Cytosol,Nucleoplasm
 Q9H095	Actin filaments,Cytosol
 Q9H098	Golgi apparatus,Nucleoplasm
@@ -7616,7 +7616,7 @@ Q9H0A8	Cytosol,Plasma membrane,Vesicles
 Q9H0A9	Cytosol,Plasma membrane,Vesicles
 Q9H0B6	Cytosol,Mitochondria,Nucleoplasm,Plasma membrane
 Q9H0B8	Vesicles
-Q9H0C5	Cytosol
+Q9H0C5	Cytoplasmic bodies
 Q9H0D2	Cytosol,Nucleoplasm
 Q9H0D6	Nucleoli,Nucleoplasm
 Q9H0E2	Cytosol
@@ -7653,13 +7653,13 @@ Q9H0X9	Vesicles
 Q9H0Y0	Nucleoli,Nucleoplasm
 Q9H0Z9	Cytosol,Nucleoplasm
 Q9H116	Nucleoli,Nucleoplasm
-Q9H147	Nucleoli,Nucleoplasm
+Q9H147	Nucleoli rim,Nucleoplasm
 Q9H158	Nucleoli,Nucleoplasm
 Q9H160	Nucleoplasm
 Q9H165	Nuclear bodies,Nucleoplasm
 Q9H175	Mitochondria,Nuclear speckles
 Q9H190	Nucleoplasm
-Q9H1A3	Plasma membrane,Nucleoplasm
+Q9H1A3	Cell Junctions,Nucleoplasm
 Q9H1A4	Vesicles
 Q9H1B7	Nucleoplasm
 Q9H1C3	Golgi apparatus,Nucleoplasm
@@ -7667,13 +7667,13 @@ Q9H1C4	Nucleoplasm
 Q9H1D9	Nucleoplasm
 Q9H1E3	Nucleoplasm
 Q9H1E5	Nuclear membrane
-Q9H1I8	Cytosol,Actin filaments,Nucleoplasm
+Q9H1I8	Cytosol,Focal adhesion sites,Nucleoplasm
 Q9H1J1	Cytosol,Nucleoplasm,Vesicles
 Q9H1J7	Vesicles
 Q9H1K0	Vesicles
 Q9H1K1	Cytosol
 Q9H1K4	Mitochondria,Nucleoplasm
-Q9H1K6	Cytosol,Nucleoplasm
+Q9H1K6	Cytoplasmic bodies,Nucleoplasm
 Q9H1P3	Cytosol
 Q9H1Q7	Cytosol,Nucleoplasm
 Q9H1R2	Cytosol,Plasma membrane
@@ -7681,7 +7681,7 @@ Q9H1R3	Endoplasmic reticulum
 Q9H1U4	Nucleoplasm
 Q9H1V8	Mitochondria
 Q9H1X3	Cytosol,Nucleoplasm
-Q9H1Z4	Centrosome,Nucleoplasm,Plasma membrane
+Q9H1Z4	Centriolar satellite,Nucleoplasm,Plasma membrane
 Q9H201	Vesicles
 Q9H204	Nucleoplasm
 Q9H211	Nucleoplasm
@@ -7737,11 +7737,11 @@ Q9H3J6	Cytosol
 Q9H3K2	Mitochondria
 Q9H3M7	Cytosol,Plasma membrane
 Q9H3N1	Endoplasmic reticulum,Nucleoli
-Q9H3P2	location_not_included_g1,Nuclear bodies,Nucleoplasm
+Q9H3P2	Micronucleus,Nuclear bodies,Nucleoplasm
 Q9H3P7	Golgi apparatus
 Q9H3Q1	Actin filaments,Microtubules,Plasma membrane
 Q9H3R0	Nucleoplasm
-Q9H3R5	location_not_included_g1,Nucleoli
+Q9H3R5	Micronucleus,Mitotic chromosome,Nucleoli rim
 Q9H3S3	Nucleoplasm
 Q9H3S4	Vesicles
 Q9H3S7	Nuclear bodies,Nucleoplasm,Vesicles
@@ -7751,7 +7751,7 @@ Q9H3Y6	Actin filaments,Cytosol
 Q9H3Y8	Microtubules,Nucleoli,Nucleoplasm
 Q9H3Z4	Golgi apparatus
 Q9H3Z7	Nucleoplasm
-Q9H410	Cytosol,location_not_included_g1,Nuclear bodies,Nucleoli,Nucleoplasm
+Q9H410	Cytosol,Kinetochore,Nuclear bodies,Nucleoli,Nucleoplasm
 Q9H422	Cytosol
 Q9H425	Cytosol
 Q9H426	Nucleoplasm
@@ -7766,14 +7766,14 @@ Q9H4B0	Mitochondria
 Q9H4D5	Nucleoplasm
 Q9H4E7	Nucleoplasm
 Q9H4F1	Golgi apparatus
-Q9H4H8	location_not_included_g1
+Q9H4H8	Mitotic spindle
 Q9H4I2	Nucleoplasm
 Q9H4I3	Mitochondria,Nucleoplasm
 Q9H4I9	Mitochondria,Nucleoplasm
 Q9H4L4	Nucleoli,Nucleoplasm
 Q9H4L7	Nucleoplasm
 Q9H4M3	Nucleoplasm
-Q9H4M7	Centrosome,location_not_included_g1,Cytosol,Plasma membrane
+Q9H4M7	Centriolar satellite,Cytokinetic bridge,Cytosol,Plasma membrane
 Q9H4Q3	Nucleoplasm
 Q9H4X1	Nucleoplasm
 Q9H4Z2	Nucleoplasm
@@ -7784,15 +7784,15 @@ Q9H568	Cytosol
 Q9H583	Mitochondria,Nucleoli fibrillar center
 Q9H5F2	Nucleoplasm
 Q9H5H4	Nucleoplasm,Vesicles
-Q9H5I5	Cytosol,Actin filaments,Plasma membrane
+Q9H5I5	Cytosol,Focal adhesion sites,Plasma membrane
 Q9H5J0	Mitochondria
-Q9H5J8	Centrosome,Cytosol,location_not_included_g1,Nucleoplasm
+Q9H5J8	Centriolar satellite,Cytosol,Mitotic spindle,Nucleoplasm
 Q9H5L6	Mitochondria
 Q9H5N1	Cytosol
 Q9H5Q4	Mitochondria
 Q9H5U6	Golgi apparatus,Nuclear speckles
 Q9H5V7	Nucleoplasm,Plasma membrane
-Q9H5V9	Centrosome,location_not_included_g1,Nucleoplasm
+Q9H5V9	Centrosome,Micronucleus,Nucleoplasm
 Q9H5X1	Cytosol,Nucleoplasm
 Q9H5Z1	Nuclear bodies
 Q9H5Z6	Mitochondria,Nucleoplasm
@@ -7806,14 +7806,14 @@ Q9H672	Vesicles
 Q9H694	Cytosol
 Q9H6A0	Nucleoplasm
 Q9H6D3	Golgi apparatus
-Q9H6D8	location_not_included_g1,Cytosol,Nucleoplasm
+Q9H6D8	Aggresome,Cytosol,Nucleoplasm
 Q9H6E4	Cytosol,Vesicles
 Q9H6E5	Cytosol,Nucleoplasm
 Q9H6F2	Nucleoplasm
-Q9H6F5	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9H6F5	Mitotic chromosome,Nucleoli,Nucleoli rim,Nucleoplasm
 Q9H6H4	Endoplasmic reticulum
 Q9H6I2	Nucleoplasm
-Q9H6J7	location_not_included_g1,Nuclear speckles,Nucleoplasm
+Q9H6J7	Micronucleus,Nuclear speckles,Nucleoplasm
 Q9H6K1	Centrosome,Cytosol,Nuclear speckles
 Q9H6K4	Cytosol
 Q9H6K5	Golgi apparatus,Nuclear speckles
@@ -7833,7 +7833,7 @@ Q9H6T0	Nucleoplasm
 Q9H6T3	Cytosol
 Q9H6U6	Nucleoli
 Q9H6U8	Endoplasmic reticulum
-Q9H6W3	Nucleoli
+Q9H6W3	Nucleoli rim
 Q9H6X4	Cytosol
 Q9H6X5	Nucleoplasm
 Q9H6Y2	Nucleoli,Nucleoplasm
@@ -7845,9 +7845,9 @@ Q9H706	Cytosol,Nucleoplasm
 Q9H777	Cytosol,Nucleoplasm
 Q9H788	Cytosol
 Q9H790	Cytosol,Nucleoplasm
-Q9H792	Cytosol,Actin filaments
+Q9H792	Cytosol,Focal adhesion sites
 Q9H799	Cytosol
-Q9H7B2	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9H7B2	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q9H7C4	Plasma membrane
 Q9H7C9	Cytosol,Nucleoplasm
 Q9H7D0	Cytosol
@@ -7867,9 +7867,9 @@ Q9H7X3	Nucleoli,Nucleoplasm
 Q9H7X7	Cytosol,Microtubules
 Q9H7Z3	Mitochondria,Nucleoplasm
 Q9H7Z6	Nucleoplasm
-Q9H814	location_not_included_g1,Nucleoplasm
+Q9H814	Micronucleus,Nucleoplasm
 Q9H816	Nuclear bodies,Nucleoplasm
-Q9H819	Plasma membrane,Cytosol
+Q9H819	Cell Junctions,Cytosol
 Q9H832	Cytosol,Nucleoplasm
 Q9H840	Cytosol,Nucleoplasm
 Q9H845	Mitochondria
@@ -7893,7 +7893,7 @@ Q9H8P0	Cytosol,Plasma membrane
 Q9H8U3	Nucleoplasm,Vesicles
 Q9H8V3	Cytosol,Nucleoplasm
 Q9H8W3	Centrosome,Nucleoli,Nucleoplasm
-Q9H8W5	location_not_included_g1,Cytosol
+Q9H8W5	Cytokinetic bridge,Cytosol
 Q9H8X2	Cytosol
 Q9H8Y1	Nucleoplasm
 Q9H8Y5	Cytosol,Nuclear bodies,Nucleoplasm
@@ -7914,7 +7914,7 @@ Q9H9A6	Nucleoli
 Q9H9A7	Nuclear bodies,Nucleoplasm
 Q9H9B1	Nuclear bodies,Nucleoplasm
 Q9H9B4	Mitochondria
-Q9H9D4	Centrosome,Cytosol
+Q9H9D4	Centriolar satellite,Cytosol
 Q9H9E1	Plasma membrane
 Q9H9E3	Golgi apparatus,Vesicles
 Q9H9H5	Cytosol
@@ -7955,13 +7955,13 @@ Q9HAU0	Cytosol,Nucleoplasm
 Q9HAU4	Nuclear speckles
 Q9HAU5	Cytosol
 Q9HAU8	Nucleoplasm
-Q9HAV4	Cytosol,location_not_included_g1,Nucleoplasm
-Q9HAV5	Plasma membrane
+Q9HAV4	Cytosol,Micronucleus,Nucleoplasm
+Q9HAV5	Cell Junctions
 Q9HAV7	Mitochondria,Nucleoplasm
 Q9HAW0	Nucleoli
 Q9HAW4	Golgi apparatus,Nucleoplasm
 Q9HAY2	Actin filaments
-Q9HAY6	Centrosome
+Q9HAY6	Centriolar satellite
 Q9HAZ1	Actin filaments
 Q9HAZ2	Cytosol,Nucleoplasm
 Q9HB07	Nucleoplasm
@@ -7970,7 +7970,7 @@ Q9HB20	Golgi apparatus
 Q9HB21	Cytosol,Nucleoplasm
 Q9HB40	Golgi apparatus
 Q9HB58	Nucleoplasm
-Q9HB65	Cytosol,location_not_included_g1,Nuclear speckles,Nucleoli,Nucleoplasm
+Q9HB65	Cytosol,Mitotic chromosome,Nuclear speckles,Nucleoli,Nucleoplasm
 Q9HB71	Cytosol
 Q9HB75	Cytosol
 Q9HB90	Nucleoplasm,Vesicles
@@ -7990,7 +7990,7 @@ Q9HBJ0	Cytosol
 Q9HBJ7	Cytosol,Plasma membrane
 Q9HBJ8	Endoplasmic reticulum,Vesicles
 Q9HBK9	Mitochondria
-Q9HBL0	Actin filaments
+Q9HBL0	Focal adhesion sites
 Q9HBM0	Nucleoplasm
 Q9HBM1	Cytosol
 Q9HBR0	Golgi apparatus
@@ -8004,14 +8004,14 @@ Q9HC29	Golgi apparatus
 Q9HC35	Cytosol,Microtubules
 Q9HC36	Mitochondria
 Q9HC38	Cytosol
-Q9HC44	Cytosol,Actin filaments,Nucleoplasm
+Q9HC44	Cytosol,Focal adhesion sites,Nucleoplasm
 Q9HC52	Nucleoplasm
 Q9HC56	Centrosome,Nucleoplasm
 Q9HC62	Cytosol
 Q9HC73	Plasma membrane
 Q9HC78	Nuclear bodies,Nucleoplasm
 Q9HC96	Cytosol,Mitochondria
-Q9HC98	Centrosome,Cytosol,Nucleoplasm
+Q9HC98	Centriolar satellite,Cytosol,Nucleoplasm
 Q9HCC0	Mitochondria
 Q9HCC6	Cytosol,Nucleoplasm
 Q9HCC9	Cytosol,Nucleoplasm,Plasma membrane
@@ -8054,7 +8054,7 @@ Q9HCU5	Endoplasmic reticulum
 Q9HCU8	Nucleoplasm
 Q9HCX3	Nuclear speckles
 Q9HCZ1	Cytosol,Nucleoplasm
-Q9HD15	location_not_included_g1,Microtubules,Nucleoplasm
+Q9HD15	Cytokinetic bridge,Microtubules,Nucleoplasm
 Q9HD20	Vesicles
 Q9HD33	Mitochondria
 Q9HD34	Nuclear bodies
@@ -8066,7 +8066,7 @@ Q9HD64	Nucleoplasm
 Q9HD67	Cytosol,Plasma membrane
 Q9HDC5	Nucleoplasm
 Q9HDC9	Plasma membrane
-Q9HDD0	Cytosol,Actin filaments
+Q9HDD0	Cytosol,Focal adhesion sites
 Q9NNW5	Cytosol,Plasma membrane
 Q9NNW7	Cytosol
 Q9NNX1	Vesicles
@@ -8076,13 +8076,13 @@ Q9NP59	Cytosol,Plasma membrane
 Q9NP66	Nucleoplasm
 Q9NP71	Nucleoplasm
 Q9NP73	Vesicles
-Q9NP74	Actin filaments
+Q9NP74	Focal adhesion sites
 Q9NP78	Vesicles
 Q9NP79	Cytosol,Nucleoplasm,Vesicles
 Q9NP80	Cytosol,Golgi apparatus,Nucleoplasm
 Q9NP84	Cytosol,Plasma membrane
 Q9NP87	Nucleoplasm
-Q9NP94	Cytosol,Plasma membrane
+Q9NP94	Cytoplasmic bodies,Plasma membrane
 Q9NPA1	Mitochondria,Nucleoplasm
 Q9NPA8	Mitochondria,Nucleoplasm
 Q9NPB0	Vesicles
@@ -8107,7 +8107,7 @@ Q9NPH9	Vesicles
 Q9NPI0	Microtubules
 Q9NPI1	Cytosol,Nucleoplasm
 Q9NPI5	Nucleoplasm,Plasma membrane,Vesicles
-Q9NPI6	Cytosol
+Q9NPI6	Cytoplasmic bodies
 Q9NPI7	Cytosol
 Q9NPJ1	Centrosome
 Q9NPJ4	Nucleoplasm
@@ -8132,7 +8132,7 @@ Q9NQ92	Nucleoplasm,Plasma membrane
 Q9NQB0	Nucleoplasm
 Q9NQC1	Nucleoplasm
 Q9NQC3	Endoplasmic reticulum
-Q9NQC7	Centrosome,Nucleoplasm
+Q9NQC7	Centriolar satellite,Nucleoplasm
 Q9NQE9	Cytosol,Mitochondria,Nucleoli
 Q9NQG1	Mitochondria,Nucleoplasm
 Q9NQH7	Mitochondria
@@ -8148,7 +8148,7 @@ Q9NQT5	Nucleoplasm
 Q9NQU5	Nucleoli fibrillar center,Nucleoplasm
 Q9NQV6	Nucleoli fibrillar center,Nucleoplasm,Vesicles
 Q9NQW1	Cytosol,Nucleoplasm,Vesicles
-Q9NQW6	location_not_included_g1,Nucleoplasm
+Q9NQW6	Midbody,Nucleoplasm
 Q9NQW7	Cytosol
 Q9NQX0	Nucleoplasm
 Q9NQX1	Nuclear bodies,Nucleoli,Nucleoplasm
@@ -8160,13 +8160,13 @@ Q9NQZ5	Mitochondria
 Q9NQZ6	Vesicles
 Q9NQZ8	Nucleoli
 Q9NR00	Cytosol,Plasma membrane
-Q9NR09	Golgi apparatus,location_not_included_g1,Vesicles
-Q9NR12	Actin filaments,Nucleoplasm
+Q9NR09	Golgi apparatus,Mitotic spindle,Vesicles
+Q9NR12	Actin filaments,Focal adhesion sites,Nucleoplasm
 Q9NR16	Cytosol,Nucleoplasm
 Q9NR20	Vesicles
 Q9NR21	Cytosol,Nucleoplasm
 Q9NR28	Cytosol,Mitochondria
-Q9NR30	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9NR30	Mitotic chromosome,Nucleoli rim,Nucleoplasm
 Q9NR33	Cytosol,Nucleoplasm
 Q9NR45	Nucleoplasm
 Q9NR46	Cytosol,Nucleoplasm
@@ -8186,15 +8186,15 @@ Q9NRC8	Nuclear speckles,Nucleoplasm
 Q9NRD0	Cytosol,Nucleoplasm
 Q9NRD5	Cytosol
 Q9NRE2	Golgi apparatus,Nucleoplasm
-Q9NRF2	Centrosome
+Q9NRF2	Centriolar satellite
 Q9NRF8	Cytosol,Mitochondria
 Q9NRF9	Nucleoplasm
 Q9NRG1	Cytosol,Nucleoplasm
 Q9NRG4	Cytosol,Mitochondria
 Q9NRG9	Nuclear membrane
 Q9NRH1	Cytosol
-Q9NRH2	Plasma membrane,Vesicles
-Q9NRH3	Centrosome
+Q9NRH2	Cell Junctions,Vesicles
+Q9NRH3	Centriolar satellite
 Q9NRI5	Intermediate filaments
 Q9NRJ5	Nucleoplasm
 Q9NRL3	Cytosol
@@ -8217,7 +8217,7 @@ Q9NRX1	Nucleoli,Nucleoplasm
 Q9NRX4	Cytosol,Nucleoplasm
 Q9NRX5	Cytosol
 Q9NRY2	Nucleoplasm
-Q9NRY4	location_not_included_g1,Nuclear bodies
+Q9NRY4	Aggresome,Nuclear bodies
 Q9NRY5	Vesicles
 Q9NRY6	Mitochondria
 Q9NRY7	Endoplasmic reticulum,Nucleoplasm
@@ -8240,12 +8240,12 @@ Q9NS91	Nuclear bodies,Nuclear speckles,Nucleoplasm
 Q9NS93	Cytosol,Nucleoplasm
 Q9NSB8	Cytosol
 Q9NSC2	Cytosol,Nucleoli,Nucleoplasm
-Q9NSC5	Cytosol
+Q9NSC5	Cytoplasmic bodies,Cytosol
 Q9NSC7	Nucleoplasm
 Q9NSD4	Nucleoli fibrillar center
 Q9NSD5	Mitochondria
 Q9NSD9	Nucleoplasm
-Q9NSE2	location_not_included_g1,Microtubules
+Q9NSE2	Cytokinetic bridge,Microtubules
 Q9NSE4	Mitochondria
 Q9NSI2	Nucleoli,Nucleoplasm
 Q9NSI6	Nucleoli,Nucleoplasm
@@ -8256,7 +8256,7 @@ Q9NSU2	Cytosol
 Q9NSV4	Microtubules,Plasma membrane
 Q9NSY0	Cytosol
 Q9NSY1	Nuclear speckles
-Q9NT22	location_not_included_g1,Golgi apparatus,Microtubules
+Q9NT22	Cytokinetic bridge,Golgi apparatus,Microtubules
 Q9NT62	Cytosol,Plasma membrane
 Q9NT68	Nucleoli
 Q9NTI2	Plasma membrane
@@ -8297,7 +8297,7 @@ Q9NUP7	Cytosol,Nucleoplasm,Plasma membrane
 Q9NUQ2	Mitochondria
 Q9NUQ3	Cytosol
 Q9NUQ6	Cytosol,Nucleoli
-Q9NUQ7	location_not_included_g1,Cytosol,Nucleoplasm
+Q9NUQ7	Cytokinetic bridge,Cytosol,Nucleoplasm
 Q9NUQ8	Cytosol,Nucleoli
 Q9NUQ9	Nucleoplasm
 Q9NUR3	Golgi apparatus,Nucleoplasm
@@ -8324,7 +8324,7 @@ Q9NVC6	Cytosol,Nucleoplasm
 Q9NVD3	Nuclear speckles
 Q9NVD7	Actin filaments,Cytosol
 Q9NVE5	Vesicles
-Q9NVF7	Actin filaments,Nucleoplasm
+Q9NVF7	Focal adhesion sites,Nucleoplasm
 Q9NVG8	Cytosol
 Q9NVH0	Intermediate filaments
 Q9NVH1	Nuclear speckles
@@ -8337,7 +8337,7 @@ Q9NVM6	Nucleoplasm
 Q9NVM9	Nuclear bodies,Nucleoplasm,Vesicles
 Q9NVN3	Cytosol
 Q9NVN8	Cytosol,Nucleoli,Nucleoplasm
-Q9NVP1	location_not_included_g1,Nucleoli
+Q9NVP1	Mitotic chromosome,Nucleoli
 Q9NVP2	Nucleoplasm
 Q9NVQ4	Cytosol,Plasma membrane
 Q9NVR0	Nuclear membrane,Nucleoplasm
@@ -8345,7 +8345,7 @@ Q9NVR2	Cytosol,Nucleoplasm
 Q9NVR5	Cytosol
 Q9NVS9	Cytosol,Nucleoplasm
 Q9NVT9	Mitochondria
-Q9NVU0	location_not_included_g1,Nucleoplasm
+Q9NVU0	Micronucleus,Nucleoplasm
 Q9NVU7	Nucleoli,Nucleoplasm
 Q9NVV4	Mitochondria
 Q9NVV9	Nucleoplasm,Vesicles
@@ -8397,7 +8397,7 @@ Q9NWV8	Cytosol,Nuclear bodies,Nucleoplasm
 Q9NWW5	Endoplasmic reticulum,Nucleoli,Vesicles
 Q9NWW7	Nucleoplasm
 Q9NWW9	Mitochondria
-Q9NWY4	location_not_included_g1,Cytosol
+Q9NWY4	Cytokinetic bridge,Cytosol
 Q9NWZ3	Cytosol,Microtubules,Nucleoli
 Q9NWZ5	Endoplasmic reticulum
 Q9NWZ8	Cytosol,Nucleoplasm
@@ -8417,7 +8417,7 @@ Q9NX46	Nuclear bodies,Nucleoplasm
 Q9NX47	Mitochondria
 Q9NX55	Microtubules,Nucleoplasm
 Q9NX57	Golgi apparatus,Vesicles
-Q9NX58	Nucleoli,Nucleoplasm
+Q9NX58	Nucleoli,Nucleoli rim,Nucleoplasm
 Q9NX61	Cytosol
 Q9NX62	Cytosol,Golgi apparatus,Nucleoplasm
 Q9NX63	Mitochondria
@@ -8448,7 +8448,7 @@ Q9NXS3	Cytosol
 Q9NXT0	Nucleoli fibrillar center,Vesicles
 Q9NXU5	Golgi apparatus,Plasma membrane
 Q9NXV6	Nucleoplasm
-Q9NXW2	Endoplasmic reticulum,location_not_included_g1,Nuclear membrane
+Q9NXW2	Endoplasmic reticulum,Micronucleus,Nuclear membrane
 Q9NXX6	Nucleoplasm
 Q9NXZ1	Nucleoplasm
 Q9NY12	Nucleoli fibrillar center,Nucleoplasm
@@ -8461,7 +8461,7 @@ Q9NY61	Nucleoli,Nucleoplasm
 Q9NY65	Microtubules
 Q9NY72	Cytosol,Intermediate filaments
 Q9NY74	Cytosol,Nucleoplasm
-Q9NY93	location_not_included_g1,Nucleoli
+Q9NY93	Mitotic chromosome,Nucleoli
 Q9NY97	Vesicles
 Q9NY99	Nucleoplasm,Plasma membrane
 Q9NYA1	Cytosol,Plasma membrane
@@ -8470,19 +8470,19 @@ Q9NYB9	Cytosol,Nucleoplasm,Vesicles
 Q9NYD6	Nuclear bodies,Nucleoplasm
 Q9NYF0	Nucleoplasm
 Q9NYF5	Nucleoplasm
-Q9NYF8	location_not_included_g1,Nuclear speckles
+Q9NYF8	Micronucleus,Nuclear speckles
 Q9NYG5	Nucleoplasm
-Q9NYH9	location_not_included_g1,Nucleoli
+Q9NYH9	Mitotic chromosome,Nucleoli
 Q9NYI0	Cytosol,Nucleoplasm,Vesicles
 Q9NYJ1	Nucleoli fibrillar center,Nucleoplasm
 Q9NYJ7	Nucleoplasm,Plasma membrane
 Q9NYK5	Mitochondria
-Q9NYK6	location_not_included_g1,Microtubules
+Q9NYK6	Cytokinetic bridge,Microtubules
 Q9NYL2	Cytosol
 Q9NYL4	Centrosome,Cytosol
 Q9NYL9	Actin filaments,Cytosol
 Q9NYM9	Golgi apparatus,Nucleoplasm
-Q9NYP3	Plasma membrane,Nucleoplasm
+Q9NYP3	Cell Junctions,Nucleoplasm
 Q9NYP7	Endoplasmic reticulum,Nuclear speckles
 Q9NYP9	Cytosol,Nucleoplasm
 Q9NYQ3	Cytosol
@@ -8491,7 +8491,7 @@ Q9NYR9	Nucleoli,Nucleoplasm
 Q9NYS0	Cytosol,Endoplasmic reticulum
 Q9NYT6	Nuclear bodies
 Q9NYV4	Nuclear speckles,Nucleoplasm
-Q9NYV6	Nucleoli
+Q9NYV6	Nucleoli rim
 Q9NYW0	Plasma membrane,Vesicles
 Q9NYW4	Nucleoli
 Q9NYW8	Nucleoplasm
@@ -8502,7 +8502,7 @@ Q9NYZ3	Centrosome,Plasma membrane
 Q9NZ08	Cytosol,Nucleoplasm
 Q9NZ09	Cytosol,Plasma membrane,Vesicles
 Q9NZ20	Endoplasmic reticulum
-Q9NZ32	Actin filaments,Plasma membrane
+Q9NZ32	Focal adhesion sites,Plasma membrane
 Q9NZ45	Mitochondria
 Q9NZ52	Golgi apparatus
 Q9NZ53	Golgi apparatus,Vesicles
@@ -8532,10 +8532,10 @@ Q9NZL6	Nucleoplasm,Vesicles
 Q9NZL9	Plasma membrane
 Q9NZM1	Vesicles
 Q9NZM3	Plasma membrane,Vesicles
-Q9NZM4	location_not_included_g1,Nucleoplasm
+Q9NZM4	Micronucleus,Nucleoplasm
 Q9NZM5	Nucleoli,Vesicles
 Q9NZM6	Cytosol,Plasma membrane
-Q9NZN4	location_not_included_g1,Microtubules
+Q9NZN4	Cytokinetic bridge,Microtubules
 Q9NZN5	Cytosol,Plasma membrane
 Q9NZN8	Cytosol,Nucleoplasm
 Q9NZN9	Cytosol,Nuclear speckles,Nucleoplasm
@@ -8549,9 +8549,9 @@ Q9NZR4	Nucleoli
 Q9NZS2	Plasma membrane
 Q9NZT2	Nucleoplasm
 Q9NZU0	Cytosol,Plasma membrane
-Q9NZU5	Plasma membrane,Cytosol,Nucleoplasm
+Q9NZU5	Cell Junctions,Cytosol,Nucleoplasm,Plasma membrane
 Q9NZV6	Nucleoplasm
-Q9NZZ3	Cytosol,location_not_included_g1
+Q9NZZ3	Cytosol,Midbody
 Q9P000	Cytosol,Nucleoplasm
 Q9P013	Mitochondria,Nuclear speckles
 Q9P015	Mitochondria
@@ -8575,11 +8575,11 @@ Q9P0N8	Endoplasmic reticulum
 Q9P0P0	Cytosol,Nucleoplasm
 Q9P0R6	Vesicles
 Q9P0T7	Microtubules,Vesicles
-Q9P0U3	Actin filaments,Nuclear membrane,Nucleoplasm
+Q9P0U3	Focal adhesion sites,Nuclear membrane,Nucleoplasm
 Q9P0V9	Actin filaments,Nucleoplasm
 Q9P0W2	Nuclear bodies,Nucleoplasm
 Q9P0W8	Cytosol
-Q9P104	Actin filaments
+Q9P104	Focal adhesion sites
 Q9P107	Cytosol,Nucleoplasm
 Q9P1F3	Nucleoplasm
 Q9P1Q0	Nucleoplasm
@@ -8590,7 +8590,7 @@ Q9P1W3	Centrosome
 Q9P1W9	Cytosol
 Q9P1Z0	Cytosol,Nuclear bodies,Nucleoplasm
 Q9P1Z2	Cytosol
-Q9P206	Plasma membrane,Endoplasmic reticulum,Nucleoplasm
+Q9P206	Cell Junctions,Endoplasmic reticulum,Nucleoplasm,Plasma membrane
 Q9P209	Centrosome
 Q9P212	Cytosol
 Q9P215	Nucleoplasm,Vesicles
@@ -8602,12 +8602,12 @@ Q9P241	Nucleoplasm,Plasma membrane
 Q9P242	Mitochondria
 Q9P243	Nuclear bodies
 Q9P265	Endoplasmic reticulum
-Q9P266	Plasma membrane,Vesicles
+Q9P266	Cell Junctions,Vesicles
 Q9P270	Centrosome,Cytosol
 Q9P272	Cytosol,Nucleoplasm
 Q9P273	Nucleoplasm
 Q9P275	Nuclear speckles,Nucleoli
-Q9P278	Centrosome,Cytosol
+Q9P278	Centriolar satellite,Cytosol
 Q9P281	Nucleoli
 Q9P286	Nucleoplasm
 Q9P291	Mitochondria
@@ -8638,7 +8638,7 @@ Q9P2K3	Cytosol,Nucleoplasm
 Q9P2K5	Nucleoplasm
 Q9P2K8	Cytosol
 Q9P2M4	Nucleoplasm
-Q9P2M7	Plasma membrane
+Q9P2M7	Cell Junctions,Plasma membrane
 Q9P2N4	Endoplasmic reticulum,Vesicles
 Q9P2N5	Nuclear speckles
 Q9P2N6	Nucleoplasm,Vesicles
@@ -8663,7 +8663,7 @@ Q9UBC3	Nucleoplasm
 Q9UBC5	Nucleoplasm
 Q9UBD5	Nuclear bodies,Nucleoplasm
 Q9UBE0	Nucleoplasm
-Q9UBE8	Plasma membrane,Nucleoli,Nucleoplasm
+Q9UBE8	Cell Junctions,Nucleoli,Nucleoplasm
 Q9UBF1	Cytosol,Nucleoplasm
 Q9UBF6	Nucleoplasm
 Q9UBF8	Golgi apparatus
@@ -8704,8 +8704,8 @@ Q9UBW8	Nucleoplasm
 Q9UBX1	Plasma membrane,Vesicles
 Q9UBX2	Cytosol,Nucleoli,Nucleoplasm
 Q9UBX3	Mitochondria
-Q9UBY0	Plasma membrane
-Q9UBY9	location_not_included_g1,Nucleoplasm
+Q9UBY0	Cell Junctions
+Q9UBY9	Aggresome,Nucleoplasm
 Q9UBZ4	Nucleoli fibrillar center,Nucleoplasm,Vesicles
 Q9UBZ9	Nucleoli
 Q9UC06	Cytosol
@@ -8740,17 +8740,17 @@ Q9UGI6	Cytosol,Plasma membrane
 Q9UGJ0	Nucleoplasm
 Q9UGK8	Nucleoplasm
 Q9UGL1	Nucleoplasm
-Q9UGM3	Centrosome
+Q9UGM3	Centriolar satellite
 Q9UGM5	Vesicles
 Q9UGM6	Mitochondria,Nucleoplasm
 Q9UGN4	Cytosol
 Q9UGN5	Nucleoli,Nucleoplasm
-Q9UGP4	Actin filaments,Nucleoplasm
+Q9UGP4	Focal adhesion sites,Nucleoplasm
 Q9UGP5	Nucleoplasm
 Q9UGP8	Endoplasmic reticulum
 Q9UGQ2	Nucleoplasm
 Q9UGT4	Plasma membrane
-Q9UGY1	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9UGY1	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q9UH03	Actin filaments,Nucleoplasm,Plasma membrane
 Q9UH36	Cytosol
 Q9UH62	Cytosol,Golgi apparatus,Nucleoplasm
@@ -8759,7 +8759,7 @@ Q9UH99	Nuclear membrane
 Q9UHA2	Mitochondria,Nucleoli,Nucleoplasm
 Q9UHA3	Nucleoli,Nucleoplasm
 Q9UHB4	Cytosol,Nucleoplasm
-Q9UHB6	Actin filaments,Cytosol,Plasma membrane
+Q9UHB6	Actin filaments,Cytosol,Focal adhesion sites,Plasma membrane
 Q9UHB7	Nucleoplasm
 Q9UHB9	Cytosol
 Q9UHC1	Nucleoplasm
@@ -8793,7 +8793,7 @@ Q9UHQ9	Cytosol
 Q9UHR4	Cytosol,Plasma membrane
 Q9UHR5	Nucleoplasm
 Q9UHV2	Cytosol,Golgi apparatus,Nucleoplasm
-Q9UHV5	location_not_included_g1,Microtubules,Nucleoli
+Q9UHV5	Cytokinetic bridge,Microtubules,Nucleoli
 Q9UHV7	Nucleoplasm
 Q9UHV8	Nucleoplasm
 Q9UHV9	Cytosol
@@ -8812,7 +8812,7 @@ Q9UI30	Microtubules
 Q9UI36	Cytosol,Nucleoplasm
 Q9UI42	Nucleoplasm,Plasma membrane
 Q9UI95	Nucleoplasm
-Q9UIA0	location_not_included_g1,Cytosol
+Q9UIA0	Cytokinetic bridge,Cytosol
 Q9UIB8	Plasma membrane,Vesicles
 Q9UIC8	Cytosol,Nucleoplasm
 Q9UID3	Vesicles
@@ -8823,7 +8823,7 @@ Q9UIF8	Cytosol,Nucleoplasm
 Q9UIF9	Cytosol,Nuclear speckles
 Q9UIG0	Nucleoplasm
 Q9UII2	Mitochondria
-Q9UIM3	location_not_included_g1,Nucleoplasm
+Q9UIM3	Mitotic spindle,Nucleoplasm
 Q9UIS9	Nucleoplasm,Vesicles
 Q9UIU6	Nucleoplasm
 Q9UIV1	Nuclear bodies
@@ -8841,7 +8841,7 @@ Q9UJA3	Nucleoplasm
 Q9UJA5	Nucleoplasm
 Q9UJC5	Nucleoplasm
 Q9UJD0	Mitochondria,Nucleoli,Nucleoplasm
-Q9UJF2	Actin filaments,Plasma membrane
+Q9UJF2	Focal adhesion sites,Plasma membrane
 Q9UJG1	Nucleoplasm,Vesicles
 Q9UJH8	Cytosol,Nucleoplasm
 Q9UJJ7	Cytosol,Golgi apparatus,Nucleoplasm
@@ -8880,14 +8880,14 @@ Q9UK58	Nuclear bodies,Nucleoplasm
 Q9UK59	Nucleoplasm
 Q9UK61	Nucleoplasm
 Q9UK73	Cytosol,Nucleoplasm
-Q9UK76	location_not_included_g1,Cytosol
+Q9UK76	Cytokinetic bridge,Cytosol
 Q9UK80	Cytosol,Plasma membrane
 Q9UK85	Vesicles
 Q9UK96	Cytosol,Nucleoplasm
 Q9UK99	Cytosol,Nucleoplasm
 Q9UKA2	Nuclear speckles
 Q9UKA4	Cytosol,Nucleoli,Plasma membrane
-Q9UKA8	location_not_included_g1,Nuclear speckles
+Q9UKA8	Micronucleus,Nuclear speckles
 Q9UKA9	Nucleoplasm
 Q9UKB1	Plasma membrane,Vesicles
 Q9UKC9	Nucleoli,Nucleoplasm
@@ -8898,7 +8898,7 @@ Q9UKF7	Cytosol,Nucleoplasm
 Q9UKG1	Actin filaments,Plasma membrane,Vesicles
 Q9UKG9	Vesicles
 Q9UKI8	Nucleoplasm
-Q9UKI9	Cytosol,location_not_included_g1,Nuclear bodies,Nucleoli,Nucleoplasm
+Q9UKI9	Cytosol,Micronucleus,Nuclear bodies,Nucleoli,Nucleoplasm
 Q9UKJ0	Mitochondria
 Q9UKJ3	Mitochondria,Nuclear speckles
 Q9UKK3	Cytosol,Nucleoplasm
@@ -8906,9 +8906,9 @@ Q9UKK6	Cytosol,Nucleoplasm
 Q9UKK9	Vesicles
 Q9UKL0	Nucleoplasm
 Q9UKL6	Nucleoli,Nucleoplasm
-Q9UKM9	location_not_included_g1,Nucleoplasm,Vesicles
+Q9UKM9	Cytokinetic bridge,Nucleoplasm,Vesicles
 Q9UKN5	Cytosol,Nucleoplasm
-Q9UKN8	location_not_included_g1,Nucleoplasm
+Q9UKN8	Micronucleus,Nucleoplasm
 Q9UKP3	Cytosol
 Q9UKP4	Vesicles
 Q9UKQ2	Mitochondria,Plasma membrane
@@ -8918,7 +8918,7 @@ Q9UKT4	Nucleoplasm
 Q9UKT5	Nucleoplasm
 Q9UKT7	Nuclear bodies
 Q9UKT8	Nucleoplasm
-Q9UKT9	location_not_included_g1,Nucleoplasm
+Q9UKT9	Micronucleus,Nucleoplasm
 Q9UKV0	Nucleoplasm
 Q9UKV3	Cytosol,Nucleoplasm,Plasma membrane
 Q9UKV5	Endoplasmic reticulum,Golgi apparatus
@@ -8955,10 +8955,10 @@ Q9ULE0	Actin filaments,Cytosol
 Q9ULF5	Cytosol,Nucleoplasm,Plasma membrane
 Q9ULG1	Cytosol,Nucleoplasm
 Q9ULG6	Golgi apparatus
-Q9ULH1	Cytosol,location_not_included_g1,Plasma membrane
+Q9ULH1	Cytosol,Micronucleus,Plasma membrane
 Q9ULH7	Nuclear speckles
 Q9ULI0	Nucleoplasm
-Q9ULI2	Centrosome,Nucleoplasm
+Q9ULI2	Centriolar satellite,Nucleoplasm
 Q9ULI3	Plasma membrane,Vesicles
 Q9ULI4	Plasma membrane
 Q9ULJ3	Cytosol,Nucleoplasm
@@ -8982,12 +8982,12 @@ Q9ULV0	Plasma membrane
 Q9ULV1	Plasma membrane
 Q9ULV3	Nucleoplasm,Plasma membrane
 Q9ULV5	Nuclear speckles
-Q9ULW0	location_not_included_g1,Nucleoplasm
+Q9ULW0	Cytokinetic bridge,Mitotic spindle,Nucleoplasm
 Q9ULW2	Nucleoplasm
 Q9ULW3	Vesicles
 Q9ULW6	Cytosol,Plasma membrane,Vesicles
 Q9ULW8	Cytosol,Vesicles
-Q9ULX3	Cytosol,Actin filaments
+Q9ULX3	Cytosol,Focal adhesion sites
 Q9ULX5	Cytosol,Nuclear speckles
 Q9ULX6	Nuclear speckles
 Q9ULX9	Mitochondria,Nucleoplasm
@@ -9005,27 +9005,27 @@ Q9UMQ3	Actin filaments,Golgi apparatus,Nucleoplasm
 Q9UMR3	Nucleoli fibrillar center
 Q9UMR5	Cytosol
 Q9UMS0	Cytosol,Nucleoplasm
-Q9UMS4	location_not_included_g1,Nuclear speckles
+Q9UMS4	Micronucleus,Nuclear speckles
 Q9UMS5	Nuclear bodies
 Q9UMW8	Cytosol,Vesicles
 Q9UMX0	Cytosol,Nucleoplasm
 Q9UMX1	Nucleoplasm
 Q9UMX2	Nucleoplasm
-Q9UMY1	location_not_included_g1,Nucleoli
+Q9UMY1	Mitotic chromosome,Nucleoli
 Q9UMZ2	Cytosol
 Q9UN30	Nucleoplasm
-Q9UN36	Centrosome,Cytosol,Nucleoplasm
+Q9UN36	Centriolar satellite,Cytosol,Nucleoplasm
 Q9UN73	Vesicles
 Q9UN75	Cytosol,Plasma membrane
 Q9UN79	Nucleoplasm
 Q9UN86	Cytosol
 Q9UNA0	Nucleoplasm
 Q9UNA1	Cytosol
-Q9UNA4	Cytosol,Nuclear speckles
-Q9UNF0	Centrosome,Nuclear speckles,Plasma membrane,Vesicles
+Q9UNA4	Cytoplasmic bodies,Nuclear speckles
+Q9UNF0	Centriolar satellite,Nuclear speckles,Plasma membrane,Vesicles
 Q9UNF1	Cytosol,Nucleoli,Nucleoplasm
 Q9UNH5	Cytosol,Nucleoplasm
-Q9UNH6	Plasma membrane
+Q9UNH6	Cell Junctions
 Q9UNH7	Endosomes,Lysosomes
 Q9UNK0	Cytosol,Vesicles
 Q9UNL4	Nucleoplasm
@@ -9049,8 +9049,8 @@ Q9UP83	Golgi apparatus,Nucleoplasm
 Q9UP95	Endosomes
 Q9UPC5	Cytosol
 Q9UPM6	Nucleoli fibrillar center,Plasma membrane
-Q9UPN3	Actin filaments,Plasma membrane
-Q9UPN4	Centrosome,Nuclear membrane,Nucleoplasm
+Q9UPN3	Actin filaments,Cell Junctions,Plasma membrane
+Q9UPN4	Centriolar satellite,Nuclear membrane,Nucleoplasm
 Q9UPN6	Nucleoplasm
 Q9UPN7	Cytosol
 Q9UPN9	Vesicles
@@ -9060,7 +9060,7 @@ Q9UPQ0	Actin filaments
 Q9UPQ4	Nucleoplasm
 Q9UPQ7	Cytosol
 Q9UPQ8	Cytosol,Nucleoli
-Q9UPR3	Cytosol
+Q9UPR3	Cytoplasmic bodies
 Q9UPR6	Nuclear speckles
 Q9UPS6	Nucleoplasm
 Q9UPT5	Cytosol,Vesicles
@@ -9069,7 +9069,7 @@ Q9UPT8	Actin filaments,Cytosol,Nucleoplasm
 Q9UPT9	Nuclear speckles
 Q9UPU5	Actin filaments,Cytosol,Nucleoplasm
 Q9UPU7	Cytosol
-Q9UPU9	Plasma membrane,Cytosol
+Q9UPU9	Cell Junctions,Cytosol
 Q9UPV0	Centrosome,Vesicles
 Q9UPV9	Endoplasmic reticulum,Nucleoplasm
 Q9UPW0	Nuclear speckles,Vesicles
@@ -9080,7 +9080,7 @@ Q9UPX8	Nuclear speckles,Nucleoplasm,Vesicles
 Q9UPY5	Vesicles
 Q9UPZ3	Cytosol
 Q9UPZ9	Nucleoli fibrillar center
-Q9UQ03	Actin filaments,Plasma membrane
+Q9UQ03	Focal adhesion sites,Plasma membrane
 Q9UQ07	Endoplasmic reticulum
 Q9UQ10	Actin filaments,Nucleoplasm
 Q9UQ13	Cytosol,Nucleoplasm
@@ -9091,7 +9091,7 @@ Q9UQ80	Cytosol
 Q9UQ84	Nuclear bodies,Nucleoplasm,Plasma membrane
 Q9UQB3	Cytosol,Nucleoplasm
 Q9UQB8	Cytosol,Plasma membrane
-Q9UQD0	Plasma membrane,Vesicles
+Q9UQD0	Cell Junctions,Plasma membrane,Vesicles
 Q9UQE7	Nucleoplasm
 Q9UQF2	Plasma membrane
 Q9UQL6	Cytosol,Nuclear speckles
@@ -9111,15 +9111,15 @@ Q9Y231	Cytosol
 Q9Y232	Nuclear speckles
 Q9Y235	Nucleoplasm
 Q9Y236	Nucleoli
-Q9Y237	location_not_included_g1,Nucleoli,Nucleoplasm
+Q9Y237	Mitotic chromosome,Nucleoli,Nucleoplasm
 Q9Y238	Cytosol
 Q9Y239	Mitochondria
 Q9Y240	Centrosome
 Q9Y242	Nucleoplasm
 Q9Y243	Cytosol,Golgi apparatus
 Q9Y244	Nuclear speckles
-Q9Y247	location_not_included_g1,Nucleoplasm
-Q9Y248	location_not_included_g1,Nucleoplasm
+Q9Y247	Midbody,Nucleoplasm
+Q9Y248	Micronucleus,Nucleoplasm
 Q9Y250	Nucleoli,Plasma membrane
 Q9Y251	Nucleoplasm,Vesicles
 Q9Y252	Nuclear membrane,Vesicles
@@ -9127,11 +9127,11 @@ Q9Y253	Cytosol,Nucleoplasm
 Q9Y255	Mitochondria
 Q9Y257	Cytosol,Plasma membrane
 Q9Y259	Cytosol
-Q9Y261	Plasma membrane,Nucleoplasm
+Q9Y261	Cell Junctions,Nucleoplasm
 Q9Y262	Nucleoli,Nucleoplasm
 Q9Y263	Cytosol,Nucleoplasm,Plasma membrane
 Q9Y265	Cytosol,Nucleoplasm
-Q9Y275	Actin filaments,Vesicles
+Q9Y275	Focal adhesion sites,Vesicles
 Q9Y277	Mitochondria
 Q9Y283	Cytosol,Plasma membrane,Vesicles
 Q9Y284	Endoplasmic reticulum,Nuclear membrane
@@ -9150,7 +9150,7 @@ Q9Y2C9	Endoplasmic reticulum
 Q9Y2D1	Nucleoplasm
 Q9Y2D4	Cytosol,Nuclear bodies
 Q9Y2D5	Nucleoplasm,Plasma membrane
-Q9Y2D8	Plasma membrane
+Q9Y2D8	Cell Junctions
 Q9Y2D9	Nucleoplasm
 Q9Y2E4	Cytosol,Nucleoplasm,Vesicles
 Q9Y2E6	Vesicles
@@ -9158,20 +9158,20 @@ Q9Y2F9	Vesicles
 Q9Y2G0	Actin filaments,Plasma membrane
 Q9Y2G1	Cytosol,Nucleoplasm
 Q9Y2G2	Nucleoplasm
-Q9Y2G3	Centrosome
+Q9Y2G3	Centriolar satellite
 Q9Y2G4	Vesicles
 Q9Y2G7	Cytosol
 Q9Y2G8	Vesicles
-Q9Y2H0	Actin filaments
+Q9Y2H0	Focal adhesion sites
 Q9Y2H2	Vesicles
 Q9Y2H5	Centrosome
 Q9Y2H6	Centrosome
 Q9Y2H9	Vesicles
 Q9Y2I1	Cytosol,Microtubules,Nucleoplasm
-Q9Y2I6	location_not_included_g1,Microtubules,Vesicles
+Q9Y2I6	Cytokinetic bridge,Microtubules,Vesicles
 Q9Y2I8	Intermediate filaments
 Q9Y2I9	Plasma membrane
-Q9Y2J2	Plasma membrane
+Q9Y2J2	Cell Junctions,Plasma membrane
 Q9Y2K1	Nuclear membrane,Nucleoplasm
 Q9Y2K3	Cytosol
 Q9Y2K5	Nucleoplasm
@@ -9179,7 +9179,7 @@ Q9Y2K6	Cytosol,Nucleoplasm,Plasma membrane
 Q9Y2K7	Nucleoplasm
 Q9Y2L1	Cytosol,Nucleoplasm
 Q9Y2L5	Cytosol,Microtubules
-Q9Y2L6	Centrosome
+Q9Y2L6	Centriolar satellite
 Q9Y2L8	Intermediate filaments
 Q9Y2L9	Actin filaments,Cytosol,Nucleoli
 Q9Y2N7	Cytosol,Nucleoplasm,Plasma membrane
@@ -9204,7 +9204,7 @@ Q9Y2W1	Nuclear speckles
 Q9Y2W2	Cytosol,Nucleoplasm
 Q9Y2W6	Cytosol
 Q9Y2X3	Nucleoli fibrillar center,Nucleoplasm
-Q9Y2X7	Cytosol,Actin filaments
+Q9Y2X7	Cytosol,Focal adhesion sites
 Q9Y2X9	Nucleoplasm
 Q9Y2Y0	Cytosol,Nucleoplasm
 Q9Y2Y1	Cytosol,Nucleoplasm
@@ -9227,9 +9227,9 @@ Q9Y343	Vesicles
 Q9Y365	Cytosol
 Q9Y371	Cytosol
 Q9Y375	Mitochondria
-Q9Y376	location_not_included_g1,Cytosol,Nucleoli fibrillar center
+Q9Y376	Cytokinetic bridge,Cytosol,Nucleoli fibrillar center
 Q9Y383	Nucleoplasm
-Q9Y388	location_not_included_g1,Nuclear membrane,Nucleoli
+Q9Y388	Micronucleus,Nuclear membrane,Nucleoli
 Q9Y394	Mitochondria,Nucleoplasm
 Q9Y397	Cytosol,Endoplasmic reticulum
 Q9Y399	Mitochondria
@@ -9239,8 +9239,8 @@ Q9Y3A5	Cytosol,Nucleoplasm
 Q9Y3B1	Nucleoplasm
 Q9Y3B2	Nuclear bodies
 Q9Y3B4	Nucleoplasm
-Q9Y3B8	Actin filaments,Mitochondria,Nucleoli
-Q9Y3B9	Mitochondria,location_not_included_g1,Nucleoli,Nucleoplasm
+Q9Y3B8	Focal adhesion sites,Mitochondria,Nucleoli
+Q9Y3B9	Mitochondria,Mitotic chromosome,Nucleoli rim,Nucleoplasm
 Q9Y3C0	Actin filaments,Vesicles
 Q9Y3C1	Nucleoli,Nucleoplasm,Vesicles
 Q9Y3C4	Cytosol
@@ -9250,7 +9250,7 @@ Q9Y3C8	Cytosol,Nuclear speckles
 Q9Y3D3	Cytosol,Mitochondria
 Q9Y3D6	Mitochondria
 Q9Y3D7	Microtubules,Mitochondria,Nucleoplasm
-Q9Y3D8	location_not_included_g1,Nuclear speckles
+Q9Y3D8	Micronucleus,Nuclear speckles
 Q9Y3D9	Mitochondria,Nuclear membrane
 Q9Y3E1	Nucleoplasm
 Q9Y3E5	Mitochondria
@@ -9267,7 +9267,7 @@ Q9Y3Q8	Cytosol
 Q9Y3R5	Nucleoplasm
 Q9Y3S2	Nucleoli,Nucleoplasm
 Q9Y3T6	Cytosol,Nucleoplasm
-Q9Y3T9	location_not_included_g1,Nucleoli
+Q9Y3T9	Mitotic chromosome,Nucleoli rim
 Q9Y3U8	Cytosol
 Q9Y3X0	Cytosol
 Q9Y3Y2	Nuclear speckles
@@ -9275,22 +9275,22 @@ Q9Y3Y4	Cytosol,Nucleoplasm
 Q9Y3Z3	Nucleoplasm,Plasma membrane
 Q9Y421	Nucleoli,Nucleoplasm
 Q9Y426	Nucleoplasm
-Q9Y448	location_not_included_g1
+Q9Y448	Mitotic spindle
 Q9Y450	Cytosol,Nuclear bodies
 Q9Y467	Nucleoplasm,Vesicles
-Q9Y468	location_not_included_g1,Nucleoplasm
+Q9Y468	Midbody ring,Nucleoplasm
 Q9Y473	Nucleoli
 Q9Y478	Cytosol,Nucleoplasm
-Q9Y483	Actin filaments,Nucleoplasm
+Q9Y483	Focal adhesion sites,Nucleoplasm
 Q9Y485	Cytosol,Nucleoli,Nucleoli fibrillar center
 Q9Y487	Plasma membrane
-Q9Y490	Cytosol,Actin filaments
-Q9Y4A0	location_not_included_g1,Nucleoplasm
+Q9Y490	Cytosol,Focal adhesion sites
+Q9Y4A0	Cytokinetic bridge,Nucleoplasm
 Q9Y4A5	Golgi apparatus,Nucleoplasm
 Q9Y4A8	Vesicles
 Q9Y4B4	Nucleoplasm
 Q9Y4B6	Nucleoli fibrillar center,Nucleoplasm
-Q9Y4C1	location_not_included_g1,Nucleoplasm
+Q9Y4C1	Micronucleus,Nucleoplasm
 Q9Y4C4	Cytosol,Nucleoplasm
 Q9Y4C8	Nucleoli
 Q9Y4D1	Cytosol
@@ -9302,7 +9302,7 @@ Q9Y4F3	Golgi apparatus,Vesicles
 Q9Y4G2	Nucleoli,Vesicles
 Q9Y4G6	Cytosol
 Q9Y4G8	Cytosol
-Q9Y4I1	Centrosome,Cytosol,Actin filaments
+Q9Y4I1	Centriolar satellite,Cytosol,Focal adhesion sites
 Q9Y4I5	Nucleoplasm,Vesicles
 Q9Y4J8	Intermediate filaments
 Q9Y4K0	Nucleoplasm
@@ -9336,7 +9336,7 @@ Q9Y580	Nucleoplasm
 Q9Y587	Vesicles
 Q9Y5A6	Endoplasmic reticulum
 Q9Y5A7	Cytosol,Nucleoli
-Q9Y5A9	Cytosol
+Q9Y5A9	Cytoplasmic bodies,Cytosol
 Q9Y5B0	Nucleoplasm,Vesicles
 Q9Y5B6	Cytosol,Nucleoplasm
 Q9Y5B9	Nucleoli fibrillar center,Nucleoplasm
@@ -9347,8 +9347,8 @@ Q9Y5E6	Vesicles
 Q9Y5E9	Vesicles
 Q9Y5G1	Plasma membrane
 Q9Y5G2	Vesicles
-Q9Y5G3	Actin filaments,Plasma membrane
-Q9Y5H1	Actin filaments,Plasma membrane
+Q9Y5G3	Focal adhesion sites,Plasma membrane
+Q9Y5H1	Focal adhesion sites,Plasma membrane
 Q9Y5H7	Mitochondria,Plasma membrane
 Q9Y5I3	Plasma membrane
 Q9Y5I4	Mitochondria,Nucleoplasm
@@ -9356,7 +9356,7 @@ Q9Y5J1	Nucleoli,Nucleoplasm
 Q9Y5J3	Cytosol,Nuclear membrane,Nucleoplasm
 Q9Y5J7	Mitochondria
 Q9Y5K5	Cytosol,Nucleoli,Nucleoplasm
-Q9Y5K6	Centrosome,Plasma membrane
+Q9Y5K6	Centriolar satellite,Plasma membrane
 Q9Y5K8	Plasma membrane
 Q9Y5L0	Vesicles
 Q9Y5L4	Mitochondria,Nucleoli fibrillar center
@@ -9369,7 +9369,7 @@ Q9Y5P8	Nucleoplasm
 Q9Y5Q3	Cytosol,Nucleoplasm
 Q9Y5Q5	Actin filaments,Plasma membrane
 Q9Y5Q8	Nucleoplasm
-Q9Y5Q9	location_not_included_g1,Nuclear membrane,Nucleoplasm
+Q9Y5Q9	Micronucleus,Nuclear membrane,Nucleoplasm
 Q9Y5R2	Nucleoli,Plasma membrane
 Q9Y5S9	Nuclear speckles
 Q9Y5T5	Cytosol,Nucleoplasm
@@ -9406,14 +9406,14 @@ Q9Y663	Microtubules
 Q9Y664	Nucleoplasm,Plasma membrane,Vesicles
 Q9Y673	Cytosol
 Q9Y675	Nuclear speckles
-Q9Y676	Plasma membrane,Mitochondria
+Q9Y676	Cell Junctions,Mitochondria
 Q9Y678	Golgi apparatus,Nucleoplasm
 Q9Y679	Nucleoplasm,Vesicles
 Q9Y680	Endoplasmic reticulum
 Q9Y692	Nucleoplasm
 Q9Y696	Centrosome,Plasma membrane
 Q9Y6A4	Nucleoplasm
-Q9Y6A5	Centrosome,Cytosol,location_not_included_g1
+Q9Y6A5	Centriolar satellite,Cytosol,Mitotic spindle
 Q9Y6A9	Golgi apparatus
 Q9Y6B2	Nucleoplasm
 Q9Y6B6	Endoplasmic reticulum
@@ -9424,22 +9424,22 @@ Q9Y6D5	Golgi apparatus,Vesicles
 Q9Y6D6	Cytosol,Golgi apparatus,Nucleoplasm
 Q9Y6E0	Cytosol,Nucleoli
 Q9Y6E2	Actin filaments,Cytosol,Plasma membrane
-Q9Y6F1	location_not_included_g1,Nucleoplasm
+Q9Y6F1	Cytokinetic bridge,Nucleoplasm
 Q9Y6F6	Cytosol,Nuclear bodies
 Q9Y6G1	Endoplasmic reticulum
 Q9Y6G3	Mitochondria,Plasma membrane
 Q9Y6H1	Mitochondria
 Q9Y6H3	Cytosol,Vesicles
-Q9Y6H5	Cytosol,Nucleoplasm
+Q9Y6H5	Cytoplasmic bodies,Nucleoplasm
 Q9Y6I3	Cytosol,Nucleoplasm,Plasma membrane,Vesicles
-Q9Y6I4	Cytosol,location_not_included_g1,Nucleoplasm
+Q9Y6I4	Cytoplasmic bodies,Midbody ring,Nucleoplasm
 Q9Y6I7	Mitochondria
 Q9Y6I9	Endoplasmic reticulum
-Q9Y6J0	location_not_included_g1,Cytosol,Nucleoplasm
+Q9Y6J0	Aggresome,Cytosol,Nucleoplasm
 Q9Y6J9	Nucleoplasm
 Q9Y6K1	Nucleoplasm
 Q9Y6K5	Cytosol,Nucleoplasm,Plasma membrane
-Q9Y6K8	Centrosome,Cytosol
+Q9Y6K8	Centriolar satellite,Cytosol
 Q9Y6K9	Cytosol,Nuclear bodies
 Q9Y6L6	Plasma membrane
 Q9Y6M0	Cytosol
