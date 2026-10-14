@@ -64,16 +64,16 @@ def pair_index(i, j, n):
 
 
 def classify(pairs, rows, cols, locs):
-    """Positions among *pairs* whose proteins share every location, and none."""
+    """Of pair positions *pairs*, of proteins *rows* and *cols*, those whose proteins share every location, and none."""
     same, none = [], []
-    for k in pairs:
-        a, b = locs[rows[k]], locs[cols[k]]
+    for k, r, c in zip(pairs, rows, cols):
+        a, b = locs[r], locs[c]
         if a and b:
             if a == b:
                 same.append(k)
             elif not a & b:
                 none.append(k)
-    return same, none
+    return np.array(same, dtype=np.int64), np.array(none, dtype=np.int64)
 
 
 def frame(seq_pct, mm_pct, layers):
@@ -83,14 +83,13 @@ def frame(seq_pct, mm_pct, layers):
 
 def overview(seq_pct, mm_pct, proteins, locations) -> pd.DataFrame:
     n = len(proteins)
-    rows, cols = np.triu_indices(n, k=1)
     rng = np.random.default_rng(SEED)
     i, j = (rng.integers(0, n, N_OVERVIEW_SAMPLE) for _ in range(2))
     i, j = np.minimum(i, j)[i != j], np.maximum(i, j)[i != j]
-    same, none = classify(pair_index(i, j, n), rows, cols,
+    same, none = classify(pair_index(i, j, n), i, j,
                           [frozenset(locations.get(p, ())) for p in proteins])
     same, none = (rng.choice(c, N_OVERVIEW_CLASS, replace=False) if len(c) > N_OVERVIEW_CLASS
-                  else np.array(c, dtype=np.int64) for c in (same, none))
+                  else c for c in (same, none))
     every = np.arange(0, len(seq_pct), max(1, len(seq_pct) // N_OVERVIEW_ALL))
     return frame(seq_pct, mm_pct, [("all", every), ("none", none), ("same", same)])
 
@@ -98,9 +97,10 @@ def overview(seq_pct, mm_pct, proteins, locations) -> pd.DataFrame:
 def background(seq_pct, mm_pct, proteins, locations) -> pd.DataFrame:
     shown = np.flatnonzero(seq_pct >= MIN_SEQUENCE_PCT)
     rows, cols = np.triu_indices(len(proteins), k=1)
-    same, none = classify(shown, rows, cols, [frozenset(locations.get(p, ())) for p in proteins])
+    same, none = classify(shown, rows[shown], cols[shown],
+                          [frozenset(locations.get(p, ())) for p in proteins])
     np.random.seed(SEED)
-    same, none = (np.random.choice(c, N_CLASS, replace=False) if len(c) > N_CLASS else np.array(c)
+    same, none = (np.random.choice(c, N_CLASS, replace=False) if len(c) > N_CLASS else c
                   for c in (same, none))
     log(f"{len(shown):,} pairs in the top {100 - MIN_SEQUENCE_PCT}% by sequence; "
         f"drawing {len(same):,} with the same locations, {len(none):,} with none shared")

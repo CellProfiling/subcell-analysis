@@ -114,7 +114,7 @@ CM4AI_CROPS = ROOT / "bridge2ai_crops"          # masked CM4AI single-cell crops
 MULTIMODAL_DIR = ROOT / "multimodal_integration"  # image + sequence co-embedding (Fig. 6)
 MULTIMODAL_ENRICHMENT_DIR = ROOT / "bionic_eval_embed_imgseq"   # interaction enrichment (Fig. 6d, Extended Data Fig. 7b)
 CLUSTER_TRANSFER_DIR = ROOT / "cluster_transfer"   # image and sequence clusters on the co-embedding (Fig. 6a,b, Extended Data Fig. 7a)
-COMPARTMENT_ENRICHMENT_DIR = ROOT / "compartment_enrichment"   # within- vs between-compartment similarity (Fig. 6c)
+COMPARTMENT_ENRICHMENT_DIR = ROOT / "compartment_enrichment"   # within- vs between-compartment and process similarity (Fig. 6c,f, Extended Data Fig. 7c)
 PARALOG_RANKS_DIR = ROOT / "paralog_ranks"   # sequence vs multimodal ranks of protein pairs (Fig. 6e)
 
 # GO / Reactome membership prediction from per-gene mean embeddings (Fig. 3d).

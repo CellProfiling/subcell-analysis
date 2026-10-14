@@ -31,14 +31,12 @@ import numpy as np
 import pandas as pd
 
 from subcell import config, style
-from subcell.multimodal.embeddings import METHOD_NAME
+from subcell.multimodal.embeddings import METHOD_NAME, SPACE_LABELS
 from subcell.runlog import log
 from subcell.style import layout as L
 from subcell.style import palettes as pal
 from subcell.utils.hierarchical_leiden import RESOLUTIONS
 
-# image is SubCell, sequence ESM-2, multimodal their MuSIC co-embedding
-SPACE_LABELS = {"image": "Image", "sequence": "Sequence", "multimodal": "Multimodal"}
 
 # (clustered space, UMAP space) per row; one row per panel for Fig. 6a,b
 PANEL_ROWS = {"fig6a": [("image", "multimodal")], "fig6b": [("sequence", "multimodal")]}

@@ -28,6 +28,7 @@ import seaborn as sns
 
 from subcell import config, naming, style
 from subcell.runlog import log
+from subcell.multimodal.embeddings import SPACE_COLORS, SPACE_LABELS, SPACES
 from subcell.multimodal.interaction_enrichment import evaluation_table
 from subcell.style import layout as L
 
@@ -104,8 +105,8 @@ def summary_table(best_df):
 EMBEDDING_COLORS = dict(zip(EMBEDDING_LABELS, style.palettes.categorical(len(EMBEDDING_LABELS))))
 
 # Fig. 6d names and colours its embeddings as the other Fig. 6 panels do, unmuted
-FIG6D_LABELS = {"Seq_Embed": "Sequence", "Image_Embed": "Image", "Music_Embed": "Multimodal"}
-FIG6D_COLORS = {"Seq_Embed": "#1d3a42", "Image_Embed": "#5191bc", "Music_Embed": "#F4AC45"}
+FIG6D_LABELS = {col: SPACE_LABELS[s] for s, col in SPACES.items()}
+FIG6D_COLORS = {col: SPACE_COLORS[s] for s, col in SPACES.items()}
 
 
 def _bars(ax, data, method, embeddings, labels=EMBEDDING_LABELS, colors=EMBEDDING_COLORS,

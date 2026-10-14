@@ -1,8 +1,8 @@
 """Hierarchical Leiden clustering: each level subclusters the clusters of the level before.
 
-The clustering of the multiscale cell map (Fig. 5,
-``notebooks/fig5_multiscale_cell_map.ipynb``), also used by
-``subcell.multimodal.cluster_transfer`` (Fig. 6). The first level clusters over many
+The procedure of the multiscale cell map (Fig. 5), whose notebook
+``notebooks/fig5_multiscale_cell_map.ipynb`` keeps its own copy, used here by
+``subcell.multimodal.cluster_transfer`` (Fig. 6a,b). The first level clusters over many
 neighbours, for global structure; every later level re-clusters each cluster of the
 previous level separately, at a higher resolution over fewer neighbours, for
 increasingly local structure. A cluster with fewer members than the level's

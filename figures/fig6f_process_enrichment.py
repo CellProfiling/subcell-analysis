@@ -20,14 +20,12 @@ import numpy as np
 import pandas as pd
 
 from subcell import config, style
-from subcell.multimodal.embeddings import METHOD_NAME
+from subcell.multimodal.embeddings import METHOD_NAME, SPACE_COLORS, SPACE_LABELS
 from subcell.runlog import log
 from subcell.style import layout as L
 
-# embedding -> (label, colour); sequence is ESM-2, image SubCell, multimodal their
-# MuSIC co-embedding
-EMBEDDINGS = {"sequence": ("Sequence", "#1d3a42"), "image": ("Image", "#5191bc"),
-              "multimodal": ("Multimodal", "#F4AC45")}
+# embedding -> (label, colour), in plotting order
+EMBEDDINGS = {s: (SPACE_LABELS[s], SPACE_COLORS[s]) for s in ("sequence", "image", "multimodal")}
 N_TOP = 25
 
 

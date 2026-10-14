@@ -21,6 +21,11 @@ METHOD_NAME = "MAE-CellS-ProtS-Pool_U2OS_harmonized_if_plate_id_microscope"
 # space -> methods_info.csv column
 SPACES = {"image": "Image_Embed", "sequence": "Seq_Embed", "multimodal": "Music_Embed"}
 
+# How every Fig. 6 panel names and colours the spaces: sequence is ESM-2, image
+# SubCell, multimodal their MuSIC co-embedding
+SPACE_LABELS = {"sequence": "Sequence", "image": "Image", "multimodal": "Multimodal"}
+SPACE_COLORS = {"sequence": "#1d3a42", "image": "#5191bc", "multimodal": "#F4AC45"}
+
 
 def input_paths(method_name=METHOD_NAME, run_dir=None) -> dict[str, Path]:
     """space -> embedding file of the MuSIC run *method_name*."""
@@ -59,5 +64,5 @@ def pair_percentiles(X) -> np.ndarray:
     """
     sims = centered_cosine(X)[np.triu_indices(len(X), k=1)]
     ranks = np.empty(len(sims), dtype=np.int64)
-    ranks[np.argsort(sims)] = np.arange(1, len(sims) + 1)
+    ranks[np.argsort(sims, kind="stable")] = np.arange(1, len(sims) + 1)
     return (ranks * (100.0 / len(sims))).astype(np.float32)

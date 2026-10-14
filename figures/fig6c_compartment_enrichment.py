@@ -25,15 +25,13 @@ import pandas as pd
 
 from subcell import config, style
 from subcell.multimodal.compartment_labels import SUBORGANELLAR_TERMS
-from subcell.multimodal.embeddings import METHOD_NAME
+from subcell.multimodal.embeddings import METHOD_NAME, SPACE_COLORS, SPACE_LABELS
 from subcell.runlog import log
 from subcell.style import layout as L
 from subcell.style import palettes as pal
 
-# embedding -> (label, colour); sequence is ESM-2, image SubCell, multimodal their
-# MuSIC co-embedding
-EMBEDDINGS = {"sequence": ("Sequence", "#1d3a42"), "image": ("Image", "#5191bc"),
-              "multimodal": ("Multimodal", "#F4AC45")}
+# embedding -> (label, colour), in plotting order
+EMBEDDINGS = {s: (SPACE_LABELS[s], SPACE_COLORS[s]) for s in ("sequence", "image", "multimodal")}
 
 # Radar order, counter-clockwise from the right
 LOCATION_ORDER = [
@@ -70,10 +68,12 @@ def load(label_set, method_name=METHOD_NAME, in_dir=None) -> pd.DataFrame:
 def radar(df):
     fig = L.figure("single", height=80)
     ax = fig.add_axes([0.24, 0.2, 0.52, 0.52 * 89 / 80], projection="polar")
-    angles = np.linspace(0, 2 * np.pi, len(LOCATION_ORDER), endpoint=False)
+    scored = set(df["compartment"])
+    locations = [loc for loc in LOCATION_ORDER if loc in scored]
+    angles = np.linspace(0, 2 * np.pi, len(locations), endpoint=False)
     closed = np.append(angles, angles[0])
     for emb, (label, color) in EMBEDDINGS.items():
-        v = df[df["embedding"] == emb].set_index("compartment").loc[LOCATION_ORDER,
+        v = df[df["embedding"] == emb].set_index("compartment").loc[locations,
                                                                     "cliffs_delta_mean"]
         v = np.append(v.to_numpy(), v.iloc[0])
         ax.plot(closed, v, "o-", color=color, lw=style.LW_LINE, ms=2.2, mec="white",
@@ -81,12 +81,12 @@ def radar(df):
         ax.fill(closed, v, color=color, alpha=0.15, lw=0)
     ax.set_xticks(angles)
     ax.set_xticklabels([])
-    for a, name in zip(angles, LOCATION_ORDER):
+    for a, name in zip(angles, locations):
         c = np.cos(a)
         ax.text(a, 1.07, name, fontsize=style.FS_TINY, va="center",
                 ha="left" if c > 0.1 else "right" if c < -0.1 else "center")
     ax.set_ylim(0, 1)
-    ax.set_rlabel_position(360 / len(LOCATION_ORDER) / 2)
+    ax.set_rlabel_position(360 / len(locations) / 2)
     ax.set_yticks([0.25, 0.5, 0.75, 1.0])
     ax.tick_params(axis="y", labelsize=style.FS_TINY, colors=pal.INK2)
     ax.grid(color=pal.GRID, lw=style.LW_MIN)
@@ -100,7 +100,9 @@ def radar(df):
 
 def suborganellar(df):
     mm = df[df["embedding"] == "multimodal"].set_index("compartment")["cliffs_delta_mean"]
-    organelles = {o: sorted(terms, key=lambda t: -mm[t]) for o, terms in SUBORGANELLAR_TERMS.items()}
+    organelles = {o: sorted((t for t in terms if t in mm), key=lambda t: -mm[t])
+                  for o, terms in SUBORGANELLAR_TERMS.items()}
+    organelles = {o: terms for o, terms in organelles.items() if terms}
     n_bars = sum(len(t) for t in organelles.values())
     left, gap, width = 13.0, 10.0, L.resolve_width("double")
     unit = (width - left - 2.0 - gap * (len(organelles) - 1)) / n_bars
@@ -118,8 +120,9 @@ def suborganellar(df):
         ax.set_xticks(x)
         ax.set_xticklabels([SHORT_LABELS[t] for t in terms], rotation=40, ha="right")
         ax.set_xlim(-0.5, len(terms) - 0.5)
-        ax.set_ylim(bottom=0)
-        ax.margins(y=0.1)
+        shown = df[df["compartment"].isin(terms)]
+        lo, hi = shown["cliffs_delta_ci_lower"].min(), shown["cliffs_delta_ci_upper"].max()
+        ax.set_ylim(min(0.0, lo), hi * 1.1)
         ax.set_title(organelle, fontsize=style.FS_BASE, pad=3)
         if k == 0:
             ax.set_ylabel("Cliff's delta")

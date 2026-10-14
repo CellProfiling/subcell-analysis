@@ -35,10 +35,12 @@ of one of them, so a rebuilt table can differ for those entries.
 which send the UniProt entries to the g:Profiler web service. g:Profiler serves only
 its current GO release, so a new query returns today's memberships rather than those
 of the shipped tables. ``gobp`` keeps the processes the published set was chosen by
-(:func:`select_gobp`): g:Profiler enrichment p < 0.001 over the queried entries, 5 or
-more of them as members, no other selected process below it in the GO hierarchy
-(``is_a`` in ``--obo``, ``go-basic.obo`` from https://purl.obolibrary.org/obo/go/go-basic.obo),
-and none specific to a cell type (``CELL_TYPE_WORDS``) or to viral or stem-cell biology.
+(:func:`select_gobp`): among the processes the query returns with 5 or more of the
+entries as members, those that are no direct ``is_a`` parent of another of them
+(``--obo``, ``go-basic.obo`` from https://purl.obolibrary.org/obo/go/go-basic.obo), with
+g:Profiler enrichment p < 0.001, and not specific to a cell type (``CELL_TYPE_WORDS``)
+or to viral or stem-cell biology. The parent rule is applied before the p-value and
+name filters, so a parent is left out even when its child is then filtered out.
 """
 
 from __future__ import annotations
@@ -170,7 +172,7 @@ def go_parents(obo_path) -> dict[str, list[str]]:
 
 
 def select_gobp(terms, obo_path) -> pd.DataFrame:
-    """The processes of *terms* (from :func:`query_gobp`) that Fig. 6f scores."""
+    """The processes of *terms* (from :func:`query_gobp`) that Fig. 6f scores, in the published order of filters."""
     terms = terms[terms["intersections"].map(len) >= 5]
     ids, parents = set(terms["go_id"]), go_parents(obo_path)
     has_child = {p for g in ids for p in parents.get(g, []) if p in ids}

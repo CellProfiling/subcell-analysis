@@ -19,12 +19,13 @@ import argparse
 import pandas as pd
 
 from subcell import config, style
-from subcell.multimodal.embeddings import METHOD_NAME
+from subcell.multimodal.embeddings import METHOD_NAME, SPACE_COLORS
 from subcell.runlog import log
 from subcell.style import layout as L
 from subcell.style import palettes as pal
 
-IMAGE, SEQUENCE, TRANSFER, CROSS, RANDOM = "#5191bc", "#1d3a42", "#d4a017", "#c47a20", "#999999"
+IMAGE, SEQUENCE = SPACE_COLORS["image"], SPACE_COLORS["sequence"]
+TRANSFER, CROSS, RANDOM = "#d4a017", "#c47a20", "#999999"   # lines into another space, chance
 
 # (cluster source, scored space, line colour, marker colour, line style, marker, label)
 LINES = [

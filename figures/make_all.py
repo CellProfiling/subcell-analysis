@@ -16,11 +16,12 @@ import importlib
 import traceback
 
 from subcell import config
+from subcell.multimodal.embeddings import METHOD_NAME
 from subcell.perturbation import CM4AI_METADATA
 from subcell.runlog import log
 
 _ATTENTION_RUNS = ("subcell_rybg_mae", "subcell_rybg_vit")
-_CLUSTER_TRANSFER_RUN = "MAE-CellS-ProtS-Pool_U2OS_harmonized_if_plate_id_microscope"
+_CLUSTER_TRANSFER_RUN = METHOD_NAME   # the MuSIC run of the Fig. 6 analyses
 _MICROSCOPE_TABLES = ("identity.csv", "transfer.csv", "transfer_direction_delta.csv",
                       "geometry.csv", "panel_a_cells.csv", "gallery.csv")
 
