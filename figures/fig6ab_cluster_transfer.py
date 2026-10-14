@@ -37,7 +37,8 @@ from subcell.style import layout as L
 from subcell.style import palettes as pal
 from subcell.utils.hierarchical_leiden import RESOLUTIONS
 
-SPACE_LABELS = {"image": "SubCell", "sequence": "ESM-2", "multimodal": "MuSIC\nco-embedding"}
+# image is SubCell, sequence ESM-2, multimodal their MuSIC co-embedding
+SPACE_LABELS = {"image": "Image", "sequence": "Sequence", "multimodal": "Multimodal"}
 
 # (clustered space, UMAP space) per row; one row per panel for Fig. 6a,b
 PANEL_ROWS = {"fig6a": [("image", "multimodal")], "fig6b": [("sequence", "multimodal")]}
@@ -80,7 +81,7 @@ def render(df, rows):
         d = DOT_FRAC * w * L.MM * 72.0
         y = TOP + i * (w + 4.0)
         L.text(fig, 1.5, y + w / 2,
-               f"{SPACE_LABELS[clustered]} clusters\non {SPACE_LABELS[space]}",
+               f"{SPACE_LABELS[clustered]} clusters\non {SPACE_LABELS[space].lower()}",
                va="center", fontsize=style.FS_SMALL, linespacing=1.3)
         for j, res in enumerate(RESOLUTIONS):
             labels = df[f"{clustered}_leiden_{res}"].astype(int).to_numpy()

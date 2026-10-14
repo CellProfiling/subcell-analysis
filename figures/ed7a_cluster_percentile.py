@@ -28,14 +28,14 @@ IMAGE, SEQUENCE, TRANSFER, CROSS, RANDOM = "#5191bc", "#1d3a42", "#d4a017", "#c4
 
 # (cluster source, scored space, line colour, marker colour, line style, marker, label)
 LINES = [
-    ("image", "image", IMAGE, IMAGE, "-", "o", "SubCell → SubCell"),
-    ("sequence", "sequence", SEQUENCE, SEQUENCE, "-", "s", "ESM-2 → ESM-2"),
-    ("image", "multimodal", TRANSFER, IMAGE, "-", "o", "SubCell → co-embedding"),
-    ("sequence", "multimodal", TRANSFER, SEQUENCE, "-", "s", "ESM-2 → co-embedding"),
-    ("image", "sequence", CROSS, IMAGE, "-", "D", "SubCell → ESM-2"),
-    ("sequence", "image", CROSS, SEQUENCE, "-", "D", "ESM-2 → SubCell"),
-    ("random_image_sized", "image", RANDOM, IMAGE, "--", "o", "Random (SubCell sizes)"),
-    ("random_sequence_sized", "sequence", RANDOM, SEQUENCE, "--", "s", "Random (ESM-2 sizes)"),
+    ("image", "image", IMAGE, IMAGE, "-", "o", "Image → Image"),
+    ("sequence", "sequence", SEQUENCE, SEQUENCE, "-", "s", "Sequence → Sequence"),
+    ("image", "multimodal", TRANSFER, IMAGE, "-", "o", "Image → Multimodal"),
+    ("sequence", "multimodal", TRANSFER, SEQUENCE, "-", "s", "Sequence → Multimodal"),
+    ("image", "sequence", CROSS, IMAGE, "-", "D", "Image → Sequence"),
+    ("sequence", "image", CROSS, SEQUENCE, "-", "D", "Sequence → Image"),
+    ("random_image_sized", "image", RANDOM, IMAGE, "--", "o", "Random (image sizes)"),
+    ("random_sequence_sized", "sequence", RANDOM, SEQUENCE, "--", "s", "Random (sequence sizes)"),
 ]
 
 
