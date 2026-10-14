@@ -145,6 +145,7 @@ python -m figures.fig3c_mantel         # one figure
 | Fig. 6c | `fig6c_compartment_enrichment` | `subcell.multimodal.compartment_enrichment` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), labels from `subcell.multimodal.compartment_labels` | as for Fig. 6a,b |
 | Fig. 6e | `fig6e_paralog_ranks` | `subcell.multimodal.paralog_ranks` (`subcell/multimodal/slurm/paralog_ranks.sbatch`) | as for Fig. 6a,b |
 | Fig. 6f | `fig6f_process_enrichment` | `subcell.multimodal.compartment_enrichment gobp` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), processes from `subcell.multimodal.compartment_labels gobp` | as for Fig. 6a,b |
+| Extended Data Fig. 7c | `ed7c_process_enrichment` | as for Fig. 6f (the processes after its top 25) | as for Fig. 6a,b |
 | Extended Data Fig. 7a | `ed7a_cluster_percentile` | `subcell.multimodal.cluster_transfer`, then `subcell.multimodal.cluster_percentile` | as above |
 | Fig. 6d; Extended Data Fig. 7b | `ed7b_interaction_enrichment` | `subcell.multimodal.music`, `subcell.multimodal.mirage`, `subcell.multimodal.interaction_enrichment` | `feature_analysis.harmonization` |
 | Fig. 4e-h; Extended Data Figs. 6 and 9 | `jump/notebooks/` | the JUMP-Pilot pipeline in `jump/` (own environments and configuration; see `jump/README.md`) | `jump/scripts/inference_*.py` |
@@ -162,7 +163,6 @@ Not produced by this repository:
 - Fig. 2d (a decision tree), Fig. 4d (images) and the joint intensity-versus-embedding plot of
   Fig. 4c. Fig. 2e (OpenCell clustering) has its features (`inference.opencell`) but no
   analysis code here.
-- Extended Data Fig. 7c.
 - Extended Data Fig. 2a-h,l (core segregation, dispersion, vimentin classification and the
   image panels).
 

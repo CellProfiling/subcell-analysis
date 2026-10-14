@@ -4,9 +4,9 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=8G
 
-# `python -m subcell.multimodal.compartment_enrichment`, then its figures (Fig. 6c,f),
-# with the labels shipped in annotations/. On 4 CPUs the three label sets take about
-# 8 minutes and 2 GB.
+# `python -m subcell.multimodal.compartment_enrichment`, then its figures (Fig. 6c,f,
+# Extended Data Fig. 7c), with the labels shipped in annotations/. On 4 CPUs the three
+# label sets take about 8 minutes and 2 GB.
 #   sbatch subcell/multimodal/slurm/compartment_enrichment.sbatch [--run-dir DIR]
 # Arguments are passed to the analysis.
 #
@@ -21,3 +21,4 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 ${SUBCELL_PYTHON:-python} -u -m subcell.multimodal.compartment_enrichment "$@"
 ${SUBCELL_PYTHON:-python} -u -m figures.fig6c_compartment_enrichment
 ${SUBCELL_PYTHON:-python} -u -m figures.fig6f_process_enrichment
+${SUBCELL_PYTHON:-python} -u -m figures.ed7c_process_enrichment

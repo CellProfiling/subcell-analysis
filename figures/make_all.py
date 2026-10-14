@@ -65,6 +65,8 @@ FIGURES = {
                for s in ("coarse", "suborganellar")]),
     "fig6f": ("figures.fig6f_process_enrichment",
               [config.COMPARTMENT_ENRICHMENT_DIR / _CLUSTER_TRANSFER_RUN / "gobp_summary.csv"]),
+    "ed7c": ("figures.ed7c_process_enrichment",
+             [config.COMPARTMENT_ENRICHMENT_DIR / _CLUSTER_TRANSFER_RUN / "gobp_summary.csv"]),
     "fig6e": ("figures.fig6e_paralog_ranks",
               [config.PARALOG_RANKS_DIR / _CLUSTER_TRANSFER_RUN / f for f in ("overview.csv", "background.csv", "paralogs.csv")]),
 }
