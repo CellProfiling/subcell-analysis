@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.hpa -c configs/config_b2ai.yaml`: features of every compared model on the CM4AI
+# Read by `python -m subcell.inference.hpa -c configs/cm4ai.yaml`: features of every compared model on the CM4AI
 # MDA-MB-468 crops (Fig. 4a-c, Extended Data Fig. 5).
 - name: subcell_rybg_mae
   dataset: HPATestDataset

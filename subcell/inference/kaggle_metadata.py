@@ -8,10 +8,10 @@ reads: ``id`` is the image, ``cell`` is ``<n>_crop`` so the crop files
 ``<image>_cell<n>_crop_<color>.png`` resolve, and ``locations`` carries the expert
 cell-level ``annotated_label``.
 
-    python -m scripts.build_kaggle_metadata
+    python -m subcell.inference.kaggle_metadata
 
 Both paths default to files in ``config.ROOTS["KAGGLE_DATA"]``: ``all_crops.csv`` in,
-``kaggle_crops_metadata.csv`` out (the ``metadata_file`` of ``configs/config_kaggle.yaml``).
+``kaggle_crops_metadata.csv`` out (the ``metadata_file`` of ``configs/kaggle.yaml``).
 """
 
 import argparse

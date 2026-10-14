@@ -5,7 +5,7 @@ no nuclear stain; ``channel_combination`` selects the substitute fed to the DNA 
 ``nuc_const`` (the nuclear mask at constant intensity) or ``nuc_cdt_gmmn`` (mean of the CDT1 and GMNN channels
 inside the nucleus). With ``resize`` the crops are rescaled to the HPA pixel size.
 
-    python -m subcell.inference.fucci -c configs/config_subcell_mae_fucci.yaml
+    python -m subcell.inference.fucci -c configs/fucci_subcell_mae.yaml
 
 The config is a list of runs with ``name``, ``crops_folder``, ``metadata_file``, ``inference_folder``,
 ``channel_combination``, ``resize``, ``save_attention`` and ``model``. The features are written to

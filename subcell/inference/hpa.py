@@ -5,11 +5,11 @@ single-cell crops of the HPA (``HPA_DATA``), the HPA Kaggle test set (``KAGGLE_D
 perturbation images (``CM4AI_DATA``). The features are the input of the localization benchmarks
 (Fig. 2a-c), the feature analyses (Fig. 3, Extended Data Figs. 3 and 8) and the CM4AI analysis (Fig. 4).
 
-    python -m subcell.inference.hpa -c configs/config_subcell_mae.yaml
+    python -m subcell.inference.hpa -c configs/hpa_subcell_mae.yaml
 
 The config is a list of runs. Per run the encoder, its default preprocessing and the Dataset follow
-from ``name`` (``bestfitting``, ``cell_dino*``, ``*dino*``, ``*subcell*``); the keys ``preprocess`` and
-``dataset`` override the preprocessing and the Dataset. Other keys: ``crops_folder``, ``metadata_file``,
+from ``name`` (``bestfitting``, ``cell_dino*``, ``*dino*``, ``*subcell*``); the key ``dataset``
+overrides the Dataset. Other keys: ``crops_folder``, ``metadata_file``,
 ``inference_folder``, ``crop_params``, ``model``, ``save_attention`` (attention panels for every 25th
 batch), ``save_patch_features`` (default true: the patch tokens of each batch are kept in
 ``<inference_folder>/<name>/temp``), ``num_workers``.
@@ -21,7 +21,6 @@ otherwise ``<inference_folder>/<name>/all_features_pooled.pth`` with the metadat
 import argparse
 import os
 import shutil
-from functools import partial
 
 import pandas as pd
 import torch
@@ -35,11 +34,6 @@ from subcell.utils import inference
 FEATURE_META_COLS = ["cell_id", "if_plate_id", "position", "sample", "atlas_name",
                      "antibody", "ensembl_ids", "gene_names", "locations", "cell_path"]
 DATASETS = {"HPATestDataset": HPATestDataset, "HPATestDataset2": HPATestDataset2, "HPATestDataset3": HPATestDataset3}
-PREPROCESS = {
-    "preprocess_input_self_norm": preprocess_input_self_norm,
-    "preprocess_input_self_norm_no_8bit": partial(preprocess_input_self_norm, to_8bit=False),
-    "preprocess_input_dino": preprocess_input_dino,
-}
 
 
 def defaults(name):
@@ -59,7 +53,6 @@ def run(run_config):
     name = run_config["name"]
     model = inference.get_model(name, run_config["model"])
     preprocess, dataset_cls = defaults(name)
-    preprocess = PREPROCESS[run_config["preprocess"]] if "preprocess" in run_config else preprocess
     dataset_cls = DATASETS[run_config["dataset"]] if "dataset" in run_config else dataset_cls
 
     inference_folder = f"{run_config['inference_folder']}/{name}"

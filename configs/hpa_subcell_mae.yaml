@@ -1,13 +1,13 @@
-# Read by `python -m subcell.inference.hpa -c configs/config_subcell_vit.yaml`: ViT-ProtS-Pool features
-# (MT, ER, DNA, protein) of the HPA v23 cells, written to config.features("ViT-ProtS-Pool"). Input of
+# Read by `python -m subcell.inference.hpa -c configs/hpa_subcell_mae.yaml`: MAE-CellS-ProtS-Pool features
+# (MT, ER, DNA, protein) of the HPA v23 cells, written to config.features("MAE-CellS-ProtS-Pool"). Input of
 # the localization benchmarks (Fig. 2a-c) and the feature analyses (Fig. 3, Extended Data Figs. 3 and 8).
 -
-    name: subcell_rybg_vit
+    name: subcell_rybg_mae
     crops_folder: ${HPA_DATA}
     metadata_file: ${HPA_DATA}/crops_metadata.csv
     dataset: HPATestDataset2
     inference_folder: ${SUBCELL_ROOT}/hpa_inference
-    output_path: ${SUBCELL_ROOT}/features/ViT-ProtS-Pool/hpa_features/all_features.pth
+    output_path: ${SUBCELL_ROOT}/features/MAE-CellS-ProtS-Pool/hpa_features/all_features.pth
     save_attention: False
     save_patch_features: False
     model:
@@ -30,7 +30,7 @@
                 dim: 768
                 int_dim: 512
                 num_heads: 2
-        weight_path: ${SUBCELL_WEIGHTS}/all_channels_ViT-ProtS-Pool.pth
+        weight_path: ${SUBCELL_WEIGHTS}/all_channels_MAE-CellS-ProtS-Pool.pth
     crop_params:
         mask_cell: True
         pad: -1

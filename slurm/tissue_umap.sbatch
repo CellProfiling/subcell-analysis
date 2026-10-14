@@ -8,9 +8,9 @@
 
 # UMAP of the uncorrected and each harmonized tissue feature matrix, on the top 256
 # principal components (GPU randomized SVD) of each matrix, for
-# figures/ed2i_tissue_umaps.py. Run after scripts/tissue_harmonization.sbatch.
+# figures/ed2i_tissue_umaps.py. Run after slurm/tissue_harmonization.sbatch.
 #
-#   sbatch -o "$SUBCELL_ROOT/logs/%x_%j.out" scripts/tissue_umap.sbatch
+#   sbatch -o "$SUBCELL_ROOT/logs/%x_%j.out" slurm/tissue_umap.sbatch
 #
 # SUBCELL_PYTHON selects the interpreter (default: python on PATH). A login shell
 # is requested so that `module` is defined; load the modules your Python

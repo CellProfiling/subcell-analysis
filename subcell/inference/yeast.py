@@ -2,7 +2,7 @@
 
 Input: the HDF5 files of yeast cells in ``crops_folder`` (``YEAST_DATA``), one per task.
 
-    python -m subcell.inference.yeast -c configs/config_subcell_mae_yeast.yaml
+    python -m subcell.inference.yeast -c configs/yeast_subcell_mae.yaml
 
 The config is a list of runs with ``name``, ``crops_folder``, ``inference_folder``, ``resize``,
 ``save_attention`` and ``model``. For every HDF5 file the features are written to

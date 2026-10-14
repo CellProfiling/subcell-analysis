@@ -4,7 +4,7 @@ Input: the HPA-resolution projections built by ``subcell.inference.allencell_cro
 The channel combination (``concat``, ``nuc_prot_only``, ``plasma_nuc_prot``) and the normalization
 (``perchannel``, ``perimage``) of each run give the channel/normalization sweep of Supplementary Table 10.
 
-    python -m subcell.inference.allencell -c configs/config_subcell_mae_allen.yaml
+    python -m subcell.inference.allencell -c configs/allencell_subcell_mae.yaml
 
 The config is a list of runs with ``name``, ``crops_folder``, ``metadata_file``, ``inference_folder``,
 ``channel_combination``, ``normalization``, ``save_attention`` and ``model``. The features are written to

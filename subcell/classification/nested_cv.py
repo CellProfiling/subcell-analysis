@@ -21,13 +21,51 @@ import pandas as pd
 import torch
 from joblib import Parallel, delayed
 from sklearn.metrics import average_precision_score
+from torch import nn
 from torch.nn import functional as F
 from tqdm import tqdm
 
-from subcell.models.mlp import MLPClassifier
 from subcell.utils.losses import SigmoidFocalLoss
 from subcell.utils.metrics import compute_metrics, get_optimal_threshold
 from subcell.utils.seed import set_random_seed
+
+
+
+class MLPClassifier(nn.Module):
+    """Dropout on the input, ``n_layers`` hidden blocks of
+    Linear-Dropout-ReLU-BatchNorm, then a linear output layer.
+
+    ``n_layers == 1`` is the exception: no hidden block, so the probe is dropout
+    followed by one linear map and ``hidden_dim`` is ignored. The stacked trainer
+    below relies on this layout.
+    """
+
+    def __init__(self, input_dim, output_dim, hidden_dim=512, n_layers=1, dropout=0.5):
+        super().__init__()
+
+        self.n_layers = n_layers
+        self.dropout = nn.Dropout(dropout)
+
+        if n_layers > 1:
+            for i in range(n_layers):
+                setattr(self, f"fc{i}", nn.Linear(input_dim, hidden_dim))
+                setattr(self, f"dropout{i}", nn.Dropout(dropout))
+                setattr(self, f"nonlin{i}", nn.ReLU())
+                setattr(self, f"norm{i}", nn.BatchNorm1d(hidden_dim))
+                input_dim = hidden_dim
+
+        self.fc_out = nn.Linear(input_dim, output_dim)
+
+    def forward(self, X):
+        X = self.dropout(X)
+        if self.n_layers > 1:
+            for i in range(self.n_layers):
+                X = getattr(self, f"fc{i}")(X)
+                X = getattr(self, f"dropout{i}")(X)
+                X = getattr(self, f"nonlin{i}")(X)
+                X = getattr(self, f"norm{i}")(X)
+        X = self.fc_out(X)
+        return X
 
 
 def compute_nested_metrics(y_val, val_pred, test_pred, y_test):

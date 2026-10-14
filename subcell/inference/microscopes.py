@@ -11,7 +11,7 @@ the two microscopes align row by row.
 -> <inference_folder>/<model name>_norm_<normalization>/<mag>_features_pooled.pth
    = (metadata DataFrame, features tensor (N, P x D)), features_layout.json
 
-    python -m subcell.inference.microscopes -c configs/config_cellcycle_microscopes.yaml [--shard K --nshards N]
+    python -m subcell.inference.microscopes -c configs/microscopes.yaml [--shard K --nshards N]
 
 Shards split the cells (e.g. one per GPU); ``--merge`` joins the per-shard files. Optional config key ``ids_file``:
 restrict to the ids of that csv. The benchmark itself is ``python -m subcell.microscope_robustness``.

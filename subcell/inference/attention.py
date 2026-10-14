@@ -8,7 +8,7 @@ correlation and by normalized mutual information. The result is
 head names and one [cells, channels, heads] tensor per measure, with the channels
 in ``CHANNEL_ORDER`` (MT, ER, Nuc, Prot) whatever the order the encoder reads.
 
-    python -m subcell.inference.attention -c configs/config_attention_hpa.yaml --name subcell_rybg_vit
+    python -m subcell.inference.attention -c configs/hpa_attention.yaml --name subcell_rybg_vit
 
 The config is a list of runs, as for ``subcell.inference.hpa``. Batches are written
 as they finish and skipped on a rerun, so an interrupted run resumes where it

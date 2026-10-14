@@ -1,6 +1,6 @@
 """Cell-cycle stage probes on Allen Cell hiPSC features (Fig. 2g,i; Supplementary Table 10).
 
-For every model variant, an MLP (``subcell.classification.mlp``) is trained on ten
+For every model variant, an MLP (``subcell.classification.probe``) is trained on ten
 seeds to predict the mitotic stage of a cell from its frozen features, on the
 DINO4Cells train / validation / test split of the cells; per-seed predictions and
 metrics are written beside the features. ``figures.fig2_cell_cycle`` summarises them.
@@ -25,7 +25,7 @@ import torch
 from sklearn.model_selection import train_test_split
 
 from subcell import config
-from subcell.classification.mlp import probe_seeds
+from subcell.classification.probe import probe_seeds
 
 DINO_FILES = {
     "dino": "DINO_features_and_df.pth",

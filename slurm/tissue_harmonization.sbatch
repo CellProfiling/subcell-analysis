@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 #SBATCH --job-name=tissue_harmonization
 #SBATCH -p gpu
 #SBATCH -G 1
@@ -10,7 +10,7 @@
 # keys (Extended Data Fig. 2i, Supplementary Note 2): stages validate + harm, or
 # all (harm then umap). Needs a GPU.
 #
-#   sbatch -o "$SUBCELL_ROOT/logs/%x_%j.out" scripts/tissue_harmonization.sbatch [stage]
+#   sbatch -o "$SUBCELL_ROOT/logs/%x_%j.out" slurm/tissue_harmonization.sbatch [stage]
 #
 # SUBCELL_PYTHON selects the interpreter (default: python on PATH). Add the
 # `module load` lines your Python environment needs before the python call.

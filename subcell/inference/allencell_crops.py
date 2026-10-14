@@ -8,7 +8,7 @@ written as ``<name>_resized_proj.png`` (the file the Allen Cell Dataset reads).
     python -m subcell.inference.allencell_crops [--jobs N]
 
 Inputs (``ALLENCELL_DATA``): ``manifest.csv`` and ``loaddata/{crop_raw,crop_seg}``.
-Output: ``config.ALLENCELL_DIR/crop_subcell``, the ``crops_folder`` of the configs ``config_subcell_*_allen.yaml``.
+Output: ``config.ALLENCELL_DIR/crop_subcell``, the ``crops_folder`` of the configs ``allencell_subcell_*.yaml``.
 """
 import argparse
 import ast

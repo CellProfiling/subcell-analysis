@@ -1,14 +1,14 @@
 """Move the Kaggle test-set features from the inference output to ``features/<model>/kaggle_features``.
 
-``python -m subcell.inference.hpa -c configs/config_kaggle.yaml`` writes
+``python -m subcell.inference.hpa -c configs/kaggle.yaml`` writes
 ``<inference_folder>/<run>/all_features_pooled.pth``. This rewrites each as
 ``config.FEATURE_DIR/<model>/kaggle_features/all_features.pth``, next to the model's
 ``hpa_features``, with the metadata columns ``get_challenge_data`` in
 ``subcell.classification.localization`` reads (``annotated_label``, ``antibody``, ...).
 
-    python -m scripts.export_kaggle_features [--inference-folder DIR]
+    python -m subcell.inference.kaggle_features [--inference-folder DIR]
 
-The inference folder defaults to ``config.ROOT/kaggle_inference``. Runs whose output
+The inference folder defaults to ``config.KAGGLE_INFERENCE_DIR``. Runs whose output
 does not exist are skipped.
 """
 
@@ -26,10 +26,6 @@ RUNS = {
     "subcell_rybg_vit": "ViT-ProtS-Pool",
     "subcell_vit_supervised": "ViT-Supervised",
     "bestfitting": "bestfitting",
-    "dino_selfnorm": "DINO4Cells-HPA-SelfNorm",
-    "cell_dino_hpa_vitl16_crop512_8bit": "Cell-DINO-HPA-Crop512-8bit",
-    "cell_dino_hpa_vitl16_crop512": "Cell-DINO-HPA-Crop512",
-    "cell_dino_hpa_vitl16_dinonorm": "Cell-DINO-HPA-DINONorm",
 }
 
 
@@ -56,5 +52,5 @@ def main(inference_folder):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--inference-folder", default=str(config.ROOT / "kaggle_inference"))
+    ap.add_argument("--inference-folder", default=str(config.KAGGLE_INFERENCE_DIR))
     main(ap.parse_args().inference_folder)

@@ -1,4 +1,4 @@
-# Read by `python -m subcell.inference.allencell -c configs/config_subcell_mae_allen.yaml`: MAE-CellS-ProtS-Pool features on Allen Cell
+# Read by `python -m subcell.inference.allencell -c configs/allencell_subcell_mae.yaml`: MAE-CellS-ProtS-Pool features on Allen Cell
 # projections for cell-cycle stage: DNA + structure (bg) or DNA + structure + plasma membrane (rbg) channels, three channel
 # combinations x two normalizations (Fig. 2g,i; Supplementary Table 10). The crops are built by subcell.inference.allencell_crops.
 - &concat_perchannel

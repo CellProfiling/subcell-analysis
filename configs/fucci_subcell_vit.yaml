@@ -1,8 +1,8 @@
-# Read by `python -m subcell.inference.fucci -c configs/config_subcell_mae_fucci.yaml`: MAE-CellS-ProtS-Pool features
+# Read by `python -m subcell.inference.fucci -c configs/fucci_subcell_vit.yaml`: ViT-ProtS-Pool features
 # on the FUCCI U2OS crops (built by subcell.inference.fucci_crops), with three substitutes for the missing
 # DNA channel (Fig. 2k,l; config.FUCCI_VARIANTS).
 - &nuc_zero
-  name: subcell_rbg_mae
+  name: subcell_rbg_vit
   crops_folder: ${FUCCI_DATA}/single_cell_crops
   metadata_file: ${FUCCI_DATA}/single_cell_statistics_pcs.csv
   inference_folder: ${SUBCELL_ROOT}/fucci
@@ -14,9 +14,8 @@
           hidden_dropout_prob: 0.0, attention_probs_dropout_prob: 0.0, initializer_range: 0.02, layer_norm_eps: 1.0e-12, image_size: 448,
           patch_size: 16, num_channels: 3, qkv_bias: true}
       pool_model: {dim: 768, int_dim: 512, num_heads: 2}
-    weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_MAE-CellS-ProtS-Pool.pth
+    weight_path: ${SUBCELL_WEIGHTS}/MT-DNA-Protein_ViT-ProtS-Pool.pth
 - <<: *nuc_zero
   channel_combination: nuc_const
 - <<: *nuc_zero
   channel_combination: nuc_cdt_gmmn
-  save_attention: true

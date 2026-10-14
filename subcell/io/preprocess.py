@@ -89,13 +89,12 @@ def preprocess_input_dino(images):
     return image_tensors
 
 
-def preprocess_input_self_norm(images, to_8bit=True):
+def preprocess_input_self_norm(images):
     images_np = np.concatenate([image[np.newaxis, ...] for image in images], axis=0)
     images_np = images_np.astype(np.float32)
 
     images_np = images_np / np.maximum(images_np.max(axis=(1, 2), keepdims=True), 1)
-    if to_8bit:
-        images_np = np.floor(images_np * 255) / 255
+    images_np = np.floor(images_np * 255) / 255
     img_mean = images_np.mean(axis=(1, 2), keepdims=True)
     img_std = images_np.std(axis=(1, 2), keepdims=True)
     images_np = (images_np - img_mean) / (img_std + 1e-7)

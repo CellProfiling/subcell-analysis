@@ -17,7 +17,6 @@ import traceback
 
 from subcell import config
 from subcell.multimodal.embeddings import METHOD_NAME
-from subcell.perturbation import CM4AI_METADATA
 from subcell.runlog import log
 
 _ATTENTION_RUNS = ("subcell_rybg_mae", "subcell_rybg_vit")
@@ -42,7 +41,7 @@ FIGURES = {
     "fig3fg": ("figures.fig3fg_attention",
                [config.ATTN_CORR_DIR / run / "all_relations.pth" for run in _ATTENTION_RUNS]),
     "fig4": ("figures.fig4_perturbation",
-             [config.features("MAE-CellS-ProtS-Pool", "b2ai_features"), CM4AI_METADATA]),
+             [config.features("MAE-CellS-ProtS-Pool", "b2ai_features"), config.CM4AI_METADATA]),
     "ed1": ("figures.ed1_microscopes",
             [config.MICROSCOPE_DIR / f for f in _MICROSCOPE_TABLES] + [config.MICROSCOPE_CROPS]),
     "ed2jk": ("figures.ed2jk_cluster_annotation",

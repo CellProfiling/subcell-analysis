@@ -31,8 +31,8 @@ subcell/                     importable package
 figures/                     one module per figure, rendering cached results
 notebooks/                   the multiscale cell map (Fig. 5)
 jump/                        the JUMP-Pilot benchmark (Fig. 4e-h; see jump/README.md)
-configs/                     inference configurations (models, datasets, channels)
-scripts/                     data preparation and Slurm job scripts
+configs/                     inference configurations: <dataset>_<model>.yaml, or <dataset>.yaml for all compared models
+slurm/                       Slurm job scripts for the long-running stages
 annotations/                 small curated tables the results depend on
 LICENSES/                    licences of the third-party code included here
 paths.example.toml           template for paths.local.toml (see "Paths")
@@ -88,14 +88,14 @@ The files in `configs/` refer to these roots as `${NAME}`.
   (facebookresearch/dinov2), bestfitting (winner of the HPA Kaggle single-cell challenge) and
   ViT-Weak-Supervised (trained with the SubCell code).
 - HPA v23 single-cell crops: `s3://czi-subcell-public/`;
-  `python -m scripts.build_hpa_cell_metadata` writes their `crops_metadata.csv`. From
+  `python -m subcell.inference.hpa_metadata` writes their `crops_metadata.csv`. From
   <https://www.proteinatlas.org>: the image table (`annotations/IF-image-orig-bboxes.csv`)
   and the cell-line RNA data (`annotations/rna_celline.tsv`, HPA v24). The antibody split
   used for training and evaluation is in `annotations/splits/`.
 - HPA Kaggle single-cell challenge test set:
   <https://www.kaggle.com/competitions/hpa-single-cell-image-classification>;
-  `python -m scripts.build_kaggle_metadata` writes its metadata and
-  `python -m scripts.export_kaggle_features` files its features beside the HPA ones.
+  `python -m subcell.inference.kaggle_metadata` writes its metadata and
+  `python -m subcell.inference.kaggle_features` files its features beside the HPA ones.
 - OpenCell: <https://opencell.czbiohub.org>. Allen Cell: <https://www.allencell.org>. Yeast:
   <https://github.com/BooneAndrewsLab/CycleNET>. FUCCI U2OS: BioImage Archive S-BIAD34.
   CM4AI (June 2025 release): <https://doi.org/10.18130/V3/F3TD5R>. The widefield/confocal
@@ -130,28 +130,28 @@ python -m figures.fig3c_mantel         # one figure
 
 | Figure | Figure module | Analysis | Features |
 | --- | --- | --- | --- |
-| Fig. 2a-c, Supplementary Table 9 | — (tables from `classification.localization`) | `subcell.classification.localization` | `inference.hpa` with `config_subcell_*.yaml`, `config_kaggle.yaml` |
+| Fig. 2a-c, Supplementary Table 9 | — (tables from `classification.localization`) | `subcell.classification.localization` | `inference.hpa` with `hpa_subcell_*.yaml`, `kaggle.yaml` |
 | Fig. 2f,h,j, Supplementary Table 1 | — (tables) | `subcell.classification.yeast` | `inference.yeast` |
 | Fig. 2g,i, Supplementary Table 10 | `fig2_cell_cycle` | `subcell.classification.cellcycle_allencell` | `inference.allencell_crops`, `inference.allencell` |
 | Fig. 2k | `fig2_cell_cycle` | `subcell.classification.cellcycle_fucci` | `inference.fucci_crops`, `inference.fucci` |
 | Fig. 2l | — (predictions from `classification.cellcycle_fucci`) | `subcell.classification.cellcycle_fucci` | as above |
 | Fig. 3a,b; Extended Data Fig. 8a,b | `fig3ab_similarity` | `subcell.feature_analysis.similarity` | `inference.hpa` |
 | Fig. 3c; Extended Data Fig. 8e | `fig3c_mantel` | `subcell.feature_analysis.similarity` | `inference.hpa` |
-| Fig. 3d; Extended Data Fig. 8c | `fig3d_function_prediction` | `subcell.feature_analysis.harmonization`, then `subcell.classification.function_prediction` (`scripts/function_prediction.sbatch`) | `inference.hpa` |
-| Fig. 3f,g; Extended Data Fig. 8f,g | `fig3fg_attention` | `subcell.feature_analysis.attention_correlation` | `inference.attention` with `config_attention_hpa.yaml` |
-| Fig. 4a | — (table) | `subcell.perturbation.cm4ai_drug_prediction crops`, then `predict` | `inference.hpa` with `config_b2ai.yaml` |
-| Fig. 4b, the tables behind Fig. 4c; Extended Data Fig. 5 | `fig4_perturbation` | `subcell.perturbation.cm4ai_signatures` | `inference.hpa` with `config_b2ai.yaml` |
+| Fig. 3d; Extended Data Fig. 8c | `fig3d_function_prediction` | `subcell.feature_analysis.harmonization`, then `subcell.classification.function_prediction` (`slurm/function_prediction.sbatch`) | `inference.hpa` |
+| Fig. 3f,g; Extended Data Fig. 8f,g | `fig3fg_attention` | `subcell.feature_analysis.attention_correlation` | `inference.attention` with `hpa_attention.yaml` |
+| Fig. 4a | — (table) | `subcell.perturbation.cm4ai_drug_prediction crops`, then `predict` | `inference.hpa` with `cm4ai.yaml` |
+| Fig. 4b, the tables behind Fig. 4c; Extended Data Fig. 5 | `fig4_perturbation` | `subcell.perturbation.cm4ai_signatures` | `inference.hpa` with `cm4ai.yaml` |
 | Fig. 6a,b | `fig6ab_cluster_transfer` | `subcell.multimodal.cluster_transfer` (`subcell/multimodal/slurm/cluster_transfer.sbatch`) | `multimodal.music` (the image, ESM-2 and co-embedding of one run) |
 | Fig. 6c | `fig6c_compartment_enrichment` | `subcell.multimodal.compartment_enrichment` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), labels from `subcell.multimodal.compartment_labels` | as for Fig. 6a,b |
+| Fig. 6d; Extended Data Fig. 7b | `ed7b_interaction_enrichment` | `subcell.multimodal.music`, `subcell.multimodal.mirage`, `subcell.multimodal.interaction_enrichment` | `feature_analysis.harmonization` |
 | Fig. 6e | `fig6e_paralog_ranks` | `subcell.multimodal.paralog_ranks` (`subcell/multimodal/slurm/paralog_ranks.sbatch`) | as for Fig. 6a,b |
 | Fig. 6f | `fig6f_process_enrichment` | `subcell.multimodal.compartment_enrichment gobp` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), processes from `subcell.multimodal.compartment_labels gobp` | as for Fig. 6a,b |
+| Extended Data Fig. 7a | `ed7a_cluster_percentile` | `subcell.multimodal.cluster_transfer`, then `subcell.multimodal.cluster_percentile` | as for Fig. 6a,b |
 | Extended Data Fig. 7c | `ed7c_process_enrichment` | as for Fig. 6f (the processes after its top 25) | as for Fig. 6a,b |
-| Extended Data Fig. 7a | `ed7a_cluster_percentile` | `subcell.multimodal.cluster_transfer`, then `subcell.multimodal.cluster_percentile` | as above |
-| Fig. 6d; Extended Data Fig. 7b | `ed7b_interaction_enrichment` | `subcell.multimodal.music`, `subcell.multimodal.mirage`, `subcell.multimodal.interaction_enrichment` | `feature_analysis.harmonization` |
 | Fig. 4e-h; Extended Data Figs. 6 and 9 | `jump/notebooks/` | the JUMP-Pilot pipeline in `jump/` (own environments and configuration; see `jump/README.md`) | `jump/scripts/inference_*.py` |
 | Fig. 5 | `notebooks/fig5_multiscale_cell_map.ipynb` | hierarchical Leiden clustering and g:Profiler enrichment of the U2OS protein embeddings, in the notebook | Harmony-corrected SubCell features |
-| Extended Data Fig. 1 | `ed1_microscopes` | `python -m subcell.microscope_robustness` | `inference.microscopes` with `config_cellcycle_microscopes.yaml` |
-| Extended Data Fig. 2i | `ed2i_tissue_umaps`, `ed2i_cluster_umap` | `subcell.tissue.harmonization` (`scripts/tissue_*.sbatch`), `subcell.tissue.kmeans_k13` | SubCell features of the TMA cells (SubCellPortable) |
+| Extended Data Fig. 1 | `ed1_microscopes` | `python -m subcell.microscope_robustness` | `inference.microscopes` with `microscopes.yaml` |
+| Extended Data Fig. 2i | `ed2i_tissue_umaps`, `ed2i_cluster_umap` | `subcell.tissue.harmonization` (`slurm/tissue_*.sbatch`), `subcell.tissue.kmeans_k13` | SubCell features of the TMA cells (SubCellPortable) |
 | Extended Data Fig. 2j,k | `ed2jk_cluster_annotation` | `subcell.tissue.kmeans_k13`, `subcell.tissue.reference_labels`, `subcell.tissue.prevalence_support` | as above |
 | Extended Data Fig. 3 | `ed3_harmonization` | `subcell.feature_analysis.harmonization`, `.retrieval`, `.mutual_info` | `inference.hpa` |
 

@@ -2,7 +2,7 @@
 
 Input: OpenCell single-cell crops and their metadata (``OPENCELL_DATA``).
 
-    python -m subcell.inference.opencell -c configs/config_subcell_mae_opencell.yaml
+    python -m subcell.inference.opencell -c configs/opencell_subcell_mae.yaml
 
 The config is a list of runs with ``name``, ``crops_folder``, ``metadata_file``, ``inference_folder``,
 ``resize``, ``normalization``, ``save_attention`` and ``model``. The features are written to
