@@ -1,6 +1,6 @@
 """Extended Data Fig. 7a -- within-cluster percentile rank of the image and sequence clusters in each space.
 
-Quantifies Fig. 6a (``figures.fig6a_cluster_transfer``). Each line is one (cluster source ->
+Quantifies Fig. 6a,b (``figures.fig6ab_cluster_transfer``). Each line is one (cluster source ->
 scored space) combination: the mean, over clusters, of the mean percentile rank of
 a cluster's within-cluster pairs (``subcell.multimodal.cluster_percentile``), with
 a band of +- s.d. across clusters. 50 (dotted) is chance; the random baselines are

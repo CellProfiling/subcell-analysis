@@ -108,7 +108,7 @@ CM4AI_DIR = ROOT / "b2ai_analysis"              # CM4AI drug perturbation (Fig. 
 CM4AI_CROPS = ROOT / "bridge2ai_crops"          # masked CM4AI single-cell crops
 MULTIMODAL_DIR = ROOT / "multimodal_integration"  # image + sequence co-embedding (Fig. 6)
 MULTIMODAL_ENRICHMENT_DIR = ROOT / "bionic_eval_embed_imgseq"   # interaction enrichment (Fig. 6d, Extended Data Fig. 7b)
-CLUSTER_TRANSFER_DIR = ROOT / "cluster_transfer"   # image and sequence clusters on the co-embedding (Fig. 6a, Extended Data Fig. 7a)
+CLUSTER_TRANSFER_DIR = ROOT / "cluster_transfer"   # image and sequence clusters on the co-embedding (Fig. 6a,b, Extended Data Fig. 7a)
 
 # GO / Reactome membership prediction from per-gene mean embeddings (Fig. 3d).
 # Repeat r draws its ten-fold split with seed r.

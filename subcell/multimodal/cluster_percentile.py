@@ -1,6 +1,6 @@
 """How well the image and sequence clusters hold together in each embedding space (Extended Data Fig. 7a).
 
-Quantifies Fig. 6a; ``figures.ed7a_cluster_percentile`` plots it. In each target
+Quantifies Fig. 6a,b; ``figures.ed7a_cluster_percentile`` plots it. In each target
 space (image, sequence, MuSIC co-embedding) every protein pair is ranked by the
 cosine similarity of the mean-centred embeddings, as a percentile of all pairs
 (100 = most similar). A cluster's score in that space is the mean percentile of

@@ -5,7 +5,7 @@
 #SBATCH --mem=8G
 
 # `python -m subcell.multimodal.cluster_transfer` and `cluster_percentile`, then their
-# figures (Fig. 6a, Extended Data Fig. 7a). On 4 CPUs the 10,363 proteins of the U2OS run take about 4 minutes;
+# figures (Fig. 6a,b, Extended Data Fig. 7a). On 4 CPUs the 10,363 proteins of the U2OS run take about 4 minutes;
 # the percentile ranks peak at 3.5 GB.
 #   sbatch subcell/multimodal/slurm/cluster_transfer.sbatch [--run-dir DIR]
 # Arguments are passed to the analysis.
@@ -20,5 +20,5 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK NUMBA_NUM_THREADS=$SLURM_CPUS_PER_TA
 
 ${SUBCELL_PYTHON:-python} -u -m subcell.multimodal.cluster_transfer "$@"
 ${SUBCELL_PYTHON:-python} -u -m subcell.multimodal.cluster_percentile "$@"
-${SUBCELL_PYTHON:-python} -u -m figures.fig6a_cluster_transfer
+${SUBCELL_PYTHON:-python} -u -m figures.fig6ab_cluster_transfer
 ${SUBCELL_PYTHON:-python} -u -m figures.ed7a_cluster_percentile

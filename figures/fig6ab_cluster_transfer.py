@@ -1,4 +1,4 @@
-"""Fig. 6a -- hierarchical Leiden clusters of the image and sequence embeddings on the co-embedding.
+"""Fig. 6a,b -- hierarchical Leiden clusters of the image and sequence embeddings on the co-embedding.
 
 One row per clustered space, one panel per level of the hierarchy. Each panel is
 the UMAP of the MuSIC co-embedding, coloured by the clusters found in the SubCell
@@ -9,16 +9,17 @@ Colours follow the published panel: ``tab20`` sampled evenly over the clusters o
 each level, so above 20 clusters colours repeat and single clusters cannot be told
 apart by colour. The panel shows how coherent clusters stay, not which is which.
 
-* ``fig6a_cluster_transfer``: image and sequence clusters on the co-embedding (Fig. 6a).
-* ``fig6a_cluster_transfer_native``: each space's clusters on its own UMAP, for reference.
-* ``fig6a_cluster_transfer_cross``: image clusters on the sequence UMAP and the reverse.
+* ``fig6a_cluster_transfer``: SubCell image clusters on the co-embedding (Fig. 6a).
+* ``fig6b_cluster_transfer``: ESM-2 sequence clusters on the co-embedding (Fig. 6b).
+* ``fig6ab_cluster_transfer_native``: each space's clusters on its own UMAP, for reference.
+* ``fig6ab_cluster_transfer_cross``: image clusters on the sequence UMAP and the reverse.
 
-    python -m figures.fig6a_cluster_transfer [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
+    python -m figures.fig6ab_cluster_transfer [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
 
 Inputs   ``config.CLUSTER_TRANSFER_DIR``/<method name>/clusters.csv
          (``subcell.multimodal.cluster_transfer``)
-Outputs  ``config.figure_dir("fig6")``/fig6a_cluster_transfer, fig6a_cluster_transfer_native,
-         fig6a_cluster_transfer_cross
+Outputs  ``config.figure_dir("fig6")``/fig6a_cluster_transfer, fig6b_cluster_transfer,
+         fig6ab_cluster_transfer_native, fig6ab_cluster_transfer_cross
 """
 
 from __future__ import annotations
@@ -38,8 +39,8 @@ from subcell.utils.hierarchical_leiden import RESOLUTIONS
 
 SPACE_LABELS = {"image": "SubCell", "sequence": "ESM-2", "multimodal": "MuSIC\nco-embedding"}
 
-# (clustered space, UMAP space) per row
-TRANSFER_ROWS = [("image", "multimodal"), ("sequence", "multimodal")]
+# (clustered space, UMAP space) per row; one row per panel for Fig. 6a,b
+PANEL_ROWS = {"fig6a": [("image", "multimodal")], "fig6b": [("sequence", "multimodal")]}
 NATIVE_ROWS = [("image", "image"), ("sequence", "sequence")]
 CROSS_ROWS = [("image", "sequence"), ("sequence", "image")]
 
@@ -106,9 +107,10 @@ def main(method_name=METHOD_NAME, in_dir=None, out_dir=None):
     out_dir = out_dir or config.figure_dir("fig6")
     formats = ("pdf", "png", "svg")
     with style.nature():
-        style.save(render(df, TRANSFER_ROWS), "fig6a_cluster_transfer", out_dir, formats=formats)
-        style.save(render(df, NATIVE_ROWS), "fig6a_cluster_transfer_native", out_dir, formats=formats)
-        style.save(render(df, CROSS_ROWS), "fig6a_cluster_transfer_cross", out_dir, formats=formats)
+        for panel, rows in PANEL_ROWS.items():
+            style.save(render(df, rows), f"{panel}_cluster_transfer", out_dir, formats=formats)
+        style.save(render(df, NATIVE_ROWS), "fig6ab_cluster_transfer_native", out_dir, formats=formats)
+        style.save(render(df, CROSS_ROWS), "fig6ab_cluster_transfer_cross", out_dir, formats=formats)
 
 
 if __name__ == "__main__":
