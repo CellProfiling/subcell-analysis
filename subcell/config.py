@@ -89,10 +89,11 @@ IF_IMAGES = ANNOT_DIR / "IF-image-orig-bboxes.csv"    # HPA v23 image table
 COMPLEXES_DIR = ANNOT_DIR / "complexes"               # GO / Reactome / CORUM / hu.MAP / BioPlex / STRING
 TISSUE_ANNOT_K13 = ANNOT_DIR / "hpa_tissue_cluster_annotation_k13.tsv"
 TISSUE_CORE_META = ANNOT_DIR / "hpa_tissue_core_metadata.tsv"
-# Compartment labels of Fig. 6c, as used for the figure (see subcell.multimodal.compartment_labels)
+# Protein labels of Fig. 6c,e,f, as used for the figures (see subcell.multimodal.compartment_labels)
 U2OS_LOCATIONS = ANNOT_DIR / "u2os_protein_locations.tsv"   # HPA location annotations per UniProt entry, U2OS cells
 SUBORGANELLAR_GOCC = ANNOT_DIR / "suborganellar_gocc_gprofiler.tsv"   # members of 11 GO:CC compartments, g:Profiler 2026-03-14
-SUBORGANELLAR_GOCC_QUERY = ANNOT_DIR / "suborganellar_gocc_query_ids.txt"   # the UniProt entries that query was run on
+GOBP_TERMS = ANNOT_DIR / "gobp_gprofiler.tsv"   # members of the 158 GO:BP processes scored, g:Profiler 2026-03
+GPROFILER_QUERY_IDS = ANNOT_DIR / "gprofiler_query_ids.txt"   # the UniProt entries both g:Profiler queries were run on
 
 # ------------------------------------------------------------- result trees
 

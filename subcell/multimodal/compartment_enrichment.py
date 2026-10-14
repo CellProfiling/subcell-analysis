@@ -1,6 +1,6 @@
-"""How much more similar proteins of one compartment are to each other than to the rest (Fig. 6c).
+"""How much more similar proteins of one compartment or process are to each other than to the rest (Fig. 6c,f).
 
-For a compartment, the similarities of pairs within it (both proteins members) are
+For a compartment or process, the similarities of pairs within it (both proteins members) are
 compared with those of pairs across its boundary (one member, one not) by Cliff's
 delta: the fraction of (within, across) pair combinations in which the within pair
 is the more similar, minus the fraction in which it is the less. 1 means every
@@ -12,24 +12,28 @@ spaces; proteins without a label count as non-members.
 Each delta is estimated from bootstrap draws of equal numbers of within and across
 pairs, drawn without replacement when the compartment has that many pairs and with
 replacement otherwise; the summary is the mean, s.d. and 2.5-97.5 percentile range
-over the draws. Two label sets (``subcell.multimodal.compartment_labels``):
+over the draws. Three label sets (``subcell.multimodal.compartment_labels``):
 
 * ``coarse``: the Grouping 1 locations of U2OS proteins (``config.U2OS_LOCATIONS``),
   compartments of 10 or more proteins, 5,000 pairs of each kind x 500 draws.
 * ``suborganellar``: the 11 GO:CC compartments (``config.SUBORGANELLAR_GOCC``),
   10,000 pairs x 1,000 draws.
+* ``gobp``: the 158 GO:BP processes (``config.GOBP_TERMS``), processes of 10 or more
+  proteins, 5,000 pairs x 500 draws.
 
-    python -m subcell.multimodal.compartment_enrichment [coarse] [suborganellar]
-        [--method-name NAME] [--run-dir DIR] [--locations FILE] [--gocc FILE] [--out-dir DIR]
+    python -m subcell.multimodal.compartment_enrichment [coarse] [suborganellar] [gobp]
+        [--method-name NAME] [--run-dir DIR] [--locations FILE] [--gocc FILE] [--gobp FILE]
+        [--out-dir DIR]
 
 Outputs, in ``config.COMPARTMENT_ENRICHMENT_DIR``/<method name>/:
 ``<label set>_summary.csv``, one row per (embedding, compartment).
-``figures.fig6c_compartment_enrichment`` plots them.
+``figures.fig6c_compartment_enrichment`` and ``figures.fig6f_process_enrichment`` plot them.
 
-The published run drew pairs with per-pair Python loops, from a random pool of 10
-million across pairs where there were more, and listed proteins in set order, so
-its draws cannot be repeated exactly; its estimates and these agree to the
-bootstrap error.
+The published runs drew pairs from a random pool of 10 million across pairs where
+there were more, and the location and GO:CC runs listed proteins in set order, so
+their draws cannot be repeated exactly; their estimates and these agree to the
+bootstrap error. The GO:BP run also scored random protein sets of each process's
+size, which no figure shows; they are not computed here.
 """
 
 from __future__ import annotations
@@ -40,13 +44,15 @@ import numpy as np
 import pandas as pd
 
 from subcell import config
-from subcell.multimodal.compartment_labels import NOT_INCLUDED, read_gocc, read_locations
+from subcell.multimodal.compartment_labels import (NOT_INCLUDED, read_gobp, read_gocc,
+                                                   read_locations)
 from subcell.multimodal.embeddings import (METHOD_NAME, SPACES, centered_cosine, input_paths,
                                            read_embedding)
 from subcell.runlog import log
 
 # label set -> (pairs of each kind per draw, draws, minimum members)
-SETTINGS = {"coarse": (5000, 500, 10), "suborganellar": (10000, 1000, 10)}
+SETTINGS = {"coarse": (5000, 500, 10), "suborganellar": (10000, 1000, 10),
+            "gobp": (5000, 500, 10)}
 SEED = 42
 
 
@@ -76,8 +82,8 @@ def bootstrap(sim, members, n, n_draws, seed=SEED) -> np.ndarray:
     return deltas
 
 
-def compartments(label_set, proteins, locations=None, gocc=None) -> dict[str, np.ndarray]:
-    """Compartment -> row indices of its members among *proteins*, largest first."""
+def compartments(label_set, proteins, locations=None, gocc=None, gobp=None) -> dict[str, np.ndarray]:
+    """Compartment or process -> row indices of its members among *proteins*, largest first."""
     index = {p: i for i, p in enumerate(proteins)}
     if label_set == "coarse":
         groups = {}
@@ -86,19 +92,20 @@ def compartments(label_set, proteins, locations=None, gocc=None) -> dict[str, np
                 if p in index and loc != NOT_INCLUDED:
                     groups.setdefault(loc, set()).add(index[p])
     else:
-        groups = {t: {index[p] for p in ps if p in index} for t, ps in read_gocc(gocc).items()}
+        sets = read_gocc(gocc) if label_set == "suborganellar" else read_gobp(gobp)
+        groups = {t: {index[p] for p in ps if p in index} for t, ps in sets.items()}
     min_members = SETTINGS[label_set][2]
     groups = {k: np.array(sorted(v)) for k, v in groups.items() if len(v) >= min_members}
     return dict(sorted(groups.items(), key=lambda kv: -len(kv[1])))
 
 
 def main(label_sets=tuple(SETTINGS), method_name=METHOD_NAME, run_dir=None, locations=None,
-         gocc=None, out_dir=None):
+         gocc=None, gobp=None, out_dir=None):
     paths = input_paths(method_name, run_dir)
     tables = {space: read_embedding(p) for space, p in paths.items()}
     proteins = sorted(set.intersection(*(set(t.index) for t in tables.values())))
     out_dir = config.ensure(out_dir or config.COMPARTMENT_ENRICHMENT_DIR / method_name)
-    groups = {s: compartments(s, proteins, locations, gocc) for s in label_sets}
+    groups = {s: compartments(s, proteins, locations, gocc, gobp) for s in label_sets}
     for s, g in groups.items():
         log(f"{s}: {len(g)} compartments over {len(proteins):,} proteins")
 
@@ -117,7 +124,7 @@ def main(label_sets=tuple(SETTINGS), method_name=METHOD_NAME, run_dir=None, loca
                     cliffs_delta_mean=deltas.mean(), cliffs_delta_std=deltas.std(),
                     cliffs_delta_ci_lower=np.percentile(deltas, 2.5),
                     cliffs_delta_ci_upper=np.percentile(deltas, 97.5)))
-                log(f"  {s:13s} {name:35s} n={k:5d}  delta={deltas.mean():.3f}")
+                log(f"  {s:13s} {name[:45]:45s} n={k:5d}  delta={deltas.mean():.3f}")
         del sim
 
     for s, r in rows.items():
@@ -128,7 +135,7 @@ def main(label_sets=tuple(SETTINGS), method_name=METHOD_NAME, run_dir=None, loca
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("label_sets", nargs="*", metavar="LABEL_SET",
-                    help=f"label sets to score, of {list(SETTINGS)} (default: both)")
+                    help=f"label sets to score, of {list(SETTINGS)} (default: all)")
     ap.add_argument("--method-name", default=METHOD_NAME)
     ap.add_argument("--run-dir", default=None,
                     help="read the run's embeddings from this folder instead")
@@ -136,8 +143,11 @@ if __name__ == "__main__":
                     help="coarse labels (default: config.U2OS_LOCATIONS)")
     ap.add_argument("--gocc", default=None,
                     help="sub-organellar labels (default: config.SUBORGANELLAR_GOCC)")
+    ap.add_argument("--gobp", default=None,
+                    help="GO:BP process labels (default: config.GOBP_TERMS)")
     ap.add_argument("--out-dir", default=None)
     a = ap.parse_args()
     if set(a.label_sets) - set(SETTINGS):
         ap.error(f"unknown label set; choose from {list(SETTINGS)}")
-    main(a.label_sets or tuple(SETTINGS), a.method_name, a.run_dir, a.locations, a.gocc, a.out_dir)
+    main(a.label_sets or tuple(SETTINGS), a.method_name, a.run_dir, a.locations, a.gocc, a.gobp,
+         a.out_dir)

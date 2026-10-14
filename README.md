@@ -108,13 +108,13 @@ The files in `configs/` refer to these roots as `${NAME}`.
   2025-03-16, Reactome V92, CORUM 5.1, hu.MAP 2.0, BioPlex 3.0 and STRING v12.0.
   `python -m subcell.io.complexes` builds the BioPlex and STRING tables from the raw
   downloads in `ppi_data/`; its docstring lists every table and the file it is read from.
-- Compartment labels of Fig. 6c,e, as used for the figures: the HPA location annotations of
-  U2OS proteins (`annotations/u2os_protein_locations.tsv`) and the members of the 11
-  GO:CC compartments plotted, from a g:Profiler query of 14 March 2026
-  (`annotations/suborganellar_gocc_gprofiler.tsv`, over the entries in
-  `annotations/suborganellar_gocc_query_ids.txt`). `python -m subcell.multimodal.compartment_labels`
-  rebuilds either; g:Profiler serves only its current GO release, so a new query gives
-  current memberships.
+- Protein labels of Fig. 6c,e,f, as used for the figures: the HPA location annotations of
+  U2OS proteins (`annotations/u2os_protein_locations.tsv`), and from g:Profiler queries of
+  March 2026 over the entries in `annotations/gprofiler_query_ids.txt` the members of the
+  11 GO:CC compartments plotted (`annotations/suborganellar_gocc_gprofiler.tsv`) and of the
+  158 GO:BP processes scored (`annotations/gobp_gprofiler.tsv`).
+  `python -m subcell.multimodal.compartment_labels` rebuilds each; g:Profiler serves only
+  its current GO release, so a new query gives current memberships.
 
 ## Reproducing the figures
 
@@ -144,6 +144,7 @@ python -m figures.fig3c_mantel         # one figure
 | Fig. 6a,b | `fig6ab_cluster_transfer` | `subcell.multimodal.cluster_transfer` (`subcell/multimodal/slurm/cluster_transfer.sbatch`) | `multimodal.music` (the image, ESM-2 and co-embedding of one run) |
 | Fig. 6c | `fig6c_compartment_enrichment` | `subcell.multimodal.compartment_enrichment` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), labels from `subcell.multimodal.compartment_labels` | as for Fig. 6a,b |
 | Fig. 6e | `fig6e_paralog_ranks` | `subcell.multimodal.paralog_ranks` (`subcell/multimodal/slurm/paralog_ranks.sbatch`) | as for Fig. 6a,b |
+| Fig. 6f | `fig6f_process_enrichment` | `subcell.multimodal.compartment_enrichment gobp` (`subcell/multimodal/slurm/compartment_enrichment.sbatch`), processes from `subcell.multimodal.compartment_labels gobp` | as for Fig. 6a,b |
 | Extended Data Fig. 7a | `ed7a_cluster_percentile` | `subcell.multimodal.cluster_transfer`, then `subcell.multimodal.cluster_percentile` | as above |
 | Fig. 6d; Extended Data Fig. 7b | `ed7b_interaction_enrichment` | `subcell.multimodal.music`, `subcell.multimodal.mirage`, `subcell.multimodal.interaction_enrichment` | `feature_analysis.harmonization` |
 | Fig. 4e-h; Extended Data Figs. 6 and 9 | `jump/notebooks/` | the JUMP-Pilot pipeline in `jump/` (own environments and configuration; see `jump/README.md`) | `jump/scripts/inference_*.py` |
@@ -161,7 +162,7 @@ Not produced by this repository:
 - Fig. 2d (a decision tree), Fig. 4d (images) and the joint intensity-versus-embedding plot of
   Fig. 4c. Fig. 2e (OpenCell clustering) has its features (`inference.opencell`) but no
   analysis code here.
-- Fig. 6f, Extended Data Fig. 7c.
+- Extended Data Fig. 7c.
 - Extended Data Fig. 2a-h,l (core segregation, dispersion, vimentin classification and the
   image panels).
 
