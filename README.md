@@ -134,6 +134,8 @@ python -m figures.fig3c_mantel         # one figure
 | Fig. 3f,g; Extended Data Fig. 8f,g | `fig3fg_attention` | `subcell.feature_analysis.attention_correlation` | `inference.attention` with `config_attention_hpa.yaml` |
 | Fig. 4a | — (table) | `subcell.perturbation.cm4ai_drug_prediction crops`, then `predict` | `inference.hpa` with `config_b2ai.yaml` |
 | Fig. 4b, the tables behind Fig. 4c; Extended Data Fig. 5 | `fig4_perturbation` | `subcell.perturbation.cm4ai_signatures` | `inference.hpa` with `config_b2ai.yaml` |
+| Fig. 6a | `fig6a_cluster_transfer` | `subcell.multimodal.cluster_transfer` (`subcell/multimodal/slurm/cluster_transfer.sbatch`) | `multimodal.music` (the image, ESM-2 and co-embedding of one run) |
+| Extended Data Fig. 7a | `ed7a_cluster_percentile` | `subcell.multimodal.cluster_transfer`, then `subcell.multimodal.cluster_percentile` | as above |
 | Fig. 6d; Extended Data Fig. 7b | `ed7b_interaction_enrichment` | `subcell.multimodal.music`, `subcell.multimodal.mirage`, `subcell.multimodal.interaction_enrichment` | `feature_analysis.harmonization` |
 | Fig. 4e-h; Extended Data Figs. 6 and 9 | `jump/notebooks/` | the JUMP-Pilot pipeline in `jump/` (own environments and configuration; see `jump/README.md`) | `jump/scripts/inference_*.py` |
 | Fig. 5 | `notebooks/fig5_multiscale_cell_map.ipynb` | hierarchical Leiden clustering and g:Profiler enrichment of the U2OS protein embeddings, in the notebook | Harmony-corrected SubCell features |
@@ -150,7 +152,7 @@ Not produced by this repository:
 - Fig. 2d (a decision tree), Fig. 4d (images) and the joint intensity-versus-embedding plot of
   Fig. 4c. Fig. 2e (OpenCell clustering) has its features (`inference.opencell`) but no
   analysis code here.
-- Fig. 6a-c,e,f, Extended Data Fig. 7a,c.
+- Fig. 6b,c,e,f, Extended Data Fig. 7c.
 - Extended Data Fig. 2a-h,l (core segregation, dispersion, vimentin classification and the
   image panels).
 

@@ -56,11 +56,10 @@ FIGURES = {
             [config.HPA_UMAP_DIR / "retrieval" / "retrieval_map.csv", config.MUTUAL_INFO_DIR]),
     "ed7b": ("figures.ed7b_interaction_enrichment",
              [config.MULTIMODAL_ENRICHMENT_DIR]),
-    "fig6_clusters": ("figures.fig6_cluster_transfer",
-                      [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "clusters.csv"]),
-    "fig6_percentile": ("figures.fig6_cluster_percentile",
-                        [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN
-                         / "cluster_percentile_summary.csv"]),
+    "fig6a": ("figures.fig6a_cluster_transfer",
+              [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "clusters.csv"]),
+    "ed7a": ("figures.ed7a_cluster_percentile",
+             [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "cluster_percentile_summary.csv"]),
 }
 
 

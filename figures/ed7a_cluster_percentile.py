@@ -1,18 +1,15 @@
-"""Fig. 6 -- within-cluster percentile rank of the image and sequence clusters in each space.
+"""Extended Data Fig. 7a -- within-cluster percentile rank of the image and sequence clusters in each space.
 
-Quantifies ``figures.fig6_cluster_transfer``. Each line is one (cluster source ->
+Quantifies Fig. 6a (``figures.fig6a_cluster_transfer``). Each line is one (cluster source ->
 scored space) combination: the mean, over clusters, of the mean percentile rank of
 a cluster's within-cluster pairs (``subcell.multimodal.cluster_percentile``), with
 a band of +- s.d. across clusters. 50 (dotted) is chance; the random baselines are
 each source's clusters with labels permuted, scored in the source's own space.
 
-* ``fig6_cluster_percentile``: every line, including the transfers to the co-embedding.
-* ``fig6_cluster_percentile_no_mm``: without the transfers to the co-embedding.
-
-    python -m figures.fig6_cluster_percentile [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
+    python -m figures.ed7a_cluster_percentile [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
 
 Inputs   ``config.CLUSTER_TRANSFER_DIR``/<method name>/cluster_percentile_summary.csv
-Outputs  ``config.figure_dir("fig6")``/fig6_cluster_percentile, fig6_cluster_percentile_no_mm
+Outputs  ``config.figure_dir("ed7")``/ed7a_cluster_percentile
 """
 
 from __future__ import annotations
@@ -47,13 +44,11 @@ def load(method_name=METHOD_NAME, in_dir=None) -> pd.DataFrame:
     return pd.read_csv(f"{path}/cluster_percentile_summary.csv")
 
 
-def render(summary, include_multimodal=True):
+def render(summary):
     fig = L.figure("single", height=62)
     ax = L.axes(fig, x=11, y=3, w=46, h=48)
     handles = []
     for source, target, line, face, ls, marker, label in LINES:
-        if target == "multimodal" and not include_multimodal:
-            continue
         sub = summary[(summary["cluster_source"] == source)
                       & (summary["target_space"] == target)].sort_values("resolution")
         x, y, sd = sub["resolution"], sub["mean"], sub["std"]
@@ -76,12 +71,9 @@ def main(method_name=METHOD_NAME, in_dir=None, out_dir=None):
     style.use_agg()
     summary = load(method_name, in_dir)
     log(f"{len(summary)} (source, space, level) rows from {method_name}")
-    out_dir = out_dir or config.figure_dir("fig6")
-    formats = ("pdf", "png", "svg")
     with style.nature():
-        style.save(render(summary), "fig6_cluster_percentile", out_dir, formats=formats)
-        style.save(render(summary, include_multimodal=False), "fig6_cluster_percentile_no_mm",
-                   out_dir, formats=formats)
+        style.save(render(summary), "ed7a_cluster_percentile", out_dir or config.figure_dir("ed7"),
+                   formats=("pdf", "png", "svg"))
 
 
 if __name__ == "__main__":

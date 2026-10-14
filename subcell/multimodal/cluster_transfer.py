@@ -1,4 +1,4 @@
-"""Hierarchical Leiden clusters of the image and sequence embeddings, shown on the co-embedding (Fig. 6).
+"""Hierarchical Leiden clusters of the image and sequence embeddings, shown on the co-embedding (Fig. 6a).
 
 The SubCell image embedding and the ESM-2 sequence embedding are each clustered with
 :func:`subcell.utils.hierarchical_leiden.hierarchical_leiden`, at the levels of the
@@ -17,7 +17,7 @@ The three embeddings are the inputs and output of one MuSIC run, the row
 
 Output ``config.CLUSTER_TRANSFER_DIR``/``<method name>``/clusters.csv, one row per
 UniProt entry: ``<space>_leiden_<res>`` for the image and sequence clusters and
-``<space>_umap_1``, ``<space>_umap_2`` for every space. ``figures.fig6_cluster_transfer``
+``<space>_umap_1``, ``<space>_umap_2`` for every space. ``figures.fig6a_cluster_transfer``
 plots it.
 """
 

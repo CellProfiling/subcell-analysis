@@ -1,4 +1,4 @@
-"""Fig. 6 -- hierarchical Leiden clusters of the image and sequence embeddings on the co-embedding.
+"""Fig. 6a -- hierarchical Leiden clusters of the image and sequence embeddings on the co-embedding.
 
 One row per clustered space, one panel per level of the hierarchy. Each panel is
 the UMAP of the MuSIC co-embedding, coloured by the clusters found in the SubCell
@@ -9,16 +9,16 @@ Colours follow the published panel: ``tab20`` sampled evenly over the clusters o
 each level, so above 20 clusters colours repeat and single clusters cannot be told
 apart by colour. The panel shows how coherent clusters stay, not which is which.
 
-* ``fig6_cluster_transfer``: image and sequence clusters on the co-embedding.
-* ``fig6_cluster_transfer_native``: each space's clusters on its own UMAP, for reference.
-* ``fig6_cluster_transfer_cross``: image clusters on the sequence UMAP and the reverse.
+* ``fig6a_cluster_transfer``: image and sequence clusters on the co-embedding (Fig. 6a).
+* ``fig6a_cluster_transfer_native``: each space's clusters on its own UMAP, for reference.
+* ``fig6a_cluster_transfer_cross``: image clusters on the sequence UMAP and the reverse.
 
-    python -m figures.fig6_cluster_transfer [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
+    python -m figures.fig6a_cluster_transfer [--method-name NAME] [--in-dir DIR] [--out-dir DIR]
 
 Inputs   ``config.CLUSTER_TRANSFER_DIR``/<method name>/clusters.csv
          (``subcell.multimodal.cluster_transfer``)
-Outputs  ``config.figure_dir("fig6")``/fig6_cluster_transfer, fig6_cluster_transfer_native,
-         fig6_cluster_transfer_cross
+Outputs  ``config.figure_dir("fig6")``/fig6a_cluster_transfer, fig6a_cluster_transfer_native,
+         fig6a_cluster_transfer_cross
 """
 
 from __future__ import annotations
@@ -106,9 +106,9 @@ def main(method_name=METHOD_NAME, in_dir=None, out_dir=None):
     out_dir = out_dir or config.figure_dir("fig6")
     formats = ("pdf", "png", "svg")
     with style.nature():
-        style.save(render(df, TRANSFER_ROWS), "fig6_cluster_transfer", out_dir, formats=formats)
-        style.save(render(df, NATIVE_ROWS), "fig6_cluster_transfer_native", out_dir, formats=formats)
-        style.save(render(df, CROSS_ROWS), "fig6_cluster_transfer_cross", out_dir, formats=formats)
+        style.save(render(df, TRANSFER_ROWS), "fig6a_cluster_transfer", out_dir, formats=formats)
+        style.save(render(df, NATIVE_ROWS), "fig6a_cluster_transfer_native", out_dir, formats=formats)
+        style.save(render(df, CROSS_ROWS), "fig6a_cluster_transfer_cross", out_dir, formats=formats)
 
 
 if __name__ == "__main__":
