@@ -60,6 +60,9 @@ FIGURES = {
                [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "clusters.csv"]),
     "ed7a": ("figures.ed7a_cluster_percentile",
              [config.CLUSTER_TRANSFER_DIR / _CLUSTER_TRANSFER_RUN / "cluster_percentile_summary.csv"]),
+    "fig6c": ("figures.fig6c_compartment_enrichment",
+              [config.COMPARTMENT_ENRICHMENT_DIR / _CLUSTER_TRANSFER_RUN / f"{s}_summary.csv"
+               for s in ("coarse", "suborganellar")]),
 }
 
 

@@ -89,6 +89,10 @@ IF_IMAGES = ANNOT_DIR / "IF-image-orig-bboxes.csv"    # HPA v23 image table
 COMPLEXES_DIR = ANNOT_DIR / "complexes"               # GO / Reactome / CORUM / hu.MAP / BioPlex / STRING
 TISSUE_ANNOT_K13 = ANNOT_DIR / "hpa_tissue_cluster_annotation_k13.tsv"
 TISSUE_CORE_META = ANNOT_DIR / "hpa_tissue_core_metadata.tsv"
+# Compartment labels of Fig. 6c, as used for the figure (see subcell.multimodal.compartment_labels)
+U2OS_LOCATIONS = ANNOT_DIR / "u2os_protein_locations_grouping1.tsv"   # Grouping 1 locations per UniProt entry, U2OS cells
+SUBORGANELLAR_GOCC = ANNOT_DIR / "suborganellar_gocc_gprofiler.tsv"   # members of 11 GO:CC compartments, g:Profiler 2026-03-14
+SUBORGANELLAR_GOCC_QUERY = ANNOT_DIR / "suborganellar_gocc_query_ids.txt"   # the UniProt entries that query was run on
 
 # ------------------------------------------------------------- result trees
 
@@ -109,6 +113,7 @@ CM4AI_CROPS = ROOT / "bridge2ai_crops"          # masked CM4AI single-cell crops
 MULTIMODAL_DIR = ROOT / "multimodal_integration"  # image + sequence co-embedding (Fig. 6)
 MULTIMODAL_ENRICHMENT_DIR = ROOT / "bionic_eval_embed_imgseq"   # interaction enrichment (Fig. 6d, Extended Data Fig. 7b)
 CLUSTER_TRANSFER_DIR = ROOT / "cluster_transfer"   # image and sequence clusters on the co-embedding (Fig. 6a,b, Extended Data Fig. 7a)
+COMPARTMENT_ENRICHMENT_DIR = ROOT / "compartment_enrichment"   # within- vs between-compartment similarity (Fig. 6c)
 
 # GO / Reactome membership prediction from per-gene mean embeddings (Fig. 3d).
 # Repeat r draws its ten-fold split with seed r.
